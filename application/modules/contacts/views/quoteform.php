@@ -1,11 +1,8 @@
   <div class="hero-quote-card-container">
-            <!-- Card Header -->
-            <div class="hero-quote-header">
-              <h3 class="hero-quote-title">Get Your Best Moving Quote</h3>
-              <p class="hero-quote-subtitle">Quick, Fast & Free Estimates</p>
-            </div>
-            
             <div class="hero-quote-white-card">
+              <div class="text-center mb-3">
+                <span class="hero-quote-title">Get a Free Quote</span>
+              </div>
               <!-- Card Body / Form -->
               <div class="card-body-form">
                 <form id="quoteform" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="quoteformresults" onsubmit="return false;">
@@ -68,34 +65,52 @@
               <!-- Card Footer / Trust Badge Bar (Desktop Only) -->
               <div class="card-footer-trust d-none d-lg-flex justify-content-between align-items-center">
                 <div class="trust-item">
-                  <i class="bi bi-shield-check trust-icon"></i>
+                  <div class="trust-icon-box bg-blue">
+                    <i class="bi bi-shield-check"></i>
+                  </div>
                   <div class="trust-text">
-                    <strong>100% Secure</strong>
-                    <span>Your data is safe with us</span>
+                    <strong>Safe & Secure</strong>
+                    <span>100% Safe Packing<br>& Moving</span>
                   </div>
                 </div>
                 <div class="divider-vertical"></div>
                 <div class="trust-item">
-                  <i class="bi bi-clock trust-icon"></i>
+                  <div class="trust-icon-box bg-green">
+                    <i class="bi bi-truck"></i>
+                  </div>
                   <div class="trust-text">
-                    <strong>Quick Response</strong>
-                    <span>We respond within 15 mins</span>
+                    <strong>On Time Delivery</strong>
+                    <span>We Value Your<br>Precious Time</span>
                   </div>
                 </div>
                 <div class="divider-vertical"></div>
                 <div class="trust-item">
-                  <i class="bi bi-currency-rupee trust-icon-circle"></i>
+                  <div class="trust-icon-box bg-pink">
+                    <i class="bi bi-people"></i>
+                  </div>
                   <div class="trust-text">
-                    <strong>Best Price Guarantee</strong>
-                    <span>Get the most competitive rates</span>
+                    <strong>Expert Team</strong>
+                    <span>Professional &<br>Trained Staff</span>
                   </div>
                 </div>
                 <div class="divider-vertical"></div>
                 <div class="trust-item">
-                  <i class="bi bi-headset trust-icon"></i>
+                  <div class="trust-icon-box bg-blue">
+                    <i class="bi bi-box-seam"></i>
+                  </div>
+                  <div class="trust-text">
+                    <strong>Quality Packing</strong>
+                    <span>Best Quality Packing<br>Materials</span>
+                  </div>
+                </div>
+                <div class="divider-vertical"></div>
+                <div class="trust-item">
+                  <div class="trust-icon-box bg-green">
+                    <i class="bi bi-headset"></i>
+                  </div>
                   <div class="trust-text">
                     <strong>24/7 Support</strong>
-                    <span>We are here to help</span>
+                    <span>We Are Always<br>Here to Help You</span>
                   </div>
                 </div>
               </div>

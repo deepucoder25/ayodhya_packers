@@ -1,56 +1,60 @@
-<section class="home-page-slider">
-  <div class="home-page-slider-content">
+<section class="home-slider-section">
+  <div class="dot-pattern-overlay"></div>
+  <div class="slider-wrapper d-flex align-items-center py-4">
     <div class="container">
-      <!-- Title & Text Section -->
-      <div class="row">
-        <div class="col-lg-8 col-md-10 text-start hero-text-col">
-          <div class="hero-eyebrow">INDIA'S TRUSTED RELOCATION PARTNER</div>
+      <div class="row align-items-center position-relative hero-content-row">
+        
+        <div class="col-lg-5 col-md-8 col-sm-9 col-10 text-start hero-text-col">
+          <div class="hero-eyebrow">
+            <span class="eyebrow-safe">SAFE.</span> 
+            <span class="eyebrow-reliable">RELIABLE.</span> 
+            <span class="eyebrow-ontime">ON TIME.</span>
+          </div>
           <h1 class="hero-title">
-            Move. Care. Deliver. We Make <span class="accent-text">It Happen.</span>
+            We Move Your <span class="accent-text">World</span> With Care
           </h1>
-          <p class="hero-lead">
-            Safe, reliable and hassle-free relocation services across India and around the world.
+          <p class="hero-desc">
+            Ayodhya Packers And Movers offers professional packing and moving services for your home, office, and vehicle – anywhere in India and worldwide.
           </p>
+          
+          <div class="hero-buttons-flex">
+            <a href="#" class="btn-hero btn-quote" data-bs-toggle="modal" data-bs-target="#qteModal">
+              <span>Get a Free Quote</span>
+              <div class="btn-arrow-circle">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </a>
+            <a href="<?= site_url('our-services') ?>" class="btn-hero btn-services">
+              <span>Our Services</span>
+              <div class="btn-arrow-circle">
+                <i class="bi bi-arrow-right"></i>
+              </div>
+            </a>
+          </div>
+          
+          <div class="hero-trust-rating">
+            <div class="avatar-group">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="avatar-img">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="User" class="avatar-img">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User" class="avatar-img">
+              <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="User" class="avatar-img">
+            </div>
+            <div class="trust-rating-text">
+              <span class="rating-num">4.8/5</span>
+              <span class="rating-lbl">Trusted by<br>10,000+ Customers</span>
+            </div>
+          </div>
         </div>
+        
       </div>
-      
-      <!-- Quote Form Card -->
-      <div class="row">
+
+      <div class="row hero-quote-row">
         <div class="col-12">
-        <?php $this->load->view('contacts/quoteform.php')?>
+          <?php $this->load->view('contacts/quoteform'); ?>
         </div>
       </div>
+
     </div>
+    
   </div>
 </section>
-
-<!-- Mobile Trust Badge Bar (Mobile Only, Outside the Card) -->
-<div class="mobile-trust-bar d-flex d-lg-none py-3 bg-white border-bottom">
-  <div class="container-fluid px-1">
-    <div class="row g-0 justify-content-center align-items-stretch">
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-shield-check trust-icon mb-2"></i>
-        <strong>100% Secure</strong>
-        <span>Your data is safe with us</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-clock trust-icon mb-2"></i>
-        <strong>Quick Response</strong>
-        <span>We respond within 15 mins</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-currency-rupee trust-icon-circle mb-2"></i>
-        <strong>Best Price Guarantee</strong>
-        <span>Get the most competitive rates</span>
-      </div>
-      <div class="col-3 d-flex flex-column align-items-center text-center trust-mobile-item">
-        <i class="bi bi-headset trust-icon mb-2"></i>
-        <strong>24/7 Support</strong>
-        <span>We are here to help</span>
-      </div>
-    </div>
-  </div>
-</div>
-
-
-
