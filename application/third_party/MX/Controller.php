@@ -51,45 +51,46 @@ class MX_Controller
         $this->load = clone load_class('Loader');
         $this->load->initialize($this);
 
-        $this->comp['phone'] = '+91 0000000000';
-        $this->comp['phonehtml'] = 'tel:+910000000000';
-        $this->comp['phone1'] = '+91 0000000000';
-        $this->comp['phonehtml1'] = 'tel:+910000000000';
-        $this->comp['supportmail'] = 'support@mycompany.com';
-        $this->comp['replyToMail'] = 'support@mycompany.com';
-        $this->comp['mail'] = 'support@mycompany.com';    
-        $this->comp['mailhtml'] = "mailto:support@mycompany.com";
-        $this->comp['company3'] = 'MyCompany';
-        $this->comp['companydomain'] = 'mycompany.com';
+        $this->comp['phone'] = '+91 9039699727';
+        $this->comp['phonehtml'] = 'tel:+919039699727';
+        $this->comp['phone1'] = '+91 8120009727';
+        $this->comp['phonehtml1'] = 'tel:+918120009727';
+        $this->comp['supportmail'] = 'info@ayodhyapackers.com';
+        $this->comp['replyToMail'] = 'info@ayodhyapackers.com';
+        $this->comp['mail'] = 'info@ayodhyapackers.com';
+        $this->comp['mailhtml'] = "mailto:info@ayodhyapackers.com";
+        $this->comp['company3'] = 'AYODHYA PACKERS AND MOVERS';
+        $this->comp['companydomain'] = 'ayodhyapackers.com';
 
-        $this->comp['facebookhtml'] = "";
-        $this->comp['youtubehtml'] = "";
-        $this->comp['instagramhtml'] = "";
-        $this->comp['twitterhtml'] = "";
-        $this->comp['linkedinhtml'] = "";
-        $this->comp['whatsapphtml'] = "https://wa.me/910000000000";
+        $this->comp['facebookhtml'] = "https://m.facebook.com/ayodhyapackers/";
+        $this->comp['youtubehtml'] = "https://youtube.com/channel/UC8eIrNKY0XkNcH5wbnhNMnw";
+        $this->comp['instagramhtml'] = "https://www.instagram.com/ayodhyapackers";
+        $this->comp['twitterhtml'] = "https://mobile.twitter.com/AyodhyaPackers";
+        $this->comp['linkedinhtml'] = "https://www.linkedin.com/in/ayodhya-packers-741195243";
+        $this->comp['whatsapphtml'] = "https://wa.me/919039699727";
 
-        $this->comp['address'] = "Shop No.17, Building No.2, Deeplaxmi Rajaram Residency, Kalher, Bhiwandi, Mumbai, Pin Code- 421302";
-        $this->comp['address1'] = "Shop No.17, Building No.2, Deeplaxmi Rajaram Residency";
-        $this->comp['address2'] = "Kalher, Bhiwandi, Mumbai, Pin Code- 421302";
-        $this->comp['addressRegion'] = "Mumbai";
-        $this->comp['postalCode'] = "421302";
-        $this->comp['companystate'] = "Maharashtra";
+        $this->comp['address'] = "Shop No. 170, Kailash Kuti, Talawali Chanda, A.B. Road, Indore, Madhya Pradesh, India, 453771";
+        $this->comp['address1'] = "Shop No. 170, Kailash Kuti, Talawali Chanda";
+        $this->comp['address2'] = "A.B. Road, Indore, Madhya Pradesh";
+        $this->comp['addressRegion'] = "Indore";
+        $this->comp['postalCode'] = "453771";
+        $this->comp['companystate'] = "Madhya Pradesh";
         $this->comp['themeColor'] = "#0a4ebd";
 
-        $this->comp['experience'] = "40+";
-        $this->comp['startYear'] = "1986";
+        $this->comp['experience'] = "10+";
+        $this->comp['startYear'] = "2015";
 
-        $this->comp['happyClients'] = "39,850+";
-        $this->comp['yearsExperience'] = "40+";
+        $this->comp['happyClients'] = "1,567+";
+        $this->comp['total_moves'] = "1,584+";
+        $this->comp['yearsExperience'] = "10+";
         $this->comp['secureShifting'] = "100%";
-        $this->comp['statesCovered'] = "20+";
+        $this->comp['statesCovered'] = "67+";
 
         $this->comp['sku'] = "PM28957";
         $this->comp['mpn'] = "SPM28957";
         // Review
         $this->comp['ratingValue'] = "4.9";
-        $this->comp['ratingCount'] = "39850";
+        $this->comp['ratingCount'] = "400+";
         $this->comp['datePublished'] = "15 May, 2026";
         $this->comp['reviewBody'] = "Best Packing And Moving Company in India.";
         $this->comp['reviewperson'] = "Arshad Ali";
