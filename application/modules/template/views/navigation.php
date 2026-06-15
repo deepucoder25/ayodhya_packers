@@ -77,7 +77,7 @@
   </div>
 
   <header class="main-header" id="mainHeader">
-    <div class="header-inner-wrap d-flex align-items-center justify-content-between">
+    <div class="container d-flex align-items-center justify-content-between">
       
       <div class="mobile-header-bar d-flex d-lg-none justify-content-between align-items-center w-100">
         <a href="<?= site_url() ?>" class="mobile-brand-logo-wrap">
