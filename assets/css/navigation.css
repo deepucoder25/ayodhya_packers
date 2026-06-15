@@ -6,11 +6,22 @@ html, body {
 
 :root {
     --primary-color: #0098DB;
+    --primary-rgb: 0, 152, 219;
+    --primary-dark: #0077ab;
+
     --secondary-color: #EB268F;
+    --secondary-rgb: 235, 38, 143;
     --secondary-dark: #C2185B;
+
     --tertiary-color: #A9CF46;
+    --tertiary-dark: #89ab31;
+
     --accent-color: #2E385B;
+    --accent-rgb: 46, 56, 91;
+
     --white: #ffffff;
+    --white-rgb: 255, 255, 255;
+
     --dark-bg-color: #0d1b3e;
     --highlight-pink: #ff5eb5;
     --highlight-blue: #4cd4ff;

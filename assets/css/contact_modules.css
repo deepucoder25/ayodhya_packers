@@ -31,14 +31,21 @@
 .hero-quote-white-card {
     background-color: var(--white);
     border-radius: 20px;
-    box-shadow: 0 15px 45px rgba(46, 56, 91, 0.12), 0 5px 15px rgba(0, 0, 0, 0.04);
+    box-shadow: 0 15px 45px rgba(var(--accent-rgb), 0.12), 0 5px 15px rgba(0, 0, 0, 0.04);
     padding: 20px 25px;
-    border: 1px solid rgba(46, 56, 91, 0.05);
+    border: 1px solid rgba(var(--accent-rgb), 0.05);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
 .card-body-form {
     width: 100%;
+}
+
+.form-group-custom {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
 }
 
 /* Form Row & CSS Grid Layout */
@@ -69,7 +76,7 @@
 .input-wrap-custom:focus-within {
     border-color: var(--primary-color);
     background-color: var(--white);
-    box-shadow: 0 0 0 4px rgba(0, 152, 219, 0.12);
+    box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.12);
 }
 
 .input-icon-custom {
@@ -145,13 +152,13 @@
     font-weight: 750;
     font-size: 16px;
     cursor: pointer;
-    box-shadow: 0 6px 18px rgba(235, 38, 143, 0.3);
+    box-shadow: 0 6px 18px rgba(var(--secondary-rgb), 0.3);
     transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .btn-submit-custom:hover {
     transform: translateY(-2px);
-    box-shadow: 0 8px 24px rgba(235, 38, 143, 0.45);
+    box-shadow: 0 8px 24px rgba(var(--secondary-rgb), 0.45);
     filter: brightness(1.05);
 }
 
@@ -193,15 +200,15 @@
 }
 
 .trust-icon-box.bg-blue {
-    background: linear-gradient(135deg, #0098DB 0%, #0077ab 100%);
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
 }
 
 .trust-icon-box.bg-green {
-    background: linear-gradient(135deg, #A9CF46 0%, #89ab31 100%);
+    background: linear-gradient(135deg, var(--tertiary-color) 0%, var(--tertiary-dark) 100%);
 }
 
 .trust-icon-box.bg-pink {
-    background: linear-gradient(135deg, #EB268F 0%, #bd146f 100%);
+    background: linear-gradient(135deg, var(--secondary-color) 0%, var(--secondary-dark) 100%);
 }
 
 .trust-text {
@@ -267,12 +274,14 @@
         grid-template-columns: repeat(2, 1fr);
         gap: 10px;
     }
-    .input-wrap-custom {
+    .form-group-custom {
         grid-column: span 2;
-        height: 40px;
     }
-    .form-row-custom .half-width-mobile {
+    .form-group-custom.half-width-mobile {
         grid-column: span 1;
+    }
+    .input-wrap-custom {
+        height: 40px;
     }
     .btn-submit-custom {
         grid-column: span 2;
@@ -286,4 +295,157 @@
         display: inline-block;
         font-size: 15px;
     }
+}
+
+/* Modal Styling overrides */
+.contact-custom-modal .modal-dialog {
+    max-width: 550px;
+}
+.contact-custom-modal .modal-content {
+    border-radius: 20px;
+    border: none;
+    box-shadow: 0 20px 50px rgba(var(--accent-rgb), 0.15);
+    padding: 30px;
+}
+.contact-form-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 15px;
+    border-bottom: 1.5px solid #f1f5f9;
+    margin-bottom: 25px;
+    width: 100%;
+}
+.contact-form-header span {
+    font-size: 22px;
+    font-weight: 800;
+    color: var(--accent-color);
+    letter-spacing: -0.5px;
+    text-transform: capitalize;
+}
+.contact-form-header .close {
+    background: #f1f5f9;
+    border: none;
+    color: #64748b;
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    font-size: 14px;
+    padding: 0;
+}
+.contact-form-header .close:hover {
+    background: var(--secondary-color);
+    color: var(--white);
+    transform: rotate(90deg);
+}
+
+/* Modal Form Fields Styling */
+.contact-custom-modal .form-group {
+    margin-bottom: 18px;
+}
+.contact-custom-modal .form-icon {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f8fafc;
+    border: 1.8px solid #e2e8f0;
+    border-radius: 12px;
+    padding-left: 16px;
+    height: 44px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.contact-custom-modal .form-icon:focus-within {
+    border-color: var(--primary-color);
+    background-color: var(--white);
+    box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.12);
+}
+.contact-custom-modal .form-icon i {
+    color: #94a3b8;
+    font-size: 18px;
+    margin-right: 12px;
+    flex-shrink: 0;
+    transition: color 0.3s ease;
+}
+.contact-custom-modal .form-icon:focus-within i {
+    color: var(--primary-color);
+}
+.contact-custom-modal .form-control {
+    width: 100%;
+    height: 100%;
+    border: none !important;
+    background: transparent !important;
+    color: var(--accent-color) !important;
+    font-size: 14px;
+    font-weight: 600;
+    outline: none !important;
+    padding: 0 16px 0 0;
+    box-shadow: none !important;
+}
+.contact-custom-modal .form-control::placeholder {
+    color: #94a3b8;
+    opacity: 1;
+    font-weight: 500;
+}
+
+/* Textarea specific styles */
+.contact-custom-modal .form-icon:has(textarea) {
+    height: auto;
+    align-items: flex-start;
+    padding-top: 12px;
+}
+.contact-custom-modal .form-icon:has(textarea) i {
+    margin-top: 2px;
+}
+.contact-custom-modal textarea.form-control {
+    min-height: 90px;
+    padding-top: 0;
+    resize: none;
+}
+
+/* Modal Buttons Styling */
+.contact-quote-gap {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    margin-top: 25px;
+}
+.contact-quote-gap .theme-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 10px 26px;
+    border-radius: 30px;
+    font-weight: 700;
+    font-size: 15px;
+    transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: pointer;
+    text-decoration: none;
+}
+.contact-quote-gap #submitbquotemodal {
+    background-color: var(--secondary-color);
+    color: var(--white) !important;
+    border: none;
+    box-shadow: 0 4px 15px rgba(var(--secondary-rgb), 0.2);
+}
+.contact-quote-gap #submitbquotemodal:hover {
+    background-color: var(--secondary-dark);
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(var(--secondary-rgb), 0.3);
+}
+.contact-quote-gap button[type="reset"] {
+    background-color: transparent;
+    color: var(--accent-color) !important;
+    border: 1.8px solid #cbd5e1;
+}
+.contact-quote-gap button[type="reset"]:hover {
+    background-color: #f8fafc;
+    border-color: #94a3b8;
+    transform: translateY(-1px);
 }
