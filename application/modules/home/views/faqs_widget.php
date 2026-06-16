@@ -1,12 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed');
-
-// Auto-copy the generated mockup image to the assets folder if not already done
-$src_img = 'C:/Users/Deepali Kumari/.gemini/antigravity-ide/brain/c9c9c1ec-b620-4604-8fcc-09c7c2324707/faq_boxes_mockup_1781607349024.png';
-$dst_img = 'c:/xampp/htdocs/ayodhya_packers/assets/images/faq_boxes_mockup.png';
-if (!file_exists($dst_img) && file_exists($src_img)) {
-    @copy($src_img, $dst_img);
-}
-
 $faqs = [
     [
         'question' => 'What services do you provide?',

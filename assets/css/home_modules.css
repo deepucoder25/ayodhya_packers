@@ -1999,3 +1999,239 @@
     }
 }
 
+/* ==========================================================================
+   About Us Section Module Styles
+   ========================================================================== */
+
+.about-section {
+    background-color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.about-bg-decor {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+.about-bg-decor-left {
+    top: 60px;
+    left: 10px;
+}
+.about-bg-decor-right {
+    top: 60px;
+    right: 10px;
+}
+
+/* Underline decoration for title */
+.about-title-underline {
+    display: flex;
+    gap: 4px;
+}
+.about-title-underline .line-pink {
+    width: 30px;
+    height: 4px;
+    background-color: var(--secondary-color);
+    border-radius: 2px;
+}
+.about-title-underline .line-blue {
+    width: 15px;
+    height: 4px;
+    background-color: var(--primary-color);
+    border-radius: 2px;
+}
+
+/* Image Showcase layout */
+.about-image-showcase {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 15px 40px rgba(46, 56, 91, 0.06);
+}
+.about-img-mask-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: radial-gradient(circle at 10% 80%, rgba(var(--primary-rgb), 0.08) 0%, transparent 60%);
+    pointer-events: none;
+}
+.about-showcase-img {
+    width: 100%;
+    height: 360px;
+    display: block;
+    object-fit: cover;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+@media (max-width: 767.98px) {
+    .about-showcase-img {
+        height: 280px;
+    }
+}
+.about-image-showcase:hover .about-showcase-img {
+    transform: scale(1.03);
+}
+
+/* Custom 5-Column Grid */
+@media (min-width: 992px) {
+    .col-lg-2-5 {
+        flex: 0 0 20%;
+        max-width: 20%;
+    }
+}
+
+/* Value Cards */
+.about-value-card {
+    background-color: var(--white);
+    border-radius: 20px;
+    border: 1px solid rgba(46, 56, 91, 0.05);
+    box-shadow: 0 10px 25px rgba(46, 56, 91, 0.03);
+    padding: 28px 20px;
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.about-value-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(46, 56, 91, 0.08);
+}
+.about-value-card .value-icon-circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: var(--white);
+    margin-bottom: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+/* Color themes for value card icons and titles */
+.about-value-card.pink .value-icon-circle {
+    background-color: var(--secondary-color) !important;
+}
+.about-value-card.pink .value-card-title {
+    color: var(--secondary-color) !important;
+}
+.about-value-card.blue .value-icon-circle {
+    background-color: var(--primary-color) !important;
+}
+.about-value-card.blue .value-card-title {
+    color: var(--primary-color) !important;
+}
+.about-value-card.green .value-icon-circle {
+    background-color: var(--tertiary-color) !important;
+}
+.about-value-card.green .value-card-title {
+    color: var(--tertiary-color) !important;
+}
+
+.value-card-title {
+    font-size: 15.5px;
+    font-weight: 850;
+    margin-bottom: 12px;
+}
+.value-card-desc {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.6;
+    font-weight: 500;
+    margin-bottom: 0;
+}
+
+/* Bottom Stats Banner */
+.about-stats-banner {
+    background-color: var(--accent-color);
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(46, 56, 91, 0.15);
+    padding: 24px 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 24px;
+    position: relative;
+    z-index: 3;
+}
+.about-stat-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex: 1;
+    min-width: 160px;
+    justify-content: center;
+}
+.about-stat-item .stat-icon-circle {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+    color: var(--white);
+    flex-shrink: 0;
+}
+.about-stat-item .stat-icon-circle.bg-secondary {
+    background-color: var(--secondary-color) !important;
+}
+.about-stat-item .stat-icon-circle.bg-primary {
+    background-color: var(--primary-color) !important;
+}
+.about-stat-item .stat-icon-circle.bg-success-theme {
+    background-color: var(--tertiary-color) !important;
+}
+.stat-text-details {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.2;
+}
+.stat-num-val {
+    font-size: 22px;
+    font-weight: 950;
+    color: var(--white);
+    letter-spacing: -0.5px;
+}
+.stat-lbl-txt {
+    font-size: 11px;
+    font-weight: 600;
+    color: #cbd5e1;
+    text-transform: capitalize;
+}
+
+/* Responsive Styling */
+@media (max-width: 991.98px) {
+    .col-lg-2-5 {
+        flex: 0 0 33.3333%;
+        max-width: 33.3333%;
+    }
+    .about-stats-banner {
+        justify-content: center;
+        gap: 30px;
+        padding: 30px;
+    }
+}
+@media (max-width: 767.98px) {
+    .col-lg-2-5 {
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+    .about-stat-item {
+        justify-content: flex-start;
+        width: 100%;
+        flex: 0 0 100%;
+        max-width: 220px;
+        margin: 0 auto;
+    }
+}
+@media (max-width: 575.98px) {
+    .col-lg-2-5 {
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
