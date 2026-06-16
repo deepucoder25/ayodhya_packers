@@ -1,1 +1,93 @@
-﻿
+/* Premium Clean Dashboard-Style Breadcrumbs Styling */
+
+.service-breadcrumbs {
+    background: linear-gradient(135deg, var(--accent-color, #2E385B) 0%, #151b33 100%);
+    padding: 22px 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    border-bottom: 3px solid;
+    border-image: linear-gradient(90deg, var(--primary-color, #0098DB) 0%, var(--secondary-color, #EB268F) 50%, var(--tertiary-color, #A9CF46) 100%) 1;
+}
+
+.bc-content-z {
+    position: relative;
+    z-index: 5;
+}
+
+/* Heading Typography */
+.bc-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 2.25rem;
+    font-weight: 700;
+    color: #ffffff;
+    letter-spacing: -0.3px;
+    line-height: 1.2;
+}
+
+/* Description Text */
+.bc-desc {
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 1.05rem;
+    font-weight: 400;
+    line-height: 1.4;
+}
+
+/* Breadcrumbs Navigation Badge / Pill */
+.bc-nav-pill {
+    background: rgba(255, 255, 255, 0.03);
+    border: 1px solid rgba(255, 255, 255, 0.06);
+    padding: 8px 18px;
+    border-radius: 50px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    font-size: 15px;
+    font-weight: 600;
+}
+
+.bc-link {
+    color: rgba(255, 255, 255, 0.8) !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+}
+
+.bc-link:hover {
+    color: var(--primary-color, #0098DB) !important;
+    text-shadow: 0 0 8px rgba(0, 152, 219, 0.3);
+}
+
+.bc-link i {
+    font-size: 16px;
+    vertical-align: middle;
+}
+
+.bc-sep {
+    color: var(--tertiary-color, #A9CF46) !important;
+    font-weight: 900;
+    font-size: 11px;
+    margin: 0 5px;
+}
+
+.bc-current {
+    color: var(--secondary-color, #EB268F);
+    font-weight: 600;
+}
+
+/* Responsive adjustments */
+@media (max-width: 767px) {
+    .service-breadcrumbs {
+        padding: 20px 0;
+    }
+    
+    .bc-title {
+        font-size: 1.9rem;
+    }
+    
+    .bc-desc {
+        font-size: 0.95rem;
+    }
+    
+    .bc-nav-pill {
+        padding: 6px 12px;
+        font-size: 13.5px;
+    }
+}

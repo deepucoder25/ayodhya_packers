@@ -7,8 +7,8 @@ class Contacts extends MX_Controller
     }
     function index()
     {
-        $data['title'] = "Contact Us | " . $this->comp['company3'];
-        $data['description'] = "Get in touch with " . $this->comp['company3'] . " for all your relocation and transportation needs. Call us at " . $this->comp['phone'] . ".";
+        $data['title'] = "Contact " . $this->comp['company3'] . " | Get a Free Shifting Quote";
+        $data['description'] = "Get in touch with " . $this->comp['company3'] . " for household shifting, office relocation, vehicle transport, or warehousing. Call " . $this->comp['phone'] . " or email " . $this->comp['mail'] . " for a free estimate.";
         $data['module'] = "contacts";
         $data['view_file'] = "contacts";
         echo Modules::run('template/layout2', $data);
@@ -121,8 +121,8 @@ class Contacts extends MX_Controller
 
     function trackingpage()
     {
-        $data['title'] = "Track Your Shipment | Get Real-Time Shipping Updates";
-        $data['description'] = "Track shipment with tracking number or LR number. Get real-time updates of your household shifting, cargo, or vehicle transportation. Get instant tracking with accurate status";
+        $data['title'] = "Track Your Shipment Online - Real-Time Shifting Updates | " . $this->comp['company3'];
+        $data['description'] = "Easily track your household shifting, car carrier, or cargo shipment online with " . $this->comp['company3'] . ". Enter your tracking ID or LR number for real-time status updates.";
         $data['module'] = "contacts";
         $data['view_file'] = "tracking";
         echo Modules::run('template/layout2', $data);

@@ -1,42 +1,17 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
-    <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-branches') ?>">Branches</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Bike Transportation in <?= $city ?></span>
-        </nav>
-        <h1><span class="bc-title-white">Bike Transportation in</span> <span class="bc-title-orange"><?= $city ?></span></h1>
-        <p class="bc-desc">Your prized bike deserves the safest journey. We transport all two-wheelers — scooters, motorcycles, and sports bikes — from <?= $city ?> in padded cradles with complete insurance cover across India.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-shield-fill-check"></i></div>
-                <div class="pill-text"><strong>Padded Cradle</strong><small>Scratch-free transit</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-patch-check-fill"></i></div>
-                <div class="pill-text"><strong>Insured Transit</strong><small>Damage protection</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-globe-americas"></i></div>
-                <div class="pill-text"><strong>Pan-India</strong><small>All city coverage</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-house-door-fill"></i></div>
-                <div class="pill-text"><strong>Door Pickup</strong><small>Home collection</small></div>
-            </div>
-        </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
-    </div>
-</section>
+<?php
+$this->load->view('template/breadcrumbs', [
+    'title' => 'Bike Transportation in ' . $city,
+    'description' => 'Your prized bike deserves the safest journey. We transport all two-wheelers — scooters, motorcycles, and sports bikes — from ' . $city . ' in padded cradles with complete insurance cover across India.',
+    'breadcrumbs' => [
+        ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
+        ['label' => 'Branches', 'url' => site_url('our-branches'), 'icon' => 'bi bi-geo-alt-fill'],
+        ['label' => 'Bike Transportation in ' . $city]
+    ]
+]);
+?>
 
 <!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">

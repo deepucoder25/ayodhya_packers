@@ -4,16 +4,16 @@ class Packers_movers extends MX_Controller
 
     function index()
     {
-        $data['title'] = "All India Service " . $this->comp['company3'];
-        $data['description'] = $this->comp['company3'] . " is best packers and movers service provider.";
+        $data['title'] = "Our Network Branches Across India | " . $this->comp['company3'];
+        $data['description'] = "Find " . $this->comp['company3'] . " network branches across India. Reliable local and domestic packers and movers services in your city at affordable rates.";
         $data['module'] = "packers_movers";
         $data['view_file'] = "states";
         echo Modules::run('template/layout2', $data);
     }
     function state()
     {
-        $data['title'] = "All India Service " . $this->comp['company3'];
-        $data['description'] = $this->comp['company3'] . " is best packers and movers service provider.";
+        $data['title'] = "Our Network Branches Across India | " . $this->comp['company3'];
+        $data['description'] = "Find " . $this->comp['company3'] . " network branches across India. Reliable local and domestic packers and movers services in your city at affordable rates.";
         $data['module'] = "packers_movers";
         $data['view_file'] = "states";
         echo Modules::run('template/layout2', $data);
@@ -27,8 +27,8 @@ class Packers_movers extends MX_Controller
         $state = ucwords(str_replace("-", " ", $state));
         $data = array(
             "state" => $state,
-            "title" => $this->comp['company3'] . " in $state",
-            "description" => $this->comp['company3'] . " in $state",
+            "title" => "Top Packers and Movers in " . $state . " | " . $this->comp['company3'],
+            "description" => "Hire the best and most reliable packers and movers services in " . $state . " with " . $this->comp['company3'] . ". Safe household shifting and vehicle relocation at transparent rates.",
             "keywords" => "$state " . $this->comp['company3'] . " in $state",
             "module" => "packers_movers",
             "view_file" => "city_list",

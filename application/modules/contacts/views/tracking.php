@@ -1,31 +1,14 @@
 
-<div class="scs-breadcrumb position-relative text-white"
-     style="background: linear-gradient(rgba(66,66,68,0.8), rgba(57,58,59,0.8)), url('<?php echo base_url("assets/images/about/packers.jpg"); ?>') center/cover no-repeat;">
-
-    <div class="container text-center py-5">
-        <h1 class="fw-bold mb-3">Track Your Congsignment</h1>
-
-        <nav aria-label="breadcrumb">
-            <ol class="breadcrumb justify-content-center bg-transparent mb-0">
-
-                <!-- Home -->
-                <li class="breadcrumb-item">
-                    <a href="<?=site_url()?>"
-                       class="text-warning text-decoration-none fw-semibold">
-                        Home
-                    </a>
-                </li>
-
-                <!-- Contact -->
-                <li class="breadcrumb-item active text-light fw-semibold"
-                    aria-current="page">
-                   Track Your Congsignment
-                </li>
-
-            </ol>
-        </nav>
-    </div>
-</div>
+<?php
+$this->load->view('template/breadcrumbs', [
+    'title' => 'Track Your Consignment',
+    'description' => 'Track the live location and transit status of your shipment moving with ' . $company3 . '.',
+    'breadcrumbs' => [
+        ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
+        ['label' => 'Track Your Consignment']
+    ]
+]);
+?>
 
 
 

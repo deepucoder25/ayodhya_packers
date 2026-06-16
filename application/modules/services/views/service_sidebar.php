@@ -7,18 +7,15 @@
         <ul class="sidebar-services-list" id="sidebarServiceList">
             <?php
             $sidebar_services = [
-                ['slug' => 'home-shifting',        'name' => 'Home Shifting',        'icon' => 'bi-house-heart'],
-                ['slug' => 'office-relocation',    'name' => 'Office Relocation',    'icon' => 'bi-building-gear'],
-                ['slug' => 'car-transportation',   'name' => 'Car Transportation',   'icon' => 'bi-car-front'],
-                ['slug' => 'bike-transportation',  'name' => 'Bike Transportation',  'icon' => 'bi-bicycle'],
-                ['slug' => 'warehouse-and-storage','name' => 'Warehouse & Storage',  'icon' => 'bi-box-seam'],
-                ['slug' => 'domestic-relocation',  'name' => 'Domestic Relocation',  'icon' => 'bi-truck'],
-                ['slug' => 'international-shifting','name' => 'International Shifting','icon' => 'bi-globe-americas'],
-                ['slug' => 'corporate-shifting',   'name' => 'Corporate Shifting',   'icon' => 'bi-briefcase'],
-                ['slug' => 'intercity-shifting',   'name' => 'Intercity Shifting',   'icon' => 'bi-signpost-split'],
-                ['slug' => 'local-shifting',       'name' => 'Local Shifting',       'icon' => 'bi-geo-alt'],
-                ['slug' => 'logistic-services',    'name' => 'Logistic Services',    'icon' => 'bi-truck-flatbed'],
-                ['slug' => 'pet-relocation',       'name' => 'Pet Relocation',       'icon' => 'bi-heart-pulse'],
+                ['slug' => 'packing-and-moving',            'name' => 'Packing & Moving',              'icon' => 'bi-box-seam'],
+                ['slug' => 'loading-and-unloading',          'name' => 'Loading & Unloading',            'icon' => 'bi-truck-flatbed'],
+                ['slug' => 'residential-relocation',         'name' => 'Residential Relocation',         'icon' => 'bi-house-heart'],
+                ['slug' => 'office-relocation',              'name' => 'Office Relocation',              'icon' => 'bi-building-gear'],
+                ['slug' => 'car-transportation',             'name' => 'Car Transportation',             'icon' => 'bi-car-front'],
+                ['slug' => 'international-transportation',    'name' => 'International Transportation',   'icon' => 'bi-globe-americas'],
+                ['slug' => 'warehousing-and-storage',        'name' => 'Warehousing & Storage',          'icon' => 'bi-buildings'],
+                ['slug' => 'transport-insurance',            'name' => 'Transport Insurance',            'icon' => 'bi-shield-check'],
+                ['slug' => 'heavy-machinery-and-shifting',   'name' => 'Heavy Machinery Shifting',       'icon' => 'bi-gear-wide-connected'],
             ];
 
             foreach ($sidebar_services as $index => $s):

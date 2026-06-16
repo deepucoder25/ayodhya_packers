@@ -1,8 +1,19 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<section class="py-5">
+<?php
+$this->load->view('template/breadcrumbs', [
+    'title' => 'Terms & Conditions',
+    'description' => 'Understand the terms, guidelines, and conditions governing home shifting, transport insurance, and cargo moving services with ' . $company3 . '.',
+    'breadcrumbs' => [
+        ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
+        ['label' => 'Terms & Conditions']
+    ]
+]);
+?>
+
+<section class="py-5 bg-light">
     <div class="container">
-        <h1 class="mb-4">Terms &amp; Conditions</h1>
+
         
         <p class="lead">
             Welcome to <strong><?= $company3 ?></strong>. These Terms &amp; Conditions govern your use of our website and relocation services. By booking a move or using our services, you agree to be bound by these terms.

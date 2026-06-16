@@ -1,13 +1,14 @@
 <main class="main">
-    <div class="site-breadcrumb home-error-breadcrumb">
-        <div class="container">
-            <h2 class="breadcrumb-title">Our Reviews</h2>
-            <ul class="breadcrumb-menu">
-                <li><a href="<?= site_url() ?>">Home</a></li>
-                <li class="active">Reviews</li>
-            </ul>
-        </div>
-    </div>
+<?php
+$this->load->view('template/breadcrumbs', [
+    'title' => 'Our Reviews',
+    'description' => 'Read what our verified clients say about our packing and shifting quality, staff behaviour, and delivery punctuality.',
+    'breadcrumbs' => [
+        ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
+        ['label' => 'Reviews']
+    ]
+]);
+?>
 
     <div class="reviews-service-page reviews-feature-content-section">
         <div ng-app="reviewsApp" ng-controller="reviewsctrl">

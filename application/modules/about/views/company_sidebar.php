@@ -14,6 +14,7 @@
                 ['slug' => 'reviews',           'name' => 'Customer Reviews',  'icon' => 'bi-star-half'],
                 ['slug' => 'photo-gallery',     'name' => 'Photo Gallery',     'icon' => 'bi-images'],
                 ['slug' => 'video-gallery',     'name' => 'Video Gallery',     'icon' => 'bi-play-circle'],
+                ['slug' => 'packing-tips',      'name' => 'Packing Tips',      'icon' => 'bi-box-seam'],
             ];
 
             foreach ($sidebar_links as $link):

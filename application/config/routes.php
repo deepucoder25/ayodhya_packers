@@ -19,6 +19,7 @@ $route['blog/([a-z0-9-]+)'] = 'blog/read/$1';
 $route['blog'] = 'blog/view';
 $route['privacy-policy'] = 'about/privacy';
 $route['terms-and-conditions'] = 'about/terms';
+$route['packing-tips'] = 'about/packingTips';
 
 
 // City Services Routes
@@ -29,23 +30,30 @@ $route["bike-transport-in-(:any)"] = "city_services/bike_transport/$1";
 
 // Services Routes
 $route["our-services"] = "services/index";
-$route["bike-transportation"] = "services/bike";
-$route["car-transportation"] = "services/car";
-$route["corporate-shifting"] = "services/corporate";
-$route["domestic-relocation"] = "services/domestic";
-$route["home-shifting"] = "services/homeShifting";
-$route["intercity-shifting"] = "services/intercity";
-$route["international-shifting"] = "services/international";
-$route["local-shifting"] = "services/local";
-$route["logistic-services"] = "services/logistic";
-$route["office-relocation"] = "services/office";
-$route["pet-relocation"] = "services/pet";
-$route["warehouse-and-storage"] = "services/storage";
+$route["packing-and-moving"] = "services/packingAndMoving";
+$route["loading-and-unloading"] = "services/loadingAndUnloading";
+$route["residential-relocation"] = "services/residentialRelocation";
+$route["office-relocation"] = "services/officeRelocation";
+$route["car-transportation"] = "services/carTransportation";
+$route["international-transportation"] = "services/internationalTransportation";
+$route["warehousing-and-storage"] = "services/warehousingAndStorage";
+$route["transport-insurance"] = "services/transportInsurance";
+$route["heavy-machinery-and-shifting"] = "services/heavyMachineryShifting";
 
 // Legacy/Compatibility Routes
-$route["home-relocation"] = "services/homeShifting";
-$route["storage-services"] = "services/storage";
-$route["car-transportation-service"] = "services/car";
+$route["home-shifting"] = "services/residentialRelocation";
+$route["home-relocation"] = "services/residentialRelocation";
+$route["local-shifting"] = "services/residentialRelocation";
+$route["intercity-shifting"] = "services/residentialRelocation";
+$route["domestic-relocation"] = "services/residentialRelocation";
+$route["corporate-shifting"] = "services/officeRelocation";
+$route["international-shifting"] = "services/internationalTransportation";
+$route["warehouse-and-storage"] = "services/warehousingAndStorage";
+$route["storage-services"] = "services/warehousingAndStorage";
+$route["bike-transportation"] = "services/carTransportation";
+$route["car-transportation-service"] = "services/carTransportation";
+$route["pet-relocation"] = "services/carTransportation";
+$route["logistic-services"] = "services/heavyMachineryShifting";
 $route["infrastructure"] = "about/infrastructure";
 $route["why-choose-us"] = "about/choose";
 

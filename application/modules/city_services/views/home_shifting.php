@@ -1,42 +1,17 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <!-- Breadcrumbs Section -->
-<section class="service-breadcrumbs">
-    <div class="container">
-        <nav class="bc-nav">
-            <a href="<?= site_url() ?>">Home</a>
-            <span class="bc-sep">›</span>
-            <a href="<?= site_url('our-branches') ?>">Branches</a>
-            <span class="bc-sep">›</span>
-            <span class="bc-current">Home Shifting in <?= $city ?></span>
-        </nav>
-        <h1><span class="bc-title-white">Home Shifting in</span> <span class="bc-title-orange"><?= $city ?></span></h1>
-        <p class="bc-desc">Relocate your entire home safely in <?= $city ?> with our expert packers and movers. We pack, load, transport, unload, and reassemble everything — so you can move in with zero stress.</p>
-        <div class="bc-features">
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-box-seam-fill"></i></div>
-                <div class="pill-text"><strong>Safe Packing</strong><small>Expert multi-layer wrap</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-tools"></i></div>
-                <div class="pill-text"><strong>Furniture Care</strong><small>Disassembly included</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-geo-alt-fill"></i></div>
-                <div class="pill-text"><strong>GPS Tracked</strong><small>Real-time updates</small></div>
-            </div>
-            <div class="bc-feature-pill">
-                <div class="pill-icon"><i class="bi bi-clock-fill"></i></div>
-                <div class="pill-text"><strong>On-Time Delivery</strong><small>Guaranteed schedule</small></div>
-            </div>
-        </div>
-    </div>
-    <div class="bc-wave-wrap">
-        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 64" preserveAspectRatio="none">
-            <path d="M0,30 C480,64 960,0 1440,30 L1440,64 L0,64 Z" fill="#ffffff"/>
-        </svg>
-    </div>
-</section>
+<?php
+$this->load->view('template/breadcrumbs', [
+    'title' => 'Home Shifting in ' . $city,
+    'description' => 'Relocate your entire home safely in ' . $city . ' with our expert packers and movers. We pack, load, transport, unload, and reassemble everything — so you can move in with zero stress.',
+    'breadcrumbs' => [
+        ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
+        ['label' => 'Branches', 'url' => site_url('our-branches'), 'icon' => 'bi bi-geo-alt-fill'],
+        ['label' => 'Home Shifting in ' . $city]
+    ]
+]);
+?>
 
 <!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">

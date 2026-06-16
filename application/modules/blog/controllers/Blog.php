@@ -62,8 +62,8 @@ class Blog extends MX_Controller {
         $data['total'] = $total_rows;
         $data['recent_posts'] = array_slice($all_blogs, 0, 5);
 
-        $data['title'] = "Official Blog of ".$this->comp['company3']." India";
-        $data['description'] = "Latest blog of ".$this->comp['company3'];
+        $data['title'] = "Shifting Guides, Moving Tips & Packers Movers Blogs | " . $this->comp['company3'];
+        $data['description'] = "Stay updated with the latest shifting guides, moving tips, packing strategies, and industry news from the official blog of " . $this->comp['company3'] . ".";
         $data['module'] = "blog";
         $data['view_file'] = "blog"; 
 
@@ -71,7 +71,6 @@ class Blog extends MX_Controller {
     }
 
     function read($slug = '') {
-        // die("DEBUG: Slug received: " . $slug);
         $this->load->helper('text');
 
         $all_blogs = $this->loadBlogs();
@@ -81,7 +80,6 @@ class Blog extends MX_Controller {
             $custom_slug = $b['slug'] ?? '';
             $auto_slug = $this->slugify($b['title']);
             
-            // Handle CI's translate_uri_dashes by replacing _ back to - in incoming slug
             $search_slug = str_replace('_', '-', $slug);
 
             if (
@@ -98,7 +96,7 @@ class Blog extends MX_Controller {
             $data['query'] = [$selected_blog];
             $data['recent_posts'] = array_slice(array_reverse($all_blogs), 0, 5);
             
-            $data['title'] = ucfirst($selected_blog->title);
+            $data['title'] = ucfirst($selected_blog->title) . " | Blog - " . $this->comp['company3'];
             $data['description'] = word_limiter(strip_tags($selected_blog->description), 200);
             
             $image_file = $selected_blog->image;

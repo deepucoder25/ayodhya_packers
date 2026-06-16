@@ -1,8 +1,19 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
-<section class="py-5">
+<?php
+$this->load->view('template/breadcrumbs', [
+    'title' => 'Privacy Policy',
+    'description' => 'Read the privacy policy of ' . $company3 . '. Learn how we protect, handle, and secure your personal details during your relocation process.',
+    'breadcrumbs' => [
+        ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
+        ['label' => 'Privacy Policy']
+    ]
+]);
+?>
+
+<section class="py-5 bg-light">
     <div class="container">
-        <h1 class="mb-4">Privacy Policy</h1>
+
         
         <p class="lead">
             We value your trust and are committed to protecting your privacy. This Privacy Policy describes how <strong><?= $company3 ?></strong> collects, uses, and discloses your personal information when you visit our website or use our relocation services.

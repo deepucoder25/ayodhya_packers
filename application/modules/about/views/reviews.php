@@ -1,11 +1,13 @@
-
-
-<section class="about-review-header">
-    <div class="container">
-        <h1>What Our Clients Say</h1>
-        <p class="text-muted fs-5">Read real feedback from our satisfied customers across India.</p>
-    </div>
-</section>
+<?php
+$this->load->view('template/breadcrumbs', [
+    'title' => 'Our Reviews',
+    'description' => 'Read what our verified clients say about our packing and shifting quality, staff behaviour, and delivery punctuality.',
+    'breadcrumbs' => [
+        ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
+        ['label' => 'Reviews']
+    ]
+]);
+?>
 
 <div class="container mb-5 pb-5">
     <?php if($this->session->flashdata('success')): ?>

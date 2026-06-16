@@ -1,13 +1,15 @@
 <main class="main">
-  <div class="site-breadcrumb home-error-breadcrumb">
-    <div class="container">
-      <h1 class="breadcrumb-title">404 Error</h1>
-      <ul class="breadcrumb-menu">
-        <li><a href="<?= site_url() ?>">Home</a></li>
-        <li class="active">404 Error</li>
-      </ul>
-    </div>
-  </div>
+<?php
+$this->load->view('template/breadcrumbs', [
+    'title' => 'Page Not Found',
+    'description' => 'The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.',
+    'breadcrumbs' => [
+        ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
+        ['label' => '404 Error']
+    ]
+]);
+?>
+
   <section class="error_section text-center mouse_move mt-3">
     <div class="container">
       <div class="error_image decoration_wrap text-center">

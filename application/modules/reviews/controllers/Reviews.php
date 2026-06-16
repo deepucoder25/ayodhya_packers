@@ -36,8 +36,8 @@ class Reviews extends MX_Controller
             return ($r['status'] ?? 'show') === 'show';
         });
         
-        $data['title'] = "Customer Reviews & Ratings | " . $this->comp['company3'];
-        $data['description'] = "Detailed feedback and ratings from our satisfied clients. Read real reviews about our relocation services at " . $this->comp['company3'] . ".";
+        $data['title'] = $this->comp['company3'] . " Reviews, Ratings & Customer Feedback";
+        $data['description'] = "Read genuine ratings, shifting testimonials, and customer reviews for " . $this->comp['company3'] . ". See why we are rated 4.9/5 stars for packers and movers services.";
         $data['module'] = "about";
         $data['view_file'] = "reviews";
         echo Modules::run('template/layout2', $data);
