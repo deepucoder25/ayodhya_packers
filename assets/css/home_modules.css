@@ -255,7 +255,6 @@
     color: var(--primary-color);
 }
 
-/* Green Card Theme */
 .srv-card.green .srv-icon {
     background-color: var(--tertiary-color);
     color: var(--white);
@@ -388,8 +387,6 @@
     color: #cbd5e1;
 }
 
-
-/* CTA Button styling */
 .srv-cta-btn {
     display: inline-flex;
     align-items: center;
@@ -420,7 +417,6 @@
     transform: translateX(2px);
 }
 
-/* Responsive Rules */
 @media (max-width: 1199.98px) {
     .srv-main-title {
         font-size: 36px;
@@ -538,5 +534,357 @@
     }
     .srv-wave-svg {
         display: none;
+    }
+}
+
+.process-section {
+    background-color: var(--white);
+    position: relative;
+    z-index: 1;
+}
+
+.process-bg-grid {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+.process-bg-grid-left {
+    top: 30px;
+    left: 10px;
+}
+.process-bg-grid-right {
+    top: 30px;
+    right: 10px;
+}
+
+.process-bg-decor {
+    position: absolute;
+    pointer-events: none;
+    z-index: 0;
+}
+.process-bg-decor-left {
+    top: 100px;
+    left: 57px;
+}
+.process-bg-decor-right {
+    top: 80px;
+    right: 62px;
+}
+
+.process-heading-line {
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+}
+.process-heading-line svg {
+    display: block;
+}
+
+/* Card Row & Card container */
+.process-cards-row {
+    position: relative;
+    z-index: 2;
+}
+.process-card {
+    background-color: var(--white);
+    border: 1px solid rgba(46, 56, 91, 0.06);
+    border-radius: 24px;
+    box-shadow: 0 10px 25px rgba(46, 56, 91, 0.03), 0 2px 6px rgba(0, 0, 0, 0.01);
+    padding: 30px 14px 22px 14px;
+    margin-top: 25px;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    overflow: visible;
+}
+.process-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 16px 36px rgba(46, 56, 91, 0.1);
+}
+
+.process-card-badge {
+    position: absolute;
+    top: -15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 13px;
+    font-weight: 800;
+    color: var(--white);
+    z-index: 5;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+}
+
+/* Icon ring with outer glow */
+.process-icon-wrap-outer {
+    position: relative;
+    width: 80px;
+    height: 80px;
+    margin: 15px auto 12px auto;
+    z-index: 2;
+}
+.process-icon-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    border: 4px solid var(--white);
+    box-shadow: inset 0 0 0 2px rgba(255, 255, 255, 0.3);
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    position: relative;
+    z-index: 3;
+}
+.process-card:hover .process-icon-circle {
+    transform: scale(1.04);
+}
+.process-icon-glow {
+    position: absolute;
+    top: -4px;
+    left: -4px;
+    width: 88px;
+    height: 88px;
+    border-radius: 50%;
+    opacity: 0.1;
+    transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), opacity 0.4s ease;
+    z-index: 1;
+}
+.process-card:hover .process-icon-glow {
+    transform: scale(1.18);
+    opacity: 0.22;
+}
+
+.process-card-title {
+    font-size: 15.5px;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 10px;
+    line-height: 1.35;
+}
+.process-card-desc {
+    font-size: 12px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 0;
+    font-weight: 500;
+}
+
+/* Thick color bottom stripe */
+.process-card-stripe {
+    height: 8px;
+    width: 100%;
+    border-bottom-left-radius: 23px;
+    border-bottom-right-radius: 23px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+/* Colors styling for card themes */
+.process-card.pink .process-card-badge {
+    background-color: var(--secondary-color);
+}
+.process-card.pink .process-icon-circle {
+    background-color: var(--secondary-color);
+}
+.process-card.pink .process-icon-glow {
+    background-color: var(--secondary-color);
+}
+.process-card.pink .process-card-stripe {
+    background-color: var(--secondary-color);
+}
+
+.process-card.blue .process-card-badge {
+    background-color: var(--primary-color);
+}
+.process-card.blue .process-icon-circle {
+    background-color: var(--primary-color);
+}
+.process-card.blue .process-icon-glow {
+    background-color: var(--primary-color);
+}
+.process-card.blue .process-card-stripe {
+    background-color: var(--primary-color);
+}
+
+.process-card.green .process-card-badge {
+    background-color: var(--tertiary-color);
+}
+.process-card.green .process-icon-circle {
+    background-color: var(--tertiary-color);
+}
+.process-card.green .process-icon-glow {
+    background-color: var(--tertiary-color);
+}
+.process-card.green .process-card-stripe {
+    background-color: var(--tertiary-color);
+}
+
+.process-card-arrow {
+    position: absolute;
+    top: 85px;
+    right: -16px;
+    width: 32px;
+    height: 16px;
+    z-index: 10;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.process-bottom-banner {
+    background-color: var(--white);
+    border-radius: 28px;
+    box-shadow: 0 12px 35px rgba(46, 56, 91, 0.05), 0 2px 8px rgba(0, 0, 0, 0.01);
+    border: 1px solid rgba(46, 56, 91, 0.06);
+    overflow: hidden;
+    position: relative;
+    z-index: 3;
+}
+.process-banner-left {
+    height: 100%;
+    min-height: 140px;
+    align-self: stretch;
+}
+.banner-left-bg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 105%;
+    height: 100%;
+    z-index: 1;
+}
+.banner-left-watermark {
+    position: absolute;
+    bottom: -15px;
+    left: -10px;
+    width: 110px;
+    height: auto;
+    z-index: 2;
+    pointer-events: none;
+}
+.banner-left-content {
+    position: relative;
+    z-index: 3;
+    line-height: 1.25;
+}
+.banner-line-text {
+    font-size: 11px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    opacity: 0.9;
+    display: block;
+}
+.banner-highlight-text {
+    font-size: 26px;
+    font-weight: 950;
+    color: var(--secondary-color);
+    letter-spacing: -0.5px;
+    display: block;
+    line-height: 1.1;
+    margin: 4px 0;
+}
+
+.process-banner-right {
+    background-color: transparent;
+}
+
+.process-feature-item {
+    align-self: stretch;
+    position: relative;
+}
+.feature-icon-circle {
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+.feature-icon-circle.bg-secondary-theme {
+    background-color: var(--secondary-color);
+}
+.feature-icon-circle.bg-primary-theme {
+    background-color: var(--primary-color);
+}
+.feature-icon-circle.bg-tertiary-theme {
+    background-color: var(--tertiary-color);
+}
+.feature-text-block {
+    display: flex;
+    flex-direction: column;
+}
+.feature-title {
+    font-size: 13.5px;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-bottom: 4px;
+    line-height: 1.3;
+}
+.feature-desc {
+    font-size: 11px;
+    color: #64748b;
+    margin-bottom: 0;
+    line-height: 1.5;
+    font-weight: 500;
+}
+
+@media (max-width: 1199.98px) {
+    .process-section {
+        padding: 60px 0 !important;
+    }
+    .process-card {
+        min-height: 270px;
+        padding-top: 25px;
+    }
+    .process-card-arrow {
+        display: none !important;
+    }
+}
+
+@media (max-width: 991.98px) {
+    .banner-left-bg {
+        display: none !important;
+    }
+    .process-banner-left {
+        background-color: var(--accent-color);
+        border-bottom: 6px solid var(--secondary-color);
+        border-radius: 28px 28px 0 0;
+        min-height: auto;
+    }
+    .banner-left-content {
+        padding: 24px 30px !important;
+    }
+    .process-banner-right {
+        padding: 35px 25px !important;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .process-section {
+        padding: 50px 0 !important;
+    }
+    .process-card {
+        min-height: auto;
+        padding: 25px 20px 20px 20px;
+    }
+    .process-icon-wrap-outer {
+        margin-top: 5px;
+    }
+    .process-feature-item {
+        margin-bottom: 12px;
+    }
+    .process-feature-item:last-child {
+        margin-bottom: 0;
+    }
+}
+
+@media (max-width: 575.98px) {
+    .banner-left-content {
+        padding: 20px !important;
     }
 }
