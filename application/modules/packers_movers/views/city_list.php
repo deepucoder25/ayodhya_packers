@@ -25,17 +25,16 @@ $this->load->view('template/breadcrumbs', [
                 $link = urlencode(strtolower(str_replace(" ", "-", $ct['nm'])));
                 $statename = urlencode(strtolower(str_replace(" ", "-", $st)));
             ?>
-                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mb-3">
+                <div class="col-xl-2 col-lg-3 col-md-4 col-sm-6 col-6 mb-4">
                     <a href="<?= site_url("$link-packers-movers-$statename") ?>" class="pm-list-city-card-link d-block h-100 text-decoration-none">
-                        <div class="pm-list-city-card card border-0 shadow h-100">
-                            <div class="card-body pm-list-card-body">
-                                <!-- Truck Icon on Left -->
+                        <div class="pm-list-city-card h-100">
+                            <div class="pm-list-card-body">
                                 <div class="pm-list-icon">
                                     <i class="bi bi-truck"></i>
                                 </div>
-                                <!-- Title on Right -->
                                 <div class="pm-list-city-name">
-                                    <h5>Packers and Movers <b><?= $ct['nm'] ?></b></h5>
+                                    <span class="pm-list-sub">Packers & Movers</span>
+                                    <h5 class="pm-list-title"><?= htmlspecialchars($ct['nm']) ?></h5>
                                 </div>
                             </div>
                         </div>

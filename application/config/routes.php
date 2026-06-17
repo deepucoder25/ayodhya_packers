@@ -71,6 +71,7 @@ $route["maharashtra"] = "packers_movers/state_services/maharashtra";
 $route["haryana"] = "packers_movers/state_services/haryana";
 $route["rajasthan"] = "packers_movers/state_services/rajasthan";
 $route["uttar-pradesh"] = "packers_movers/state_services/uttar-pradesh";
+$route["madhya-pradesh"] = "packers_movers/state_services/madhya-pradesh";
 $route["jharkhand"] = "packers_movers/state_services/jharkhand";
 $route["assam"] = "packers_movers/state_services/assam";
 $route["karnataka"] = "packers_movers/state_services/karnataka";
