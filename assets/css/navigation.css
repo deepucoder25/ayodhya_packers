@@ -637,6 +637,7 @@ html, body {
 .drawer-footer {
     border-top: 1px solid rgba(46, 56, 91, 0.08);
     padding-top: 20px;
+    padding-bottom: 75px; /* Adds scroll distance to prevent action bar overlap */
     margin-top: auto;
 }
 .footer-badges-grid {
@@ -732,4 +733,11 @@ html, body {
     background-color: rgba(235, 38, 143, 0.04);
     color: var(--secondary-color);
     padding-left: 24px;
+}
+
+/* Hide top bar on mobile and tablet views */
+@media (max-width: 991.98px) {
+    .top-bar {
+        display: none !important;
+    }
 }

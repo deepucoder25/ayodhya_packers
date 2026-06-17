@@ -288,6 +288,24 @@
       </div>
     </div>
   </div>
+
+  <!-- Floating/Sticky Footer Action Bar -->
+  <div class="footer-action-bar">
+    <a href="<?= $phonehtml ?>" class="action-btn call-btn">
+      <div class="btn-ripple-wrapper">
+        <div class="btn-ripple"></div>
+      </div>
+      <i class="bi bi-telephone-fill"></i>
+      <span>Call Now</span>
+    </a>
+    <a href="javascript:void(0)" class="action-btn quote-btn" data-bs-toggle="modal" data-bs-target="#qteModal">
+      <div class="btn-ripple-wrapper">
+        <div class="btn-ripple"></div>
+      </div>
+      <i class="bi bi-chat-left-text-fill"></i>
+      <span>Get Quote</span>
+    </a>
+  </div>
 </footer>
 
   <?php $this->load->view('contacts/quotemodal'); ?>
