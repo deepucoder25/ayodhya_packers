@@ -1,11 +1,4 @@
-<?php
-  $state_slug     = strtolower(str_replace(' ', '-', $state));
-  $state_img_file = FCPATH . 'assets/images/state/' . $state_slug . '.jpg';
-  $state_img_url  = file_exists($state_img_file)
-                      ? base_url('assets/images/state/' . $state_slug . '.jpg')
-                      : base_url('assets/images/slider/slider.jpg');
-?>
-<section class="home-slider-section pm-city-slider" style="background-image: url('<?= $state_img_url ?>');">
+<section class="home-slider-section pm-city-slider">
   <div class="dot-pattern-overlay"></div>
   <div class="slider-wrapper d-flex align-items-center py-4">
     <div class="container">
