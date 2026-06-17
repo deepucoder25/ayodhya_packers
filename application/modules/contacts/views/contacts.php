@@ -11,72 +11,150 @@ $this->load->view('template/breadcrumbs', [
 ?>
 <section class="contact-section py-5 bg-light">
     <div class="container my-4">
-        <div class="row g-5">
-            <div class="col-lg-5">
-                <div class="contact-details-box bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
-                    <h2 class="fw-bold mb-4 contact-title-primary">Get In Touch</h2>
-                    <p class="text-muted mb-5">Have questions or need a custom quote? Reach out to us, and our team will get back to you as soon as possible.</p>
-                    
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="contact-icon rounded-circle d-flex justify-content-center align-items-center me-3 contact-icon-box">
-                            <i class="bi bi-geo-alt-fill"></i>
-                        </div>
-                        <div>
-                            <h6 class="fw-bold mb-1">Head Office</h6>
-                            <p class="mb-0 text-muted"><?= $address ?></p>
-                        </div>
+        <div class="row g-4 mb-5">
+            <div class="col-md-4">
+                <div class="contact-info-card text-center">
+                    <div class="contact-info-icon-wrap email-icon">
+                        <i class="bi bi-envelope-open-fill"></i>
                     </div>
-                    
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="contact-icon rounded-circle d-flex justify-content-center align-items-center me-3 contact-icon-box-success">
-                            <i class="bi bi-telephone-fill"></i>
-                        </div>
-                        <div>
-                            <h6 class="fw-bold mb-1">Phone Number</h6>
-                            <p class="mb-0 text-muted"><a href="<?= $phonehtml ?>" class="text-decoration-none text-muted"><?= $phone ?></a></p>
-                        </div>
-                    </div>
-                    
-                    <div class="d-flex align-items-center mb-4">
-                        <div class="contact-icon rounded-circle d-flex justify-content-center align-items-center me-3 contact-icon-box-warning">
-                            <i class="bi bi-envelope-fill"></i>
-                        </div>
-                        <div>
-                            <h6 class="fw-bold mb-1">Email Address</h6>
-                            <p class="mb-0 text-muted"><a href="<?= $mailhtml ?>" class="text-decoration-none text-muted"><?= $mail ?></a></p>
-                        </div>
+                    <h4>Email Address</h4>
+                    <p class="mb-2">Send us an email anytime</p>
+                    <a href="<?= $mailhtml ?>" class="fw-bold text-decoration-none"><?= $mail ?></a>
+                    <div>
+                        <a href="<?= $mailhtml ?>" class="contact-card-btn">
+                            <i class="bi bi-chat-dots-fill me-1"></i> Email Us Now
+                        </a>
                     </div>
                 </div>
             </div>
+            
+            <div class="col-md-4">
+                <div class="contact-info-card text-center">
+                    <div class="contact-info-icon-wrap phone-icon">
+                        <i class="bi bi-telephone-forward-fill"></i>
+                    </div>
+                    <h4>Phone Numbers</h4>
+                    <p class="mb-2">Call our support desk 24/7</p>
+                    <div class="d-flex flex-column align-items-center gap-2 w-100">
+                        <a href="<?= $phonehtml ?>" class="contact-card-btn phone-btn-accent w-100 justify-content-center mt-2">
+                            <i class="bi bi-telephone-outbound-fill me-1"></i> Call <?= $phone ?>
+                        </a>
+                        <?php if (!empty($phone1)): ?>
+                            <a href="<?= $phonehtml1 ?>" class="contact-card-btn w-100 justify-content-center mt-0">
+                                <i class="bi bi-telephone-fill me-1"></i> Call <?= $phone1 ?>
+                            </a>
+                        <?php endif; ?>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4">
+                <div class="contact-info-card text-center">
+                    <div class="contact-info-icon-wrap address-icon">
+                        <i class="bi bi-geo-alt-fill"></i>
+                    </div>
+                    <h4>Head Office</h4>
+                    <p class="mb-2">Visit our corporate office</p>
+                    <p class="address-text mb-1"><?= $address ?></p>
+                    <div>
+                        <a href="https://www.google.com/maps/search/?api=1&query=Ayodhya+Packers+And+Movers+Indore" target="_blank" class="contact-card-btn">
+                            <i class="bi bi-geo-alt-fill me-1"></i> Open in Maps
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row g-4">
             <div class="col-lg-7">
-                <div class="contact-form-box bg-white p-4 p-md-5 rounded-4 shadow-sm h-100 border-top border-4 contact-border-warning">
-                    <h2 class="fw-bold mb-4 contact-title-primary">Send Us A Message</h2>
+                <div class="contact-form-card p-4 p-md-5">
+                    <div class="form-header mb-4">
+                        <div class="form-badge-pill mb-3">
+                            <span class="badge-dot"></span> Get in Touch
+                        </div>
+                        <h2>Send Us A Message</h2>
+                        <p>Have questions or need a custom quote? Fill out the form below and we'll get back to you shortly.</p>
+                    </div>
                     <form id="contactform" class="ajax-form" data-url="<?php echo site_url('contacts/contact') ?>" data-result="contactformresults" onsubmit="return false;">
-                        <div class="row g-3">
+                        <div class="row g-4">
                             <div class="col-md-6">
-                                <label class="form-label fw-semibold text-dark">Your Name *</label>
-                                <input type="text" name="name" class="form-control py-2 contact-input-rounded" placeholder="John Doe">
+                                <div class="form-group-wrap">
+                                    <label class="form-label-custom">Your Name *</label>
+                                    <div class="input-icon-wrap">
+                                        <i class="bi bi-person-fill"></i>
+                                        <input type="text" name="name" class="form-control-custom-input" placeholder="John Doe" required>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-md-6">
-                                <label class="form-label fw-semibold text-dark">Phone Number *</label>
-                                <input type="tel" name="phone" class="form-control py-2 contact-input-rounded" placeholder="Mobile Number">
+                                <div class="form-group-wrap">
+                                    <label class="form-label-custom">Phone Number *</label>
+                                    <div class="input-icon-wrap">
+                                        <i class="bi bi-telephone-fill"></i>
+                                        <input type="tel" name="phone" class="form-control-custom-input" placeholder="Mobile Number" required>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-12">
-                                <label class="form-label fw-semibold text-dark">Email Address</label>
-                                <input type="email" name="email" class="form-control py-2 contact-input-rounded" placeholder="hello@example.com">
+                                <div class="form-group-wrap">
+                                    <label class="form-label-custom">Email Address</label>
+                                    <div class="input-icon-wrap">
+                                        <i class="bi bi-envelope-fill"></i>
+                                        <input type="email" name="email" class="form-control-custom-input" placeholder="hello@example.com">
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-12">
-                                <label class="form-label fw-semibold text-dark">Your Message</label>
-                                <textarea name="message" class="form-control py-2 contact-input-rounded" rows="5" placeholder="How can we help you?"></textarea>
+                                <div class="form-group-wrap">
+                                    <label class="form-label-custom">Your Message *</label>
+                                    <div class="input-icon-wrap textarea-wrap">
+                                        <i class="bi bi-chat-left-text-fill"></i>
+                                        <textarea name="message" class="form-control-custom-input" rows="5" placeholder="How can we help you?" required></textarea>
+                                    </div>
+                                </div>
                             </div>
                             <div class="col-12 mt-4">
-                                <button type="submit" class="theme-btn w-100 py-3 contact-btn-rounded">
-                                    <i class="bi bi-send me-2"></i> Send Message
+                                <button type="submit" class="contact-submit-btn">
+                                    <i class="bi bi-send-fill me-2"></i> Send Message
                                 </button>
                             </div>
                         </div>
                         <div id="contactformresults" class="mt-3"></div>
                     </form>
+                    <div class="form-trust-footer mt-4 pt-4 border-top">
+                        <div class="row g-3">
+                            <div class="col-sm-4">
+                                <div class="trust-pillar-item text-center">
+                                    <i class="bi bi-shield-fill-check"></i>
+                                    <span>100% Secure Data</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="trust-pillar-item text-center">
+                                    <i class="bi bi-lightning-charge-fill"></i>
+                                    <span>Instant Response</span>
+                                </div>
+                            </div>
+                            <div class="col-sm-4">
+                                <div class="trust-pillar-item text-center">
+                                    <i class="bi bi-headset"></i>
+                                    <span>24/7 Support Desk</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-lg-5">
+                <div class="contact-map-card p-4 h-100 d-flex flex-column">
+                    <div class="map-header mb-4">
+                        <h3>Find Us On Google Maps</h3>
+                        <p>Visit our location or view directions to our main office.</p>
+                    </div>
+                    <div class="map-iframe-wrap flex-grow-1">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d58848.19857937457!2d75.915303!3d22.802004!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39631cd90fe903a5%3A0x4f61f1e4dda4795c!2sAyodhya%20Packers%20And%20Movers!5e0!3m2!1sen!2sin!4v1747127608542!5m2!1sen!2sin" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
         </div>
