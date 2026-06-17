@@ -465,7 +465,24 @@
 
 @media (max-width: 575.98px) {
     .service-highlights-row {
-        flex-direction: column;
+        flex-direction: row;
+        gap: 8px;
+    }
+    .service-highlight-badge {
+        padding: 10px 4px;
+        min-width: 0;
+    }
+    .service-highlight-badge i {
+        font-size: 16px;
+        margin-bottom: 4px;
+    }
+    .service-highlight-badge h5,
+    .service-highlight-badge .highlight-val {
+        font-size: 13px;
+    }
+    .service-highlight-badge p {
+        font-size: 9px !important;
+        line-height: 1.25 !important;
     }
 }
 

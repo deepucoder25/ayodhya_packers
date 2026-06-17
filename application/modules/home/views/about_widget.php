@@ -71,7 +71,7 @@
             </div>
         </div>
         <div class="row g-4 mb-5 justify-content-center">
-            <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
+            <div class="col-lg-2-5 col-md-4 col-6 d-flex">
                 <div class="about-value-card w-100 pink">
                     <div class="value-icon-circle">
                         <i class="bi bi-shield-check"></i>
@@ -80,7 +80,7 @@
                     <p class="value-card-desc">We are committed to delivering safe, timely and hassle-free moving experiences.</p>
                 </div>
             </div>
-            <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
+            <div class="col-lg-2-5 col-md-4 col-6 d-flex">
                 <div class="about-value-card w-100 blue">
                     <div class="value-icon-circle">
                         <i class="bi bi-people-fill"></i>
@@ -89,7 +89,7 @@
                     <p class="value-card-desc">Our skilled and trained professionals ensure your move is in safe hands.</p>
                 </div>
             </div>
-            <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
+            <div class="col-lg-2-5 col-md-4 col-6 d-flex">
                 <div class="about-value-card w-100 green">
                     <div class="value-icon-circle">
                         <i class="bi bi-award-fill"></i>
@@ -98,7 +98,7 @@
                     <p class="value-card-desc">We use premium packing materials and modern equipment for best results.</p>
                 </div>
             </div>
-            <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
+            <div class="col-lg-2-5 col-md-4 col-6 d-flex">
                 <div class="about-value-card w-100 pink">
                     <div class="value-icon-circle">
                         <i class="bi bi-heart-fill"></i>
@@ -107,7 +107,7 @@
                     <p class="value-card-desc">Customer satisfaction is our top priority – always.</p>
                 </div>
             </div>
-            <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
+            <div class="col-lg-2-5 col-md-4 col-6 d-flex">
                 <div class="about-value-card w-100 blue">
                     <div class="value-icon-circle">
                         <i class="bi bi-bullseye"></i>

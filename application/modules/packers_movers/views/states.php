@@ -44,7 +44,7 @@ $state = [
         <div class="row g-4">
 
             <?php foreach ($state as $item): ?>
-                <div class="col-12 col-sm-6 col-md-4 col-lg-3">
+                <div class="col-6 col-sm-6 col-md-4 col-lg-3">
 
                     <div class="pm-state-card h-100 d-flex flex-column">
                         <div class="state-card-header d-flex align-items-center justify-content-center position-relative">

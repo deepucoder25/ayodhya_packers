@@ -2220,18 +2220,54 @@
         flex: 0 0 50%;
         max-width: 50%;
     }
+    .about-stats-banner {
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        gap: 16px 8px;
+        padding: 20px 12px;
+        justify-content: center;
+    }
     .about-stat-item {
-        justify-content: flex-start;
+        justify-content: center;
         width: 100%;
-        flex: 0 0 100%;
-        max-width: 220px;
-        margin: 0 auto;
+        max-width: none;
+        min-width: 0;
+        margin: 0;
+        gap: 8px;
+    }
+    .about-stat-item .stat-icon-circle {
+        width: 36px;
+        height: 36px;
+        font-size: 15px;
+    }
+    .stat-num-val {
+        font-size: 18px;
+    }
+    .stat-lbl-txt {
+        font-size: 10px;
+    }
+    .about-stat-item:nth-child(-n+2) {
+        grid-column: span 3;
+    }
+    .about-stat-item:nth-child(n+3) {
+        grid-column: span 2;
     }
 }
 @media (max-width: 575.98px) {
     .col-lg-2-5 {
-        flex: 0 0 100%;
-        max-width: 100%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+@media (max-width: 480px) {
+    .about-stat-item {
+        flex-direction: column;
+        text-align: center;
+        gap: 6px;
+    }
+    .about-stat-item .stat-text-details {
+        align-items: center;
+        text-align: center;
     }
 }
 
