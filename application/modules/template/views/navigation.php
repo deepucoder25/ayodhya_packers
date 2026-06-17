@@ -12,7 +12,7 @@
       $active_tab = 'home';
   } elseif ($class === 'about' || $class === 'blog' || in_array($segment1, ['about-us', 'testimonials', 'blog', 'reviews', 'faqs', 'packing-tips', 'privacy-policy', 'terms-and-conditions'])) {
       $active_tab = 'about';
-  } elseif ($class === 'services' || in_array($segment1, ['our-services', 'packing-and-moving', 'loading-and-unloading', 'residential-relocation', 'office-relocation', 'car-transportation', 'international-transportation', 'warehousing-and-storage', 'transport-insurance', 'heavy-machinery-and-shifting'])) {
+  } elseif ($class === 'services' || in_array($segment1, ['our-services', 'packing-and-moving', 'loading-and-unloading', 'residential-relocation', 'home-relocation', 'office-relocation', 'car-transportation', 'bike-transportation', 'international-transportation', 'warehousing-and-storage', 'transport-insurance', 'heavy-machinery-and-shifting'])) {
       $active_tab = 'services';
   } elseif ($class === 'packers_movers' || $segment1 === 'our-branches') {
       $active_tab = 'locations';
@@ -144,8 +144,10 @@
                 <a href="<?= site_url('packing-and-moving') ?>">Packing and Moving</a>
                 <a href="<?= site_url('loading-and-unloading') ?>">Loading and Unloading</a>
                 <a href="<?= site_url('residential-relocation') ?>">Residential Relocation</a>
+                <a href="<?= site_url('home-relocation') ?>">Home Relocation</a>
                 <a href="<?= site_url('office-relocation') ?>">Office Relocation</a>
                 <a href="<?= site_url('car-transportation') ?>">Car Transportation</a>
+                <a href="<?= site_url('bike-transportation') ?>">Bike Transportation</a>
                 <a href="<?= site_url('international-transportation') ?>">International Transportation</a>
                 <a href="<?= site_url('warehousing-and-storage') ?>">Warehousing and Storage</a>
                 <a href="<?= site_url('transport-insurance') ?>">Transport Insurance</a>
@@ -269,8 +271,10 @@
               <a href="<?= site_url('packing-and-moving') ?>" class="<?= $segment1 === 'packing-and-moving' ? 'active' : '' ?>">Packing and Moving</a>
               <a href="<?= site_url('loading-and-unloading') ?>" class="<?= $segment1 === 'loading-and-unloading' ? 'active' : '' ?>">Loading and Unloading</a>
               <a href="<?= site_url('residential-relocation') ?>" class="<?= $segment1 === 'residential-relocation' ? 'active' : '' ?>">Residential Relocation</a>
+              <a href="<?= site_url('home-relocation') ?>" class="<?= $segment1 === 'home-relocation' ? 'active' : '' ?>">Home Relocation</a>
               <a href="<?= site_url('office-relocation') ?>" class="<?= $segment1 === 'office-relocation' ? 'active' : '' ?>">Office Relocation</a>
               <a href="<?= site_url('car-transportation') ?>" class="<?= $segment1 === 'car-transportation' ? 'active' : '' ?>">Car Transportation</a>
+              <a href="<?= site_url('bike-transportation') ?>" class="<?= $segment1 === 'bike-transportation' ? 'active' : '' ?>">Bike Transportation</a>
               <a href="<?= site_url('international-transportation') ?>" class="<?= $segment1 === 'international-transportation' ? 'active' : '' ?>">International Transportation</a>
               <a href="<?= site_url('warehousing-and-storage') ?>" class="<?= $segment1 === 'warehousing-and-storage' ? 'active' : '' ?>">Warehousing and Storage</a>
               <a href="<?= site_url('transport-insurance') ?>" class="<?= $segment1 === 'transport-insurance' ? 'active' : '' ?>">Transport Insurance</a>

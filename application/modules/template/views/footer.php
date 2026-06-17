@@ -77,6 +77,11 @@
                 </a>
               </li>
               <li>
+                <a href="<?= site_url('home-relocation') ?>">
+                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Home Relocation
+                </a>
+              </li>
+              <li>
                 <a href="<?= site_url('office-relocation') ?>">
                   <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Office Relocation
                 </a>
@@ -84,6 +89,11 @@
               <li>
                 <a href="<?= site_url('car-transportation') ?>">
                   <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Car Transportation
+                </a>
+              </li>
+              <li>
+                <a href="<?= site_url('bike-transportation') ?>">
+                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Bike Transportation
                 </a>
               </li>
               <li>

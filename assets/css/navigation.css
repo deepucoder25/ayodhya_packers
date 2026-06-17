@@ -75,7 +75,6 @@ html, body {
 
 .main-header {
     background-color: var(--white);
-    padding: 10px 0;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -88,7 +87,6 @@ html, body {
 
 .main-header.scrolled {
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.12);
-    padding: 5px 0;
 }
 
 .header-inner-wrap {
@@ -99,6 +97,7 @@ html, body {
 }
 
 .desktop-header-wrap {
+    padding: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -336,7 +335,7 @@ html, body {
 }
 
 .mobile-header-bar {
-    padding: 8px 0;
+    padding: 5px 0;
     width: 100%;
 }
 .mobile-brand-logo-wrap {

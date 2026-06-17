@@ -14,7 +14,7 @@ $this->load->view('template/breadcrumbs', [
         <div class="row">
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img7.jpg') ?>" alt="About <?= $company3 ?>" class="about-banner-img">
+                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img5.jpg') ?>" alt="About <?= $company3 ?>" class="about-banner-img">
 
                     <h2>India's Leading Packers &amp; Movers</h2>
                     <p>

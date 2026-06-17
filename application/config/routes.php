@@ -42,7 +42,7 @@ $route["heavy-machinery-and-shifting"] = "services/heavyMachineryShifting";
 
 // Legacy/Compatibility Routes
 $route["home-shifting"] = "services/residentialRelocation";
-$route["home-relocation"] = "services/residentialRelocation";
+$route["home-relocation"] = "services/homeRelocation";
 $route["local-shifting"] = "services/residentialRelocation";
 $route["intercity-shifting"] = "services/residentialRelocation";
 $route["domestic-relocation"] = "services/residentialRelocation";
@@ -50,7 +50,7 @@ $route["corporate-shifting"] = "services/officeRelocation";
 $route["international-shifting"] = "services/internationalTransportation";
 $route["warehouse-and-storage"] = "services/warehousingAndStorage";
 $route["storage-services"] = "services/warehousingAndStorage";
-$route["bike-transportation"] = "services/carTransportation";
+$route["bike-transportation"] = "services/bikeTransportation";
 $route["car-transportation-service"] = "services/carTransportation";
 $route["pet-relocation"] = "services/carTransportation";
 $route["logistic-services"] = "services/heavyMachineryShifting";
