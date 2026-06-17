@@ -1087,3 +1087,618 @@
         align-self: start; /* Prevents stretching to full column height, allowing sticky to scroll */
     }
 }
+
+
+/* ==========================================================================
+   City Details Content, Map, & FAQ Redesign Styles
+   ========================================================================== */
+
+/* Main Content Card Layouts */
+.pm-city-content-card,
+.city-content-card,
+.city-map-card {
+    position: relative;
+    background: #ffffff;
+    border-radius: 24px !important;
+    border: 1px solid rgba(46, 56, 91, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(46, 56, 91, 0.02) !important;
+    padding: 32px !important;
+    margin-bottom: 24px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pm-city-content-card:hover,
+.city-content-card:hover,
+.city-map-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(46, 56, 91, 0.05) !important;
+    border-color: rgba(0, 152, 219, 0.15) !important;
+}
+
+/* Gradient Top Bar Accent for Cards */
+.pm-city-content-card::before,
+.city-content-card::before,
+.city-map-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--tertiary-color) 100%);
+    z-index: 5;
+}
+
+/* Eyebrow & Title Typography inside cards */
+.pm-city-section-eyebrow {
+    font-size: 11px;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    color: var(--secondary-color, #EB268F);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.pm-city-section-title {
+    font-family: 'Outfit', sans-serif;
+    font-size: 32px;
+    font-weight: 850;
+    color: var(--accent-color, #2E385B);
+    line-height: 1.25;
+    margin-bottom: 20px;
+}
+
+.pm-city-accent {
+    color: var(--primary-color, #0098DB);
+}
+
+.city-prose {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #4b5563;
+}
+
+.city-prose p {
+    margin-bottom: 1rem;
+}
+
+/* Headings within content */
+.city-section-title-sm {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 750;
+    color: var(--accent-color, #2E385B);
+    position: relative;
+    padding-left: 14px;
+    margin-top: 10px;
+    margin-bottom: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.city-section-title-sm::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 2px;
+}
+
+.city-section-title-sm i {
+    font-size: 20px;
+    margin-right: 8px;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+/* Feature Pills responsive layout */
+.city-feature-pills {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 24px;
+    margin-bottom: 24px;
+}
+
+.city-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 10px 18px;
+    border-radius: 30px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 600;
+    font-size: 13.5px;
+    border: 1px solid transparent;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.01);
+}
+
+.city-pill i {
+    font-size: 16px;
+}
+
+.city-pill:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0, 0, 0, 0.03);
+}
+
+/* Color theme mapping for the pills */
+.city-feature-pills .city-pill:nth-child(1) {
+    background: rgba(34, 197, 94, 0.06);
+    color: var(--success-color, #22c55e);
+    border-color: rgba(34, 197, 94, 0.12);
+}
+.city-feature-pills .city-pill:nth-child(1):hover {
+    background: var(--success-color, #22c55e);
+    color: #ffffff;
+}
+
+.city-feature-pills .city-pill:nth-child(2) {
+    background: rgba(0, 152, 219, 0.06);
+    color: var(--primary-color, #0098DB);
+    border-color: rgba(0, 152, 219, 0.12);
+}
+.city-feature-pills .city-pill:nth-child(2):hover {
+    background: var(--primary-color, #0098DB);
+    color: #ffffff;
+}
+
+.city-feature-pills .city-pill:nth-child(3) {
+    background: rgba(139, 92, 246, 0.06);
+    color: #8b5cf6;
+    border-color: rgba(139, 92, 246, 0.12);
+}
+.city-feature-pills .city-pill:nth-child(3):hover {
+    background: #8b5cf6;
+    color: #ffffff;
+}
+
+.city-feature-pills .city-pill:nth-child(4) {
+    background: rgba(249, 115, 22, 0.06);
+    color: #f97316;
+    border-color: rgba(249, 115, 22, 0.12);
+}
+.city-feature-pills .city-pill:nth-child(4):hover {
+    background: #f97316;
+    color: #ffffff;
+}
+
+/* Checklist 2-column layout */
+.city-checklist {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 12px 24px;
+}
+
+@media (max-width: 575.98px) {
+    .city-checklist {
+        grid-template-columns: 1fr;
+    }
+}
+
+.city-checklist li {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    font-size: 14.5px;
+    color: #4b5563;
+    line-height: 1.4;
+    transition: transform 0.2s ease;
+}
+
+.city-checklist li:hover {
+    transform: translateX(4px);
+}
+
+.city-checklist li i {
+    font-size: 18px;
+    color: var(--success-color, #22c55e);
+    flex-shrink: 0;
+    margin-top: 1px;
+}
+
+/* Interactive FAQ Accordion Styles */
+.city-faq-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.city-faq-item {
+    border: 1px solid rgba(46, 56, 91, 0.06);
+    border-radius: 16px;
+    background: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.city-faq-item:hover {
+    border-color: rgba(0, 152, 219, 0.15);
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.02);
+}
+
+/* When the accordion is open */
+.city-faq-item:has(.city-faq-btn:not(.collapsed)) {
+    border-color: rgba(0, 152, 219, 0.25);
+    box-shadow: 0 8px 20px rgba(0, 152, 219, 0.05);
+}
+
+.city-faq-btn {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 18px 24px;
+    background: #ffffff;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent-color, #2E385B);
+    transition: all 0.3s ease;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.city-faq-btn:focus {
+    outline: none;
+    box-shadow: none;
+}
+
+.city-faq-btn:not(.collapsed) {
+    color: var(--primary-color, #0098DB);
+    background: rgba(0, 152, 219, 0.02);
+    border-bottom: 1px solid rgba(46, 56, 91, 0.04);
+}
+
+.city-faq-btn .faq-q-icon {
+    font-size: 20px;
+    color: var(--primary-color, #0098DB);
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.city-faq-btn:not(.collapsed) .faq-q-icon {
+    color: var(--secondary-color, #EB268F);
+    transform: scale(1.1);
+}
+
+.city-faq-btn span {
+    flex-grow: 1;
+}
+
+.city-faq-btn .faq-chevron {
+    font-size: 14px;
+    color: #94a3b8;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+}
+
+.city-faq-btn:not(.collapsed) .faq-chevron {
+    transform: rotate(180deg);
+    color: var(--primary-color, #0098DB);
+}
+
+.city-faq-body {
+    padding: 20px 24px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #556080;
+    background: #ffffff;
+}
+
+/* Google Map Wrapper Styles */
+.pm-city-map {
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+    border: 1px solid rgba(46, 56, 91, 0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.015);
+    background: #f1f5f9;
+}
+
+.pm-city-map-iframe {
+    display: block;
+    border: none;
+    transition: all 0.5s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.city-map-card:hover .pm-city-map-iframe {
+    transform: scale(1.01);
+}
+
+/* Responsive card padding adjust for smaller viewports */
+@media (max-width: 768px) {
+    .pm-city-content-card,
+    .city-content-card,
+    .city-map-card {
+        padding: 24px 20px !important;
+    }
+    .pm-city-section-title {
+        font-size: 26px;
+    }
+}
+
+
+/* Customer Review Cards Redesign */
+.city-review-card {
+    position: relative;
+    background: #ffffff;
+    border: 1px solid rgba(46, 56, 91, 0.05);
+    border-radius: 20px;
+    padding: 24px;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.005);
+    overflow: hidden;
+}
+
+.city-review-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 152, 219, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 152, 219, 0.05);
+}
+
+/* Premium watermark quote background icon */
+.city-review-card::after {
+    content: "“";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 90px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    color: rgba(46, 56, 91, 0.03);
+    pointer-events: none;
+    line-height: 0.8;
+    transition: all 0.4s ease;
+}
+
+.city-review-card:hover::after {
+    color: rgba(0, 152, 219, 0.05);
+    transform: scale(1.08) rotate(-5deg);
+}
+
+.review-stars {
+    display: flex;
+    gap: 3px;
+    margin-bottom: 12px;
+}
+
+.review-stars i {
+    font-size: 15px;
+    color: #fbbf24; /* Premium warm amber star color */
+}
+
+.city-review-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 20px;
+    position: relative;
+    z-index: 2;
+    font-style: italic;
+}
+
+.review-author {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    position: relative;
+    z-index: 2;
+}
+
+.review-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14.5px;
+    font-weight: 700;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 10px rgba(0, 152, 219, 0.15);
+    transition: transform 0.3s ease;
+    text-transform: uppercase;
+}
+
+.city-review-card:hover .review-avatar {
+    transform: scale(1.08) rotate(5deg);
+}
+
+.review-author strong {
+    display: block;
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-color, #2E385B);
+}
+
+.review-author small {
+    display: block;
+    font-size: 11.5px;
+    color: #94a3b8;
+    margin-top: 1px;
+}
+
+/* Header Banner Container & Image Styling (Carousel Redesign) */
+.pm-city-banner-container {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    border: 1px solid rgba(46, 56, 91, 0.08);
+    box-shadow: 0 10px 30px rgba(46, 56, 91, 0.02);
+    background: #ffffff;
+    height: 380px; /* Increased height for gallery display */
+}
+
+@media (max-width: 768px) {
+    .pm-city-banner-container {
+        height: 240px; /* Adjusted height on tablets and mobiles */
+    }
+}
+
+.pm-city-banner-img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.pm-city-banner-container:hover .pm-city-banner-img {
+    transform: scale(1.03);
+}
+
+/* Custom Carousel Controls */
+.pm-city-banner-container .carousel-control-prev,
+.pm-city-banner-container .carousel-control-next {
+    width: 44px;
+    height: 44px;
+    background: rgba(13, 27, 62, 0.3);
+    backdrop-filter: blur(4px);
+    border-radius: 50%;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0;
+    transition: all 0.3s ease;
+    margin: 0 15px;
+}
+
+.pm-city-banner-container:hover .carousel-control-prev,
+.pm-city-banner-container:hover .carousel-control-next {
+    opacity: 1;
+}
+
+.pm-city-banner-container .carousel-control-prev:hover,
+.pm-city-banner-container .carousel-control-next:hover {
+    background: var(--primary-color, #0098DB);
+    box-shadow: 0 4px 12px rgba(0, 152, 219, 0.3);
+}
+
+.pm-city-banner-container .carousel-control-prev-icon,
+.pm-city-banner-container .carousel-control-next-icon {
+    width: 18px;
+    height: 18px;
+}
+
+/* Custom Carousel Indicators */
+.pm-city-banner-container .carousel-indicators {
+    margin-bottom: 15px;
+    gap: 6px;
+}
+
+.pm-city-banner-container .carousel-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: rgba(255, 255, 255, 0.6);
+    transition: all 0.3s ease;
+}
+
+.pm-city-banner-container .carousel-indicators .active {
+    width: 20px;
+    border-radius: 4px;
+    background-color: #ffffff;
+    box-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+/* Testimonial Carousel Indicators */
+.reviews-indicators {
+    bottom: -10px;
+    margin-bottom: 0;
+    gap: 6px;
+}
+
+.reviews-indicators [data-bs-target] {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--primary-color, #0098DB) !important;
+    opacity: 0.35;
+    transition: all 0.3s ease;
+}
+
+.reviews-indicators .active {
+    width: 20px;
+    border-radius: 4px;
+    opacity: 1;
+}
+
+/* Explicit responsive visibility for reviews carousel */
+@media (max-width: 767.98px) {
+    .reviews-carousel-desktop {
+        display: none !important;
+    }
+    .reviews-carousel-mobile {
+        display: block !important;
+    }
+}
+@media (min-width: 768px) {
+    .reviews-carousel-desktop {
+        display: block !important;
+    }
+    .reviews-carousel-mobile {
+        display: none !important;
+    }
+}
+
+/* Reviews Carousel Footer Layout */
+.reviews-carousel-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
+    gap: 48px; /* Clean gap in place of the removed dots */
+}
+
+/* Footer Navigation Buttons */
+.reviews-footer-btn {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    background: rgba(0, 152, 219, 0.06);
+    border: 1px solid rgba(0, 152, 219, 0.12);
+    color: var(--primary-color, #0098DB);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    outline: none;
+    padding: 0;
+}
+
+.reviews-footer-btn:hover {
+    background: var(--primary-color, #0098DB);
+    color: #ffffff;
+    border-color: var(--primary-color, #0098DB);
+    transform: scale(1.1);
+    box-shadow: 0 4px 10px rgba(0, 152, 219, 0.2);
+}
+
+.reviews-footer-btn i {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+
+
+
+

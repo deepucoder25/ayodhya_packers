@@ -20,7 +20,7 @@
             foreach ($faqs as $i => $faq):
             ?>
             <div class="city-faq-item">
-              <button class="city-faq-btn <?= $i === 0 ? 'active' : '' ?>" type="button"
+              <button class="city-faq-btn <?= $i === 0 ? '' : 'collapsed' ?>" type="button"
                       data-bs-toggle="collapse"
                       data-bs-target="#cfaq<?= $i ?>"
                       aria-expanded="<?= $i === 0 ? 'true' : 'false' ?>">
@@ -28,10 +28,29 @@
                 <span><?= $faq['q'] ?></span>
                 <i class="bi bi-chevron-down faq-chevron"></i>
               </button>
-              <div id="cfaq<?= $i ?>" class="collapse <?= $i === 0 ? 'show' : '' ?>">
+              <div id="cfaq<?= $i ?>" class="collapse <?= $i === 0 ? 'show' : '' ?>" data-bs-parent="#cityFaqAccordion">
                 <div class="city-faq-body"><?= $faq['a'] ?></div>
               </div>
             </div>
             <?php endforeach; ?>
           </div>
         </div>
+
+        <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const accordion = document.getElementById('cityFaqAccordion');
+          if (!accordion) return;
+
+          const collapseElements = accordion.querySelectorAll('.collapse');
+          collapseElements.forEach(collapseEl => {
+            collapseEl.addEventListener('show.bs.collapse', function () {
+              collapseElements.forEach(otherEl => {
+                if (otherEl !== collapseEl) {
+                  const bsCollapse = bootstrap.Collapse.getInstance(otherEl) || new bootstrap.Collapse(otherEl, { toggle: false });
+                  bsCollapse.hide();
+                }
+              });
+            });
+          });
+        });
+        </script>
