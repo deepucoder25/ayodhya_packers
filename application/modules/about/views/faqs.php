@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'FAQ Section',
@@ -11,12 +9,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
@@ -24,11 +19,7 @@ $this->load->view('template/breadcrumbs', [
                     <p class="lead">
                         Shifting your home or vehicle can feel overwhelming, and it's completely normal to have questions about safety, packaging, timelines, and insurance. Here are answers to the questions we are asked most frequently by our clients.
                     </p>
-
-                    <!-- Bootstrap Accordion for FAQs -->
                     <div class="accordion accordion-flush about-custom-faq-accordion" id="faqAccordion">
-                        
-                        <!-- Question 1 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faq-heading-1">
                                 <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-1" aria-expanded="true" aria-controls="faq-collapse-1">
@@ -41,8 +32,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Question 2 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faq-heading-2">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-2" aria-expanded="false" aria-controls="faq-collapse-2">
@@ -55,8 +44,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Question 3 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faq-heading-3">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-3" aria-expanded="false" aria-controls="faq-collapse-3">
@@ -69,8 +56,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Question 4 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faq-heading-4">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-4" aria-expanded="false" aria-controls="faq-collapse-4">
@@ -83,8 +68,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Question 5 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faq-heading-5">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-5" aria-expanded="false" aria-controls="faq-collapse-5">
@@ -97,8 +80,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Question 6 -->
                         <div class="accordion-item">
                             <h2 class="accordion-header" id="faq-heading-6">
                                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#faq-collapse-6" aria-expanded="false" aria-controls="faq-collapse-6">
@@ -116,8 +97,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('about/company_sidebar', ['active_link' => 'faqs']); ?>
             </div>

@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Contact Us',
@@ -11,12 +9,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Contact Details & Form Section -->
 <section class="contact-section py-5 bg-light">
     <div class="container my-4">
         <div class="row g-5">
-            <!-- Contact Details -->
             <div class="col-lg-5">
                 <div class="contact-details-box bg-white p-4 p-md-5 rounded-4 shadow-sm h-100">
                     <h2 class="fw-bold mb-4 contact-title-primary">Get In Touch</h2>
@@ -53,8 +48,6 @@ $this->load->view('template/breadcrumbs', [
                     </div>
                 </div>
             </div>
-            
-            <!-- Contact Form -->
             <div class="col-lg-7">
                 <div class="contact-form-box bg-white p-4 p-md-5 rounded-4 shadow-sm h-100 border-top border-4 contact-border-warning">
                     <h2 class="fw-bold mb-4 contact-title-primary">Send Us A Message</h2>

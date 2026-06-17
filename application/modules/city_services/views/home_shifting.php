@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Home Shifting in ' . $city,
@@ -12,12 +10,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     <h2 class="service-section-title">Hassle-Free Home Shifting in <?= $city ?> for a Smooth Move</h2>
@@ -96,38 +91,30 @@ $this->load->view('template/breadcrumbs', [
                             </table>
                         </div>
                     </div>
-
-                    <!-- How We Process Section -->
                     <h2 class="service-section-title mt-5">Our Home Shifting Process in <?= $city ?></h2>
                     <p class="text-muted">Our professional packers follow a systematic, step-by-step process:</p>
                     <div class="process-timeline">
-                        <!-- Step 1 -->
                         <div class="process-step">
                             <span class="step-number">1</span>
                             <h4>Dismantling &amp; Packing</h4>
                             <p>We disassemble large furniture pieces (beds, wardrobes) and wrap each item in multiple layers of bubble sheet and cardboard boxes.</p>
                         </div>
-                        <!-- Step 2 -->
                         <div class="process-step">
                             <span class="step-number">2</span>
                             <h4>Safe Loading</h4>
                             <p>Our loading crew systematically places heavy furniture at the bottom of the truck and stacks lighter boxes on top, using blankets for padding.</p>
                         </div>
-                        <!-- Step 3 -->
                         <div class="process-step">
                             <span class="step-number">3</span>
                             <h4>Secure Transit</h4>
                             <p>Your goods are transported via our GPS-tracked container trucks to ensure on-time delivery with full highway safety.</p>
                         </div>
-                        <!-- Step 4 -->
                         <div class="process-step">
                             <span class="step-number">4</span>
                             <h4>Unloading &amp; Reassembly</h4>
                             <p>We unload all boxes, unpack your furniture, and reassemble items like double beds and dining tables in your new rooms.</p>
                         </div>
                     </div>
-
-                    <!-- Why Choose Us Grid -->
                     <h2 class="service-section-title mt-5">Why Choose Us in <?= $city ?></h2>
                     <div class="why-choose-grid">
                         <div class="choose-item-card">
@@ -159,8 +146,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -180,11 +165,8 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- FAQs Accordion -->
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
-                        <!-- FAQ 1 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-1" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -197,7 +179,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 2 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-2" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -210,7 +191,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 3 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-3" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -227,8 +207,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('city_services/city_service_sidebar', ['active_service' => 'home-shifting-in-'.$ctlink]); ?>
             </div>

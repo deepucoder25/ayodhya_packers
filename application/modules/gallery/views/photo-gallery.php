@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Photo Gallery',
@@ -11,12 +9,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
@@ -85,8 +80,6 @@ $this->load->view('template/breadcrumbs', [
                         ]
                     ];
                     ?>
-
-                    <!-- Photo Gallery Grid -->
                     <div class="row">
                         <?php foreach ($gallery_photos as $photo): ?>
                         <div class="col-md-6 mb-4">
@@ -109,8 +102,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('about/company_sidebar', ['active_link' => 'photo-gallery']); ?>
             </div>

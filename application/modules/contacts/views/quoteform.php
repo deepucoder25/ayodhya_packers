@@ -3,36 +3,28 @@
               <div class="text-center mb-3">
                 <span class="hero-quote-title">Get a Free Quote</span>
               </div>
-              <!-- Card Body / Form -->
               <div class="card-body-form">
                 <form id="quoteform" class="ajax-form" data-url="<?php echo site_url('contacts/booking') ?>" data-result="quoteformresults" onsubmit="return false;">
                   
                    <div class="form-row-custom">
-                    <!-- Name Input -->
                     <div class="form-group-custom">
                       <div class="input-wrap-custom">
                         <i class="bi bi-person input-icon-custom"></i>
                         <input type="text" name="name" class="form-control-custom" placeholder="Your Name" >
                       </div>
                     </div>
-                    
-                    <!-- Phone Input -->
                     <div class="form-group-custom">
                       <div class="input-wrap-custom">
                         <i class="bi bi-telephone input-icon-custom"></i>
                         <input type="tel" name="phone" class="form-control-custom" placeholder="Phone Number" >
                       </div>
                     </div>
-                    
-                    <!-- Email Input -->
                     <div class="form-group-custom">
                       <div class="input-wrap-custom">
                         <i class="bi bi-envelope input-icon-custom"></i>
                         <input type="email" name="email" class="form-control-custom" placeholder="Email Address" >
                       </div>
                     </div>
-                    
-                    <!-- Select Service -->
                     <div class="form-group-custom">
                       <div class="input-wrap-custom select-wrap-custom">
                         <span class="select-label-custom">Select Service</span>
@@ -45,24 +37,18 @@
                         </select>
                       </div>
                     </div>
-                    
-                    <!-- Moving From -->
                     <div class="form-group-custom half-width-mobile">
                       <div class="input-wrap-custom">
                         <i class="bi bi-geo-alt input-icon-custom"></i>
                         <input type="text" name="mfrom" class="form-control-custom" value="<?= @$city ?>" placeholder="Moving From" >
                       </div>
                     </div>
-                    
-                    <!-- Moving To -->
                     <div class="form-group-custom half-width-mobile">
                       <div class="input-wrap-custom">
                         <i class="bi bi-geo-alt input-icon-custom"></i>
                         <input type="text" name="mto" class="form-control-custom" placeholder="Moving To" >
                       </div>
                     </div>
-                    
-                    <!-- Submit Button -->
                     <button type="submit" class="btn-submit-custom">
                       <i class="bi bi-send submit-btn-icon-desktop"></i>
                       <i class="bi bi-file-earmark-text submit-btn-icon-mobile"></i>
@@ -73,8 +59,6 @@
                   <div id="quoteformresults"></div>
                 </form>
               </div>
-              
-              <!-- Card Footer / Trust Badge Bar (Desktop Only) -->
               <div class="card-footer-trust d-none d-lg-flex justify-content-between align-items-center">
                 <div class="trust-item">
                   <div class="trust-icon-box bg-blue">
@@ -126,8 +110,6 @@
                   </div>
                 </div>
               </div>
-              
-              <!-- Mobile Security Tag (Mobile Only, Inside the Card) -->
               <div class="mobile-security-tag d-flex d-lg-none justify-content-center align-items-center gap-2 py-3">
                 <i class="bi bi-shield-check text-primary"></i>
                 <span>100% Secure. We never share your data.</span>

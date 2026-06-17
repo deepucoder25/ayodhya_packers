@@ -9,12 +9,8 @@
   ====================================================== -->
 
 <aside class="pm-city-sidebar">
-
-  <!-- Contact & Action CTA Widget -->
   <div class="sidebar-widget widget-premium-cta mb-4">
-      <!-- Top-Right Pink Shape Accent -->
       <div class="cta-accent-pink"></div>
-      <!-- Bottom-Left Blue Shape Accent -->
       <div class="cta-accent-blue"></div>
 
       <img loading="lazy" src="<?= base_url('assets/images/city_page/support_call.png') ?>" alt="Support Agent" class="cta-support-agent">
@@ -30,10 +26,7 @@
       <p class="cta-premium-desc">
           Get a free consultation from our shifting experts. <span class="text-blue fw-semibold">Available 24/7.</span>
       </p>
-
-      <!-- Call Buttons -->
       <div class="cta-support-boxes d-flex flex-column gap-3 mb-4">
-          <!-- Call Support Box -->
           <a href="<?= $phonehtml ?>" class="cta-support-box d-flex align-items-center justify-content-between text-decoration-none" id="sidebarCallBtn">
               <div class="d-flex align-items-center gap-3">
                   <div class="cta-support-icon icon-pink d-flex align-items-center justify-content-center">
@@ -46,8 +39,6 @@
               </div>
               <i class="bi bi-chevron-right cta-support-arrow text-pink"></i>
           </a>
-
-          <!-- Alternate Phone Box -->
           <?php if (isset($phone) && !empty($phone)): ?>
           <a href="<?= $phonehtml ?>" class="cta-support-box d-flex align-items-center justify-content-between text-decoration-none" id="sidebarAltCallBtn">
               <div class="d-flex align-items-center gap-3">
@@ -76,8 +67,6 @@
           </a>
           <?php endif; ?>
       </div>
-
-      <!-- Footer Action Buttons -->
       <div class="cta-action-buttons d-flex gap-3">
           <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener" class="btn-cta-footer btn-cta-whatsapp text-decoration-none d-flex align-items-center justify-content-center gap-2 flex-fill" id="sidebarWhatsAppBtn">
               <i class="bi bi-whatsapp"></i> WhatsApp
@@ -87,9 +76,6 @@
           </button>
       </div>
   </div>
-
-
-  <!-- What You Get Widget -->
   <div class="sidebar-widget widget-what-you-get mt-4" id="sidebarTrustWidget">
       <h4 class="widget-title">
           <i class="bi bi-gift-fill"></i> What You Get
@@ -97,7 +83,6 @@
       <div class="title-underline"></div>
       
       <div class="what-you-get-grid">
-          <!-- Item 1 -->
           <div class="what-you-get-card">
               <div class="icon-wrap icon-purple">
                   <i class="bi bi-heart-fill"></i>
@@ -105,8 +90,6 @@
               <h5 class="grid-item-title">Safe Handling</h5>
               <p class="grid-item-desc">Your items are handled with utmost care</p>
           </div>
-          
-          <!-- Item 2 -->
           <div class="what-you-get-card">
               <div class="icon-wrap icon-green">
                   <i class="bi bi-shield-check"></i>
@@ -114,8 +97,6 @@
               <h5 class="grid-item-title">Transit Insurance</h5>
               <p class="grid-item-desc">Full insurance for complete peace of mind</p>
           </div>
-          
-          <!-- Item 3 -->
           <div class="what-you-get-card">
               <div class="icon-wrap icon-orange">
                   <i class="bi bi-currency-rupee"></i>
@@ -123,8 +104,6 @@
               <h5 class="grid-item-title">Affordable Rates</h5>
               <p class="grid-item-desc">Best pricing with no hidden charges</p>
           </div>
-          
-          <!-- Item 4 -->
           <div class="what-you-get-card">
               <div class="icon-wrap icon-blue">
                   <i class="bi bi-clock-fill"></i>
@@ -132,8 +111,6 @@
               <h5 class="grid-item-title">On-Time Delivery</h5>
               <p class="grid-item-desc">We value your time and deliver on time</p>
           </div>
-          
-          <!-- Item 5 -->
           <div class="what-you-get-card">
               <div class="icon-wrap icon-red">
                   <i class="bi bi-headset"></i>
@@ -141,8 +118,6 @@
               <h5 class="grid-item-title">24/7 Support</h5>
               <p class="grid-item-desc">Our support team is always here to help</p>
           </div>
-          
-          <!-- Item 6 -->
           <div class="what-you-get-card">
               <div class="icon-wrap icon-teal">
                   <i class="bi bi-people-fill"></i>
@@ -152,8 +127,6 @@
           </div>
       </div>
   </div>
-
-  <!-- Nearby Cities Widget -->
   <div class="sidebar-widget widget-nearby-cities mt-4" id="sidebarRelatedLocations">
       <div class="nearby-cities-header d-flex align-items-center justify-content-between">
           <div class="d-flex align-items-center gap-2">
@@ -165,11 +138,8 @@
                   <p class="nearby-cities-desc">Packers and Movers near <?= $city ?>.</p>
               </div>
           </div>
-          
-          <!-- Dotted Route SVG from user -->
           <div class="nearby-cities-route-svg d-none d-sm-block">
               <svg width="120" height="36" viewBox="0 0 275 82" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <!-- Dotted Route -->
                   <path
                       d="M38 48 C60 60, 75 20, 100 35 C125 50, 145 70, 170 40 C195 10, 220 35, 230 45"
                       stroke="var(--success-color, #22c55e)"
@@ -177,8 +147,6 @@
                       stroke-linecap="round"
                       stroke-dasharray="2 6"
                       fill="none"/>
-
-                  <!-- Location Pin -->
                   <g transform="translate(230,18)">
                       <path
                           d="M12 0C5.4 0 0 5.4 0 12C0 21 12 34 12 34C12 34 24 21 24 12C24 5.4 18.6 0 12 0Z"
@@ -189,8 +157,6 @@
                           r="5"
                           fill="white"/>
                   </g>
-
-                  <!-- Decorative Splash -->
                   <g opacity="0.15">
                       <path d="M255 18 L265 8" stroke="var(--success-color, #22c55e)" stroke-width="2"/>
                       <path d="M262 22 L272 22" stroke="var(--success-color, #22c55e)" stroke-width="2"/>

@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Packing Tips & Guides',
@@ -12,12 +10,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
@@ -60,7 +55,6 @@ $this->load->view('template/breadcrumbs', [
                     <p>Relocating involves different types of assets. Follow these specialized steps for each room:</p>
                     
                     <div class="room-guide-list" id="roomGuideAccordion">
-                        <!-- Kitchen -->
                         <div class="room-guide-item">
                             <button class="room-guide-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#room-1" aria-expanded="false">
                                 <i class="bi bi-egg-fried"></i> Kitchen Packing Tips
@@ -77,8 +71,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-                        
-                        <!-- Living Room -->
                         <div class="room-guide-item">
                             <button class="room-guide-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#room-2" aria-expanded="false">
                                 <i class="bi bi-tv"></i> Living Room &amp; Electronics Guide
@@ -95,8 +87,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Bedroom -->
                         <div class="room-guide-item">
                             <button class="room-guide-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#room-3" aria-expanded="false">
                                 <i class="bi bi-inboxes-fill"></i> Bedroom &amp; Clothing Tips
@@ -137,8 +127,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('about/company_sidebar', ['active_link' => 'packing-tips']); ?>
             </div>

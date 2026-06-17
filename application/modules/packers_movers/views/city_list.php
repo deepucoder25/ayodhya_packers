@@ -3,8 +3,6 @@ $st = strtolower(str_replace(" ", "-", $state));
 include "data/$st.php";
 $state = ucwords($state);
 ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Packers and Movers in ' . $state,

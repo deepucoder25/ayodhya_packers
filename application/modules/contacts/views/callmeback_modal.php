@@ -1,15 +1,10 @@
 <div class="modal fade" id="callMeBackModal" tabindex="-1" aria-labelledby="callMeBackModalLabel" aria-hidden="true">
   <div class="modal-dialog modal-dialog-centered">
     <div class="modal-content contact-modal-content">
-      
-      <!-- Modal Header with Close Button -->
       <div class="modal-header border-0 pb-0 contact-modal-header">
         <button type="button" class="btn-close contact-modal-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
-
-      <!-- Modal Body -->
       <div class="modal-body px-4 pb-4 pt-1 text-center">
-        <!-- Title matching user image -->
         <h2 class="mb-4 contact-modal-title">Call Me Back</h2>
         
         <form id="callMeBackForm" class="ajax-form" data-url="<?= site_url('contacts/call_back') ?>" data-result="resultcallbackmodal" onsubmit="return false;">

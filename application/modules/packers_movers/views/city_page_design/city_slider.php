@@ -2,7 +2,6 @@
   <div class="dot-pattern-overlay"></div>
   <div class="slider-wrapper d-flex align-items-center py-4">
     <div class="container">
-      <!-- Breadcrumb Row -->
       <div class="row">
         <div class="col-12">
           <nav class="bc-nav pm-city-slider-nav">
@@ -68,8 +67,6 @@
     
   </div>
 </section>
-
-<!-- Mobile Trust Badge Bar (Mobile Only, Outside the Card) -->
 <div class="mobile-trust-bar d-flex d-lg-none py-3 bg-white border-bottom">
   <div class="container-fluid px-1">
     <div class="row g-0 justify-content-center align-items-stretch">

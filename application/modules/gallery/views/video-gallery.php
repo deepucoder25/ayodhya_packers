@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Video Gallery',
@@ -11,12 +9,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
@@ -26,10 +21,7 @@ $this->load->view('template/breadcrumbs', [
                             At <strong><?= $company3 ?></strong>, we maintain complete transparency in our relocation operations. Watch our field videos to see how our trained professionals handle packing, heavy-duty cargo loading, and safe transportation to ensure a worry-free shifting experience.
                         </p>
                     </div>
-
-                    <!-- Videos Grid -->
                     <div class="row">
-                        <!-- Video 1 -->
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden gallery-video-card">
                                 <div class="ratio ratio-16x9">
@@ -44,8 +36,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Video 2 -->
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden gallery-video-card">
                                 <div class="ratio ratio-16x9">
@@ -60,8 +50,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Video 3 -->
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden gallery-video-card">
                                 <div class="ratio ratio-16x9">
@@ -76,8 +64,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Video 4 -->
                         <div class="col-md-6 mb-4">
                             <div class="card h-100 border-0 shadow-sm rounded-3 overflow-hidden gallery-video-card">
                                 <div class="ratio ratio-16x9">
@@ -93,8 +79,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- Quality commitment banner -->
                     <div class="p-4 bg-light border-start border-5 border-success rounded-3 mt-4">
                         <h5 class="fw-bold text-success mb-2">Our Video Guidelines</h5>
                         <p class="mb-0 text-muted small">
@@ -104,8 +88,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('about/company_sidebar', ['active_link' => 'video-gallery']); ?>
             </div>

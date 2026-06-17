@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Residential Relocation',
@@ -12,23 +10,16 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    
-                    <!-- 1. Hero Cover -->
                     <div class="service-hero-cover">
                         <img loading="lazy" src="<?= base_url('assets/images/gallery/img8.jpg') ?>" alt="Residential Shifting - <?= $company3 ?>">
                         <div class="service-hero-overlay"></div>
                         <span class="service-hero-badge">Door-to-Door Safe Relocation</span>
                     </div>
-
-                    <!-- 2. Highlights Row -->
                     <div class="service-highlights-row">
                         <div class="service-highlight-badge">
                             <i class="bi bi-house-fill"></i>
@@ -54,8 +45,6 @@ $this->load->view('template/breadcrumbs', [
                     <p>
                         We manage your home relocation systematically. Our trained packers handle the wrapping, loading, and unpacking. We also deploy professional carpenters on-site to handle furniture dismantling and reassembly, ensuring a stress-free transition.
                     </p>
-
-                    <!-- 3. Shifting Comparison Grid -->
                     <h2>How We Compare to Competitors</h2>
                     <p>Our home relocation services are designed around your family's convenience and safety:</p>
                     
@@ -79,8 +68,6 @@ $this->load->view('template/breadcrumbs', [
                             </ul>
                         </div>
                     </div>
-
-                    <!-- 4. Core Process Cards Timeline -->
                     <h2>Our Household Moving Process</h2>
                     <div class="process-timeline">
                         <div class="process-step">
@@ -104,8 +91,6 @@ $this->load->view('template/breadcrumbs', [
                             <p>We unload your belongings room-by-room, reassemble the furniture, and help place heavy items where you want them.</p>
                         </div>
                     </div>
-
-                    <!-- 5. Permitted vs Prohibited Checklist -->
                     <h2>Home Shifting Safety Guidelines</h2>
                     <p>Please review which items are accepted for packing and transport:</p>
                     
@@ -129,8 +114,6 @@ $this->load->view('template/breadcrumbs', [
                             </ul>
                         </div>
                     </div>
-
-                    <!-- 6. Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -150,8 +133,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- 7. FAQs Accordion -->
                     <h2>Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
@@ -194,8 +175,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('services/service_sidebar', ['active_service' => 'residential-relocation']); ?>
             </div>

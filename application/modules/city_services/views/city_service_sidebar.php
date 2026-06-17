@@ -2,12 +2,8 @@
 ?>
 
 <aside class="service-sidebar">
-
-    <!-- Contact & Action CTA Widget -->
     <div class="sidebar-widget widget-premium-cta mb-4">
-        <!-- Top-Right Pink Shape Accent -->
         <div class="cta-accent-pink"></div>
-        <!-- Bottom-Left Blue Shape Accent -->
         <div class="cta-accent-blue"></div>
 
         <img loading="lazy" src="<?= base_url('assets/images/city_page/support_call.png') ?>" alt="Support Agent" class="cta-support-agent">
@@ -23,10 +19,7 @@
         <p class="cta-premium-desc">
             Get a free consultation from our shifting experts. <span class="text-blue fw-semibold">Available 24/7.</span>
         </p>
-
-        <!-- Call Buttons -->
         <div class="cta-support-boxes d-flex flex-column gap-3 mb-4">
-            <!-- Call Support Box -->
             <a href="<?= $phonehtml ?>" class="cta-support-box d-flex align-items-center justify-content-between text-decoration-none">
                 <div class="d-flex align-items-center gap-3">
                     <div class="cta-support-icon icon-pink d-flex align-items-center justify-content-center">
@@ -39,8 +32,6 @@
                 </div>
                 <i class="bi bi-chevron-right cta-support-arrow text-pink"></i>
             </a>
-
-            <!-- Alternate Phone Box -->
             <?php if (isset($phone1) && !empty($phone1)): ?>
             <a href="<?= isset($phonehtml1) ? $phonehtml1 : 'tel:' . $phone1 ?>" class="cta-support-box d-flex align-items-center justify-content-between text-decoration-none">
                 <div class="d-flex align-items-center gap-3">
@@ -69,8 +60,6 @@
             </a>
             <?php endif; ?>
         </div>
-
-        <!-- Footer Action Buttons -->
         <div class="cta-action-buttons d-flex gap-3">
             <a href="<?= $whatsapphtml ?>" target="_blank" rel="noopener" class="btn-cta-footer btn-cta-whatsapp text-decoration-none d-flex align-items-center justify-content-center gap-2 flex-fill">
                 <i class="bi bi-whatsapp"></i> WhatsApp
@@ -80,8 +69,6 @@
             </button>
         </div>
     </div>
-
-    <!-- What You Get Widget -->
     <div class="sidebar-widget widget-what-you-get">
         <h4 class="widget-title">
             <i class="bi bi-gift-fill"></i> What You Get
@@ -89,7 +76,6 @@
         <div class="title-underline"></div>
         
         <div class="what-you-get-grid">
-            <!-- Item 1 -->
             <div class="what-you-get-card">
                 <div class="icon-wrap icon-purple">
                     <i class="bi bi-heart-fill"></i>
@@ -97,8 +83,6 @@
                 <h5 class="grid-item-title">Safe Handling</h5>
                 <p class="grid-item-desc">Your items are handled with utmost care</p>
             </div>
-            
-            <!-- Item 2 -->
             <div class="what-you-get-card">
                 <div class="icon-wrap icon-green">
                     <i class="bi bi-shield-check"></i>
@@ -106,8 +90,6 @@
                 <h5 class="grid-item-title">Transit Insurance</h5>
                 <p class="grid-item-desc">Full insurance for complete peace of mind</p>
             </div>
-            
-            <!-- Item 3 -->
             <div class="what-you-get-card">
                 <div class="icon-wrap icon-orange">
                     <i class="bi bi-currency-rupee"></i>
@@ -115,8 +97,6 @@
                 <h5 class="grid-item-title">Affordable Rates</h5>
                 <p class="grid-item-desc">Best pricing with no hidden charges</p>
             </div>
-            
-            <!-- Item 4 -->
             <div class="what-you-get-card">
                 <div class="icon-wrap icon-blue">
                     <i class="bi bi-clock-fill"></i>
@@ -124,8 +104,6 @@
                 <h5 class="grid-item-title">On-Time Delivery</h5>
                 <p class="grid-item-desc">We value your time and deliver on time</p>
             </div>
-            
-            <!-- Item 5 -->
             <div class="what-you-get-card">
                 <div class="icon-wrap icon-red">
                     <i class="bi bi-headset"></i>
@@ -133,8 +111,6 @@
                 <h5 class="grid-item-title">24/7 Support</h5>
                 <p class="grid-item-desc">Our support team is always here to help</p>
             </div>
-            
-            <!-- Item 6 -->
             <div class="what-you-get-card">
                 <div class="icon-wrap icon-teal">
                     <i class="bi bi-people-fill"></i>

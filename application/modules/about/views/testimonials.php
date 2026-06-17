@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Client Testimonials',
@@ -11,12 +9,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
@@ -24,10 +19,7 @@ $this->load->view('template/breadcrumbs', [
                     <p class="lead">
                         At <strong><?= $company3 ?></strong>, client satisfaction is our primary reward. Over our <?= $experience ?>+ year legacy, we have successfully relocated thousands of families, offices, and vehicles across India. Below are some reviews and testimonials from our valued clients.
                     </p>
-
-                    <!-- Testimonials Grid -->
                     <div class="row mt-4">
-                        <!-- Testimonial 1 -->
                         <div class="col-md-6 mb-4">
                             <div class="about-testimonial-card h-100">
                                 <div class="rating">
@@ -52,8 +44,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Testimonial 2 -->
                         <div class="col-md-6 mb-4">
                             <div class="about-testimonial-card h-100">
                                 <div class="rating">
@@ -78,8 +68,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Testimonial 3 -->
                         <div class="col-md-6 mb-4">
                             <div class="about-testimonial-card h-100">
                                 <div class="rating">
@@ -104,8 +92,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Testimonial 4 -->
                         <div class="col-md-6 mb-4">
                             <div class="about-testimonial-card h-100">
                                 <div class="rating">
@@ -130,8 +116,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Testimonial 5 -->
                         <div class="col-md-6 mb-4">
                             <div class="about-testimonial-card h-100">
                                 <div class="rating">
@@ -156,8 +140,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-
-                        <!-- Testimonial 6 -->
                         <div class="col-md-6 mb-4">
                             <div class="about-testimonial-card h-100">
                                 <div class="rating">
@@ -183,8 +165,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- Quality commitment box -->
                     <div class="about-feedback-cta">
                         <h5>Leave Your Feedback</h5>
                         <p>
@@ -197,8 +177,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('about/company_sidebar', ['active_link' => 'testimonials']); ?>
             </div>

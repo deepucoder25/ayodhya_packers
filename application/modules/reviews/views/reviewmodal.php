@@ -1,4 +1,3 @@
-<!-- Review Modal -->
 <div class="modal fade container custom-modal" id="rvwmdl" tabindex="-1" role="dialog" aria-labelledby="rvwmdl" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content p-3" class="reviews-modal-content">

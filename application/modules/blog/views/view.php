@@ -1,7 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <main class="main">
-    <!-- Breadcrumbs Section -->
 <?php
     $this->load->view('template/breadcrumbs', [
         'title' => mb_strimwidth(@$query[0]->title, 0, 40, "..."),
@@ -13,15 +12,11 @@
         ]
     ]);
     ?>
-
-    <!-- Blog Single Post -->
     <section class="blog-details-section py-5 bg-light">
         <div class="container my-3">
             <div class="row ">
-                <!-- Main Content -->
                 <div class="col-lg-8">
                     <div class="bg-white p-4 p-md-5 rounded-4 shadow-sm">
-                        <!-- Image -->
                         <div class="mb-4 rounded-4 overflow-hidden shadow-sm position-relative">
                             <?php 
                             $image_path = FCPATH . 'uploads/blogs/' . @$query[0]->image;
@@ -31,8 +26,6 @@
                                 <img loading="lazy" src="<?= base_url('assets/images/about/packers_movers.jpg') ?>" alt="Default Image" class="img-fluid w-100 blog-details-img">
                             <?php endif; ?>
                         </div>
-                        
-                        <!-- Meta Info -->
                         <div class="d-flex flex-wrap align-items-center justify-content-between mb-4 pb-3 border-bottom">
                             <div class="d-flex gap-3 text-muted small">
                                 <span class="d-flex align-items-center gap-2"><i class="bi bi-calendar-event blog-icon-primary"></i> <?= date('M d, Y', strtotime(@$query[0]->created_at)) ?></span>
@@ -44,16 +37,12 @@
                                 </button>
                             </div>
                         </div>
-
-                        <!-- Blog Details -->
                         <h2 class="fw-bold mb-4 blog-details-title"><?= @$query[0]->title ?></h2>
                         <div class="blog-content-wrapper text-muted">
                             <?= nl2br(@$query[0]->content) ?>
                         </div>
                     </div>
                 </div>
-
-                <!-- Sidebar -->
                 <div class="col-lg-4">
                     <aside class="blog-sidebar sticky-top blog-sidebar-sticky">
                         <div class="bg-white p-4 rounded-4 shadow-sm mb-4">
@@ -82,8 +71,6 @@
                                 <?php endif; ?>
                             </div>
                         </div>
-
-                        <!-- Sticky CTA Widget -->
                         <div class="bg-light p-4 rounded-4 shadow-sm text-center border-top border-4 blog-border-warning">
                             <div class="mb-3">
                                 <i class="bi bi-headset blog-icon-lg-primary"></i>
@@ -100,8 +87,6 @@
         </div>
     </section>
 </main>
-
-<!-- Share Modal -->
 <div class="modal fade" id="shareModal" tabindex="-1">
     <div class="modal-dialog modal-dialog-centered">
         <div class="modal-content border-0 rounded-4 shadow-lg">

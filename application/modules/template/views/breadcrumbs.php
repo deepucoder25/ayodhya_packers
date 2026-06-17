@@ -10,7 +10,6 @@
 <section class="service-breadcrumbs position-relative overflow-hidden py-4">
     <div class="container position-relative bc-content-z">
         <div class="row align-items-center">
-            <!-- Left Side: Title & Description -->
             <div class="col-md-7 col-12">
                 <h1 class="bc-title text-white fw-bold m-0"><?= $title ?></h1>
                 <?php if (!empty($description)): ?>
@@ -19,8 +18,6 @@
                     </p>
                 <?php endif; ?>
             </div>
-            
-            <!-- Right Side: Breadcrumbs Navigation Badge -->
             <div class="col-md-5 col-12 d-flex justify-content-md-end justify-content-start mt-3 mt-md-0">
                 <?php if (!empty($breadcrumbs)): ?>
                     <nav class="bc-nav-pill d-inline-flex align-items-center flex-wrap gap-2">

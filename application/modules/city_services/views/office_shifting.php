@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Office Relocation in ' . $city,
@@ -12,12 +10,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     <h2 class="service-section-title">Professional Office Relocation in <?= $city ?> for Minimal Downtime</h2>
@@ -88,8 +83,6 @@ $this->load->view('template/breadcrumbs', [
                             </table>
                         </div>
                     </div>
-
-                    <!-- How We Process Section -->
                     <h2 class="service-section-title mt-5">Our Office Relocation Process in <?= $city ?></h2>
                     <p class="text-muted">A carefully planned process to move your office without business interruption:</p>
                     <div class="process-timeline">
@@ -114,8 +107,6 @@ $this->load->view('template/breadcrumbs', [
                             <p>We unload, unpack, reassemble furniture, and help arrange workstations so your team can resume work as quickly as possible.</p>
                         </div>
                     </div>
-
-                    <!-- Why Choose Us Grid -->
                     <h2 class="service-section-title mt-5">Why Choose Us in <?= $city ?></h2>
                     <div class="why-choose-grid">
                         <div class="choose-item-card">
@@ -147,8 +138,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -168,8 +157,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- FAQs Accordion -->
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
@@ -212,8 +199,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('city_services/city_service_sidebar', ['active_service' => 'office-shifting-in-'.$ctlink]); ?>
             </div>

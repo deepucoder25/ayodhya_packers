@@ -15,7 +15,6 @@ $this->load->view('template/breadcrumbs', [
 
 <div class="container py-5">
     <div class="row">
-        <!-- Left Column -->
         <div class="col-lg-12 d-flex justify-content-center align-items-center">
             <div class="contact-tracking-form mb-3 w-100">
                 <form action="" id="tracking_form">
@@ -26,8 +25,6 @@ $this->load->view('template/breadcrumbs', [
                     <button class="btn btn-success mt-3 me-2" id="tracking_submit">Submit</button>
                     <button type="reset" class="btn btn-danger mt-3">Clear</button>
                 </form>
-
-                <!-- Tracking Details (hidden until data loads) -->
                 <div class="contact-tracking-details-card mt-4">
                     <div class="card">
                         <div class="card-header bg-light">
@@ -62,8 +59,6 @@ $this->load->view('template/breadcrumbs', [
                                     <span id="ex_del_date"></span> <i class="fa-solid fa-circle-check contact-tracking-success"></i>
                                 </div>
                             </div>
-
-                            <!-- Progress Bar Tracking -->
                             <div class="contact-tracking-progress mb-4">
                                 <div class="contact-progress-bar-container">
                                     <div class="contact-progress">
@@ -93,8 +88,6 @@ $this->load->view('template/breadcrumbs', [
                                     </div>
                                 </div>
                             </div>
-
-                            <!-- Tracking Details Table -->
                             <div class="contact-tracking-table mt-4">
                                 <h6 class="border-bottom pb-2">TRACKING HISTORY</h6>
                                 <div class="table-responsive">
@@ -107,7 +100,6 @@ $this->load->view('template/breadcrumbs', [
                                             </tr>
                                         </thead>
                                         <tbody id="trackingTableBody">
-                                            <!-- Table rows will be injected here -->
                                         </tbody>
                                     </table>
                                 </div>

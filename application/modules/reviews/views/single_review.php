@@ -20,7 +20,6 @@ $this->load->view('template/breadcrumbs', [
 <div class="reviews-service-page reviews-feature-content-section">
     <div ng-app="reviewsApp" ng-controller="reviewsctrl">
         <?php $this->load->view('reviews/reviewmodal') ?>
-        <!-- Review Starts -->
         <br />
         <div class="container">
             <div class="row">

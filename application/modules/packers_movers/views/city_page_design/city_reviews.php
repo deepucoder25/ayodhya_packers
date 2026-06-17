@@ -1,14 +1,7 @@
-  <!-- Testimonials -->
         <div class="city-content-card mt-4">
           <h3 class="city-section-title-sm"><i class="bi bi-chat-left-quote me-2"></i>Customer Experiences</h3>
-          
-          <!-- ==================== DESKTOP SLIDER (2 Cards per Slide) ==================== -->
           <div id="cityReviewsCarouselDesktop" class="carousel slide mt-3 d-none d-md-block reviews-carousel-desktop" data-bs-ride="carousel" data-bs-interval="5000">
-
-            <!-- Slides -->
             <div class="carousel-inner pb-4">
-              
-              <!-- Slide 1: Reviews 1 & 2 -->
               <div class="carousel-item active">
                 <div class="row g-3">
                   <div class="col-md-6">
@@ -44,8 +37,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Slide 2: Reviews 3 & 4 -->
               <div class="carousel-item">
                 <div class="row g-3">
                   <div class="col-md-6">
@@ -83,8 +74,6 @@
               </div>
 
             </div>
-            
-            <!-- Controls Footer (No Dots) -->
             <div class="reviews-carousel-footer">
               <button class="reviews-footer-btn" type="button" data-bs-target="#cityReviewsCarouselDesktop" data-bs-slide="prev" aria-label="Previous">
                 <i class="bi bi-chevron-left"></i>
@@ -94,14 +83,8 @@
               </button>
             </div>
           </div>
-
-          <!-- ==================== MOBILE SLIDER (1 Card per Slide) ==================== -->
           <div id="cityReviewsCarouselMobile" class="carousel slide mt-3 d-block d-md-none reviews-carousel-mobile" data-bs-ride="carousel" data-bs-interval="5000">
-
-            <!-- Slides -->
             <div class="carousel-inner pb-4">
-              
-              <!-- Slide 1 -->
               <div class="carousel-item active">
                 <div class="city-review-card">
                   <div class="review-stars">
@@ -117,8 +100,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Slide 2 -->
               <div class="carousel-item">
                 <div class="city-review-card">
                   <div class="review-stars">
@@ -134,8 +115,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Slide 3 -->
               <div class="carousel-item">
                 <div class="city-review-card">
                   <div class="review-stars">
@@ -151,8 +130,6 @@
                   </div>
                 </div>
               </div>
-
-              <!-- Slide 4 -->
               <div class="carousel-item">
                 <div class="city-review-card">
                   <div class="review-stars">
@@ -170,8 +147,6 @@
               </div>
 
             </div>
-            
-            <!-- Controls Footer (No Dots) -->
             <div class="reviews-carousel-footer">
               <button class="reviews-footer-btn" type="button" data-bs-target="#cityReviewsCarouselMobile" data-bs-slide="prev" aria-label="Previous">
                 <i class="bi bi-chevron-left"></i>

@@ -2,7 +2,6 @@
 ?>
 
 <section class="about-section py-5 position-relative overflow-hidden">
-    <!-- Background Decors -->
     <div class="about-bg-decor about-bg-decor-left d-none d-lg-block">
         <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
             <pattern id="about-dots-left" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
@@ -23,11 +22,8 @@
 
     <div class="container position-relative about-z2">
         <div class="row align-items-center g-4 g-lg-5 mb-5">
-            <!-- Left Side: Content Details -->
             <div class="col-lg-6 col-12">
                 <div class="about-content">
-                    
-                    <!-- Subheading eyebrow -->
                     <div class="srv-eyebrow mb-3">
                         <span class="reviews-heading-line left">
                             <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,19 +44,13 @@
                             </svg>
                         </span>
                     </div>
-
-                    <!-- SEO-Friendly Heading -->
                     <h2 class="srv-main-title text-start mb-3">
                         Making Every Move <span class="highlight-pink-text">Simple, Safe &amp; Stress-Free</span>
                     </h2>
-
-                    <!-- Title underline decoration -->
                     <div class="about-title-underline mb-4">
                         <span class="line-pink"></span>
                         <span class="line-blue"></span>
                     </div>
-
-                    <!-- Descriptive Paragraphs -->
                     <p class="mb-3">
                         At Ayodhya Packers And Movers, we believe that moving is more than just shifting belongings – it's about moving lives. With years of experience and a dedicated team of professionals, we provide reliable, efficient and affordable moving solutions tailored to your needs.
                     </p>
@@ -71,8 +61,6 @@
 
                 </div>
             </div>
-
-            <!-- Right Side: Image Showcase -->
             <div class="col-lg-6 col-12">
                 <div class="about-image-showcase">
                     <div class="about-img-mask-bg"></div>
@@ -82,10 +70,7 @@
                 </div>
             </div>
         </div>
-
-        <!-- Values Grid (5 cards) -->
         <div class="row g-4 mb-5 justify-content-center">
-            <!-- Our Commitment -->
             <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
                 <div class="about-value-card w-100 pink">
                     <div class="value-icon-circle">
@@ -95,7 +80,6 @@
                     <p class="value-card-desc">We are committed to delivering safe, timely and hassle-free moving experiences.</p>
                 </div>
             </div>
-            <!-- Our Team -->
             <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
                 <div class="about-value-card w-100 blue">
                     <div class="value-icon-circle">
@@ -105,7 +89,6 @@
                     <p class="value-card-desc">Our skilled and trained professionals ensure your move is in safe hands.</p>
                 </div>
             </div>
-            <!-- Our Quality -->
             <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
                 <div class="about-value-card w-100 green">
                     <div class="value-icon-circle">
@@ -115,7 +98,6 @@
                     <p class="value-card-desc">We use premium packing materials and modern equipment for best results.</p>
                 </div>
             </div>
-            <!-- Our Priority -->
             <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
                 <div class="about-value-card w-100 pink">
                     <div class="value-icon-circle">
@@ -125,7 +107,6 @@
                     <p class="value-card-desc">Customer satisfaction is our top priority – always.</p>
                 </div>
             </div>
-            <!-- Our Vision -->
             <div class="col-lg-2-5 col-md-4 col-sm-6 d-flex">
                 <div class="about-value-card w-100 blue">
                     <div class="value-icon-circle">
@@ -136,8 +117,6 @@
                 </div>
             </div>
         </div>
-
-        <!-- Bottom Stats Banner -->
         <div class="about-stats-banner">
             <div class="about-stat-item">
                 <div class="stat-icon-circle bg-secondary">

@@ -1,7 +1,6 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 
 <main class="main">
-    <!-- Breadcrumbs Section -->
 <?php
     $this->load->view('template/breadcrumbs', [
         'title' => 'Our Blog',
@@ -15,7 +14,6 @@
 
     <section class="blog-section py-5 bg-light">
         <div class="container">
-            <!-- Section Heading -->
             <div class="text-center mb-5">
                 <h2 class="fw-bold">
                     Our Latest <span class="blog-title-highlight">News & Blog</span>
@@ -100,8 +98,6 @@
                     </div>
                 <?php endif; ?>
             </div>
-
-            <!-- Pagination -->
             <div class="row mt-5">
                 <div class="col-12 d-flex justify-content-center">
                     <?= $this->pagination->create_links(); ?>

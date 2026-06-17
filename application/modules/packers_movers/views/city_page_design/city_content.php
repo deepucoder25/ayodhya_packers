@@ -23,15 +23,12 @@ if (strtolower($city) == "") {
             </p>
    ";
    $htmlcontent1 = "
-     <!-- What Makes Relocation Different -->
         <div class='city-content-card mt-4'>
           <h3 class='city-section-title-sm'>
             <i class='bi bi-shield-fill-check me-2'></i>Our Seamless Shifting Process in $city
           </h3>
           <p>Moving your home is more than just loading boxes. At <strong>$company3</strong>, we follow a structured, step-by-step moving process designed to protect your goods at every turn. First, our packing experts use top-grade bubble wrap, heavy-duty cartons, and protective stretch wraps to secure your items. Next, our experienced handling team loads them carefully onto modern carrier vehicles using specialized gear to prevent scratches and dents during transit.</p>
           <p>Once we arrive at your new destination, our crew unloads your belongings, unpacks them with care, and helps place the furniture exactly where you want it. This systematic execution ensures a smooth, hassle-free transition so you can settle in comfortably.</p>
-
-          <!-- Services List -->
           <h3 class='city-section-title-sm mt-4'>
             <i class='bi bi-box-seam-fill me-2'></i>Shifting Services Available in $city
           </h3>
@@ -48,7 +45,6 @@ if (strtolower($city) == "") {
         </div>
     ";
    $htmlcontent2 = "
-     <!-- Why Choose Professional Movers -->
         <div class='city-content-card mt-4'>
           <h3 class='city-section-title-sm'>
             <i class='bi bi-heart-fill me-2'></i>Why Thousands of Customers Trust $company3

@@ -3,7 +3,6 @@
 
 <div class="container">
 <div class="row g-4 mt-5 mb-4">
-    <!-- Home Shifting -->
     <div class="col-md-6 col-lg-3 d-flex">
         <div class="pm-city-srv-card w-100 d-flex flex-column">
             <div class="pm-city-srv-icon-wrap">
@@ -14,8 +13,6 @@
             <a href="<?= site_url('home-shifting-in-'.$ctlink) ?>" class="pm-city-srv-link mt-auto">Read more home shifting..</a>
         </div>
     </div>
-    
-    <!-- Office Shifting -->
     <div class="col-md-6 col-lg-3 d-flex">
         <div class="pm-city-srv-card w-100 d-flex flex-column">
             <div class="pm-city-srv-icon-wrap">
@@ -26,8 +23,6 @@
             <a href="<?= site_url('office-shifting-in-'.$ctlink) ?>" class="pm-city-srv-link mt-auto">Read more office shifting..</a>
         </div>
     </div>
-    
-    <!-- Car Shifting -->
     <div class="col-md-6 col-lg-3 d-flex">
         <div class="pm-city-srv-card w-100 d-flex flex-column">
             <div class="pm-city-srv-icon-wrap">
@@ -38,8 +33,6 @@
             <a href="<?= site_url('car-transport-in-'.$ctlink) ?>" class="pm-city-srv-link mt-auto">Read more car transport..</a>
         </div>
     </div>
-    
-    <!-- Bike Shifting -->
     <div class="col-md-6 col-lg-3 d-flex">
         <div class="pm-city-srv-card w-100 d-flex flex-column">
             <div class="pm-city-srv-icon-wrap">

@@ -28,8 +28,6 @@ $faqs = [
 ?>
 
 <section class="faq-section py-5 position-relative overflow-hidden">
-    <!-- Background Decors -->
-    <!-- Left Background elements -->
     <div class="faq-bg-decor faq-bg-decor-left d-none d-lg-block">
         <svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
             <pattern id="faq-dots-left" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
@@ -42,8 +40,6 @@ $faqs = [
             </g>
         </svg>
     </div>
-
-    <!-- Right Background elements -->
     <div class="faq-bg-decor faq-bg-decor-right d-none d-lg-block">
         <svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
             <pattern id="faq-dots-right" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
@@ -58,7 +54,6 @@ $faqs = [
     </div>
 
     <div class="container position-relative about-z2">
-        <!-- Eyebrow & Header -->
         <div class="section-header text-center mb-5">
             <div class="srv-eyebrow mb-3">
                 <span class="reviews-heading-line left">
@@ -83,10 +78,7 @@ $faqs = [
             <h2 class="srv-main-title">Got Questions? <span class="highlight-pink-text">We've Got Answers!</span></h2>
             <p class="srv-subtitle mx-auto">Find answers to common questions about our moving services, process, safety and more.</p>
         </div>
-
-        <!-- Main Content Grid -->
         <div class="row g-4 mb-5">
-            <!-- Left FAQ Column -->
             <div class="col-lg-6 col-md-12">
                 <div class="faq-accordion" id="faqAccordionLeft">
                     <?php foreach ([0, 2, 4] as $index): ?>
@@ -116,8 +108,6 @@ $faqs = [
                     <?php endforeach; ?>
                 </div>
             </div>
-
-            <!-- Right FAQ Column -->
             <div class="col-lg-6 col-md-12">
                 <div class="faq-accordion" id="faqAccordionRight">
                     <?php foreach ([1, 3, 5] as $index): ?>
@@ -148,11 +138,8 @@ $faqs = [
                 </div>
             </div>
         </div>
-
-        <!-- Bottom CTA Help Banner -->
         <div class="faq-cta-banner">
             <div class="faq-cta-left">
-                <!-- S-Curve Background SVG -->
                 <div class="faq-cta-left-bg">
                     <svg viewBox="0 0 100 100" preserveAspectRatio="none" fill="var(--accent-color)" xmlns="http://www.w3.org/2000/svg">
                         <path d="M 0 0 L 80 0 C 92 0, 96 35, 84 65 C 76 85, 70 100, 68 100 L 0 100 Z" />

@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Customer Reviews',
@@ -11,8 +9,6 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         
@@ -24,7 +20,6 @@ $this->load->view('template/breadcrumbs', [
         <?php endif; ?>
 
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
@@ -32,15 +27,11 @@ $this->load->view('template/breadcrumbs', [
                     <p class="lead">
                         We take customer feedback very seriously. Below are genuine shifting reviews shared by families, companies, and individuals who chose our packers and movers services.
                     </p>
-
-                    <!-- Write Review Button -->
                     <div class="text-center my-4">
                         <button class="btn btn-primary btn-lg fw-bold rounded-pill px-4 shadow" data-bs-toggle="modal" data-bs-target="#reviewModal">
                             <i class="bi bi-pencil-square me-2"></i> Share Your Experience
                         </button>
                     </div>
-
-                    <!-- Reviews List -->
                     <div class="mt-4">
                         <?php if (!empty($reviews)): ?>
                             <?php foreach (array_reverse($reviews) as $r): ?>
@@ -74,8 +65,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('about/company_sidebar', ['active_link' => 'reviews']); ?>
             </div>

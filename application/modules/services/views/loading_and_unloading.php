@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Loading & Unloading',
@@ -12,23 +10,16 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    
-                    <!-- 1. Hero Cover -->
                     <div class="service-hero-cover">
                         <img loading="lazy" src="<?= base_url('assets/images/gallery/img6.jpg') ?>" alt="Loading & Unloading - <?= $company3 ?>">
                         <div class="service-hero-overlay"></div>
                         <span class="service-hero-badge">Safety First Handling</span>
                     </div>
-
-                    <!-- 2. Highlights Row -->
                     <div class="service-highlights-row">
                         <div class="service-highlight-badge">
                             <i class="bi bi-shield-check"></i>
@@ -54,8 +45,6 @@ $this->load->view('template/breadcrumbs', [
                     <p>
                         Our team employs trained loaders who utilize cargo ramps, trolleys, lifting straps, and pulleys to handle your goods safely. We pack boxes systematically inside the truck container, ensuring heavy boxes sit at the bottom and fragile items are secured on top.
                     </p>
-
-                    <!-- 3. Shifting Comparison Grid -->
                     <h2>How We Compare to Competitors</h2>
                     <p>Our systematic ground handling ensures your items are protected throughout the move:</p>
                     
@@ -79,8 +68,6 @@ $this->load->view('template/breadcrumbs', [
                             </ul>
                         </div>
                     </div>
-
-                    <!-- 4. Core Process Cards Timeline -->
                     <h2>Our Stacking &amp; Handling Process</h2>
                     <div class="process-timeline">
                         <div class="process-step">
@@ -104,8 +91,6 @@ $this->load->view('template/breadcrumbs', [
                             <p>The cargo is strapped to the truck walls to prevent cargo shifts, followed by a careful unloading process at your new address.</p>
                         </div>
                     </div>
-
-                    <!-- 5. Permitted vs Prohibited Checklist -->
                     <h2>Cargo Handling Guidelines</h2>
                     <p>Help us maintain a safe and damage-free loading operation:</p>
                     
@@ -129,8 +114,6 @@ $this->load->view('template/breadcrumbs', [
                             </ul>
                         </div>
                     </div>
-
-                    <!-- 6. Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -150,8 +133,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- 7. FAQs Accordion -->
                     <h2>Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
@@ -194,8 +175,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('services/service_sidebar', ['active_service' => 'loading-and-unloading']); ?>
             </div>

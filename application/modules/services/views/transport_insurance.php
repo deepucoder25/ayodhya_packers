@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Transport Insurance',
@@ -12,23 +10,16 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    
-                    <!-- 1. Hero Cover -->
                     <div class="service-hero-cover">
                         <img loading="lazy" src="<?= base_url('assets/images/services_modules/transport-insurance.jpg') ?>" alt="Transport Insurance - <?= $company3 ?>">
                         <div class="service-hero-overlay"></div>
                         <span class="service-hero-badge">100% Financial Protection</span>
                     </div>
-
-                    <!-- 2. Highlights Row -->
                     <div class="service-highlights-row">
                         <div class="service-highlight-badge">
                             <i class="bi bi-shield-fill-check"></i>
@@ -54,8 +45,6 @@ $this->load->view('template/breadcrumbs', [
                     <p>
                         We offer comprehensive transit coverage. Our claim support team helps you fill out the valuation list, calculate the premium, activate the policy before the truck departs, and manage the documentation for quick claims if needed.
                     </p>
-
-                    <!-- 3. Shifting Comparison Grid -->
                     <h2>How We Compare to Competitors</h2>
                     <p>Our structured transit protection gives you complete financial security:</p>
                     
@@ -79,8 +68,6 @@ $this->load->view('template/breadcrumbs', [
                             </ul>
                         </div>
                     </div>
-
-                    <!-- 4. Core Process Cards Timeline -->
                     <h2>Our Insurance Claim Process</h2>
                     <div class="process-timeline">
                         <div class="process-step">
@@ -104,8 +91,6 @@ $this->load->view('template/breadcrumbs', [
                             <p>In case of transit damages, we guide you through taking photos, listing items, filing the claim, and securing compensation.</p>
                         </div>
                     </div>
-
-                    <!-- 5. Permitted vs Prohibited Checklist -->
                     <h2>Insurance Coverage Guidelines</h2>
                     <p>Please review which items are covered under our transit insurance policy:</p>
                     
@@ -129,8 +114,6 @@ $this->load->view('template/breadcrumbs', [
                             </ul>
                         </div>
                     </div>
-
-                    <!-- 6. Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -150,8 +133,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- 7. FAQs Accordion -->
                     <h2>Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
@@ -194,8 +175,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('services/service_sidebar', ['active_service' => 'transport-insurance']); ?>
             </div>

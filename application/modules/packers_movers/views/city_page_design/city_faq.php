@@ -1,4 +1,3 @@
-    <!-- FAQ Section -->
         <div class="city-content-card mt-4">
           <h3 class="city-section-title-sm"><i class="bi bi-patch-question me-2"></i>Frequently Asked Questions — Packers & Movers in <?= $city ?></h3>
           <div class="city-faq-list mt-3" id="cityFaqAccordion">

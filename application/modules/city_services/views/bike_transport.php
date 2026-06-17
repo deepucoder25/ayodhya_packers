@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Bike Transportation in ' . $city,
@@ -12,12 +10,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     <h2 class="service-section-title">Expert Bike Transportation Services in <?= $city ?></h2>
@@ -106,38 +101,30 @@ $this->load->view('template/breadcrumbs', [
                             </table>
                         </div>
                     </div>
-                    
-                    <!-- How We Process Section -->
                     <h2 class="service-section-title mt-5">Our Bike Relocation Process in <?= $city ?></h2>
                     <p class="text-muted">We follow a structured 4-step process to ensure damage-free bike delivery:</p>
                     <div class="process-timeline">
-                        <!-- Step 1 -->
                         <div class="process-step">
                             <span class="step-number">1</span>
                             <h4>Inspection &amp; Paperwork</h4>
                             <p>We document your bike's condition, note existing scratches, verify documents (RC, Insurance), and prepare a vehicle inspection report.</p>
                         </div>
-                        <!-- Step 2 -->
                         <div class="process-step">
                             <span class="step-number">2</span>
                             <h4>Multi-Layer Packing</h4>
                             <p>We wrap sensitive parts (headlights, mirrors, speedometer) with bubble wrap, cover the body with foam sheets, and lock them in place with stretch wrap.</p>
                         </div>
-                        <!-- Step 3 -->
                         <div class="process-step">
                             <span class="step-number">3</span>
                             <h4>Safe Loading &amp; Transit</h4>
                             <p>Your bike is loaded using ramps into a specialized enclosed vehicle carrier. It is anchored securely with heavy-duty safety belts to prevent movement.</p>
                         </div>
-                        <!-- Step 4 -->
                         <div class="process-step">
                             <span class="step-number">4</span>
                             <h4>Doorstep Delivery &amp; Inspection</h4>
                             <p>We deliver the bike straight to your home in the destination city. You inspect the vehicle and sign off the delivery receipt.</p>
                         </div>
                     </div>
-
-                    <!-- Why Choose Us Grid -->
                     <h2 class="service-section-title mt-5">Why Choose Us in <?= $city ?></h2>
                     <div class="why-choose-grid">
                         <div class="choose-item-card">
@@ -169,8 +156,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -190,11 +175,8 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- FAQs Accordion -->
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
-                        <!-- FAQ 1 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-1" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -207,7 +189,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 2 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-2" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -220,7 +201,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 3 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-3" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -237,8 +217,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('city_services/city_service_sidebar', ['active_service' => 'bike-transport-in-'.$ctlink]); ?>
             </div>

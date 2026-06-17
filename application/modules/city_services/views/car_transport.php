@@ -1,6 +1,4 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
-
-<!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Car Transportation in ' . $city,
@@ -12,12 +10,9 @@ $this->load->view('template/breadcrumbs', [
     ]
 ]);
 ?>
-
-<!-- Main Page Content Section -->
 <section class="service-details-section mb-5 pb-5">
     <div class="container">
         <div class="row">
-            <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
                     <h2 class="service-section-title">Precision in Car Transportation Excellence in <?= $city ?></h2>
@@ -97,38 +92,30 @@ $this->load->view('template/breadcrumbs', [
                             </table>
                         </div>
                     </div>
-                    
-                    <!-- How We Process Section -->
                     <h2 class="service-section-title mt-5">Our Car Relocation Process in <?= $city ?></h2>
                     <p class="text-muted">We execute a rigorous loading and transit process for vehicle safety:</p>
                     <div class="process-timeline">
-                        <!-- Step 1 -->
                         <div class="process-step">
                             <span class="step-number">1</span>
                             <h4>Detailed Pre-Move Audit</h4>
                             <p>We check the tires, engine oil, fuel levels, and note down all pre-existing scratches or dents on a standard car condition report.</p>
                         </div>
-                        <!-- Step 2 -->
                         <div class="process-step">
                             <span class="step-number">2</span>
                             <h4>Parts Wrapping &amp; Preparation</h4>
                             <p>We wrap key exterior components like side-view mirrors, antenna, and body spoilers with thick foam padding to prevent scratching.</p>
                         </div>
-                        <!-- Step 3 -->
                         <div class="process-step">
                             <span class="step-number">3</span>
                             <h4>Hydraulic Loading &amp; Anchoring</h4>
                             <p>The car is carefully driven onto our double-deck car carrier trailer. The wheels are locked with chocks and tied securely to the truck deck.</p>
                         </div>
-                        <!-- Step 4 -->
                         <div class="process-step">
                             <span class="step-number">4</span>
                             <h4>Safe Destination Drop-Off</h4>
                             <p>Upon arriving in the destination city, we safely unload and deliver the car to your doorstep. You verify its condition against the audit report.</p>
                         </div>
                     </div>
-
-                    <!-- Why Choose Us Grid -->
                     <h2 class="service-section-title mt-5">Why Choose Us in <?= $city ?></h2>
                     <div class="why-choose-grid">
                         <div class="choose-item-card">
@@ -160,8 +147,6 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -181,11 +166,8 @@ $this->load->view('template/breadcrumbs', [
                             </div>
                         </div>
                     </div>
-
-                    <!-- FAQs Accordion -->
                     <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
-                        <!-- FAQ 1 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-1" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -198,7 +180,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 2 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-2" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -211,7 +192,6 @@ $this->load->view('template/breadcrumbs', [
                                 </div>
                             </div>
                         </div>
-                        <!-- FAQ 3 -->
                         <div class="faq-card">
                             <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-s-3" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
@@ -228,8 +208,6 @@ $this->load->view('template/breadcrumbs', [
 
                 </div>
             </div>
-
-            <!-- Right Side Sticky Sidebar -->
             <div class="col-lg-4">
                 <?php $this->load->view('city_services/city_service_sidebar', ['active_service' => 'car-transport-in-'.$ctlink]); ?>
             </div>
