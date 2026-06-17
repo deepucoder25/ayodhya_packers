@@ -1,0 +1,714 @@
+/* Premium Styling for Service Details Module Pages */
+
+/* 1. Main Service Content Headers Override */
+.service-main-content .service-section-title,
+.service-main-content h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 26px;
+    font-weight: 850;
+    color: var(--accent-color, #2E385B);
+    line-height: 1.25;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.service-main-content .service-section-title:first-of-type,
+.service-main-content h2:first-of-type {
+    margin-top: 0;
+}
+
+/* Left vertical gradient accent line for h2 */
+.service-main-content .service-section-title::before,
+.service-main-content h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 2px;
+}
+
+/* Main images styling inside content */
+.service-main-content img {
+    border-radius: 18px !important;
+    border: 1px solid rgba(46, 56, 91, 0.06);
+    box-shadow: 0 6px 20px rgba(46, 56, 91, 0.02) !important;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+    margin-top: 20px !important;
+    margin-bottom: 24px !important;
+}
+
+.service-main-content img:hover {
+    transform: scale(1.008);
+    box-shadow: 0 12px 30px rgba(46, 56, 91, 0.05) !important;
+}
+
+/* 2. Process Timeline Timeline Mappings */
+.service-main-content .process-timeline {
+    position: relative;
+    padding-left: 36px;
+    margin-top: 32px;
+}
+
+/* Timeline Vertical Line */
+.service-main-content .process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    bottom: 10px;
+    width: 2.5px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--tertiary-color) 100%);
+    border-radius: 2px;
+}
+
+.service-main-content .process-step {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.service-main-content .process-step:last-of-type {
+    margin-bottom: 0;
+}
+
+.service-main-content .process-step .step-number {
+    position: absolute;
+    left: -36px;
+    top: 2px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2.5px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 15px;
+    font-weight: 750;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(46, 56, 91, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Different color variations for timeline steps */
+.service-main-content .process-step:nth-child(1) .step-number {
+    border-color: var(--primary-color);
+    color: var(--primary-color);
+}
+.service-main-content .process-step:nth-child(2) .step-number {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+.service-main-content .process-step:nth-child(3) .step-number {
+    border-color: var(--success-color);
+    color: var(--success-color);
+}
+.service-main-content .process-step:nth-child(4) .step-number {
+    border-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+}
+
+.service-main-content .process-step:hover .step-number {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 152, 219, 0.15);
+}
+
+.service-main-content .process-step h4 {
+    margin-top: 0 !important;
+    margin-bottom: 6px !important;
+}
+
+.service-main-content .process-step p {
+    font-size: 14.5px !important;
+    margin: 0 !important;
+}
+
+/* 3. Why Choose Us Grid */
+.why-choose-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+@media (max-width: 767.98px) {
+    .why-choose-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.choose-item-card {
+    background: #ffffff;
+    border: 1px solid rgba(46, 56, 91, 0.05);
+    border-radius: 20px;
+    padding: 24px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.005);
+}
+
+.choose-item-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 152, 219, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 152, 219, 0.05);
+}
+
+.choose-item-card .choose-icon-wrap {
+    width: 48px;
+    height: 48px;
+    border-radius: 14px;
+    background: rgba(0, 152, 219, 0.06);
+    color: var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 22px;
+    flex-shrink: 0;
+    border: 1px solid rgba(0, 152, 219, 0.1);
+    transition: all 0.3s ease;
+}
+
+.choose-item-card:hover .choose-icon-wrap {
+    background: var(--primary-color);
+    color: #ffffff;
+    transform: scale(1.1) rotate(-6deg);
+}
+
+/* Alternate colors for the icon wrappers */
+.choose-item-card:nth-child(2) .choose-icon-wrap {
+    background: rgba(235, 38, 143, 0.06);
+    color: var(--secondary-color);
+    border-color: rgba(235, 38, 143, 0.1);
+}
+.choose-item-card:nth-child(2):hover .choose-icon-wrap {
+    background: var(--secondary-color);
+    color: #ffffff;
+}
+
+.choose-item-card:nth-child(3) .choose-icon-wrap {
+    background: rgba(34, 197, 94, 0.06);
+    color: var(--success-color);
+    border-color: rgba(34, 197, 94, 0.1);
+}
+.choose-item-card:nth-child(3):hover .choose-icon-wrap {
+    background: var(--success-color);
+    color: #ffffff;
+}
+
+.choose-item-card:nth-child(4) .choose-icon-wrap {
+    background: rgba(169, 207, 70, 0.06);
+    color: var(--tertiary-color);
+    border-color: rgba(169, 207, 70, 0.1);
+}
+.choose-item-card:nth-child(4):hover .choose-icon-wrap {
+    background: var(--tertiary-color);
+    color: #ffffff;
+}
+
+.choose-item-card .choose-content h5 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+    font-weight: 750;
+    color: var(--accent-color, #2E385B);
+    margin: 0 0 6px 0 !important;
+}
+
+.choose-item-card .choose-content p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    color: #64748b !important;
+    margin: 0 !important;
+}
+
+/* 4. Client Review Slice */
+.service-reviews-slice {
+    position: relative;
+    background: rgba(0, 152, 219, 0.015);
+    border: 1px solid rgba(46, 56, 91, 0.04);
+    border-left: 5px solid var(--primary-color);
+    border-radius: 20px;
+    padding: 32px !important;
+    margin-top: 36px;
+    margin-bottom: 36px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-reviews-slice:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 25px rgba(0, 152, 219, 0.03);
+    border-color: rgba(0, 152, 219, 0.1);
+}
+
+/* Quotation Mark Watermark */
+.service-reviews-slice::after {
+    content: "“";
+    position: absolute;
+    top: 15px;
+    right: 25px;
+    font-size: 110px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    color: rgba(46, 56, 91, 0.025);
+    pointer-events: none;
+    line-height: 0.8;
+    transition: all 0.4s ease;
+}
+
+.service-reviews-slice:hover::after {
+    color: rgba(0, 152, 219, 0.04);
+    transform: scale(1.08) rotate(-5deg);
+}
+
+.service-reviews-slice .rating-row {
+    margin-bottom: 16px;
+}
+
+.service-reviews-slice .rating-row i {
+    color: #fbbf24 !important; /* Gold star */
+    font-size: 15px;
+    margin-right: 3px;
+}
+
+.service-reviews-slice .review-text {
+    font-size: 14.5px !important;
+    line-height: 1.65 !important;
+    color: #4b5563 !important;
+    font-style: italic;
+    margin-bottom: 20px !important;
+    font-weight: 500;
+}
+
+.service-reviews-slice .review-user {
+    display: flex;
+    align-items: center;
+    gap: 14px;
+}
+
+.service-reviews-slice .review-user .user-avatar {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    box-shadow: 0 4px 10px rgba(0, 152, 219, 0.15);
+}
+
+.service-reviews-slice .review-user .user-name h6 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14.5px;
+    font-weight: 700;
+    color: var(--accent-color, #2E385B);
+    margin: 0 0 2px 0 !important;
+}
+
+.service-reviews-slice .review-user .user-name span {
+    font-size: 12px;
+    color: #94a3b8;
+    display: block;
+}
+
+/* 5. FAQs Accordion Container */
+.service-faq-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 24px;
+}
+
+.service-faq-container .faq-card {
+    border: 1px solid rgba(46, 56, 91, 0.06) !important;
+    border-radius: 16px !important;
+    background: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-faq-container .faq-card:hover {
+    border-color: rgba(0, 152, 219, 0.15) !important;
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.02);
+}
+
+.service-faq-container .faq-card:has(.faq-card-header:not(.collapsed)) {
+    border-color: rgba(0, 152, 219, 0.25) !important;
+    box-shadow: 0 8px 20px rgba(0, 152, 219, 0.05);
+}
+
+.service-faq-container .faq-card-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 18px 24px !important;
+    background: #ffffff;
+    border: none !important;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent-color, #2E385B) !important;
+    transition: all 0.3s ease;
+    gap: 14px;
+    cursor: pointer;
+}
+
+.service-faq-container .faq-card-header:not(.collapsed) {
+    color: var(--primary-color, #0098DB) !important;
+    background: rgba(0, 152, 219, 0.02) !important;
+    border-bottom: 1px solid rgba(46, 56, 91, 0.04) !important;
+}
+
+.service-faq-container .faq-card-icon {
+    font-size: 18px;
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.service-faq-container .faq-card-header:not(.collapsed) .faq-card-icon {
+    color: var(--secondary-color);
+}
+
+.service-faq-container .faq-card-body {
+    padding: 20px 24px !important;
+    font-size: 14.5px !important;
+    line-height: 1.6 !important;
+    color: #556080 !important;
+    background: #ffffff;
+}
+
+/* Toggle Icon styling */
+.service-faq-container .faq-toggle-icon {
+    font-size: 18px;
+    color: #94a3b8;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+    margin-left: auto;
+}
+
+.service-faq-container .faq-card-header:not(.collapsed) .faq-toggle-icon {
+    transform: rotate(45deg);
+    color: var(--primary-color, #0098DB);
+}
+
+/* Unique Design Section 6: Hero Banner Cover */
+.service-hero-cover {
+    position: relative;
+    border-radius: 24px;
+    overflow: hidden;
+    margin-bottom: 28px;
+    box-shadow: 0 8px 24px rgba(46, 56, 91, 0.04);
+}
+
+.service-hero-cover img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    display: block;
+    margin: 0 !important; /* Reset margin */
+    transition: transform 0.8s ease;
+}
+
+.service-hero-cover:hover img {
+    transform: scale(1.03);
+}
+
+.service-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(to top, rgba(13, 27, 62, 0.4) 0%, rgba(13, 27, 62, 0) 100%);
+    pointer-events: none;
+}
+
+.service-hero-badge {
+    position: absolute;
+    bottom: 20px;
+    left: 20px;
+    background: rgba(13, 27, 62, 0.85);
+    backdrop-filter: blur(10px);
+    color: #ffffff;
+    font-family: 'Outfit', sans-serif;
+    font-size: 13.5px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+    text-transform: uppercase;
+    padding: 8px 16px;
+    border-radius: 12px;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Unique Design Section 7: Highlights Row */
+.service-highlights-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 16px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 575.98px) {
+    .service-highlights-row {
+        flex-direction: column;
+    }
+}
+
+.service-highlight-badge {
+    flex: 1;
+    background: rgba(0, 152, 219, 0.02);
+    border: 1px solid rgba(0, 152, 219, 0.08);
+    border-radius: 16px;
+    padding: 16px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.service-highlight-badge:hover {
+    background: #ffffff;
+    border-color: rgba(0, 152, 219, 0.18);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 18px rgba(0, 152, 219, 0.04);
+}
+
+.service-highlight-badge i {
+    font-size: 20px;
+    color: var(--primary-color);
+    margin-bottom: 6px;
+    display: inline-block;
+}
+
+.service-highlight-badge:nth-child(2) i {
+    color: var(--secondary-color);
+}
+.service-highlight-badge:nth-child(2) {
+    background: rgba(235, 38, 143, 0.02);
+    border-color: rgba(235, 38, 143, 0.08);
+}
+.service-highlight-badge:nth-child(2):hover {
+    border-color: rgba(235, 38, 143, 0.18);
+    box-shadow: 0 6px 18px rgba(235, 38, 143, 0.04);
+}
+
+.service-highlight-badge:nth-child(3) i {
+    color: var(--success-color);
+}
+.service-highlight-badge:nth-child(3) {
+    background: rgba(34, 197, 94, 0.02);
+    border-color: rgba(34, 197, 94, 0.08);
+}
+.service-highlight-badge:nth-child(3):hover {
+    border-color: rgba(34, 197, 94, 0.18);
+    box-shadow: 0 6px 18px rgba(34, 197, 94, 0.04);
+}
+
+.service-highlight-badge h5,
+.service-highlight-badge .highlight-val {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin: 0 0 2px 0 !important;
+    display: block;
+}
+
+.service-highlight-badge p {
+    font-size: 11.5px !important;
+    text-transform: uppercase;
+    font-weight: 700;
+    letter-spacing: 0.5px;
+    color: #64748b !important;
+    margin: 0 !important;
+}
+
+/* Unique Design Section 8: Comparison Box */
+.service-comparison-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 28px;
+    margin-bottom: 36px;
+}
+
+@media (max-width: 767.98px) {
+    .service-comparison-box {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+.service-comparison-col {
+    background: #ffffff;
+    border: 1px solid rgba(46, 56, 91, 0.05);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.005);
+}
+
+.service-comparison-col.premium-standard {
+    border-left: 5px solid var(--success-color);
+    background: rgba(34, 197, 94, 0.005);
+}
+
+.service-comparison-col.local-standard {
+    border-left: 5px solid #ef4444;
+    background: rgba(239, 68, 68, 0.005);
+}
+
+.service-comparison-col h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    margin-top: 0 !important;
+    margin-bottom: 18px !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.service-comparison-col.premium-standard h4 {
+    color: var(--success-color);
+}
+
+.service-comparison-col.local-standard h4 {
+    color: #ef4444;
+}
+
+.service-comparison-col ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 !important;
+}
+
+.service-comparison-col ul li {
+    position: relative;
+    padding-left: 28px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 12px;
+}
+
+.service-comparison-col ul li:last-child {
+    margin-bottom: 0;
+}
+
+.service-comparison-col.premium-standard ul li::before {
+    content: "\F272"; /* bi-check-circle-fill */
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--success-color);
+    font-size: 15px;
+}
+
+.service-comparison-col.local-standard ul li::before {
+    content: "\F5C2"; /* bi-x-circle-fill */
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: #ef4444;
+    font-size: 15px;
+}
+
+/* Unique Design Section 9: Safety Notice Permitted vs Prohibited */
+.service-safety-notice-box {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 24px;
+    margin-top: 28px;
+    margin-bottom: 36px;
+}
+
+@media (max-width: 767.98px) {
+    .service-safety-notice-box {
+        grid-template-columns: 1fr;
+        gap: 16px;
+    }
+}
+
+.service-safety-col {
+    background: #ffffff;
+    border: 1px solid rgba(46, 56, 91, 0.05);
+    border-radius: 20px;
+    padding: 24px;
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.005);
+}
+
+.service-safety-col.safety-yes {
+    border-top: 4px solid var(--primary-color);
+}
+
+.service-safety-col.safety-no {
+    border-top: 4px solid var(--secondary-color);
+}
+
+.service-safety-col h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+    font-weight: 800;
+    color: var(--accent-color);
+    margin-top: 0 !important;
+    margin-bottom: 16px !important;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.service-safety-col ul {
+    list-style: none;
+    padding-left: 0;
+    margin: 0 !important;
+}
+
+.service-safety-col ul li {
+    position: relative;
+    padding-left: 28px;
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 10px;
+}
+
+.service-safety-col ul li:last-child {
+    margin-bottom: 0;
+}
+
+.service-safety-col.safety-yes ul li::before {
+    content: "\F26E"; /* bi-check */
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    color: var(--primary-color);
+    font-size: 18px;
+    font-weight: bold;
+}
+
+.service-safety-col.safety-no ul li::before {
+    content: "\F659"; /* bi-x */
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    left: 0;
+    top: -1px;
+    color: var(--secondary-color);
+    font-size: 18px;
+    font-weight: bold;
+}

@@ -4,7 +4,7 @@
 <?php
 $this->load->view('template/breadcrumbs', [
     'title' => 'Warehousing & Storage',
-    'description' => 'Safe, secure, and clean storage warehouses for household items and corporate inventory, featuring 24/7 monitoring and fire safety protection.',
+    'description' => 'Secure and clean household and business storage services. Features 24/7 CCTV monitoring and flexible short/long-term storage.',
     'breadcrumbs' => [
         ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
         ['label' => 'Services', 'url' => site_url('our-services'), 'icon' => 'bi bi-truck'],
@@ -20,80 +20,117 @@ $this->load->view('template/breadcrumbs', [
             <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Clean, Secure & pest-Controlled Storage Warehouses</h2>
-                    <div class="about-service-text">
-                        <p>
-                            At <strong><?= $company3 ?></strong>, we offer spacious and secure warehousing solutions for individuals, families, and businesses. Whether you are traveling abroad for a few months, renovating your home, or need extra space for your business inventory, our storage units are ideal.
-                        </p>
-                        <p>
-                            Our warehouses are clean, moisture-free, and undergo regular pest control treatments. We provide wooden pallets to keep your cardboard boxes and furniture off the floor, protecting them against dampness.
-                        </p>
-                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/warehouse-storage-services.jpg') ?>" alt="warehouse storage services" class="img-fluid rounded my-3 w-100">
-                        <p>
-                            We maintain a detailed inventory list and label all stored items systematically, ensuring that retrieving your goods is simple and fast whenever you require them.
-                        </p>
+                    
+                    <!-- 1. Hero Cover -->
+                    <div class="service-hero-cover">
+                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/warehouse-storage.jpg') ?>" alt="Warehousing & Storage - <?= $company3 ?>">
+                        <div class="service-hero-overlay"></div>
+                        <span class="service-hero-badge">24/7 Monitored Storage</span>
                     </div>
 
-                    <!-- How We Process Section -->
-                    <h2 class="service-section-title mt-5">Our Storage Process</h2>
-                    <p class="text-muted">How we store your items securely at our warehouse:</p>
+                    <!-- 2. Highlights Row -->
+                    <div class="service-highlights-row">
+                        <div class="service-highlight-badge">
+                            <i class="bi bi-camera-video-fill"></i>
+                            <span class="highlight-val">24/7</span>
+                            <p>CCTV Monitored</p>
+                        </div>
+                        <div class="service-highlight-badge">
+                            <i class="bi bi-bug-fill"></i>
+                            <span class="highlight-val">Pest</span>
+                            <p>Controlled Space</p>
+                        </div>
+                        <div class="service-highlight-badge">
+                            <i class="bi bi-calendar3"></i>
+                            <span class="highlight-val">Flexible</span>
+                            <p>Short &amp; Long Term</p>
+                        </div>
+                    </div>
+
+                    <h2>Secure, Clean &amp; Climate-Controlled Warehouses</h2>
+                    <p class="lead">
+                        At <strong><?= $company3 ?></strong>, we provide secure and clean warehousing facilities to store your household goods or business inventory. Whether you need short-term storage during a home renovation or long-term storage during an overseas assignment, we have the right solutions.
+                    </p>
+                    <p>
+                        Our warehouses are equipped with CCTV surveillance cameras, fire prevention systems, and 24/7 security guards. We perform regular pest control treatments and maintain clean, dry conditions to protect your goods from moisture and dust.
+                    </p>
+
+                    <!-- 3. Shifting Comparison Grid -->
+                    <h2>How We Compare to Competitors</h2>
+                    <p>Our secure warehousing solutions keep your goods safe for any duration:</p>
+                    
+                    <div class="service-comparison-box">
+                        <div class="service-comparison-col premium-standard">
+                            <h4><i class="bi bi-check-circle-fill"></i> Our Shifting Standards</h4>
+                            <ul>
+                                <li>Clean, dry, and moisture-controlled spaces.</li>
+                                <li>Regular pest control treatments.</li>
+                                <li>24/7 CCTV cameras and security guards.</li>
+                                <li>Barcoded inventory tracking for easy retrieval.</li>
+                            </ul>
+                        </div>
+                        <div class="service-comparison-col local-standard">
+                            <h4><i class="bi bi-x-circle-fill"></i> Local Transporters</h4>
+                            <ul>
+                                <li>Damp, unventilated spaces or open yards.</li>
+                                <li>No pest control, risking termite damage.</li>
+                                <li>No security cameras or gate logs.</li>
+                                <li>Random piling of goods with no tracking.</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 4. Core Process Cards Timeline -->
+                    <h2>Our Secure Storage Process</h2>
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Inventory Pickup</h4>
-                            <p>Our team packs and picks up your household goods from your home, preparing a detailed inventory list signed by both parties.</p>
+                            <h4>Inventory Packing</h4>
+                            <p>We pack your items in heavy-duty cardboard boxes, wrapping furniture in stretch wrap to prepare them for long-term storage.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Warehouse Loading</h4>
-                            <p>Upon reaching our warehouse, items are transferred onto raised wooden pallets to prevent contact with moisture.</p>
+                            <h4>Safe Transport</h4>
+                            <p>We load your belongings onto our enclosed container truck and transport them securely to our warehouse facility.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Constant Monitoring</h4>
-                            <p>Your goods are stored safely in a 24/7 CCTV-monitored facility under the supervision of security staff.</p>
+                            <h4>Allocated Storage</h4>
+                            <p>Your items are placed in an allocated, clean storage space, catalogued under your unique customer ID.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Safe Redelivery</h4>
-                            <p>Whenever you request redelivery, we load the items from our warehouse and transport them directly to your new address.</p>
+                            <h4>On-Demand Delivery</h4>
+                            <p>When you are ready, notify us. We retrieve your items, load them, and deliver them directly to your new address.</p>
                         </div>
                     </div>
 
-                    <!-- Why Choose Us Grid -->
-                    <h2 class="service-section-title mt-5">Why Choose Us</h2>
-                    <div class="why-choose-grid">
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-camera-video-fill"></i></div>
-                            <div class="choose-content">
-                                <h5>24/7 Security CCTV</h5>
-                                <p>Constant security guards and video cameras monitor all storage rooms.</p>
-                            </div>
+                    <!-- 5. Permitted vs Prohibited Checklist -->
+                    <h2>Storage Safety Guidelines</h2>
+                    <p>Please review which items are accepted for storage at our facilities:</p>
+                    
+                    <div class="service-safety-notice-box">
+                        <div class="service-safety-col safety-yes">
+                            <h4><i class="bi bi-check"></i> Accepted for Storage</h4>
+                            <ul>
+                                <li>Beds, sofas, dining tables, and wardrobes.</li>
+                                <li>TVs, refrigerators, and washing machines.</li>
+                                <li>Boxed books, clothes, and kitchenware.</li>
+                                <li>Office furniture and document archives.</li>
+                            </ul>
                         </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-bug-fill"></i></div>
-                            <div class="choose-content">
-                                <h5>Pest & Termite Controlled</h5>
-                                <p>Routine spraying and cleanliness ensure your wooden furniture is safe.</p>
-                            </div>
-                        </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-calendar3"></i></div>
-                            <div class="choose-content">
-                                <h5>Flexible Storage Duration</h5>
-                                <p>Store items for as short as 1 month or for several years as needed.</p>
-                            </div>
-                        </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-shield-check"></i></div>
-                            <div class="choose-content">
-                                <h5>Insurance Valuation</h5>
-                                <p>We offer full coverage options to protect against storage risks.</p>
-                            </div>
+                        <div class="service-safety-col safety-no">
+                            <h4><i class="bi bi-x"></i> Prohibited Items</h4>
+                            <ul>
+                                <li>Perishable foods, fruits, or open liquids.</li>
+                                <li>Flammable fuels, gas cans, or chemicals.</li>
+                                <li>Illegal goods or hazardous materials.</li>
+                                <li>Pets, birds, or live plants.</li>
+                            </ul>
                         </div>
                     </div>
 
-                    <!-- Client Review Slice -->
+                    <!-- 6. Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -103,53 +140,53 @@ $this->load->view('template/breadcrumbs', [
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <p class="review-text">
-                            "I stored my complete household goods for 6 months with Ayodhya Packers while relocating on a short project. When I received my items back, they were completely clean, dust-free, and in perfect shape. Reliable storage service!"
+                            "We stored our home furniture with Ayodhya Packers for 3 months during our home renovation. When we received the furniture back, everything was clean, dry, and in perfect condition. Their warehouse security is top-notch!"
                         </p>
                         <div class="review-user">
                             <div class="user-avatar">A</div>
                             <div class="user-name">
-                                <h6>Animesh Banerjee</h6>
-                                <span>Durgapur, West Bengal</span>
+                                <h6>Amit Shah</h6>
+                                <span>Delhi, NCR</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- FAQs Accordion -->
-                    <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
+                    <!-- 7. FAQs Accordion -->
+                    <h2>Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ws-1" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ws-1" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
                                 <span class="flex-grow-1">How secure is the storage warehouse?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-ws-1" class="collapse">
+                            <div id="faq-ws-1" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    Our warehouse is fully secure, equipped with round-the-clock CCTV cameras, digital security access logs, security guards, and fire extinguisher installations.
+                                    Our warehouses feature 24/7 CCTV surveillance, fire prevention systems, double-lock gates, and security guards to keep your goods safe.
                                 </div>
                             </div>
                         </div>
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ws-2" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ws-2" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
                                 <span class="flex-grow-1">What is the minimum storage duration?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-ws-2" class="collapse">
+                            <div id="faq-ws-2" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    We offer storage solutions starting from a minimum duration of 1 month, with monthly extensions available as per your convenience.
+                                    We offer flexible options with no lock-in periods. You can store your goods for as little as 1 week up to several months or years.
                                 </div>
                             </div>
                         </div>
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ws-3" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-ws-3" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">Can I visit the warehouse to check on my items?</span>
+                                <span class="flex-grow-1">Can I access my stored items during the storage period?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-ws-3" class="collapse">
+                            <div id="faq-ws-3" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    Yes. Customers are welcome to visit our warehouse during business hours with a 24-hour prior notice to check on their stored inventory.
+                                    Yes. You can access your stored items during business hours by notifying us 24 to 48 hours in advance, allowing our staff to assist you.
                                 </div>
                             </div>
                         </div>

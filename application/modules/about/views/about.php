@@ -21,7 +21,7 @@ $this->load->view('template/breadcrumbs', [
                 <div class="service-main-content">
                     
                     <!-- Top Page Banner Cover -->
-                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img1.jpg') ?>" alt="About <?= $company3 ?>" class="about-banner-img">
+                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img7.jpg') ?>" alt="About <?= $company3 ?>" class="about-banner-img">
 
                     <h2>India's Leading Packers &amp; Movers</h2>
                     <p>

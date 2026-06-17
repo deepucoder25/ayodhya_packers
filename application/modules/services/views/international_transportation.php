@@ -3,12 +3,12 @@
 <!-- Breadcrumbs Section -->
 <?php
 $this->load->view('template/breadcrumbs', [
-    'title' => 'International Transportation',
-    'description' => 'Hassle-free overseas moving and international cargo shifting with secure sea & air freight, custom clearances, and door delivery globally.',
+    'title' => 'International Shifting',
+    'description' => 'Global overseas relocation services by specialized sea container shipping and air cargo logistics, managed with comprehensive customs clearance support.',
     'breadcrumbs' => [
         ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
         ['label' => 'Services', 'url' => site_url('our-services'), 'icon' => 'bi bi-truck'],
-        ['label' => 'International Transportation']
+        ['label' => 'International Shifting']
     ]
 ]);
 ?>
@@ -20,80 +20,117 @@ $this->load->view('template/breadcrumbs', [
             <!-- Left Side Content -->
             <div class="col-lg-8">
                 <div class="service-main-content">
-                    <h2 class="service-section-title">Professional Overseas Relocation & Global Logistics</h2>
-                    <div class="about-service-text">
-                        <p>
-                            At <strong><?= $company3 ?></strong>, we specialize in providing end-to-end international shifting and relocation services. Relocating to a new country involves multiple complex procedures — from export-quality packaging and container loading to port handling, marine insurance, and customs clearance.
-                        </p>
-                        <p>
-                            We partner with top global logistics networks to offer sea freight (Full Container Load / Less than Container Load) and air cargo services. Our international shifting experts prepare all shipping bills, declarations, and customs documents on your behalf.
-                        </p>
-                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/warehouse-storage-services.jpg') ?>" alt="international shifting services" class="img-fluid rounded my-3 w-100">
-                        <p>
-                            We use heavy-duty, export-grade packing materials, including wooden crates, customized pallets, and multi-layer bubble wrapping, to protect your items against moisture and sea turbulence.
-                        </p>
+                    
+                    <!-- 1. Hero Cover -->
+                    <div class="service-hero-cover">
+                        <img loading="lazy" src="<?= base_url('assets/images/services_modules/international-moving.jpg') ?>" alt="International Shifting - <?= $company3 ?>">
+                        <div class="service-hero-overlay"></div>
+                        <span class="service-hero-badge">Global Relocation Partner</span>
                     </div>
 
-                    <!-- How We Process Section -->
-                    <h2 class="service-section-title mt-5">Our International Transportation Process</h2>
-                    <p class="text-muted">How we manage your international relocation smoothly:</p>
+                    <!-- 2. Highlights Row -->
+                    <div class="service-highlights-row">
+                        <div class="service-highlight-badge">
+                            <i class="bi bi-globe"></i>
+                            <span class="highlight-val">80+</span>
+                            <p>Countries Served</p>
+                        </div>
+                        <div class="service-highlight-badge">
+                            <i class="bi bi-file-earmark-text"></i>
+                            <span class="highlight-val">Customs</span>
+                            <p>Clearance Support</p>
+                        </div>
+                        <div class="service-highlight-badge">
+                            <i class="bi bi-ship-cargo"></i>
+                            <span class="highlight-val">Sea/Air</span>
+                            <p>Cargo Logistics</p>
+                        </div>
+                    </div>
+
+                    <h2>Seamless International Shifting &amp; Sea Cargo Services</h2>
+                    <p class="lead">
+                        At <strong><?= $company3 ?></strong>, we take the complexity out of moving across borders. Relocating to a new country involves navigating international shipping laws, organizing sea cargo container space, managing air freight for immediate assets, and clearing customs paperwork.
+                    </p>
+                    <p>
+                        We operate in partnership with leading global shipping lines and international logistics networks to deliver a smooth, door-to-door relocation service. We handle the paperwork, export-grade wooden crating, and terminal handling to protect your goods at every step.
+                    </p>
+
+                    <!-- 3. Shifting Comparison Grid -->
+                    <h2>How We Compare to Competitors</h2>
+                    <p>Moving overseas requires specialized packing and customs coordination that standard shippers cannot offer:</p>
+                    
+                    <div class="service-comparison-box">
+                        <div class="service-comparison-col premium-standard">
+                            <h4><i class="bi bi-check-circle-fill"></i> Our Shifting Standards</h4>
+                            <ul>
+                                <li>Export-grade wooden crates and moisture barriers.</li>
+                                <li>Full container (FCL) &amp; shared container (LCL) options.</li>
+                                <li>End-to-end customs clearance handling and filing.</li>
+                                <li>Door-to-door delivery with international partner networks.</li>
+                            </ul>
+                        </div>
+                        <div class="service-comparison-col local-standard">
+                            <h4><i class="bi bi-x-circle-fill"></i> Local Transporters</h4>
+                            <ul>
+                                <li>Standard cardboard boxes with minimal wrapping.</li>
+                                <li>Standard freight options without consolidation.</li>
+                                <li>No assistance with international customs clearance.</li>
+                                <li>Port-to-port delivery only (leaving you to organize unloading).</li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <!-- 4. Core Process Cards Timeline -->
+                    <h2>Our International Relocation Process</h2>
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
-                            <h4>Customs Planning & Survey</h4>
-                            <p>We assess your household items, plan the appropriate shipping container size, and guide you through country-specific customs guidelines.</p>
+                            <h4>Global Audit &amp; Plan</h4>
+                            <p>We assess the volume of your goods, select between sea and air cargo options, and review the customs regulations of the destination country.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
-                            <h4>Export-Quality Packing</h4>
-                            <p>Our team packs your items in heavy-duty cardboard cartons, constructs custom wooden crates for fragile goods, and loads pallets.</p>
+                            <h4>Export-Grade Packing</h4>
+                            <p>Our specialists wrap items in anti-moisture material, build reinforced wooden crates for fragile goods, and catalog a detailed export inventory list.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
-                            <h4>Port Customs Clearance</h4>
-                            <p>We manage all port logistics, custom documentation checks, marine insurance paperwork, and load your goods onto cargo vessels or flights.</p>
+                            <h4>Customs &amp; Shipping</h4>
+                            <p>We transport your items to the port, manage custom documentation clearance, and load them onto the container ship or cargo plane.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
-                            <h4>Destination Delivery</h4>
-                            <p>Our international destination partners handle customs clearance at the destination port, transport the goods, and deliver them to your door.</p>
+                            <h4>Overseas Delivery</h4>
+                            <p>Our global delivery partner manages customs clearance at the destination port and delivers your goods safely to your new international home.</p>
                         </div>
                     </div>
 
-                    <!-- Why Choose Us Grid -->
-                    <h2 class="service-section-title mt-5">Why Choose Us</h2>
-                    <div class="why-choose-grid">
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-file-earmark-lock-fill"></i></div>
-                            <div class="choose-content">
-                                <h5>Customs Documentation Handling</h5>
-                                <p>Complete handling of import/export declarations, forms, and duties.</p>
-                            </div>
+                    <!-- 5. Permitted vs Prohibited Checklist -->
+                    <h2>International Shifting Safety Guidelines</h2>
+                    <p>Ensure you comply with international cargo shipping regulations:</p>
+                    
+                    <div class="service-safety-notice-box">
+                        <div class="service-safety-col safety-yes">
+                            <h4><i class="bi bi-check"></i> Acceptable Items</h4>
+                            <ul>
+                                <li>Household furniture and room fixtures.</li>
+                                <li>Clothes, books, and kitchenware.</li>
+                                <li>Standard non-hazardous electrical appliances.</li>
+                                <li>Items with valid purchase receipts.</li>
+                            </ul>
                         </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-box-fill"></i></div>
-                            <div class="choose-content">
-                                <h5>Export-Quality Packing</h5>
-                                <p>Thick wooden crates, heavy-duty pallets, and moisture-resistant wrap.</p>
-                            </div>
-                        </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-ship"></i></div>
-                            <div class="choose-content">
-                                <h5>Sea & Air Cargo Options</h5>
-                                <p>Choose sea freight for budget moves or air freight for express deliveries.</p>
-                            </div>
-                        </div>
-                        <div class="choose-item-card">
-                            <div class="choose-icon-wrap"><i class="bi bi-globe-americas"></i></div>
-                            <div class="choose-content">
-                                <h5>Trusted Global Partners</h5>
-                                <p>Partners in over 150 countries handle local logistics and final delivery.</p>
-                            </div>
+                        <div class="service-safety-col safety-no">
+                            <h4><i class="bi bi-x"></i> Prohibited Items</h4>
+                            <ul>
+                                <li>Seeds, plants, soil, or organic agricultural goods.</li>
+                                <li>Unsealed liquids, chemicals, or aerosols.</li>
+                                <li>Firearms, ammunition, or fireworks.</li>
+                                <li>Precious metals, cash, and high-value legal documents.</li>
+                            </ul>
                         </div>
                     </div>
 
-                    <!-- Client Review Slice -->
+                    <!-- 6. Client Review Slice -->
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -103,53 +140,53 @@ $this->load->view('template/breadcrumbs', [
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <p class="review-text">
-                            "Shifting my household goods from Kolkata to London was a massive task. Ayodhya Packers handled all customs clearances and paperwork beautifully. The wooden crating for my glass items was great. Not a single break!"
+                            "We relocated our entire household from India to the UK. Ayodhya Packers handled the heavy wooden crating, container loading, and customs documentation perfectly. Our items arrived at our doorstep in London without a scratch!"
                         </p>
                         <div class="review-user">
-                            <div class="user-avatar">V</div>
+                            <div class="user-avatar">S</div>
                             <div class="user-name">
-                                <h6>Vikram Malhotra</h6>
+                                <h6>Sanjay Sen</h6>
                                 <span>Kolkata, West Bengal</span>
                             </div>
                         </div>
                     </div>
 
-                    <!-- FAQs Accordion -->
-                    <h2 class="service-section-title mt-5">Frequently Asked Questions</h2>
+                    <!-- 7. FAQs Accordion -->
+                    <h2>Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-it-1" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-it-1" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">Do you handle customs clearance at both ports?</span>
+                                <span class="flex-grow-1">How long does international sea shipping take?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-it-1" class="collapse">
+                            <div id="faq-it-1" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    Yes. We manage customs documentation and export clearance at the origin port in India, and our destination partner manages clearance at the destination port.
+                                    Depending on the destination country, sea freight transit generally ranges from 30 to 60 days, while air freight takes about 5 to 10 days.
                                 </div>
                             </div>
                         </div>
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-it-2" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-it-2" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">How long does international sea freight shipping take?</span>
+                                <span class="flex-grow-1">Do you handle customs clearance at the destination port?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-it-2" class="collapse">
+                            <div id="faq-it-2" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    Sea freight usually takes between 30 to 60 days depending on the destination port, sailing schedules, and customs clearance procedures. Air cargo takes 5 to 12 days.
+                                    Yes. Through our international network of moving partners, we coordinate customs documentation, clearance, and port handling at both origin and destination.
                                 </div>
                             </div>
                         </div>
                         <div class="faq-card">
-                            <div class="faq-card-header d-flex align-items-center collapsed" data-bs-toggle="collapse" data-bs-target="#faq-it-3" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-it-3" aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
-                                <span class="flex-grow-1">What items are prohibited in international household shipments?</span>
+                                <span class="flex-grow-1">What is the difference between FCL and LCL container shipping?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
-                            <div id="faq-it-3" class="collapse">
+                            <div id="faq-it-3" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    Perishable food items, plants, seeds, liquids, gases, aerosol cans, flammable liquids, weapons, drugs, and cash are strictly prohibited in international shipments.
+                                    FCL (Full Container Load) means you book an entire container for your goods only, while LCL (Less than Container Load) means your goods share container space with other cargo, which is more cost-effective for smaller volumes.
                                 </div>
                             </div>
                         </div>
