@@ -1,13 +1,13 @@
 <div class="modal fade container custom-modal" id="rvwmdl" tabindex="-1" role="dialog" aria-labelledby="rvwmdl" aria-hidden="true">
     <div class="modal-dialog" role="document">
-        <div class="modal-content p-3" class="reviews-modal-content">
+        <div class="modal-content p-3 reviews-modal-content">
             <div class="contact-form-header">
                 <div class="row">
                     <div class="col-10">
                         <span class="reviews-modal-title">Leave us Feedback, Suggestion, or Complaints</span>
                     </div>
                     <div class="col-2 text-end">
-                        <button type="button" class="close" data-bs-dismiss="modal" aria-label="Close" class="reviews-modal-close">
+                        <button type="button" class="close reviews-modal-close" data-bs-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true"><i class="bi bi-x-lg"></i></span>
                         </button>
                     </div>
@@ -62,13 +62,13 @@
                     <div class="col-12">
                         <div class="form-group">
                             <label for="image" class="form-label text-white">Add Image <small>(optional)</small></label>
-                            <input type="file" name="img" class="form-control-file" class="reviews-modal-file" id="image">
+                            <input type="file" name="img" class="form-control-file reviews-modal-file" id="image">
                         </div>
                     </div>
                     <div class="col-12 text-center">
                         <div id="result"></div>
-                        <button id="submitbtn" type="submit" class="theme-btn" class="reviews-modal-submit">Submit<i class="bi bi-send"></i></button>
-                        <button onclick="$('#result').html('');" type="reset"  class="theme-btn" class="reviews-modal-clear">Clear <i class="bi bi-trash"></i></button>
+                        <button id="submitbtn" type="submit" class="theme-btn reviews-modal-submit">Submit<i class="bi bi-send"></i></button>
+                        <button onclick="$('#result').html('');" type="reset"  class="theme-btn reviews-modal-clear">Clear <i class="bi bi-trash"></i></button>
                     </div>
                 </div>
             </form>

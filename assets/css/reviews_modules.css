@@ -1,1 +1,278 @@
-﻿
+/* ==========================================================================
+   Ayodhya Packers - Reviews Module CSS Stylesheet
+   ========================================================================== */
+
+/* 1. Modal Layout & Transitions */
+.contact-review-modal-content,
+.reviews-modal-content {
+    background-color: var(--white) !important;
+    border-radius: 24px !important;
+    border: none !important;
+    box-shadow: 0 15px 40px rgba(var(--accent-rgb), 0.15), 0 5px 15px rgba(0, 0, 0, 0.05) !important;
+    overflow: hidden;
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* Modal Headers */
+.contact-review-modal-title,
+.reviews-modal-title {
+    font-size: 22px !important;
+    font-weight: 700 !important;
+    color: var(--accent-color) !important;
+    letter-spacing: -0.3px;
+    line-height: 1.3;
+}
+
+.reviews-modal-close,
+.btn-close {
+    background-color: #f1f5f9 !important;
+    border-radius: 50% !important;
+    padding: 10px !important;
+    font-size: 12px !important;
+    color: var(--accent-color) !important;
+    opacity: 0.8;
+    transition: all 0.3s ease !important;
+    border: none !important;
+}
+
+.reviews-modal-close:hover,
+.btn-close:hover {
+    background-color: var(--secondary-color) !important;
+    color: var(--white) !important;
+    opacity: 1;
+    transform: rotate(90deg);
+}
+
+/* 2. Form Labels & Inputs */
+.contact-review-form-label,
+.reviews-modal-label {
+    display: block;
+    font-size: 14px !important;
+    font-weight: 600 !important;
+    color: var(--accent-color) !important;
+    margin-bottom: 8px !important;
+    letter-spacing: 0.2px;
+}
+
+/* Inputs & Textareas */
+.contact-review-form-control,
+#reviewsform .form-control {
+    background-color: #f8fafc !important;
+    border: 1.5px solid #e2e8f0 !important;
+    border-radius: 12px !important;
+    color: var(--accent-color) !important;
+    padding: 12px 16px !important;
+    font-size: 15px !important;
+    font-family: 'Outfit', sans-serif !important;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    box-shadow: none !important;
+}
+
+.contact-review-form-control:focus,
+#reviewsform .form-control:focus {
+    background-color: var(--white) !important;
+    border-color: var(--primary-color) !important;
+    box-shadow: 0 0 0 4px rgba(var(--primary-rgb), 0.1) !important;
+    outline: none !important;
+}
+
+.contact-review-form-control::placeholder,
+#reviewsform .form-control::placeholder {
+    color: #94a3b8 !important;
+    opacity: 1;
+}
+
+/* Form Icon Inputs (AJAX review modal) */
+#reviewsform .form-icon {
+    position: relative;
+}
+
+#reviewsform .form-icon i {
+    position: absolute;
+    left: 16px;
+    top: 50%;
+    transform: translateY(-50%);
+    color: #94a3b8;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+#reviewsform .form-icon textarea + i {
+    top: 24px;
+    transform: none;
+}
+
+#reviewsform .form-icon input,
+#reviewsform .form-icon textarea {
+    padding-left: 48px !important;
+}
+
+#reviewsform .form-icon input:focus ~ i,
+#reviewsform .form-icon textarea:focus ~ i {
+    color: var(--primary-color);
+}
+
+/* File Input Specific */
+.reviews-modal-file,
+#image {
+    background-color: #f1f5f9 !important;
+    border: 1.5px dashed #cbd5e1 !important;
+    border-radius: 12px !important;
+    padding: 12px !important;
+    width: 100%;
+    color: var(--accent-color) !important;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.reviews-modal-file:hover,
+#image:hover {
+    border-color: var(--primary-color) !important;
+    background-color: rgba(var(--primary-rgb), 0.04) !important;
+}
+
+/* 3. Star Ratings Selector */
+.contact-rating-select,
+.reviews-rating {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    gap: 6px;
+}
+
+.contact-rating-item {
+    font-size: 26px !important;
+    color: #cbd5e1 !important;
+    cursor: pointer;
+    transition: all 0.2s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+/* Hover & Active States for standard stars */
+.contact-rating-item.active,
+.contact-rating-item:hover,
+.contact-rating-item:hover ~ .contact-rating-item {
+    color: #ffb703 !important;
+    transform: scale(1.15);
+}
+
+/* AJAX Form Radio Stars styling */
+.reviews-rating input {
+    display: none;
+}
+
+.reviews-rating label {
+    font-size: 26px;
+    color: #cbd5e1;
+    cursor: pointer;
+    margin: 0;
+    transition: all 0.2s ease;
+}
+
+.reviews-rating label::before {
+    content: "\F586"; /* Bootstrap Icon star-fill */
+    font-family: "bootstrap-icons";
+}
+
+.reviews-rating input:checked ~ label,
+.reviews-rating label:hover,
+.reviews-rating label:hover ~ label {
+    color: #ffb703 !important;
+    transform: scale(1.15);
+}
+
+/* Ratings wrap values */
+.contact-review-rating-wrap {
+    background-color: #f1f5f9;
+    padding: 6px 12px;
+    border-radius: 20px;
+}
+
+.contact-review-emoji {
+    font-size: 18px;
+}
+
+.contact-review-number {
+    font-weight: 700;
+    color: var(--accent-color);
+}
+
+.contact-review-total {
+    color: #64748b;
+    font-size: 12px;
+}
+
+/* 4. Action Buttons (Submit & Clear) */
+.contact-btn-submit-review,
+.theme-btn.reviews-modal-submit,
+.theme-btn.reviews-modal-clear {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    font-size: 15px !important;
+    font-weight: 700 !important;
+    padding: 12px 28px !important;
+    border-radius: 12px !important;
+    border: none !important;
+    cursor: pointer;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1) !important;
+    font-family: 'Outfit', sans-serif !important;
+}
+
+/* Submit reviews button (gradient) */
+.contact-btn-submit-review,
+.theme-btn.reviews-modal-submit {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%) !important;
+    color: var(--white) !important;
+    box-shadow: 0 4px 15px rgba(var(--primary-rgb), 0.3) !important;
+}
+
+.contact-btn-submit-review:hover,
+.theme-btn.reviews-modal-submit:hover {
+    background: linear-gradient(135deg, var(--primary-dark) 0%, var(--primary-color) 100%) !important;
+    box-shadow: 0 6px 20px rgba(var(--primary-rgb), 0.4) !important;
+    transform: translateY(-2px);
+}
+
+.contact-btn-submit-review:active,
+.theme-btn.reviews-modal-submit:active {
+    transform: translateY(1px);
+}
+
+/* Clear/Reset reviews button */
+.theme-btn.reviews-modal-clear {
+    background-color: #f1f5f9 !important;
+    color: #475569 !important;
+    margin-left: 10px;
+}
+
+.theme-btn.reviews-modal-clear:hover {
+    background-color: #e2e8f0 !important;
+    color: var(--accent-color) !important;
+    transform: translateY(-2px);
+}
+
+/* 5. Alerts & Details */
+#result .alert {
+    border-radius: 12px !important;
+    font-size: 14px !important;
+    font-weight: 500 !important;
+    padding: 12px 16px !important;
+    margin-top: 15px !important;
+    border: none !important;
+}
+
+#result .alert-success {
+    background-color: rgba(34, 197, 94, 0.1) !important;
+    color: #15803d !important;
+}
+
+#result .alert-danger {
+    background-color: rgba(239, 68, 68, 0.1) !important;
+    color: #b91c1c !important;
+}
+
+.text-muted.small {
+    color: #64748b !important;
+    font-size: 13px !important;
+    font-weight: 500;
+}

@@ -41,6 +41,7 @@
 					<th>Message</th>
 					<th>Status</th>
 					<th>Reason</th>
+					<th style="width:85px">Action</th>
 				</tr>
 			</thead>
 			<tbody>
@@ -65,6 +66,11 @@
 							<option value="competitor">Chose Competitor</option>
 							<option value="no_response">No Response</option>
 						</select>
+					</td>
+					<td>
+						<a href="javascript:void(0)" style="color:red" ng-click="deleteBooking(y.id)">
+							<span class="fa fa-trash fa-2x"></span>
+						</a>
 					</td>
 				</tr>
 			</tbody>

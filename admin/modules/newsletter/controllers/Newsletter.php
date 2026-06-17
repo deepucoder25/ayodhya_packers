@@ -29,4 +29,14 @@ class Newsletter extends MX_Controller
     				$return=$this->mdl_newsletter->view_data($where,$select);
     				$this->output->set_content_type('application/json')->set_output(json_encode($return->result_array()));
     }
+    
+    function delete_data()
+    {
+        if (isset($_GET['id']) && $_GET['id'])
+        {
+            $where['id']=$_GET['id'];
+            echo $this->mdl_newsletter->delete_data($where) ? "1" : "0";
+        }else echo "Not Deleted";
+    }
 }
+?>

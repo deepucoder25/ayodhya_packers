@@ -17,12 +17,18 @@
 					<tr class="active">
                         <th>Email</th>
 						<th>Timestamp</th>
+						<th style="width:85px">Action</th>
 					</tr>
 				</thead>
 				<tbody>
 				<tr dir-paginate="y in datadb | filter: search_text | itemsPerPage: 20" pagination-id="contact">
 				        <td>{{y.email}}</td>
 						<td>{{y.timestamp}}</td>
+						<td>
+							<a href="javascript:void(0)" style="color:red" ng-click="delete_data(y.id)">
+								<span class="fa fa-trash fa-2x"></span>
+							</a>
+						</td>
  					</tr>
 				</tbody>
 			</table>

@@ -215,4 +215,3 @@ class Blog extends MX_Controller
         
 }
 ?>
-

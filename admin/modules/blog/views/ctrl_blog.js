@@ -8,10 +8,18 @@ app.controller('ctrl_blog',function($scope,$http){
 			$scope.datadb=data;
 		})
 	}
-	 $('#DOB1').datepicker();
+	$('#DOB1').datepicker({
+		format: 'dd/mm/yyyy',
+		autoclose: true
+	}).on('change changeDate', function() {
+		$scope.$apply(function() {
+			$scope.x = $scope.x || {};
+			$scope.x.date = $('#DOB1').val();
+		});
+	});
 	
 	$scope.loader();
-	$scope.showSeo=false;
+	$scope.filter_new();
 	
 	$scope.update_call=function(y){
 		$scope.x=y;
@@ -29,7 +37,18 @@ app.controller('ctrl_blog',function($scope,$http){
 	
 	$scope.filter_new=function(){
 		$scope.x={};
+		
+		var d = new Date();
+		var dateStr = ("0" + d.getDate()).slice(-2) + "/" + ("0" + (d.getMonth() + 1)).slice(-2) + "/" + d.getFullYear();
+		var timeStr = ("0" + d.getHours()).slice(-2) + ":" + ("0" + d.getMinutes()).slice(-2);
+		
+		$scope.x.date = dateStr;
+		$scope.x.time = timeStr;
 		$scope.showSeo=false;
+		
+		setTimeout(function() {
+			$('#DOB1').val(dateStr).datepicker('update');
+		}, 100);
 	}
 	
 	$scope.options = {

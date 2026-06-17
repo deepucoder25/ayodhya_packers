@@ -106,7 +106,7 @@
     margin-bottom: 24px;
 }
 
-.service-main-content ul > li {
+.service-main-content ul>li {
     position: relative;
     padding-left: 26px;
     font-size: 14.5px;
@@ -116,13 +116,14 @@
     transition: transform 0.2s ease;
 }
 
-.service-main-content ul > li:hover {
+.service-main-content ul>li:hover {
     transform: translateX(4px);
 }
 
 /* Custom green checkmark icons for list bullets */
-.service-main-content ul > li::before {
-    content: "\F272"; /* Bootstrap icon bi-check-circle-fill code */
+.service-main-content ul>li::before {
+    content: "\F272";
+    /* Bootstrap icon bi-check-circle-fill code */
     font-family: 'bootstrap-icons';
     position: absolute;
     left: 0;
@@ -137,7 +138,7 @@
     margin-bottom: 24px;
 }
 
-.service-main-content ol > li {
+.service-main-content ol>li {
     font-size: 14.5px;
     line-height: 1.6;
     color: #4b5563;
@@ -145,7 +146,7 @@
     padding-left: 4px;
 }
 
-.service-main-content ol > li strong {
+.service-main-content ol>li strong {
     color: var(--accent-color, #2E385B);
 }
 
@@ -188,7 +189,8 @@
 }
 
 .about-testimonial-card .rating i {
-    color: #fbbf24 !important; /* Premium gold star */
+    color: #fbbf24 !important;
+    /* Premium gold star */
     font-size: 14px;
     margin-right: 2px;
 }
@@ -328,7 +330,8 @@
 /* Rotate Chevron indicator in Accordion */
 .about-custom-faq-accordion .accordion-button::after {
     font-family: 'bootstrap-icons';
-    content: "\F282"; /* chevron down */
+    content: "\F282";
+    /* chevron down */
     background: none !important;
     width: auto;
     height: auto;
@@ -395,6 +398,7 @@
     border-color: var(--secondary-color);
     color: var(--secondary-color);
 }
+
 .process-step:nth-child(3) .step-number {
     border-color: var(--tertiary-color);
     color: var(--tertiary-color);
@@ -540,6 +544,7 @@
     .service-main-content {
         padding: 24px 20px !important;
     }
+
     .service-main-content h2 {
         font-size: 22px;
     }
@@ -591,15 +596,19 @@
     font-size: 24px;
     margin-bottom: 8px;
 }
+
 .about-stat-card:nth-child(1) .stat-icon {
     color: var(--primary-color) !important;
 }
+
 .about-stat-card:nth-child(2) .stat-icon {
     color: var(--secondary-color) !important;
 }
+
 .about-stat-card:nth-child(3) .stat-icon {
     color: var(--success-color) !important;
 }
+
 .about-stat-card:nth-child(4) .stat-icon {
     color: var(--tertiary-color) !important;
 }
@@ -627,22 +636,27 @@
     background: rgba(235, 38, 143, 0.02);
     border-color: rgba(235, 38, 143, 0.08);
 }
+
 .about-stat-card:nth-child(2):hover {
     border-color: rgba(235, 38, 143, 0.18);
     box-shadow: 0 8px 20px rgba(235, 38, 143, 0.04);
 }
+
 .about-stat-card:nth-child(3) {
     background: rgba(34, 197, 94, 0.02);
     border-color: rgba(34, 197, 94, 0.08);
 }
+
 .about-stat-card:nth-child(3):hover {
     border-color: rgba(34, 197, 94, 0.18);
     box-shadow: 0 8px 20px rgba(34, 197, 94, 0.04);
 }
+
 .about-stat-card:nth-child(4) {
     background: rgba(169, 207, 70, 0.02);
     border-color: rgba(169, 207, 70, 0.08);
 }
+
 .about-stat-card:nth-child(4):hover {
     border-color: rgba(169, 207, 70, 0.18);
     box-shadow: 0 8px 20px rgba(169, 207, 70, 0.04);
@@ -703,6 +717,7 @@
     color: var(--secondary-color, #EB268F);
     border-color: rgba(235, 38, 143, 0.1);
 }
+
 .about-value-card:nth-child(2):hover .value-icon {
     background: var(--secondary-color, #EB268F);
     color: #ffffff;
@@ -713,6 +728,7 @@
     color: var(--success-color, #22c55e);
     border-color: rgba(34, 197, 94, 0.1);
 }
+
 .about-value-card:nth-child(3):hover .value-icon {
     background: var(--success-color, #22c55e);
     color: #ffffff;
@@ -723,6 +739,7 @@
     color: var(--tertiary-color, #A9CF46);
     border-color: rgba(169, 207, 70, 0.1);
 }
+
 .about-value-card:nth-child(4):hover .value-icon {
     background: var(--tertiary-color, #A9CF46);
     color: #ffffff;
@@ -741,34 +758,4 @@
     line-height: 1.55 !important;
     color: #64748b !important;
     margin: 0 !important;
-}
-
-/* Why Choose Us Page: Pillars of Trust Icons */
-.service-main-content .row .packing-tips-card .icon-box {
-    font-size: 32px;
-    margin-bottom: 16px;
-}
-.service-main-content .row > div:nth-child(1) .packing-tips-card .icon-box {
-    color: var(--success-color) !important;
-}
-.service-main-content .row > div:nth-child(2) .packing-tips-card .icon-box {
-    color: var(--primary-color) !important;
-}
-.service-main-content .row > div:nth-child(3) .packing-tips-card .icon-box {
-    color: var(--secondary-color) !important;
-}
-.service-main-content .row > div:nth-child(4) .packing-tips-card .icon-box {
-    color: var(--tertiary-color) !important;
-}
-
-/* Reviews Page: Share Your Experience Button styling */
-.service-main-content .btn-primary[data-bs-target="#reviewModal"] {
-    background: var(--primary-color) !important;
-    border: none !important;
-    transition: all 0.3s ease !important;
-}
-.service-main-content .btn-primary[data-bs-target="#reviewModal"]:hover {
-    background: var(--primary-dark) !important;
-    transform: translateY(-2px);
-    box-shadow: 0 8px 20px rgba(0, 152, 219, 0.15) !important;
 }

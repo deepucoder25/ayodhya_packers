@@ -122,20 +122,20 @@ $this->load->view('template/breadcrumbs', [
                         <div id="contactformresults" class="mt-3"></div>
                     </form>
                     <div class="form-trust-footer mt-4 pt-4 border-top">
-                        <div class="row g-3">
-                            <div class="col-sm-4">
+                        <div class="row g-2 g-md-3">
+                            <div class="col-4">
                                 <div class="trust-pillar-item text-center">
                                     <i class="bi bi-shield-fill-check"></i>
                                     <span>100% Secure Data</span>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-4">
                                 <div class="trust-pillar-item text-center">
                                     <i class="bi bi-lightning-charge-fill"></i>
                                     <span>Instant Response</span>
                                 </div>
                             </div>
-                            <div class="col-sm-4">
+                            <div class="col-4">
                                 <div class="trust-pillar-item text-center">
                                     <i class="bi bi-headset"></i>
                                     <span>24/7 Support Desk</span>

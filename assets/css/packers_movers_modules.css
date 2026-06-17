@@ -395,9 +395,12 @@
 }
 
 @keyframes cta-support-float {
-    0%, 100% {
+
+    0%,
+    100% {
         margin-top: 0;
     }
+
     50% {
         margin-top: -6px;
     }
@@ -593,7 +596,7 @@
     .widget-premium-cta {
         padding: 20px 16px !important;
     }
-    
+
     .cta-premium-title {
         font-size: 19px;
     }
@@ -608,13 +611,13 @@
 
 @media (max-width: 991.98px) {
     .pm-city-details-section {
-        padding-top: 290px;
+        padding-top:200px;
     }
 }
 
 @media (max-width: 575.98px) {
     .pm-city-details-section {
-        padding-top: 440px;
+        padding-top: 350px;
     }
 }
 
@@ -641,7 +644,8 @@
 }
 
 .widget-what-you-get .widget-title i {
-    color: #8b5cf6; /* Purple gift box icon */
+    color: #8b5cf6;
+    /* Purple gift box icon */
     font-size: 24px;
 }
 
@@ -651,7 +655,9 @@
     background-color: #8b5cf6;
     border-radius: 2px;
     margin-bottom: 20px;
-}.what-you-get-grid {
+}
+
+.what-you-get-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 12px;
@@ -663,6 +669,7 @@
         grid-template-columns: repeat(3, 1fr);
     }
 }
+
 @media (min-width: 992px) {
     .what-you-get-grid {
         grid-template-columns: repeat(2, 1fr);
@@ -987,7 +994,8 @@
 
 /* "Nearby Cities" Widget Redesign */
 .widget-nearby-cities {
-    background: rgba(34, 197, 94, 0.03) !important; /* very soft light green background */
+    background: rgba(34, 197, 94, 0.03) !important;
+    /* very soft light green background */
     border-radius: 24px !important;
     border: 1px solid rgba(34, 197, 94, 0.08) !important;
     box-shadow: 0 10px 30px rgba(34, 197, 94, 0.01) !important;
@@ -1079,12 +1087,15 @@
 
 /* Sticky Sidebar Layouts on Desktop Screens */
 @media (min-width: 992px) {
+
     .service-sidebar,
     .pm-city-sidebar {
         position: -webkit-sticky;
         position: sticky;
-        top: 130px; /* Clean spacing below main header */
-        align-self: start; /* Prevents stretching to full column height, allowing sticky to scroll */
+        top: 130px;
+        /* Clean spacing below main header */
+        align-self: start;
+        /* Prevents stretching to full column height, allowing sticky to scroll */
     }
 }
 
@@ -1235,6 +1246,7 @@
     color: var(--success-color, #22c55e);
     border-color: rgba(34, 197, 94, 0.12);
 }
+
 .city-feature-pills .city-pill:nth-child(1):hover {
     background: var(--success-color, #22c55e);
     color: #ffffff;
@@ -1245,6 +1257,7 @@
     color: var(--primary-color, #0098DB);
     border-color: rgba(0, 152, 219, 0.12);
 }
+
 .city-feature-pills .city-pill:nth-child(2):hover {
     background: var(--primary-color, #0098DB);
     color: #ffffff;
@@ -1255,6 +1268,7 @@
     color: #8b5cf6;
     border-color: rgba(139, 92, 246, 0.12);
 }
+
 .city-feature-pills .city-pill:nth-child(3):hover {
     background: #8b5cf6;
     color: #ffffff;
@@ -1265,6 +1279,7 @@
     color: #f97316;
     border-color: rgba(249, 115, 22, 0.12);
 }
+
 .city-feature-pills .city-pill:nth-child(4):hover {
     background: #f97316;
     color: #ffffff;
@@ -1417,11 +1432,13 @@
 
 /* Responsive card padding adjust for smaller viewports */
 @media (max-width: 768px) {
+
     .pm-city-content-card,
     .city-content-card,
     .city-map-card {
         padding: 24px 20px !important;
     }
+
     .pm-city-section-title {
         font-size: 26px;
     }
@@ -1478,7 +1495,8 @@
 
 .review-stars i {
     font-size: 15px;
-    color: #fbbf24; /* Premium warm amber star color */
+    color: #fbbf24;
+    /* Premium warm amber star color */
 }
 
 .city-review-card p {
@@ -1543,12 +1561,14 @@
     border: 1px solid rgba(46, 56, 91, 0.08);
     box-shadow: 0 10px 30px rgba(46, 56, 91, 0.02);
     background: #ffffff;
-    height: 380px; /* Increased height for gallery display */
+    height: 380px;
+    /* Increased height for gallery display */
 }
 
 @media (max-width: 768px) {
     .pm-city-banner-container {
-        height: 240px; /* Adjusted height on tablets and mobiles */
+        height: 240px;
+        /* Adjusted height on tablets and mobiles */
     }
 }
 
@@ -1646,14 +1666,17 @@
     .reviews-carousel-desktop {
         display: none !important;
     }
+
     .reviews-carousel-mobile {
         display: block !important;
     }
 }
+
 @media (min-width: 768px) {
     .reviews-carousel-desktop {
         display: block !important;
     }
+
     .reviews-carousel-mobile {
         display: none !important;
     }
@@ -1665,7 +1688,8 @@
     align-items: center;
     justify-content: center;
     margin-top: 15px;
-    gap: 48px; /* Clean gap in place of the removed dots */
+    gap: 48px;
+    /* Clean gap in place of the removed dots */
 }
 
 /* Footer Navigation Buttons */
@@ -1697,8 +1721,3 @@
     font-size: 14px;
     font-weight: 700;
 }
-
-
-
-
-
