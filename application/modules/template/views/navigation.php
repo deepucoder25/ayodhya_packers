@@ -81,7 +81,7 @@
       
       <div class="mobile-header-bar d-flex d-lg-none justify-content-between align-items-center w-100">
         <a href="<?= site_url() ?>" class="mobile-brand-logo-wrap">
-          <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="mobile-brand-logo">
+          <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="mobile-brand-logo">
         </a>
         <div class="d-flex align-items-center gap-3">
           <button class="hamburger" id="openMenu" aria-label="Open navigation menu">
@@ -96,7 +96,7 @@
         
         <div class="logo-col">
           <a href="<?= site_url() ?>" class="brand-logo-wrap">
-            <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo">
+            <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo">
           </a>
         </div>
 
@@ -195,7 +195,7 @@
       
       <div class="drawer-header d-flex justify-content-between align-items-center">
         <div class="drawer-logo">
-          <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Logo" class="drawer-logo-img">
+          <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Logo" class="drawer-logo-img">
         </div>
         <button class="mega-close" id="closeMenu" aria-label="Close navigation menu">
           <i class="bi bi-x"></i>

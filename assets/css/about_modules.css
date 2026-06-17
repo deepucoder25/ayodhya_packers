@@ -1,0 +1,774 @@
+/* Premium Styling for About Us, FAQs, Testimonials, Packing Tips, Privacy & Terms */
+
+/* 1. Main Content Card Wrapper & Base Styling */
+.service-main-content {
+    position: relative;
+    background: #ffffff;
+    border-radius: 24px !important;
+    border: 1px solid rgba(46, 56, 91, 0.08) !important;
+    box-shadow: 0 10px 30px rgba(46, 56, 91, 0.02) !important;
+    padding: 40px !important;
+    margin-bottom: 24px;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.service-main-content:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 16px 36px rgba(46, 56, 91, 0.05) !important;
+    border-color: rgba(0, 152, 219, 0.15) !important;
+}
+
+/* Gradient Top Bar Accent for Main Card */
+.service-main-content::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 4px;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--tertiary-color) 100%);
+    z-index: 5;
+}
+
+/* 2. Natural Typography Styling (No Classes) */
+.service-main-content h2 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 26px;
+    font-weight: 850;
+    color: var(--accent-color, #2E385B);
+    line-height: 1.25;
+    margin-top: 36px;
+    margin-bottom: 20px;
+    position: relative;
+    padding-left: 16px;
+    display: flex;
+    align-items: center;
+}
+
+.service-main-content h2:first-of-type {
+    margin-top: 0;
+}
+
+/* Left vertical gradient accent line for h2 */
+.service-main-content h2::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    width: 4px;
+    height: 20px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 2px;
+}
+
+.service-main-content h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 20px;
+    font-weight: 750;
+    color: var(--accent-color, #2E385B);
+    margin-top: 28px;
+    margin-bottom: 14px;
+}
+
+.service-main-content h4 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 17px;
+    font-weight: 700;
+    color: var(--accent-color, #2E385B);
+    margin-top: 24px;
+    margin-bottom: 12px;
+}
+
+.service-main-content p {
+    font-size: 15px;
+    line-height: 1.75;
+    color: #4b5563;
+    margin-bottom: 16px;
+}
+
+.service-main-content p strong {
+    color: var(--accent-color, #2E385B);
+}
+
+.service-main-content p.lead {
+    font-size: 16.5px;
+    line-height: 1.8;
+    color: #374151;
+    font-weight: 500;
+}
+
+/* 3. Natural List Styling */
+.service-main-content ul {
+    list-style: none;
+    padding-left: 0;
+    margin-bottom: 24px;
+}
+
+.service-main-content ul > li {
+    position: relative;
+    padding-left: 26px;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 10px;
+    transition: transform 0.2s ease;
+}
+
+.service-main-content ul > li:hover {
+    transform: translateX(4px);
+}
+
+/* Custom green checkmark icons for list bullets */
+.service-main-content ul > li::before {
+    content: "\F272"; /* Bootstrap icon bi-check-circle-fill code */
+    font-family: 'bootstrap-icons';
+    position: absolute;
+    left: 0;
+    top: 2px;
+    color: var(--success-color, #22c55e);
+    font-size: 14px;
+    line-height: 1;
+}
+
+.service-main-content ol {
+    padding-left: 20px;
+    margin-bottom: 24px;
+}
+
+.service-main-content ol > li {
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #4b5563;
+    margin-bottom: 10px;
+    padding-left: 4px;
+}
+
+.service-main-content ol > li strong {
+    color: var(--accent-color, #2E385B);
+}
+
+/* 4. Testimonials Page Redesign */
+.about-testimonial-card {
+    position: relative;
+    background: #ffffff !important;
+    border: 1px solid rgba(46, 56, 91, 0.05) !important;
+    border-radius: 20px !important;
+    padding: 24px !important;
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.005) !important;
+    overflow: hidden;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1) !important;
+}
+
+.about-testimonial-card:hover {
+    transform: translateY(-5px);
+    border-color: rgba(0, 152, 219, 0.15) !important;
+    box-shadow: 0 10px 25px rgba(0, 152, 219, 0.05) !important;
+}
+
+/* Quotation Mark Watermark */
+.about-testimonial-card::after {
+    content: "“";
+    position: absolute;
+    top: 10px;
+    right: 20px;
+    font-size: 90px;
+    font-family: 'Outfit', sans-serif;
+    font-weight: 900;
+    color: rgba(46, 56, 91, 0.03);
+    pointer-events: none;
+    line-height: 0.8;
+    transition: all 0.4s ease;
+}
+
+.about-testimonial-card:hover::after {
+    color: rgba(0, 152, 219, 0.05);
+    transform: scale(1.08) rotate(-5deg);
+}
+
+.about-testimonial-card .rating i {
+    color: #fbbf24 !important; /* Premium gold star */
+    font-size: 14px;
+    margin-right: 2px;
+}
+
+.about-testimonial-card p {
+    font-size: 14px;
+    line-height: 1.6;
+    color: #4b5563;
+    font-style: italic;
+    margin-bottom: 16px;
+}
+
+.about-testimonial-card .user-details {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 16px;
+    border-top: 1px solid rgba(46, 56, 91, 0.06);
+    margin-top: auto;
+}
+
+.about-testimonial-card .user-details strong {
+    font-family: 'Outfit', sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: var(--accent-color, #2E385B);
+}
+
+.about-testimonial-card .user-details small {
+    font-size: 11.5px;
+    color: #94a3b8;
+}
+
+/* Verified Badge soft background */
+.about-bg-success-soft {
+    background-color: rgba(34, 197, 94, 0.08) !important;
+    color: var(--success-color, #22c55e) !important;
+    font-weight: 700;
+    font-size: 10px;
+    letter-spacing: 0.5px;
+    border: 1px solid rgba(34, 197, 94, 0.15);
+}
+
+/* Feedback CTA block */
+.about-feedback-cta {
+    background: rgba(0, 152, 219, 0.02) !important;
+    border-left: 5px solid var(--primary-color, #0098DB) !important;
+    border-radius: 16px !important;
+    padding: 24px !important;
+    margin-top: 32px;
+}
+
+.about-feedback-cta h5 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px;
+    font-weight: 750;
+    color: var(--accent-color, #2E385B);
+}
+
+.about-feedback-cta p {
+    font-size: 13.5px;
+    margin-bottom: 16px !important;
+}
+
+.about-feedback-cta a.btn {
+    background: var(--primary-color, #0098DB);
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: all 0.3s ease;
+}
+
+.about-feedback-cta a.btn:hover {
+    background: var(--primary-dark, #0077ab);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0, 152, 219, 0.2);
+}
+
+/* 5. FAQs Accordion Redesign */
+.about-custom-faq-accordion {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.about-custom-faq-accordion .accordion-item {
+    border: 1px solid rgba(46, 56, 91, 0.06) !important;
+    border-radius: 16px !important;
+    background: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.about-custom-faq-accordion .accordion-item:hover {
+    border-color: rgba(0, 152, 219, 0.15) !important;
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.02);
+}
+
+.about-custom-faq-accordion .accordion-item:has(.accordion-button:not(.collapsed)) {
+    border-color: rgba(0, 152, 219, 0.25) !important;
+    box-shadow: 0 8px 20px rgba(0, 152, 219, 0.05);
+}
+
+.about-custom-faq-accordion .accordion-button {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    padding: 18px 24px !important;
+    background: #ffffff !important;
+    border: none !important;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: var(--accent-color, #2E385B) !important;
+    transition: all 0.3s ease;
+    gap: 14px;
+    box-shadow: none !important;
+}
+
+.about-custom-faq-accordion .accordion-button:not(.collapsed) {
+    color: var(--primary-color, #0098DB) !important;
+    background: rgba(0, 152, 219, 0.02) !important;
+    border-bottom: 1px solid rgba(46, 56, 91, 0.04) !important;
+}
+
+.about-custom-faq-accordion .accordion-body {
+    padding: 20px 24px !important;
+    font-size: 14.5px !important;
+    line-height: 1.6 !important;
+    color: #556080 !important;
+    background: #ffffff;
+}
+
+/* Rotate Chevron indicator in Accordion */
+.about-custom-faq-accordion .accordion-button::after {
+    font-family: 'bootstrap-icons';
+    content: "\F282"; /* chevron down */
+    background: none !important;
+    width: auto;
+    height: auto;
+    color: #94a3b8;
+    transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1), color 0.3s ease;
+    font-size: 14px;
+    margin-left: auto;
+}
+
+.about-custom-faq-accordion .accordion-button:not(.collapsed)::after {
+    transform: rotate(180deg);
+    color: var(--primary-color, #0098DB);
+}
+
+/* 6. Packing Tips Timeline Redesign */
+.process-timeline {
+    position: relative;
+    padding-left: 36px;
+    margin-top: 32px;
+}
+
+/* Timeline Vertical Line */
+.process-timeline::before {
+    content: '';
+    position: absolute;
+    left: 17px;
+    top: 10px;
+    bottom: 10px;
+    width: 2.5px;
+    background: linear-gradient(180deg, var(--primary-color) 0%, var(--secondary-color) 50%, var(--tertiary-color) 100%);
+    border-radius: 2px;
+}
+
+.process-step {
+    position: relative;
+    margin-bottom: 32px;
+}
+
+.process-step:last-of-type {
+    margin-bottom: 0;
+}
+
+.process-step .step-number {
+    position: absolute;
+    left: -36px;
+    top: 2px;
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    background: #ffffff;
+    border: 2.5px solid var(--primary-color);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--primary-color);
+    font-size: 15px;
+    z-index: 10;
+    box-shadow: 0 4px 10px rgba(46, 56, 91, 0.05);
+    transition: all 0.3s ease;
+}
+
+/* Secondary/Tertiary color variations for timeline steps */
+.process-step:nth-child(2) .step-number {
+    border-color: var(--secondary-color);
+    color: var(--secondary-color);
+}
+.process-step:nth-child(3) .step-number {
+    border-color: var(--tertiary-color);
+    color: var(--tertiary-color);
+}
+
+.process-step:hover .step-number {
+    transform: scale(1.1);
+    box-shadow: 0 6px 15px rgba(0, 152, 219, 0.15);
+}
+
+.process-step h4 {
+    margin-top: 0 !important;
+    margin-bottom: 6px !important;
+}
+
+.process-step p {
+    font-size: 14px !important;
+    margin: 0 !important;
+}
+
+/* Packing Tips Cards Grid */
+.packing-tips-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 32px;
+}
+
+@media (max-width: 575.98px) {
+    .packing-tips-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.packing-tips-card {
+    background: #ffffff;
+    border: 1px solid rgba(46, 56, 91, 0.05);
+    border-radius: 16px;
+    padding: 20px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.005);
+}
+
+.packing-tips-card:hover {
+    transform: translateY(-3px);
+    border-color: rgba(0, 152, 219, 0.15);
+    box-shadow: 0 8px 20px rgba(0, 152, 219, 0.04);
+}
+
+.packing-tips-card h5 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 750;
+    color: var(--accent-color, #2E385B);
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px !important;
+}
+
+.packing-tips-card h5 i {
+    color: var(--primary-color, #0098DB);
+    font-size: 18px;
+}
+
+.packing-tips-card:nth-child(2n) h5 i {
+    color: var(--secondary-color, #EB268F);
+}
+
+.packing-tips-card p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    color: #64748b !important;
+    margin: 0 !important;
+}
+
+/* Interactive Room Cards inside Packing Tips */
+.room-guide-list {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.room-guide-item {
+    border: 1px solid rgba(46, 56, 91, 0.05);
+    border-radius: 16px;
+    background: #ffffff;
+    overflow: hidden;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.room-guide-item:hover {
+    border-color: rgba(0, 152, 219, 0.15);
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.015);
+}
+
+.room-guide-header {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 16px 20px;
+    background: #ffffff;
+    border: none;
+    font-family: 'Outfit', sans-serif;
+    font-size: 15.5px;
+    font-weight: 700;
+    color: var(--accent-color, #2E385B);
+    transition: all 0.3s ease;
+    gap: 12px;
+    cursor: pointer;
+}
+
+.room-guide-header:not(.collapsed) {
+    background: rgba(0, 152, 219, 0.02);
+    border-bottom: 1px solid rgba(46, 56, 91, 0.03);
+    color: var(--primary-color, #0098DB);
+}
+
+.room-guide-header i.bi-plus {
+    margin-left: auto;
+    font-size: 20px;
+    color: #94a3b8;
+    transition: transform 0.3s ease;
+}
+
+.room-guide-header:not(.collapsed) i.bi-plus {
+    transform: rotate(45deg);
+    color: var(--primary-color, #0098DB);
+}
+
+.room-guide-body {
+    padding: 16px 20px;
+    background: #ffffff;
+}
+
+.room-guide-body ul {
+    margin: 0 !important;
+}
+
+/* 7. Responsive Card Padding adjust for smaller screens */
+@media (max-width: 768px) {
+    .service-main-content {
+        padding: 24px 20px !important;
+    }
+    .service-main-content h2 {
+        font-size: 22px;
+    }
+}
+
+/* 8. About Page Specific Attractive Grid layouts */
+.about-banner-img {
+    width: 100%;
+    height: 280px;
+    object-fit: cover;
+    border-radius: 18px;
+    border: 1px solid rgba(46, 56, 91, 0.06);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.015);
+    margin-bottom: 24px;
+    display: block;
+}
+
+.about-stats-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 16px;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+@media (max-width: 767.98px) {
+    .about-stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+.about-stat-card {
+    background: rgba(0, 152, 219, 0.02);
+    border: 1px solid rgba(0, 152, 219, 0.08);
+    border-radius: 18px;
+    padding: 20px 10px;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.about-stat-card:hover {
+    transform: translateY(-3px);
+    background: #ffffff;
+    border-color: rgba(0, 152, 219, 0.18);
+    box-shadow: 0 8px 20px rgba(0, 152, 219, 0.04);
+}
+
+.about-stat-card .stat-icon {
+    font-size: 24px;
+    margin-bottom: 8px;
+}
+.about-stat-card:nth-child(1) .stat-icon {
+    color: var(--primary-color) !important;
+}
+.about-stat-card:nth-child(2) .stat-icon {
+    color: var(--secondary-color) !important;
+}
+.about-stat-card:nth-child(3) .stat-icon {
+    color: var(--success-color) !important;
+}
+.about-stat-card:nth-child(4) .stat-icon {
+    color: var(--tertiary-color) !important;
+}
+
+.about-stat-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 24px !important;
+    font-weight: 800 !important;
+    color: var(--accent-color, #2E385B) !important;
+    margin: 0 0 4px 0 !important;
+}
+
+.about-stat-card p {
+    font-size: 12px !important;
+    line-height: 1.3 !important;
+    color: #64748b !important;
+    margin: 0 !important;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+}
+
+/* Alternate color cards */
+.about-stat-card:nth-child(2) {
+    background: rgba(235, 38, 143, 0.02);
+    border-color: rgba(235, 38, 143, 0.08);
+}
+.about-stat-card:nth-child(2):hover {
+    border-color: rgba(235, 38, 143, 0.18);
+    box-shadow: 0 8px 20px rgba(235, 38, 143, 0.04);
+}
+.about-stat-card:nth-child(3) {
+    background: rgba(34, 197, 94, 0.02);
+    border-color: rgba(34, 197, 94, 0.08);
+}
+.about-stat-card:nth-child(3):hover {
+    border-color: rgba(34, 197, 94, 0.18);
+    box-shadow: 0 8px 20px rgba(34, 197, 94, 0.04);
+}
+.about-stat-card:nth-child(4) {
+    background: rgba(169, 207, 70, 0.02);
+    border-color: rgba(169, 207, 70, 0.08);
+}
+.about-stat-card:nth-child(4):hover {
+    border-color: rgba(169, 207, 70, 0.18);
+    box-shadow: 0 8px 20px rgba(169, 207, 70, 0.04);
+}
+
+.about-values-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+    margin-top: 24px;
+    margin-bottom: 36px;
+}
+
+@media (max-width: 575.98px) {
+    .about-values-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+.about-value-card {
+    background: #ffffff;
+    border: 1px solid rgba(46, 56, 91, 0.05);
+    border-radius: 20px;
+    padding: 24px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 15px rgba(46, 56, 91, 0.005);
+}
+
+.about-value-card:hover {
+    transform: translateY(-4px);
+    border-color: rgba(0, 152, 219, 0.15);
+    box-shadow: 0 10px 25px rgba(0, 152, 219, 0.05);
+}
+
+.about-value-card .value-icon {
+    width: 46px;
+    height: 46px;
+    border-radius: 12px;
+    background: rgba(0, 152, 219, 0.06);
+    color: var(--primary-color, #0098DB);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+    border: 1px solid rgba(0, 152, 219, 0.1);
+    transition: all 0.3s ease;
+}
+
+.about-value-card:hover .value-icon {
+    background: var(--primary-color, #0098DB);
+    color: #ffffff;
+    transform: scale(1.1) rotate(-6deg);
+}
+
+.about-value-card:nth-child(2) .value-icon {
+    background: rgba(235, 38, 143, 0.06);
+    color: var(--secondary-color, #EB268F);
+    border-color: rgba(235, 38, 143, 0.1);
+}
+.about-value-card:nth-child(2):hover .value-icon {
+    background: var(--secondary-color, #EB268F);
+    color: #ffffff;
+}
+
+.about-value-card:nth-child(3) .value-icon {
+    background: rgba(34, 197, 94, 0.06);
+    color: var(--success-color, #22c55e);
+    border-color: rgba(34, 197, 94, 0.1);
+}
+.about-value-card:nth-child(3):hover .value-icon {
+    background: var(--success-color, #22c55e);
+    color: #ffffff;
+}
+
+.about-value-card:nth-child(4) .value-icon {
+    background: rgba(169, 207, 70, 0.06);
+    color: var(--tertiary-color, #A9CF46);
+    border-color: rgba(169, 207, 70, 0.1);
+}
+.about-value-card:nth-child(4):hover .value-icon {
+    background: var(--tertiary-color, #A9CF46);
+    color: #ffffff;
+}
+
+.about-value-card h3 {
+    font-family: 'Outfit', sans-serif;
+    font-size: 18px !important;
+    font-weight: 750 !important;
+    color: var(--accent-color, #2E385B) !important;
+    margin: 0 0 8px 0 !important;
+}
+
+.about-value-card p {
+    font-size: 13.5px !important;
+    line-height: 1.55 !important;
+    color: #64748b !important;
+    margin: 0 !important;
+}
+
+/* Why Choose Us Page: Pillars of Trust Icons */
+.service-main-content .row .packing-tips-card .icon-box {
+    font-size: 32px;
+    margin-bottom: 16px;
+}
+.service-main-content .row > div:nth-child(1) .packing-tips-card .icon-box {
+    color: var(--success-color) !important;
+}
+.service-main-content .row > div:nth-child(2) .packing-tips-card .icon-box {
+    color: var(--primary-color) !important;
+}
+.service-main-content .row > div:nth-child(3) .packing-tips-card .icon-box {
+    color: var(--secondary-color) !important;
+}
+.service-main-content .row > div:nth-child(4) .packing-tips-card .icon-box {
+    color: var(--tertiary-color) !important;
+}
+
+/* Reviews Page: Share Your Experience Button styling */
+.service-main-content .btn-primary[data-bs-target="#reviewModal"] {
+    background: var(--primary-color) !important;
+    border: none !important;
+    transition: all 0.3s ease !important;
+}
+.service-main-content .btn-primary[data-bs-target="#reviewModal"]:hover {
+    background: var(--primary-dark) !important;
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(0, 152, 219, 0.15) !important;
+}

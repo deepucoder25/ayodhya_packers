@@ -76,7 +76,7 @@
             <div class="col-lg-6 col-12">
                 <div class="about-image-showcase">
                     <div class="about-img-mask-bg"></div>
-                    <img src="<?= base_url('assets/images/about_modules/about.jpg') ?>" 
+                    <img loading="lazy" src="<?= base_url('assets/images/about_modules/about.jpg') ?>" 
                          alt="Reliable Packers and Movers Service - <?= $company3 ?>" 
                          class="about-showcase-img img-fluid">
                 </div>

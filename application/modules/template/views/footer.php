@@ -6,7 +6,7 @@
         <div class="col-lg-3 col-md-12">
           <div class="footer-brand-col">
             <a href="<?= site_url() ?>" class="footer-logo-link">
-              <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Logo" class="footer-logo-img">
+              <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Logo" class="footer-logo-img">
             </a>
             <p class="footer-desc-text">
               Ayodhya Packers And Movers offers reliable and affordable packing and moving services for your home, office, and vehicle – anywhere in India and worldwide.

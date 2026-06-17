@@ -56,7 +56,7 @@ $state = [
                     <div class="pm-state-card h-100 d-flex flex-column">
                         <!-- Card Header with image background -->
                         <div class="state-card-header d-flex align-items-center justify-content-center position-relative">
-                            <img src="<?= base_url($item['image']) ?>" alt="<?= htmlspecialchars($item['category']) ?>" class="state-card-bg-img position-absolute w-100 h-100 object-fit-cover">
+                            <img loading="lazy" src="<?= base_url($item['image']) ?>" alt="<?= htmlspecialchars($item['category']) ?>" class="state-card-bg-img position-absolute w-100 h-100 object-fit-cover">
                             <div class="state-card-header-overlay position-absolute w-100 h-100"></div>
                             
                             <span class="state-badge"><?= htmlspecialchars($item['code']) ?></span>

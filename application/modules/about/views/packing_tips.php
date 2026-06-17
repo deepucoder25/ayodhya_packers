@@ -21,97 +21,53 @@ $this->load->view('template/breadcrumbs', [
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
-                    <h2 class="service-section-title">The Golden Rules of Packing &amp; Shifting</h2>
-                    <div class="about-service-text mb-5">
-                        <p>
-                            Packing up your entire life into cardboard boxes can feel overwhelming. However, with the right approach and planning, you can make the process smooth and structured. Below are the key packing principles recommended by the moving specialists at <strong><?= $company3 ?></strong>.
-                        </p>
-                        
-                        <div class="row g-3 mt-3">
-                            <div class="col-md-6">
-                                <div class="p-3 border rounded bg-light h-100">
-                                    <h5 class="text-primary d-flex align-items-center gap-2 mb-2">
-                                        <i class="bi bi-check2-circle"></i> 1. Declutter Before You Pack
-                                    </h5>
-                                    <p class="small text-muted m-0">Sort through your items. Donate, sell, or discard things you no longer need. This reduces your overall packing volume and saves transport costs.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="p-3 border rounded bg-light h-100">
-                                    <h5 class="text-primary d-flex align-items-center gap-2 mb-2">
-                                        <i class="bi bi-check2-circle"></i> 2. Pack Early &amp; Room-by-Room
-                                    </h5>
-                                    <p class="small text-muted m-0">Start packing items you don't use daily (like books, seasonal clothes, and showpieces) weeks in advance. Tackle one room at a time to stay organized.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="p-3 border rounded bg-light h-100">
-                                    <h5 class="text-primary d-flex align-items-center gap-2 mb-2">
-                                        <i class="bi bi-check2-circle"></i> 3. Heavy Items at the Bottom
-                                    </h5>
-                                    <p class="small text-muted m-0">Always place heavy objects like books and tools at the bottom of the box, and place lighter items like cushions, sheets, or clothes on top.</p>
-                                </div>
-                            </div>
-                            <div class="col-md-6">
-                                <div class="p-3 border rounded bg-light h-100">
-                                    <h5 class="text-primary d-flex align-items-center gap-2 mb-2">
-                                        <i class="bi bi-check2-circle"></i> 4. Label Box Sides Clearly
-                                    </h5>
-                                    <p class="small text-muted m-0">Label each box with its room category and contents on the side (not top), so you can read it easily when boxes are stacked.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <h2 class="service-section-title">Essential Packing Materials Checklist</h2>
-                    <p class="text-muted">Ensure you have the right tools before you begin wrapping:</p>
-                    <div class="row g-3 mb-5">
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled custom-checked-list">
-                                <li class="mb-2 d-flex align-items-start gap-2">
-                                    <i class="bi bi-check-lg text-success mt-1"></i>
-                                    <div><strong>Corrugated Boxes:</strong> Sturdy boxes in small, medium, and large sizes.</div>
-                                </li>
-                                <li class="mb-2 d-flex align-items-start gap-2">
-                                    <i class="bi bi-check-lg text-success mt-1"></i>
-                                    <div><strong>Bubble Wrap:</strong> For wrapping glassware, electronics, and delicate showpieces.</div>
-                                </li>
-                                <li class="mb-2 d-flex align-items-start gap-2">
-                                    <i class="bi bi-check-lg text-success mt-1"></i>
-                                    <div><strong>Packing Paper:</strong> Blank newsprint paper to wrap crockery and fill empty box spaces.</div>
-                                </li>
-                            </ul>
-                        </div>
-                        <div class="col-sm-6">
-                            <ul class="list-unstyled custom-checked-list">
-                                <li class="mb-2 d-flex align-items-start gap-2">
-                                    <i class="bi bi-check-lg text-success mt-1"></i>
-                                    <div><strong>Adhesive Packing Tapes:</strong> Broad brown/transparent tapes to seal boxes securely.</div>
-                                </li>
-                                <li class="mb-2 d-flex align-items-start gap-2">
-                                    <i class="bi bi-check-lg text-success mt-1"></i>
-                                    <div><strong>Marker Pens &amp; Scissors:</strong> Thick permanent markers to label and track boxes.</div>
-                                </li>
-                                <li class="mb-2 d-flex align-items-start gap-2">
-                                    <i class="bi bi-check-lg text-success mt-1"></i>
-                                    <div><strong>Stretch Wrap:</strong> Cling film to wrap furniture and bundle loose items together.</div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-
-                    <h2 class="service-section-title">Room-by-Room Packing Guide</h2>
+                    <h2>The Golden Rules of Packing &amp; Shifting</h2>
+                    <p class="lead">
+                        Packing up your entire life into cardboard boxes can feel overwhelming. However, with the right approach and planning, you can make the process smooth and structured. Below are the key packing principles recommended by the moving specialists at <strong><?= $company3 ?></strong>.
+                    </p>
                     
-                    <div class="accordion mb-5" id="roomGuideAccordion">
+                    <div class="packing-tips-grid">
+                        <div class="packing-tips-card">
+                            <h5><i class="bi bi-check2-circle"></i> Declutter Before Shifting</h5>
+                            <p>Sort through your items. Donate, sell, or discard things you no longer need. This reduces your overall packing volume and saves transport costs.</p>
+                        </div>
+                        <div class="packing-tips-card">
+                            <h5><i class="bi bi-check2-circle"></i> Pack Early &amp; Room-by-Room</h5>
+                            <p>Start packing items you don't use daily (like books, seasonal clothes, and showpieces) weeks in advance. Tackle one room at a time to stay organized.</p>
+                        </div>
+                        <div class="packing-tips-card">
+                            <h5><i class="bi bi-check2-circle"></i> Heavy Items at the Bottom</h5>
+                            <p>Always place heavy objects like books and tools at the bottom of the box, and place lighter items like cushions, sheets, or clothes on top.</p>
+                        </div>
+                        <div class="packing-tips-card">
+                            <h5><i class="bi bi-check2-circle"></i> Label Box Sides Clearly</h5>
+                            <p>Label each box with its room category and contents on the side (not top), so you can read it easily when boxes are stacked.</p>
+                        </div>
+                    </div>
+
+                    <h2>Essential Packing Materials Checklist</h2>
+                    <p>Ensure you have the right tools before you begin wrapping:</p>
+                    <ul>
+                        <li><strong>Corrugated Boxes:</strong> Sturdy boxes in small, medium, and large sizes to bundle items safely.</li>
+                        <li><strong>Bubble Wrap:</strong> For wrapping glassware, electronics, and delicate showpieces against impacts.</li>
+                        <li><strong>Packing Paper:</strong> Blank newsprint paper to wrap crockery and fill empty box spaces.</li>
+                        <li><strong>Adhesive Packing Tapes:</strong> Broad brown/transparent tapes to seal boxes securely.</li>
+                        <li><strong>Marker Pens &amp; Scissors:</strong> Thick permanent markers to label and track boxes.</li>
+                        <li><strong>Stretch Wrap:</strong> Cling film to wrap furniture and bundle loose items together.</li>
+                    </ul>
+
+                    <h2>Room-by-Room Packing Guide</h2>
+                    <p>Relocating involves different types of assets. Follow these specialized steps for each room:</p>
+                    
+                    <div class="room-guide-list" id="roomGuideAccordion">
                         <!-- Kitchen -->
-                        <div class="faq-card border-bottom pb-3 mb-3">
-                            <div class="faq-card-header d-flex align-items-center collapsed py-2" data-bs-toggle="collapse" data-bs-target="#room-1" aria-expanded="false" role="button">
-                                <i class="bi bi-egg-fried faq-card-icon me-3 text-primary"></i>
-                                <strong class="flex-grow-1">Kitchen Packing Tips</strong>
-                                <i class="bi bi-plus faq-toggle-icon"></i>
-                            </div>
+                        <div class="room-guide-item">
+                            <button class="room-guide-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#room-1" aria-expanded="false">
+                                <i class="bi bi-egg-fried"></i> Kitchen Packing Tips
+                                <i class="bi bi-plus"></i>
+                            </button>
                             <div id="room-1" class="collapse" data-bs-parent="#roomGuideAccordion">
-                                <div class="faq-card-body pt-3">
+                                <div class="room-guide-body">
                                     <ul>
                                         <li>Wrap every plate, bowl, and glass individually in bubble wrap or packing paper.</li>
                                         <li>Stack plates vertically inside the box (like records) rather than flat, as vertical force is stronger.</li>
@@ -123,14 +79,13 @@ $this->load->view('template/breadcrumbs', [
                         </div>
                         
                         <!-- Living Room -->
-                        <div class="faq-card border-bottom pb-3 mb-3">
-                            <div class="faq-card-header d-flex align-items-center collapsed py-2" data-bs-toggle="collapse" data-bs-target="#room-2" aria-expanded="false" role="button">
-                                <i class="bi bi-tv faq-card-icon me-3 text-primary"></i>
-                                <strong class="flex-grow-1">Living Room &amp; Electronics Guide</strong>
-                                <i class="bi bi-plus faq-toggle-icon"></i>
-                            </div>
+                        <div class="room-guide-item">
+                            <button class="room-guide-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#room-2" aria-expanded="false">
+                                <i class="bi bi-tv"></i> Living Room &amp; Electronics Guide
+                                <i class="bi bi-plus"></i>
+                            </button>
                             <div id="room-2" class="collapse" data-bs-parent="#roomGuideAccordion">
-                                <div class="faq-card-body pt-3">
+                                <div class="room-guide-body">
                                     <ul>
                                         <li>Take photos of the back panel of your TV and setup box wiring connections before unplugging. This helps in re-wiring later.</li>
                                         <li>Wrap electronic devices in anti-static bubble wrap and place them in sturdy, form-fitting boxes.</li>
@@ -142,14 +97,13 @@ $this->load->view('template/breadcrumbs', [
                         </div>
 
                         <!-- Bedroom -->
-                        <div class="faq-card border-bottom pb-3">
-                            <div class="faq-card-header d-flex align-items-center collapsed py-2" data-bs-toggle="collapse" data-bs-target="#room-3" aria-expanded="false" role="button">
-                                <i class="bi bi-inboxes-fill faq-card-icon me-3 text-primary"></i>
-                                <strong class="flex-grow-1">Bedroom &amp; Clothing Tips</strong>
-                                <i class="bi bi-plus faq-toggle-icon"></i>
-                            </div>
+                        <div class="room-guide-item">
+                            <button class="room-guide-header collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#room-3" aria-expanded="false">
+                                <i class="bi bi-inboxes-fill"></i> Bedroom &amp; Clothing Tips
+                                <i class="bi bi-plus"></i>
+                            </button>
                             <div id="room-3" class="collapse" data-bs-parent="#roomGuideAccordion">
-                                <div class="faq-card-body pt-3">
+                                <div class="room-guide-body">
                                     <ul>
                                         <li>Keep hanging clothes on their hangers and place them inside large trash bags or wardrobe carton boxes.</li>
                                         <li>Pack shoes in individual shoe boxes before placing them inside larger cartons to prevent deformation.</li>
@@ -161,7 +115,8 @@ $this->load->view('template/breadcrumbs', [
                         </div>
                     </div>
 
-                    <h2 class="service-section-title">Weekly Countdown Moving Checklist</h2>
+                    <h2>Weekly Countdown Moving Checklist</h2>
+                    <p>Track your relocation timelines to avoid last-minute delays:</p>
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number"><i class="bi bi-calendar3"></i></span>

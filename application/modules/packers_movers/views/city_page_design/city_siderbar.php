@@ -17,10 +17,10 @@
       <!-- Bottom-Left Blue Shape Accent -->
       <div class="cta-accent-blue"></div>
 
-      <img src="<?= base_url('assets/images/city_page/support_call.png') ?>" alt="Support Agent" class="cta-support-agent">
+      <img loading="lazy" src="<?= base_url('assets/images/city_page/support_call.png') ?>" alt="Support Agent" class="cta-support-agent">
 
       <div class="cta-header-group d-flex align-items-center justify-content-between mb-3">
-          <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?>" class="cta-brand-logo">
+          <img loading="lazy" src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?>" class="cta-brand-logo">
       </div>
 
       <h3 class="cta-premium-title">
