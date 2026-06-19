@@ -1,18 +1,53 @@
 /* gallery_modules.css */
 
-/* Photo Gallery */
-.gallery-photo-card { transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; border: 1px solid #eef1f6 !important; }
-.gallery-photo-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(95, 150, 24, 0.08) !important; border-color: #5f9618 !important; }
-.gallery-bg-success-soft { background-color: rgba(25, 135, 84, 0.1) !important; }
-.gallery-img-wrapper:hover .gallery-hover-overlay { opacity: 1 !important; }
-.gallery-bg-dark-50 { background-color: rgba(0, 0, 0, 0.4) !important; }
-.gallery-transition-all { transition: all 0.3s ease-in-out; }
+/* Photo Gallery Card Design - Simple Image Box */
+.gallery-photo-card {
+    background-color: var(--white) !important;
+    border: 1px solid rgba(46, 56, 91, 0.08) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(46, 56, 91, 0.03) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
 
-.gallery-img { height: 220px; object-fit: cover; }
-.gallery-icon-lg { font-size: 2rem; }
-.gallery-badge-sm { font-size: 0.75rem; }
-.gallery-title-sm { font-size: 1rem; }
+.gallery-photo-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(var(--primary-rgb), 0.1) !important;
+    border-color: var(--primary-color) !important;
+}
 
-/* Video Gallery */
-.gallery-video-card { transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease; border: 1px solid #eef1f6 !important; }
-.gallery-video-card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(95, 150, 24, 0.08) !important; border-color: #5f9618 !important; }
+/* Image Wrapper */
+.gallery-img-wrapper {
+    position: relative;
+    width: 100%;
+    height: 260px;
+    overflow: hidden;
+}
+
+.gallery-img-wrapper img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    margin-top: 0 !important;
+    margin-bottom: 0 !important;
+    border-radius: 0 !important;
+    border: none !important;
+    box-shadow: none !important;
+}
+
+/* Video Gallery consistency */
+.gallery-video-card {
+    background-color: var(--white) !important;
+    border: 1px solid rgba(46, 56, 91, 0.08) !important;
+    border-radius: 12px !important;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(46, 56, 91, 0.03) !important;
+    transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease !important;
+}
+
+.gallery-video-card:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 24px rgba(var(--primary-rgb), 0.1) !important;
+    border-color: var(--primary-color) !important;
+}

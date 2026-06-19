@@ -10,7 +10,7 @@
   $active_tab = '';
   if (empty($segment1) || $segment1 === 'home' || $class === 'home') {
       $active_tab = 'home';
-  } elseif ($class === 'about' || $class === 'blog' || in_array($segment1, ['about-us', 'testimonials', 'blog', 'reviews', 'faqs', 'packing-tips', 'privacy-policy', 'terms-and-conditions'])) {
+  } elseif ($class === 'about' || $class === 'blog' || $class === 'gallery' || in_array($segment1, ['about-us', 'testimonials', 'blog', 'reviews', 'faqs', 'packing-tips', 'privacy-policy', 'terms-and-conditions', 'photo-gallery'])) {
       $active_tab = 'about';
   } elseif ($class === 'services' || in_array($segment1, ['our-services', 'packing-and-moving', 'loading-and-unloading', 'residential-relocation', 'home-relocation', 'office-relocation', 'car-transportation', 'bike-transportation', 'international-transportation', 'warehousing-and-storage', 'transport-insurance', 'heavy-machinery-and-shifting'])) {
       $active_tab = 'services';
@@ -125,6 +125,7 @@
                 <a href="<?= site_url('blog') ?>">Blog</a>
                 <a href="<?= site_url('reviews') ?>">Review</a>
                 <a href="<?= site_url('faqs') ?>">FAQs</a>
+                <a href="<?= site_url('photo-gallery') ?>">Photo Gallery</a>
                 <a href="<?= site_url('packing-tips') ?>">Packing Tips</a>
                 <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
                 <a href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a>
@@ -251,6 +252,7 @@
               <a href="<?= site_url('blog') ?>" class="<?= $segment1 === 'blog' ? 'active' : '' ?>">Blog</a>
               <a href="<?= site_url('reviews') ?>" class="<?= $segment1 === 'reviews' ? 'active' : '' ?>">Review</a>
               <a href="<?= site_url('faqs') ?>" class="<?= $segment1 === 'faqs' ? 'active' : '' ?>">FAQs</a>
+              <a href="<?= site_url('photo-gallery') ?>" class="<?= $segment1 === 'photo-gallery' ? 'active' : '' ?>">Photo Gallery</a>
               <a href="<?= site_url('packing-tips') ?>" class="<?= $segment1 === 'packing-tips' ? 'active' : '' ?>">Packing Tips</a>
               <a href="<?= site_url('privacy-policy') ?>" class="<?= $segment1 === 'privacy-policy' ? 'active' : '' ?>">Privacy Policy</a>
               <a href="<?= site_url('terms-and-conditions') ?>" class="<?= $segment1 === 'terms-and-conditions' ? 'active' : '' ?>">Terms &amp; Conditions</a>

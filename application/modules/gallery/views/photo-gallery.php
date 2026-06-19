@@ -61,12 +61,6 @@ $this->load->view('template/breadcrumbs', [
                             'desc' => 'Neat and balanced loading of household goods and furniture inside enclosed cargo containers.'
                         ],
                         [
-                            'img' => 'img7.jpg',
-                            'badge' => 'Household Moving',
-                            'title' => 'Enclosed Cargo Loading',
-                            'desc' => 'Our experienced ground crew loading furniture and cargo onto container trucks for secure transit.'
-                        ],
-                        [
                             'img' => 'img8.jpg',
                             'badge' => 'Domestic Relocation',
                             'title' => 'Luggage & Box Loading',
@@ -83,17 +77,9 @@ $this->load->view('template/breadcrumbs', [
                     <div class="row">
                         <?php foreach ($gallery_photos as $photo): ?>
                         <div class="col-md-6 mb-4">
-                            <div class="card border-0 shadow-sm rounded-3 overflow-hidden gallery-photo-card h-100">
-                                <div class="gallery-img-wrapper position-relative" style="height: 240px; overflow: hidden;">
-                                    <img loading="lazy" src="<?= base_url('assets/images/gallery/' . $photo['img']) ?>" class="w-100 h-100 img-fluid gallery-img" alt="<?= $photo['title'] ?>" style="object-fit: cover; transition: transform 0.4s ease;">
-                                    <div class="gallery-hover-overlay position-absolute top-0 start-0 w-100 h-100 d-flex align-items-center justify-content-center opacity-0 gallery-bg-dark-50 gallery-transition-all">
-                                        <i class="bi bi-zoom-in text-white gallery-icon-lg"></i>
-                                    </div>
-                                </div>
-                                <div class="card-body p-3">
-                                    <span class="badge gallery-bg-success-soft text-success mb-2 gallery-badge-sm"><?= $photo['badge'] ?></span>
-                                    <h5 class="fw-bold mb-1 gallery-title-sm"><?= $photo['title'] ?></h5>
-                                    <p class="small text-muted mb-0"><?= $photo['desc'] ?></p>
+                            <div class="gallery-photo-card">
+                                <div class="gallery-img-wrapper">
+                                    <img loading="lazy" src="<?= base_url('assets/images/gallery/' . $photo['img']) ?>" alt="<?= $photo['title'] ?>">
                                 </div>
                             </div>
                         </div>

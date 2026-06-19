@@ -150,6 +150,11 @@
                 </a>
               </li>
               <li>
+                <a href="<?= site_url('photo-gallery') ?>">
+                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Photo Gallery
+                </a>
+              </li>
+              <li>
                 <a href="<?= site_url('blog') ?>">
                   <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Blog
                 </a>

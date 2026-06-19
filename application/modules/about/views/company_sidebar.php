@@ -27,6 +27,7 @@
                 ['slug' => 'blog',                 'name' => 'Blog',                 'icon' => 'bi-journal-text',      'color' => 'green'],
                 ['slug' => 'reviews',              'name' => 'Review',               'icon' => 'bi-star',              'color' => 'orange'],
                 ['slug' => 'faqs',                 'name' => 'FAQs',                 'icon' => 'bi-question-circle',   'color' => 'purple'],
+                ['slug' => 'photo-gallery',         'name' => 'Photo Gallery',         'icon' => 'bi-images',            'color' => 'blue'],
                 ['slug' => 'packing-tips',         'name' => 'Packing Tips',         'icon' => 'bi-box-seam',          'color' => 'teal'],
                 ['slug' => 'privacy-policy',       'name' => 'Privacy Policy',       'icon' => 'bi-shield-lock',       'color' => 'red'],
                 ['slug' => 'terms-and-conditions', 'name' => 'Terms & Conditions',    'icon' => 'bi-file-earmark-text', 'color' => 'pink'],
