@@ -155,6 +155,11 @@
                 </a>
               </li>
               <li>
+                <a href="<?= site_url('track-consignment') ?>">
+                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Track Consignment
+                </a>
+              </li>
+              <li>
                 <a href="<?= site_url('blog') ?>">
                   <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Blog
                 </a>

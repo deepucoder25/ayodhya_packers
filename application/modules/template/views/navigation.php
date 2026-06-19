@@ -16,7 +16,7 @@
       $active_tab = 'services';
   } elseif ($class === 'packers_movers' || $segment1 === 'our-branches') {
       $active_tab = 'locations';
-  } elseif ($class === 'contacts' || $segment1 === 'contact-us') {
+  } elseif ($class === 'contacts' || in_array($segment1, ['contact-us', 'track-consignment'])) {
       $active_tab = 'contact';
   }
   ?>
@@ -126,6 +126,7 @@
                 <a href="<?= site_url('reviews') ?>">Review</a>
                 <a href="<?= site_url('faqs') ?>">FAQs</a>
                 <a href="<?= site_url('photo-gallery') ?>">Photo Gallery</a>
+                <a href="<?= site_url('track-consignment') ?>">Track Consignment</a>
                 <a href="<?= site_url('packing-tips') ?>">Packing Tips</a>
                 <a href="<?= site_url('privacy-policy') ?>">Privacy Policy</a>
                 <a href="<?= site_url('terms-and-conditions') ?>">Terms &amp; Conditions</a>
@@ -253,6 +254,7 @@
               <a href="<?= site_url('reviews') ?>" class="<?= $segment1 === 'reviews' ? 'active' : '' ?>">Review</a>
               <a href="<?= site_url('faqs') ?>" class="<?= $segment1 === 'faqs' ? 'active' : '' ?>">FAQs</a>
               <a href="<?= site_url('photo-gallery') ?>" class="<?= $segment1 === 'photo-gallery' ? 'active' : '' ?>">Photo Gallery</a>
+              <a href="<?= site_url('track-consignment') ?>" class="<?= $segment1 === 'track-consignment' ? 'active' : '' ?>">Track Consignment</a>
               <a href="<?= site_url('packing-tips') ?>" class="<?= $segment1 === 'packing-tips' ? 'active' : '' ?>">Packing Tips</a>
               <a href="<?= site_url('privacy-policy') ?>" class="<?= $segment1 === 'privacy-policy' ? 'active' : '' ?>">Privacy Policy</a>
               <a href="<?= site_url('terms-and-conditions') ?>" class="<?= $segment1 === 'terms-and-conditions' ? 'active' : '' ?>">Terms &amp; Conditions</a>

@@ -849,3 +849,473 @@
         font-size: 16px;
     }
 }
+
+/* ---------------------------------------------------- */
+/* Premium Consignment Tracking Page Styles */
+/* ---------------------------------------------------- */
+
+.tracking-search-card {
+    background-color: var(--white);
+    border: 1px solid rgba(var(--accent-rgb), 0.06);
+    border-radius: 24px;
+    box-shadow: 0 15px 45px rgba(var(--accent-rgb), 0.08), 0 5px 15px rgba(0, 0, 0, 0.02);
+    padding: 35px;
+    font-family: 'Outfit', sans-serif;
+}
+
+.tracking-badge {
+    font-size: 11px;
+    font-weight: 750;
+    color: var(--secondary-color);
+    background: rgba(235, 38, 143, 0.08);
+    padding: 6px 14px;
+    border-radius: 20px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.tracking-card-title {
+    font-size: 32px;
+    font-weight: 900;
+    color: var(--accent-color);
+    letter-spacing: -0.5px;
+}
+
+.tracking-card-subtitle {
+    font-size: 14.5px;
+    color: #64748b;
+    margin-bottom: 0;
+    font-weight: 550;
+}
+
+.tracking-input-wrapper {
+    position: relative;
+    display: flex;
+    align-items: center;
+    background-color: #f8fafc;
+    border: 2px solid #cbd5e1;
+    border-radius: 16px;
+    padding: 6px;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.tracking-input-wrapper:focus-within {
+    border-color: var(--primary-color);
+    background-color: var(--white);
+    box-shadow: 0 0 0 5px rgba(var(--primary-rgb), 0.15);
+}
+
+.tracking-input-icon {
+    color: #94a3b8;
+    font-size: 20px;
+    margin-left: 15px;
+    margin-right: 10px;
+    transition: color 0.3s ease;
+}
+
+.tracking-input-wrapper:focus-within .tracking-input-icon {
+    color: var(--primary-color);
+}
+
+.tracking-input-field {
+    border: none !important;
+    background: transparent !important;
+    box-shadow: none !important;
+    outline: none !important;
+    font-family: 'Outfit', sans-serif;
+    font-size: 16px;
+    font-weight: 600;
+    color: var(--accent-color);
+    padding: 8px 12px !important;
+    height: 48px;
+    width: 100%;
+}
+
+.btn-tracking-submit {
+    background: linear-gradient(135deg, var(--primary-color) 0%, var(--primary-dark) 100%);
+    color: var(--white) !important;
+    font-weight: 800;
+    font-size: 15px;
+    padding: 0 28px;
+    height: 48px;
+    border-radius: 12px;
+    border: none;
+    transition: all 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+    box-shadow: 0 4px 12px rgba(var(--primary-rgb), 0.25);
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.btn-tracking-submit:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 6px 18px rgba(var(--primary-rgb), 0.4);
+    filter: brightness(1.05);
+}
+
+.btn-tracking-clear {
+    font-size: 13.5px;
+    font-weight: 700;
+    color: #94a3b8 !important;
+    text-decoration: none;
+    transition: all 0.3s ease;
+    background: none;
+    border: none;
+    padding: 0;
+}
+
+.btn-tracking-clear:hover {
+    color: var(--secondary-color) !important;
+}
+
+/* Consignment Details Dashboard */
+.tracking-dashboard {
+    border: 1px solid rgba(var(--accent-rgb), 0.06);
+    border-radius: 24px;
+    overflow: hidden;
+    background-color: var(--white);
+}
+
+.bg-primary-soft {
+    background-color: rgba(var(--primary-rgb), 0.08);
+}
+
+.text-accent {
+    color: var(--accent-color);
+}
+
+.font-outfit {
+    font-family: 'Outfit', sans-serif;
+}
+
+.tracking-stat-box {
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 18px 12px;
+    text-align: center;
+    transition: all 0.3s ease;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.tracking-stat-box:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(var(--accent-rgb), 0.04);
+    border-color: rgba(var(--primary-rgb), 0.25);
+}
+
+.tracking-stat-box.highlight {
+    background: linear-gradient(135deg, rgba(235, 38, 143, 0.02) 0%, rgba(235, 38, 143, 0.06) 100%);
+    border-color: rgba(var(--secondary-rgb), 0.15);
+}
+
+.tracking-stat-box.highlight:hover {
+    border-color: var(--secondary-color);
+}
+
+.tracking-stat-icon {
+    font-size: 22px;
+    margin-bottom: 8px;
+}
+
+.tracking-stat-label {
+    font-size: 11px;
+    font-weight: 700;
+    color: #64748b;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    margin-bottom: 6px;
+}
+
+.tracking-stat-val {
+    font-size: 13.5px;
+    font-weight: 750;
+    color: var(--accent-color);
+    word-break: break-word;
+    line-height: 1.35;
+}
+
+/* Consignment Stepper Timeline */
+.contact-tracking-progress {
+    position: relative;
+    padding: 20px 0;
+}
+
+.contact-progress-bar-container {
+    position: relative;
+    width: 100%;
+}
+
+.contact-progress {
+    position: absolute;
+    top: 26px;
+    left: 40px;
+    right: 40px;
+    height: 6px;
+    background-color: #e2e8f0;
+    border-radius: 3px;
+    z-index: 1;
+}
+
+.contact-progress-bar {
+    height: 100%;
+    background: linear-gradient(90deg, var(--primary-color) 0%, var(--secondary-color) 100%);
+    border-radius: 3px;
+    width: 0%;
+    transition: width 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.contact-progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 120px;
+}
+
+.contact-step-icon {
+    width: 58px;
+    height: 58px;
+    border-radius: 50%;
+    background-color: var(--white);
+    border: 3.5px solid #cbd5e1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: #94a3b8;
+    transition: all 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.contact-step-content {
+    margin-top: 12px;
+}
+
+.contact-step-label {
+    font-size: 14px;
+    font-weight: 800;
+    color: #64748b;
+    margin-bottom: 2px;
+    font-family: 'Outfit', sans-serif;
+    transition: color 0.3s ease;
+}
+
+.contact-step-date {
+    font-size: 11px;
+    color: #94a3b8;
+    font-weight: 600;
+    min-height: 16px;
+}
+
+/* Stepper States */
+.contact-step.completed .contact-step-icon {
+    border-color: var(--primary-color);
+    background-color: var(--primary-color);
+    color: var(--white);
+    box-shadow: 0 0 0 6px rgba(var(--primary-rgb), 0.12);
+}
+
+.contact-step.completed .contact-step-label {
+    color: var(--primary-color);
+}
+
+.contact-step.completed .contact-step-date {
+    color: #64748b;
+}
+
+.contact-step.active .contact-step-icon {
+    border-color: var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: var(--white);
+    transform: scale(1.12);
+    box-shadow: 0 0 0 8px rgba(var(--secondary-rgb), 0.22);
+    animation: stepper-pulse 2s infinite;
+}
+
+.contact-step.active .contact-step-label {
+    color: var(--secondary-color);
+}
+
+@keyframes stepper-pulse {
+    0% {
+        box-shadow: 0 0 0 0px rgba(var(--secondary-rgb), 0.4);
+    }
+    70% {
+        box-shadow: 0 0 0 10px rgba(var(--secondary-rgb), 0);
+    }
+    100% {
+        box-shadow: 0 0 0 0px rgba(var(--secondary-rgb), 0);
+    }
+}
+
+/* Premium Table Styles */
+.tracking-history-title {
+    font-size: 16px;
+    font-weight: 850;
+    color: var(--accent-color);
+    border-bottom: 2px solid #e2e8f0;
+    font-family: 'Outfit', sans-serif;
+    letter-spacing: 0.5px;
+}
+
+.table-custom {
+    border-collapse: separate;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #cbd5e1;
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+.table-custom thead {
+    background-color: #f1f5f9;
+}
+
+.table-custom th {
+    border: none !important;
+    font-size: 12px;
+    font-weight: 800;
+    color: #475569;
+    text-transform: uppercase;
+    letter-spacing: 0.8px;
+    padding: 16px 20px;
+}
+
+.table-custom td {
+    border-top: 1px solid #e2e8f0 !important;
+    border-bottom: none !important;
+    border-left: none !important;
+    border-right: none !important;
+    padding: 16px 20px;
+    font-size: 13.5px;
+    color: var(--accent-color);
+    font-weight: 600;
+    vertical-align: middle;
+}
+
+.table-custom tbody tr:nth-child(even) {
+    background-color: #f8fafc;
+}
+
+.table-custom tbody tr:hover {
+    background-color: rgba(var(--primary-rgb), 0.02);
+}
+
+/* Support Footer */
+.tracking-support-footer {
+    border-left: 4px solid var(--primary-color) !important;
+    background-color: #f8fafc;
+    font-size: 13.5px;
+    font-weight: 550;
+    border-radius: 12px;
+}
+
+.contact-tracking-link, .contact-tracking-underline {
+    color: var(--primary-color);
+    transition: color 0.3s ease;
+}
+
+.contact-tracking-link:hover, .contact-tracking-underline:hover {
+    color: var(--secondary-color);
+}
+
+/* Responsive Stepper Timeline for Mobile */
+@media (max-width: 767.98px) {
+    .tracking-search-card {
+        padding: 24px 20px;
+    }
+    
+    .tracking-card-title {
+        font-size: 24px;
+    }
+    
+    .tracking-input-wrapper {
+        flex-direction: column;
+        padding: 10px;
+        border-radius: 18px;
+        gap: 10px;
+    }
+    
+    .tracking-input-icon {
+        display: none;
+    }
+    
+    .tracking-input-field {
+        width: 100%;
+        text-align: center;
+        padding: 0 !important;
+        height: 44px;
+    }
+    
+    .btn-tracking-submit {
+        width: 100%;
+        height: 48px;
+    }
+    
+    .contact-progress {
+        display: none;
+    }
+    
+    .contact-progress-steps {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 24px;
+        position: relative;
+        padding-left: 15px;
+    }
+    
+    .contact-step {
+        flex-direction: row;
+        align-items: center;
+        text-align: left;
+        width: 100%;
+        gap: 16px;
+    }
+    
+    .contact-step-content {
+        margin-top: 0;
+    }
+    
+    .contact-step-icon {
+        width: 46px;
+        height: 46px;
+        font-size: 16px;
+        position: relative;
+        z-index: 2;
+    }
+    
+    /* Connective vertical lines */
+    .contact-step:not(:last-child)::after {
+        content: '';
+        position: absolute;
+        left: 36px;
+        width: 3px;
+        height: 28px;
+        background-color: #cbd5e1;
+        z-index: 1;
+        margin-top: 42px;
+    }
+    
+    .contact-step.completed:not(:last-child)::after {
+        background-color: var(--primary-color);
+    }
+    
+    .contact-step.active:not(:last-child)::after {
+        background-color: #cbd5e1;
+    }
+}
+

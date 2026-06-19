@@ -20,6 +20,7 @@ $route['blog'] = 'blog/view';
 $route['privacy-policy'] = 'about/privacy';
 $route['terms-and-conditions'] = 'about/terms';
 $route['packing-tips'] = 'about/packingTips';
+$route['track-consignment'] = 'contacts/trackingpage';
 
 
 // City Services Routes

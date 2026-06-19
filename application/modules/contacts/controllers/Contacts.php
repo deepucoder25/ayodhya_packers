@@ -85,6 +85,7 @@ class Contacts extends MX_Controller
         $this->form_validation->set_rules('trackingNumber', 'Tracking ID', 'required|trim');
 
         if ($this->form_validation->run() == true) {
+            $this->load->model('contacts_mdl');
             $data = $this->contacts_mdl->trackings();
 
             if ($data) {
@@ -102,13 +103,15 @@ class Contacts extends MX_Controller
                     'timeline' => []
                 ];
                 foreach ($data as $row) {
-                    $response['timeline'][] = [
-                        'type' => $row['type'],
-                        'date' => $row['date'],
-                        'time' => $row['time'],
-                        'place' => $row['place'],
-                        'remarks' => $row['remarks']
-                    ];
+                    if ($row['type']) {
+                        $response['timeline'][] = [
+                            'type' => $row['type'],
+                            'date' => $row['date'],
+                            'time' => $row['time'],
+                            'place' => $row['place'],
+                            'remarks' => $row['remarks']
+                        ];
+                    }
                 }
                 echo json_encode($response);
             } else {
@@ -127,6 +130,4 @@ class Contacts extends MX_Controller
         $data['view_file'] = "tracking";
         echo Modules::run('template/layout2', $data);
     }
-
-    
 }
