@@ -141,7 +141,12 @@
               </li>
               <li>
                 <a href="<?= site_url('our-branches') ?>">
-                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Our Network
+                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Our Branches
+                </a>
+              </li>
+              <li>
+                <a href="<?= site_url('certificates') ?>">
+                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Our Certificates
                 </a>
               </li>
               <li>
