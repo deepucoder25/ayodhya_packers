@@ -62,6 +62,72 @@ include 'city_content.php';
         <?php echo $htmlcontent2;?>      
         <?php include 'city_reviews.php'?>
 
+        <!-- Client Certificates & Work Orders Section inside col-8 -->
+        <div class="city-documents-card mt-4 mb-4">
+            <h3 class="city-section-title-sm mb-3">
+                <i class="bi bi-shield-check text-primary me-2"></i>Client &amp; Work Orders
+            </h3>
+            <p class="text-muted mb-4" style="font-size: 14px;">Explore our trusted client list and recent work order documents in <?= htmlspecialchars($city) ?>.</p>
+            
+            <?php
+            if (!isset($work_orders)) {
+                $work_orders = [
+                    [
+                        'title' => 'Official Quotation & Estimate',
+                        'file_name' => 'Quotation_No_20260165.pdf',
+                        'file_path' => 'assets/images/documents/certificate1.pdf',
+                        'color' => 'blue',
+                        'is_pink_hover' => true
+                    ],
+                    [
+                        'title' => 'Pre-Move Survey List',
+                        'file_name' => 'Survey_List_No_20260004.pdf',
+                        'file_path' => 'assets/images/documents/certificate2.pdf',
+                        'color' => 'pink',
+                        'is_pink_hover' => false
+                    ],
+                    [
+                        'title' => 'Inventory Packing List',
+                        'file_name' => 'Packing_List_No_20260018.pdf',
+                        'file_path' => 'assets/images/documents/certificate3.pdf',
+                        'color' => 'orange',
+                        'is_pink_hover' => true
+                    ],
+                    [
+                        'title' => 'Lorry Receipt (Consignment Note)',
+                        'file_name' => 'Lorry_Receipt_No_20260046.pdf',
+                        'file_path' => 'assets/images/documents/certificate4.pdf',
+                        'color' => 'purple',
+                        'is_pink_hover' => false
+                    ]
+                ];
+            }
+            ?>
+            <div class="row g-3">
+                <?php foreach ($work_orders as $doc): ?>
+                    <div class="col-md-6 col-12 d-flex">
+                        <div class="doc-card w-100<?= $doc['is_pink_hover'] ? ' pink-hover' : '' ?>" style="padding: 24px 16px; border-radius: 16px;">
+                            <div class="doc-icon-wrap color-<?= $doc['color'] ?>" style="width: 50px; height: 50px; font-size: 24px; margin-bottom: 12px;">
+                                <i class="bi bi-file-earmark-pdf-fill"></i>
+                            </div>
+                            <h4 class="doc-title" style="font-size: 16px; margin-bottom: 4px;"><?= htmlspecialchars($doc['title']) ?></h4>
+                            <span class="doc-name" style="font-size: 12px; margin-bottom: 16px;" title="<?= htmlspecialchars($doc['file_name']) ?>"><?= htmlspecialchars($doc['file_name']) ?></span>
+                            <a href="<?= base_url($doc['file_path']) ?>" target="_blank" class="btn-view-doc" style="padding: 6px 18px; font-size: 13px;">
+                                <i class="bi bi-eye"></i> View
+                            </a>
+                        </div>
+                    </div>
+                <?php endforeach; ?>
+            </div>
+            
+            <div class="text-center mt-4">
+                <a href="<?= site_url('certificates') ?>" class="btn-view-all-docs" style="padding: 10px 24px; font-size: 14px;">
+                    <span>View All Documents</span>
+                    <i class="bi bi-arrow-right"></i>
+                </a>
+            </div>
+        </div>
+
         <?php include 'city_faq.php'?>
 
       </div><!-- /col-lg-8 -->

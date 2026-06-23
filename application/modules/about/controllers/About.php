@@ -70,4 +70,14 @@ class About extends MX_Controller
         $data['view_file'] = "packing_tips";
         echo Modules::run('template/layout2', $data);
     }
+
+    function certificates()
+    {
+        $data['title'] = "Our Certificates & Documents | " . $this->comp['company3'];
+        $data['description'] = "Explore verified work orders, registration documents, and official certifications of " . $this->comp['company3'] . ". ISO Certified & IBA Approved Packers and Movers.";
+        $data['module'] = "about";
+        $data['view_file'] = "certificates";
+        echo Modules::run('template/layout2', $data);
+    }
 }
+

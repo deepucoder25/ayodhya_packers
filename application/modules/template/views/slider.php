@@ -40,7 +40,7 @@
               <img loading="lazy" src="https://randomuser.me/api/portraits/men/62.jpg" alt="User" class="avatar-img">
             </div>
             <div class="trust-rating-text">
-              <span class="rating-num">4.8/5</span>
+              <span class="rating-num"><?= $ratingValue?>/5</span>
               <span class="rating-lbl">Trusted by<br>10,000+ Customers</span>
             </div>
           </div>

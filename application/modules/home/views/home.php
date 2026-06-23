@@ -11,6 +11,10 @@ $this->load->view('process_widget');
 
 // Load the Reviews widget
 $this->load->view('review_widget');
+
+// Load the Client & Work Orders widget
+$this->load->view('client_docs_widget');
+
 // $this->load->view('city_list');
 // Load the FAQs widget
 $this->load->view('faqs_widget');

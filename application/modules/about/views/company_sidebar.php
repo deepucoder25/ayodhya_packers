@@ -24,6 +24,7 @@
             $sidebar_links = [
                 ['slug' => 'about-us',             'name' => 'About Us',             'icon' => 'bi-info-circle',       'color' => 'pink'],
                 ['slug' => 'testimonials',         'name' => 'Testimonial',          'icon' => 'bi-chat-quote',        'color' => 'blue'],
+                ['slug' => 'certificates',         'name' => 'Our Certificates',     'icon' => 'bi-award',             'color' => 'orange'],
                 ['slug' => 'blog',                 'name' => 'Blog',                 'icon' => 'bi-journal-text',      'color' => 'green'],
                 ['slug' => 'reviews',              'name' => 'Review',               'icon' => 'bi-star',              'color' => 'orange'],
                 ['slug' => 'faqs',                 'name' => 'FAQs',                 'icon' => 'bi-question-circle',   'color' => 'purple'],
