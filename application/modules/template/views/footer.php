@@ -150,6 +150,11 @@
                 </a>
               </li>
               <li>
+                <a href="<?= site_url('online-payment') ?>">
+                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Online Payment
+                </a>
+              </li>
+              <li>
                 <a href="<?= site_url('testimonials') ?>">
                   <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Testimonials
                 </a>

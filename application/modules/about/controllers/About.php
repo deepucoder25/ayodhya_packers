@@ -79,5 +79,14 @@ class About extends MX_Controller
         $data['view_file'] = "certificates";
         echo Modules::run('template/layout2', $data);
     }
+
+    function payment()
+    {
+        $data['title'] = "Online Payment - Secure Shifting Payments | " . $this->comp['company3'];
+        $data['description'] = "Make secure online payments for your household shifting, vehicle transport, or warehouse booking with " . $this->comp['company3'] . ". Scan our verified QR codes to pay.";
+        $data['module'] = "about";
+        $data['view_file'] = "payment";
+        echo Modules::run('template/layout2', $data);
+    }
 }
 

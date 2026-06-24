@@ -10,6 +10,8 @@
   $active_tab = '';
   if (empty($segment1) || $segment1 === 'home' || $class === 'home') {
       $active_tab = 'home';
+  } elseif ($segment1 === 'online-payment') {
+      $active_tab = 'payment';
   } elseif ($class === 'about' || $class === 'blog' || $class === 'gallery' || in_array($segment1, ['about-us', 'testimonials', 'certificates', 'blog', 'reviews', 'faqs', 'packing-tips', 'privacy-policy', 'terms-and-conditions', 'photo-gallery'])) {
       $active_tab = 'about';
   } elseif ($class === 'services' || in_array($segment1, ['our-services', 'packing-and-moving', 'loading-and-unloading', 'residential-relocation', 'home-relocation', 'office-relocation', 'car-transportation', 'bike-transportation', 'international-transportation', 'warehousing-and-storage', 'transport-insurance', 'heavy-machinery-and-shifting'])) {
@@ -165,6 +167,14 @@
               <span class="nav-menu-text">branches</span>
               <div class="nav-active-line"></div>
             </a>
+
+            <a href="<?= site_url('online-payment') ?>" class="nav-menu-item<?= $active_tab === 'payment' ? ' active' : '' ?>">
+              <div class="nav-menu-icon">
+                <i class="bi bi-credit-card"></i>
+              </div>
+              <span class="nav-menu-text">Online Payment</span>
+              <div class="nav-active-line"></div>
+            </a>
             
             <a href="<?= site_url('contact-us') ?>" class="nav-menu-item<?= $active_tab === 'contact' ? ' active' : '' ?>">
               <div class="nav-menu-icon">
@@ -295,6 +305,18 @@
                   <i class="bi bi-geo-alt"></i>
                 </div>
                 <span class="drawer-item-text">branches</span>
+              </div>
+              <i class="bi bi-chevron-right chevron-rt"></i>
+            </a>
+          </div>
+
+          <div class="mobile-nav-item<?= $active_tab === 'payment' ? ' active' : '' ?>">
+            <a href="<?= site_url('online-payment') ?>" class="drawer-nav-item-link">
+              <div class="d-flex align-items-center gap-3">
+                <div class="drawer-item-icon">
+                  <i class="bi bi-credit-card"></i>
+                </div>
+                <span class="drawer-item-text">Online Payment</span>
               </div>
               <i class="bi bi-chevron-right chevron-rt"></i>
             </a>

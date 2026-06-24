@@ -562,7 +562,7 @@ html, body {
     margin: 0 auto;
 }
 .mobile-nav-item.active .mobile-dropdown-menu {
-    max-height: 400px;
+    max-height: 600px;
     padding: 10px 0;
     margin: 8px auto 4px auto;
     border: 1px solid rgba(46, 56, 91, 0.05);
