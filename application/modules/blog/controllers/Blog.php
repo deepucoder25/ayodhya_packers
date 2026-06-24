@@ -4,6 +4,7 @@ class Blog extends MX_Controller {
 
     function __construct(){
         parent::__construct();
+        $this->load->database();
     }
 
     private function slugify($text) {
@@ -14,9 +15,15 @@ class Blog extends MX_Controller {
     }
 
     private function loadBlogs() {
-        $path = FCPATH . 'admin_data/blogs.json';
-        if (!file_exists($path)) return [];
-        return json_decode(file_get_contents($path), true) ?: [];
+        $query = $this->db->where('status', 1)->order_by('b_id', 'asc')->get('blog');
+        $blogs = [];
+        foreach ($query->result_array() as $row) {
+            $row['id'] = $row['b_id'];
+            $row['created_at'] = $row['timestamp'] ?? date('Y-m-d H:i:s');
+            $row['content'] = $row['description'];
+            $blogs[] = $row;
+        }
+        return $blogs;
     }
 
     function index() {
@@ -100,7 +107,7 @@ class Blog extends MX_Controller {
             $data['description'] = word_limiter(strip_tags($selected_blog->description), 200);
             
             $image_file = $selected_blog->image;
-            $data['img'] = ($image_file && file_exists(FCPATH . 'uploads/blogs/' . $image_file)) ? base_url('uploads/blogs/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
+            $data['img'] = ($image_file && file_exists(FCPATH . 'assets/uploads/blog/' . $image_file)) ? base_url('assets/uploads/blog/'.$image_file) : base_url('assets/images/about/packers_movers.jpg');
             
             $data['module'] = "blog";
             $data['view_file'] = "view"; 
