@@ -428,7 +428,7 @@
 
 .stat-icon.icon-green {
     background-color: var(--tertiary-color);
-    color: var(--white);
+    color: #050d22;
 }
 
 .stat-icon.icon-pink {

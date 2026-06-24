@@ -8,26 +8,26 @@
             <div class="modal-body p-4">
                 <form action="<?= site_url('reviews/submit') ?>" method="POST">
                     <div class="mb-3">
-                        <label class="contact-review-form-label">Your Full Name</label>
-                        <input type="text" name="name" class="form-control contact-review-form-control" placeholder="Enter your name" required>
+                        <label for="review_name" class="contact-review-form-label">Your Full Name</label>
+                        <input id="review_name" type="text" name="name" class="form-control contact-review-form-control" placeholder="Enter your name" required>
                     </div>
                     <div class="mb-3">
-                        <label class="contact-review-form-label">Your Email</label>
-                        <input type="email" name="email" class="form-control contact-review-form-control" placeholder="Enter your email address" required>
+                        <label for="review_email" class="contact-review-form-label">Your Email</label>
+                        <input id="review_email" type="email" name="email" class="form-control contact-review-form-control" placeholder="Enter your email address" required>
                     </div>
                     <div class="mb-3">
-                        <label class="contact-review-form-label">Your City</label>
-                        <input type="text" name="city" class="form-control contact-review-form-control" placeholder="e.g. Lucknow" value="<?= isset($city) ? $city : '' ?>" required>
+                        <label for="review_city" class="contact-review-form-label">Your City</label>
+                        <input id="review_city" type="text" name="city" class="form-control contact-review-form-control" placeholder="e.g. Lucknow" value="<?= isset($city) ? $city : '' ?>" required>
                     </div>
                     <div class="mb-3">
                         <label class="contact-review-form-label">Your Rating</label>
                         <div class="d-flex align-items-center gap-3 mb-3">
                             <div class="contact-rating-select mb-0" id="star-rating">
-                                <i class="bi bi-star-fill contact-rating-item active" data-value="1"></i>
-                                <i class="bi bi-star-fill contact-rating-item active" data-value="2"></i>
-                                <i class="bi bi-star-fill contact-rating-item active" data-value="3"></i>
-                                <i class="bi bi-star-fill contact-rating-item active" data-value="4"></i>
-                                <i class="bi bi-star-fill contact-rating-item active" data-value="5"></i>
+                                <i class="bi bi-star-fill contact-rating-item active" data-value="1" role="button" aria-label="Rate 1 out of 5 stars"></i>
+                                <i class="bi bi-star-fill contact-rating-item active" data-value="2" role="button" aria-label="Rate 2 out of 5 stars"></i>
+                                <i class="bi bi-star-fill contact-rating-item active" data-value="3" role="button" aria-label="Rate 3 out of 5 stars"></i>
+                                <i class="bi bi-star-fill contact-rating-item active" data-value="4" role="button" aria-label="Rate 4 out of 5 stars"></i>
+                                <i class="bi bi-star-fill contact-rating-item active" data-value="5" role="button" aria-label="Rate 5 out of 5 stars"></i>
                             </div>
                             <div class="d-flex align-items-center gap-2 contact-review-rating-wrap">
                                 <div id="rating-emoji" class="contact-review-emoji">😍</div>
@@ -37,8 +37,8 @@
                         <input type="hidden" name="rating" id="rating-input" value="5">
                     </div>
                     <div class="mb-3">
-                        <label class="contact-review-form-label">Your Message</label>
-                        <textarea name="review" class="form-control contact-review-form-control" rows="4" placeholder="Write your feedback here..." required></textarea>
+                        <label for="review_text" class="contact-review-form-label">Your Message</label>
+                        <textarea id="review_text" name="review" class="form-control contact-review-form-control" rows="4" placeholder="Write your feedback here..." required></textarea>
                     </div>
                     <button type="submit" class="contact-btn-submit-review mt-3">Submit Review</button>
                 </form>

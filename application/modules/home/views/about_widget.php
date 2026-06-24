@@ -3,7 +3,7 @@
 
 <section class="about-section py-5 position-relative overflow-hidden">
     <div class="about-bg-decor about-bg-decor-left d-none d-lg-block">
-        <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <pattern id="about-dots-left" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
                 <circle cx="2" cy="2" r="1.5" fill="var(--secondary-color)" opacity="0.1" />
             </pattern>
@@ -12,7 +12,7 @@
     </div>
 
     <div class="about-bg-decor about-bg-decor-right d-none d-lg-block">
-        <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="200" height="150" viewBox="0 0 200 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <pattern id="about-dots-right" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
                 <circle cx="2" cy="2" r="1.5" fill="var(--primary-color)" opacity="0.1" />
             </pattern>
@@ -26,19 +26,19 @@
                 <div class="about-content">
                     <div class="srv-eyebrow mb-3">
                         <span class="reviews-heading-line left">
-                            <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <line x1="0" y1="2" x2="22" y2="2" stroke="var(--primary-color)" stroke-width="1.8" stroke-linecap="round" />
                                 <line x1="22" y1="2" x2="45" y2="2" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" />
                             </svg>
                         </span>
                         <span class="srv-eyebrow-text px-3 d-inline-flex align-items-center">
                             ABOUT US 
-                            <svg width="20" height="16" viewBox="0 0 24 24" fill="var(--primary-color)" class="ms-2">
+                            <svg width="20" height="16" viewBox="0 0 24 24" fill="var(--primary-color)" class="ms-2" aria-hidden="true">
                                 <path d="M20 8h-3V4H3c-1.1 0-2 .9-2 2v11h2c0 1.66 1.34 3 3 3s3-1.34 3-3h6c0 1.66 1.34 3 3 3s3-1.34 3-3h2v-5l-3-4zM6 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5zm12.5-11H17V5h1.5v2.5zM18 18.5c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z" />
                             </svg>
                         </span>
                         <span class="reviews-heading-line right">
-                            <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                                 <line x1="0" y1="2" x2="22" y2="2" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" />
                                 <line x1="22" y1="2" x2="45" y2="2" stroke="var(--primary-color)" stroke-width="1.8" stroke-linecap="round" />
                             </svg>
@@ -66,7 +66,7 @@
                     <div class="about-img-mask-bg"></div>
                     <img loading="lazy" src="<?= base_url('assets/images/about_modules/about.jpg') ?>" 
                          alt="Reliable Packers and Movers Service - <?= $company3 ?>" 
-                         class="about-showcase-img img-fluid">
+                         class="about-showcase-img img-fluid" width="570" height="360">
                 </div>
             </div>
         </div>

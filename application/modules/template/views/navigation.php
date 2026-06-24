@@ -27,12 +27,12 @@
     <div class="container">
       <div class="top-bar-desktop d-none d-lg-flex justify-content-between align-items-center">
         <div class="top-bar-left d-flex align-items-center gap-3">
-          <a href="<?= $mailhtml ?>" class="d-flex align-items-center gap-2">
-            <i class="bi bi-envelope"></i> <span><?= $mail ?></span>
+          <a href="<?= $mailhtml ?>" class="d-flex align-items-center gap-2" aria-label="Send email to <?= htmlspecialchars($mail) ?>">
+            <i class="bi bi-envelope" aria-hidden="true"></i> <span><?= $mail ?></span>
           </a>
           <span class="divider-line">|</span>
-          <a href="<?= $phonehtml ?>" class="d-flex align-items-center gap-2">
-            <i class="bi bi-telephone"></i> <span><?= $phone ?></span>
+          <a href="<?= $phonehtml ?>" class="d-flex align-items-center gap-2" aria-label="Call phone number <?= htmlspecialchars($phone) ?>">
+            <i class="bi bi-telephone" aria-hidden="true"></i> <span><?= $phone ?></span>
           </a>
         </div>
         
@@ -58,12 +58,12 @@
 
       <div class="top-bar-mobile d-lg-none flex-column gap-2 py-1">
         <div class="d-flex justify-content-center align-items-center gap-3">
-          <a href="<?= $mailhtml ?>" class="d-flex align-items-center gap-1">
-            <i class="bi bi-envelope"></i> <span><?= $mail ?></span>
+          <a href="<?= $mailhtml ?>" class="d-flex align-items-center gap-1" aria-label="Send email to <?= htmlspecialchars($mail) ?>">
+            <i class="bi bi-envelope" aria-hidden="true"></i> <span><?= $mail ?></span>
           </a>
           <span class="divider-line">|</span>
-          <a href="<?= $phonehtml ?>" class="d-flex align-items-center gap-1">
-            <i class="bi bi-telephone"></i> <span><?= $phone ?></span>
+          <a href="<?= $phonehtml ?>" class="d-flex align-items-center gap-1" aria-label="Call phone number <?= htmlspecialchars($phone) ?>">
+            <i class="bi bi-telephone" aria-hidden="true"></i> <span><?= $phone ?></span>
           </a>
         </div>
         <div class="d-flex justify-content-center align-items-center gap-2">
@@ -83,7 +83,7 @@
       
       <div class="mobile-header-bar d-flex d-lg-none justify-content-between align-items-center w-100">
         <a href="<?= site_url() ?>" class="mobile-brand-logo-wrap">
-          <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="mobile-brand-logo">
+          <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="mobile-brand-logo" width="135" height="90">
         </a>
         <div class="d-flex align-items-center gap-3">
           <button class="hamburger" id="openMenu" aria-label="Open navigation menu">
@@ -98,7 +98,7 @@
         
         <div class="logo-col">
           <a href="<?= site_url() ?>" class="brand-logo-wrap">
-            <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo">
+            <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Packers and Movers" class="brand-logo" width="150" height="100">
           </a>
         </div>
 
@@ -210,7 +210,7 @@
       
       <div class="drawer-header d-flex justify-content-between align-items-center">
         <div class="drawer-logo">
-          <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Logo" class="drawer-logo-img">
+          <img src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Logo" class="drawer-logo-img" width="145" height="97">
         </div>
         <button class="mega-close" id="closeMenu" aria-label="Close navigation menu">
           <i class="bi bi-x"></i>

@@ -34,10 +34,10 @@
           
           <div class="hero-trust-rating">
             <div class="avatar-group">
-              <img loading="lazy" src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="avatar-img">
-              <img loading="lazy" src="https://randomuser.me/api/portraits/men/12.jpg" alt="User" class="avatar-img">
-              <img loading="lazy" src="https://randomuser.me/api/portraits/men/22.jpg" alt="User" class="avatar-img">
-              <img loading="lazy" src="https://randomuser.me/api/portraits/men/62.jpg" alt="User" class="avatar-img">
+              <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="User" class="avatar-img" width="40" height="40">
+              <img src="https://randomuser.me/api/portraits/men/12.jpg" alt="User" class="avatar-img" width="40" height="40">
+              <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="User" class="avatar-img" width="40" height="40">
+              <img src="https://randomuser.me/api/portraits/men/62.jpg" alt="User" class="avatar-img" width="40" height="40">
             </div>
             <div class="trust-rating-text">
               <span class="rating-num"><?= $ratingValue?>/5</span>

@@ -6,7 +6,7 @@
         <div class="col-lg-3 col-md-12">
           <div class="footer-brand-col">
             <a href="<?= site_url() ?>" class="footer-logo-link">
-              <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Logo" class="footer-logo-img">
+              <img loading="lazy" src="<?= base_url() ?>assets/images/logo/logo.png" alt="<?= $company3 ?> Logo" class="footer-logo-img" width="135" height="90">
             </a>
             <p class="footer-desc-text">
               Ayodhya Packers And Movers offers reliable and affordable packing and moving services for your home, office, and vehicle – anywhere in India and worldwide.
@@ -278,7 +278,7 @@
     </div>
 
     <div class="footer-bg-waves">
-      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none">
+      <svg viewBox="0 0 1440 120" fill="none" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none" aria-hidden="true">
         <path d="M 0,40 C 300,90 600,100 900,80 C 1100,60 1250,20 1440,0 L 1440,120 L 0,120 Z" fill="var(--tertiary-color)" />
         <path d="M 0,55 C 300,98 600,108 900,90 C 1100,75 1250,35 1440,15 L 1440,120 L 0,120 Z" fill="var(--secondary-color)" />
         <path d="M 0,70 C 250,105 500,115 750,102 C 1000,90 1200,55 1440,32 L 1440,120 L 0,120 Z" fill="var(--primary-color)" />
@@ -303,44 +303,44 @@
         
         <div class="social-icons">
           <a href="<?= !empty($facebookhtml) ? $facebookhtml : '#' ?>" class="social-btn btn-facebook" aria-label="Facebook" target="_blank" rel="noopener">
-            <i class="bi bi-facebook"></i>
+            <i class="bi bi-facebook" aria-hidden="true"></i>
           </a>
           <a href="<?= !empty($instagramhtml) ? $instagramhtml : '#' ?>" class="social-btn btn-instagram" aria-label="Instagram" target="_blank" rel="noopener">
-            <i class="bi bi-instagram"></i>
+            <i class="bi bi-instagram" aria-hidden="true"></i>
           </a>
           <a href="<?= !empty($linkedinhtml) ? $linkedinhtml : '#' ?>" class="social-btn btn-linkedin" aria-label="LinkedIn" target="_blank" rel="noopener">
-            <i class="bi bi-linkedin"></i>
+            <i class="bi bi-linkedin" aria-hidden="true"></i>
           </a>
           <a href="<?= !empty($youtubehtml) ? $youtubehtml : '#' ?>" class="social-btn btn-youtube" aria-label="YouTube" target="_blank" rel="noopener">
-            <i class="bi bi-youtube"></i>
+            <i class="bi bi-youtube" aria-hidden="true"></i>
           </a>
           <?php if (!empty($twitterhtml)): ?>
           <a href="<?= $twitterhtml ?>" class="social-btn btn-twitter-x" aria-label="Twitter (X)" target="_blank" rel="noopener">
-            <i class="bi bi-twitter-x"></i>
+            <i class="bi bi-twitter-x" aria-hidden="true"></i>
           </a>
           <?php endif; ?>
           <?php if (!empty($vkhtml)): ?>
           <a href="<?= $vkhtml ?>" class="social-btn btn-vk" aria-label="VK (VKontakte)" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
               <path d="M6.837 7.3h-2.73c.126 6.24 3.245 9.99 8.72 9.99h.309v-3.57c2.013.2 3.533 1.67 4.144 3.57h2.835c-.782-2.84-2.832-4.41-4.114-5.01 1.282-.74 3.085-2.54 3.514-4.98h-2.583c-.563 1.98-2.223 3.78-3.8 3.95V7.3h-2.709v6.92c-1.603-.4-3.625-2.34-3.712-6.92z"/>
             </svg>
           </a>
           <?php endif; ?>
           <?php if (!empty($tumblrhtml)): ?>
           <a href="<?= $tumblrhtml ?>" class="social-btn btn-tumblr" aria-label="Tumblr" target="_blank" rel="noopener">
-            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor" aria-hidden="true">
               <path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/>
             </svg>
           </a>
           <?php endif; ?>
           <?php if (!empty($reddithtml)): ?>
           <a href="<?= $reddithtml ?>" class="social-btn btn-reddit" aria-label="Reddit" target="_blank" rel="noopener">
-            <i class="bi bi-reddit"></i>
+            <i class="bi bi-reddit" aria-hidden="true"></i>
           </a>
           <?php endif; ?>
           <?php if (!empty($behancehtml)): ?>
           <a href="<?= $behancehtml ?>" class="social-btn btn-behance" aria-label="Behance" target="_blank" rel="noopener">
-            <i class="bi bi-behance"></i>
+            <i class="bi bi-behance" aria-hidden="true"></i>
           </a>
           <?php endif; ?>
         </div>
@@ -354,14 +354,14 @@
       <div class="btn-ripple-wrapper">
         <div class="btn-ripple"></div>
       </div>
-      <i class="bi bi-telephone-fill"></i>
+      <i class="bi bi-telephone-fill" aria-hidden="true"></i>
       <span>Call Now</span>
     </a>
     <a href="javascript:void(0)" class="action-btn quote-btn" data-bs-toggle="modal" data-bs-target="#qteModal">
       <div class="btn-ripple-wrapper">
         <div class="btn-ripple"></div>
       </div>
-      <i class="bi bi-chat-left-text-fill"></i>
+      <i class="bi bi-chat-left-text-fill" aria-hidden="true"></i>
       <span>Get Quote</span>
     </a>
   </div>

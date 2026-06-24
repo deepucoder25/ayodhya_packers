@@ -13,7 +13,7 @@
                         <div class="form-group">
                             <div class="form-icon">
                                 <i class="bi bi-person-badge"></i>
-                                <input type="text" class="form-control" name="name" placeholder="Your Name">
+                                <input type="text" class="form-control" name="name" placeholder="Your Name" aria-label="Your Name">
                             </div>
                         </div>
                     </div>
@@ -21,7 +21,7 @@
                         <div class="form-group">
                             <div class="form-icon">
                                 <i class="bi bi-phone-vibrate"></i>
-                                <input type="tel" class="form-control" name="phone" placeholder="Mobile Number">
+                                <input type="tel" class="form-control" name="phone" placeholder="Mobile Number" aria-label="Mobile Number">
                             </div>
                         </div>
                     </div>
@@ -29,7 +29,7 @@
                         <div class="form-group">
                             <div class="form-icon">
                                 <i class="bi bi-envelope-at"></i>
-                                <input type="text" class="form-control" name="email" placeholder="Your Email">
+                                <input type="text" class="form-control" name="email" placeholder="Your Email" aria-label="Your Email">
                             </div>
                         </div>
                     </div>
@@ -37,7 +37,7 @@
                         <div class="form-group">
                             <div class="form-icon">
                                 <i class="bi bi-geo-alt-fill"></i>
-                                <input type="text" class="form-control" name="mfrom" placeholder="From City">
+                                <input type="text" class="form-control" name="mfrom" placeholder="From City" aria-label="From City">
                             </div>
                         </div>
                     </div>
@@ -45,7 +45,7 @@
                         <div class="form-group">
                             <div class="form-icon">
                                 <i class="bi bi-map-fill"></i>
-                                <input type="text" class="form-control" name="mto" placeholder="To City">
+                                <input type="text" class="form-control" name="mto" placeholder="To City" aria-label="To City">
                             </div>
                         </div>
                     </div>
@@ -53,7 +53,7 @@
                         <div class="form-group">
                             <div class="form-icon">
                                 <i class="bi bi-box-seam"></i>
-                                <select class="form-control form-select-custom" name="service" id="modalServiceSelect" required>
+                                <select class="form-control form-select-custom" name="service" id="modalServiceSelect" required aria-label="Select Service / Relocation Type">
                                     <option value="">Select Service / Relocation Type</option>
                                     <option value="packing-and-moving">Packing and Moving</option>
                                     <option value="loading-and-unloading">Loading and Unloading</option>
@@ -96,7 +96,7 @@
                         <div class="form-group">
                             <div class="form-icon">
                                 <i class="bi bi-chat-left-text"></i>
-                                <textarea name="message" cols="30" rows="3" class="form-control" placeholder="Describe your relocation needs..."></textarea>
+                                <textarea name="message" cols="30" rows="3" class="form-control" placeholder="Describe your relocation needs..." aria-label="Describe your relocation needs"></textarea>
                             </div>
                         </div>
                     </div>

@@ -3,7 +3,7 @@
     <!-- Chat Launcher Button -->
     <button class="ai-chat-launcher" onclick="toggleAIChat()" aria-label="Open AI Assistant">
         <span class="pulse-glow"></span>
-        <i class="bi bi-robot"></i>
+        <i class="bi bi-robot" aria-hidden="true"></i>
         <div class="launcher-tooltip">Chat with AI Relocation Assistant</div>
     </button>
 
@@ -13,7 +13,7 @@
         <div class="ai-chat-header">
             <div class="ai-chat-header-info">
                 <div class="ai-chat-avatar">
-                    <i class="bi bi-robot"></i>
+                    <i class="bi bi-robot" aria-hidden="true"></i>
                     <span class="ai-chat-avatar-status"></span>
                 </div>
                 <div class="ai-chat-header-titles">
@@ -22,7 +22,7 @@
                 </div>
             </div>
             <button class="ai-chat-header-close" onclick="toggleAIChat()" aria-label="Close Chat">
-                <i class="bi bi-x-lg"></i>
+                <i class="bi bi-x-lg" aria-hidden="true"></i>
             </button>
         </div>
 
@@ -39,20 +39,20 @@
 
         <!-- Suggestions -->
         <div class="ai-chat-suggestions">
-            <div class="ai-chat-suggestion-chip" onclick="handleSuggestion('List of shifting services')">Relocation Services</div>
-            <div class="ai-chat-suggestion-chip" onclick="handleSuggestion('How to track my order?')">Track Shipment</div>
-            <div class="ai-chat-suggestion-chip" onclick="handleSuggestion('Check rates & pricing')">Shifting Rates</div>
-            <div class="ai-chat-suggestion-chip" onclick="handleSuggestion('Get a price quote')">Get Free Quote</div>
-            <div class="ai-chat-suggestion-chip" onclick="handleSuggestion('Contact customer care')">Contact Support</div>
+            <div class="ai-chat-suggestion-chip" role="button" onclick="handleSuggestion('List of shifting services')">Relocation Services</div>
+            <div class="ai-chat-suggestion-chip" role="button" onclick="handleSuggestion('How to track my order?')">Track Shipment</div>
+            <div class="ai-chat-suggestion-chip" role="button" onclick="handleSuggestion('Check rates & pricing')">Shifting Rates</div>
+            <div class="ai-chat-suggestion-chip" role="button" onclick="handleSuggestion('Get a price quote')">Get Free Quote</div>
+            <div class="ai-chat-suggestion-chip" role="button" onclick="handleSuggestion('Contact customer care')">Contact Support</div>
         </div>
 
         <!-- Footer -->
         <div class="ai-chat-footer">
             <div class="ai-chat-input-wrapper">
-                <input type="text" class="ai-chat-input" id="aiChatInput" placeholder="Type your message here..." onkeydown="handleInputKeydown(event)">
+                <input type="text" class="ai-chat-input" id="aiChatInput" placeholder="Type your message here..." onkeydown="handleInputKeydown(event)" aria-label="Type message to AI assistant">
             </div>
             <button class="ai-chat-send-btn" onclick="sendUserMessage()" aria-label="Send Message">
-                <i class="bi bi-send-fill"></i>
+                <i class="bi bi-send-fill" aria-hidden="true"></i>
             </button>
         </div>
     </div>

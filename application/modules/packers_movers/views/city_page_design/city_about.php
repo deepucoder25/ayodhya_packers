@@ -16,13 +16,13 @@ include 'city_content.php';
             </div>
             <div class="carousel-inner h-100">
                 <div class="carousel-item active h-100">
-                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img1.jpg') ?>" alt="<?= $company3 ?> Shifting in <?= $city ?>" class="d-block w-100 h-100 pm-city-banner-img">
+                    <img src="<?= base_url('assets/images/gallery/img1.jpg') ?>" alt="<?= $company3 ?> Shifting in <?= $city ?>" class="d-block w-100 h-100 pm-city-banner-img" width="800" height="380">
                 </div>
                 <div class="carousel-item h-100">
-                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img2.jpg') ?>" alt="<?= $company3 ?> Warehousing in <?= $city ?>" class="d-block w-100 h-100 pm-city-banner-img">
+                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img2.jpg') ?>" alt="<?= $company3 ?> Warehousing in <?= $city ?>" class="d-block w-100 h-100 pm-city-banner-img" width="800" height="380">
                 </div>
                 <div class="carousel-item h-100">
-                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img3.jpg') ?>" alt="<?= $company3 ?> Vehicle Shipping in <?= $city ?>" class="d-block w-100 h-100 pm-city-banner-img">
+                    <img loading="lazy" src="<?= base_url('assets/images/gallery/img3.jpg') ?>" alt="<?= $company3 ?> Vehicle Shipping in <?= $city ?>" class="d-block w-100 h-100 pm-city-banner-img" width="800" height="380">
                 </div>
             </div>
             <button class="carousel-control-prev" type="button" data-bs-target="#cityHeaderCarousel" data-bs-slide="prev">

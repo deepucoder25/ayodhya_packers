@@ -63,10 +63,13 @@ class Packers_movers extends MX_Controller
         $city = urldecode(ucwords(str_replace("-", " ", $city)));
         $seo = $this->get_title($city, $state);
         $statelink=strtolower($state);
+        $state_img_name = str_replace(' ', '-', strtolower(trim($state)));
+        $state_img_path = "assets/images/state/$state_img_name.jpg";
+        $img = file_exists("./$state_img_path") ? base_url($state_img_path) : base_url('assets/images/logo/favicon.png');
         $data = array(
             "city" => $city,
             "state" => $state,
-            'img' => base_url('assets') . "/images/state/google/$statelink.png",
+            'img' => $img,
             "title" => $seo['title'],
             "description" => $seo['desc'],
             "keywords" => "movers and packers in $city, Movers Packers $city, Movers near me $city, Packers and movers in $city, Moving companies near me $city, Movers $city, Packers and movers near me $city",

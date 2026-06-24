@@ -697,7 +697,7 @@
 }
 
 .process-card.blue .process-card-badge {
-    background-color: var(--primary-color);
+    background-color: var(--primary-dark);
 }
 .process-card.blue .process-icon-circle {
     background-color: var(--primary-color);
@@ -711,6 +711,7 @@
 
 .process-card.green .process-card-badge {
     background-color: var(--tertiary-color);
+    color: var(--accent-color) !important;
 }
 .process-card.green .process-icon-circle {
     background-color: var(--tertiary-color);

@@ -13,10 +13,10 @@
       <div class="cta-accent-pink"></div>
       <div class="cta-accent-blue"></div>
 
-      <img loading="lazy" src="<?= base_url('assets/images/city_page/support_call.png') ?>" alt="Support Agent" class="cta-support-agent">
+      <img src="<?= base_url('assets/images/city_page/support_call.png') ?>" alt="Support Agent" class="cta-support-agent" width="110" height="110">
 
       <div class="cta-header-group d-flex align-items-center justify-content-between mb-3">
-          <img loading="lazy" src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?>" class="cta-brand-logo">
+          <img src="<?= base_url('assets/images/logo/logo.png') ?>" alt="<?= $company3 ?>" class="cta-brand-logo" width="105" height="70">
       </div>
 
       <h3 class="cta-premium-title">

@@ -29,7 +29,7 @@ $faqs = [
 
 <section class="faq-section py-5 position-relative overflow-hidden">
     <div class="faq-bg-decor faq-bg-decor-left d-none d-lg-block">
-        <svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <pattern id="faq-dots-left" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
                 <circle cx="2" cy="2" r="1.5" fill="var(--primary-color)" opacity="0.12" />
             </pattern>
@@ -41,7 +41,7 @@ $faqs = [
         </svg>
     </div>
     <div class="faq-bg-decor faq-bg-decor-right d-none d-lg-block">
-        <svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg width="240" height="180" viewBox="0 0 240 180" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
             <pattern id="faq-dots-right" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
                 <circle cx="2" cy="2" r="1.5" fill="var(--secondary-color)" opacity="0.12" />
             </pattern>
@@ -57,19 +57,19 @@ $faqs = [
         <div class="section-header text-center mb-5">
             <div class="srv-eyebrow mb-3">
                 <span class="reviews-heading-line left">
-                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <line x1="0" y1="2" x2="22" y2="2" stroke="var(--primary-color)" stroke-width="1.8" stroke-linecap="round" />
                         <line x1="22" y1="2" x2="45" y2="2" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" />
                     </svg>
                 </span>
                 <span class="srv-eyebrow-text px-3 d-inline-flex align-items-center">
                     FAQS 
-                    <svg width="20" height="16" viewBox="0 0 24 24" fill="var(--primary-color)" class="ms-2">
+                    <svg width="20" height="16" viewBox="0 0 24 24" fill="var(--primary-color)" class="ms-2" aria-hidden="true">
                         <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z" />
                     </svg>
                 </span>
                 <span class="reviews-heading-line right">
-                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <line x1="0" y1="2" x2="22" y2="2" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" />
                         <line x1="22" y1="2" x2="45" y2="2" stroke="var(--primary-color)" stroke-width="1.8" stroke-linecap="round" />
                     </svg>
@@ -141,7 +141,7 @@ $faqs = [
         <div class="faq-cta-banner">
             <div class="faq-cta-left">
                 <div class="faq-cta-left-bg">
-                    <svg viewBox="0 0 100 100" preserveAspectRatio="none" fill="var(--accent-color)" xmlns="http://www.w3.org/2000/svg">
+                    <svg viewBox="0 0 100 100" preserveAspectRatio="none" fill="var(--accent-color)" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <path d="M 0 0 L 80 0 C 92 0, 96 35, 84 65 C 76 85, 70 100, 68 100 L 0 100 Z" />
                     </svg>
                 </div>
@@ -158,8 +158,8 @@ $faqs = [
             </div>
             <div class="faq-cta-right">
                 <div class="faq-cta-channel">
-                    <a href="<?= $phonehtml ?>" class="faq-channel-icon-circle bg-secondary">
-                        <i class="bi bi-telephone-fill"></i>
+                    <a href="<?= $phonehtml ?>" class="faq-channel-icon-circle bg-secondary" aria-label="Call Us at <?= htmlspecialchars($phone) ?>">
+                        <i class="bi bi-telephone-fill" aria-hidden="true"></i>
                     </a>
                     <div class="faq-channel-details">
                         <span class="faq-channel-label">Call Us</span>
@@ -168,8 +168,8 @@ $faqs = [
                 </div>
                 <div class="faq-channel-divider"></div>
                 <div class="faq-cta-channel">
-                    <a href="mailto:<?= $mail ?>" class="faq-channel-icon-circle bg-primary">
-                        <i class="bi bi-envelope-fill"></i>
+                    <a href="mailto:<?= $mail ?>" class="faq-channel-icon-circle bg-primary" aria-label="Email Us at <?= htmlspecialchars($mail) ?>">
+                        <i class="bi bi-envelope-fill" aria-hidden="true"></i>
                     </a>
                     <div class="faq-channel-details">
                         <span class="faq-channel-label">Email Us</span>
@@ -178,8 +178,8 @@ $faqs = [
                 </div>
                 <div class="faq-channel-divider"></div>
                 <div class="faq-cta-channel">
-                    <a href="<?= $whatsapphtml ?>" target="_blank" class="faq-channel-icon-circle bg-success-theme">
-                        <i class="bi bi-chat-dots-fill"></i>
+                    <a href="<?= $whatsapphtml ?>" target="_blank" class="faq-channel-icon-circle bg-success-theme" aria-label="Chat with our support team on WhatsApp">
+                        <i class="bi bi-chat-dots-fill" aria-hidden="true"></i>
                     </a>
                     <div class="faq-channel-details">
                         <span class="faq-channel-label">Live Chat</span>

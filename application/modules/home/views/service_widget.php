@@ -64,7 +64,7 @@ $services = [
 
     <div class="container position-relative srv-z2">
         <div class="srv-decor srv-decor-left d-none d-lg-block">
-            <svg width="260" height="150" viewBox="0 0 260 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="260" height="150" viewBox="0 0 260 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <circle cx="100" cy="80" r="10" fill="#A9CF46" />
                 <circle cx="100" cy="80" r="3.5" fill="white" />
                 <path d="M 110 80 C 130 80, 140 115, 170 100 C 190 90, 210 90, 230 105 C 245 115, 255 110, 260 105" 
@@ -73,7 +73,7 @@ $services = [
         </div>
 
         <div class="srv-decor srv-decor-right d-none d-lg-block">
-            <svg width="260" height="150" viewBox="0 0 260 150" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <svg width="260" height="150" viewBox="0 0 260 150" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                 <path d="M 0 110 C 30 100, 60 70, 90 90 C 110 105, 130 50, 160 30" 
                       stroke="#EB268F" stroke-width="2" stroke-linecap="round" stroke-dasharray="2 6" />
                 <g transform="translate(160, 30) rotate(-15)">
@@ -110,8 +110,8 @@ $services = [
                                 <span class="srv-title-line"></span>
                             </div>
                             <p class="srv-card-desc"><?= htmlspecialchars($service['desc']) ?></p>
-                            <a href="<?= site_url($service['link']) ?>" class="srv-card-link">
-                                <span class="link-text">Learn More</span>
+                            <a href="<?= site_url($service['link']) ?>" class="srv-card-link" aria-label="Learn more about <?= htmlspecialchars($service['title']) ?>">
+                                <span class="link-text">Learn More<span class="visually-hidden"> About <?= htmlspecialchars($service['title']) ?></span></span>
                                 <span class="link-circle d-flex align-items-center justify-content-center">
                                     <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" fill="currentColor" class="bi bi-arrow-right-short" viewBox="0 0 16 16">
                                         <path fill-rule="evenodd" d="M4 8a.5.5 0 0 1 .5-.5h5.793L8.146 5.354a.5.5 0 1 1 .708-.708l3 3a.5.5 0 0 1 0 .708l-3 3a.5.5 0 0 1-.708-.708L10.293 8.5H4.5A.5.5 0 0 1 4 8"/>
@@ -121,14 +121,14 @@ $services = [
                         </div>
                         
                         <div class="srv-card-right">
-                            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="srv-wave-svg">
+                            <svg viewBox="0 0 100 100" preserveAspectRatio="none" class="srv-wave-svg" aria-hidden="true">
                                 <path d="M 0.1,0 C 0.3,0.15 0.05,0.85 -0.1,1 H 1 V 0 Z" class="srv-wave-outer" />
                                 <path d="M 0.16,0 C 0.36,0.15 0.11,0.85 -0.04,1 H 1 V 0 Z" class="srv-wave-inner" />
                             </svg>
                             <div class="srv-img-clip">
                                 <img src="<?= base_url('assets/images/services_modules/' . $service['image']) ?>" 
                                      alt="<?= htmlspecialchars($service['title']) ?>" 
-                                     class="srv-img" loading="lazy">
+                                     class="srv-img" loading="lazy" width="200" height="220">
                             </div>
                         </div>
                     </div>
@@ -139,7 +139,7 @@ $services = [
         <div class="srv-footer-cta mt-5">
             <div class="srv-cta-flex">
                 <div class="srv-cta-item srv-cta-help">
-                    <a href="<?= $phonehtml ?>" class="srv-cta-phone-pulse">
+                    <a href="<?= $phonehtml ?>" class="srv-cta-phone-pulse" aria-label="Call customer support at <?= htmlspecialchars($phone) ?>">
                         <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
                             <path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
                             <path d="M18 2c0 2-1 3-3 3M21 2c0 4.5-2 6.5-6 6.5M15 2c0 .8-.5 1.3-1.5 1.3" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" fill="none"/>

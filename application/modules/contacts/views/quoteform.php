@@ -10,25 +10,25 @@
                     <div class="form-group-custom">
                       <div class="input-wrap-custom">
                         <i class="bi bi-person input-icon-custom"></i>
-                        <input type="text" name="name" class="form-control-custom" placeholder="Your Name" >
+                        <input type="text" name="name" class="form-control-custom" placeholder="Your Name" aria-label="Your Name">
                       </div>
                     </div>
                     <div class="form-group-custom">
                       <div class="input-wrap-custom">
                         <i class="bi bi-telephone input-icon-custom"></i>
-                        <input type="tel" name="phone" class="form-control-custom" placeholder="Phone Number" >
+                        <input type="tel" name="phone" class="form-control-custom" placeholder="Phone Number" aria-label="Phone Number">
                       </div>
                     </div>
                     <div class="form-group-custom">
                       <div class="input-wrap-custom">
                         <i class="bi bi-envelope input-icon-custom"></i>
-                        <input type="email" name="email" class="form-control-custom" placeholder="Email Address" >
+                        <input type="email" name="email" class="form-control-custom" placeholder="Email Address" aria-label="Email Address">
                       </div>
                     </div>
                     <div class="form-group-custom">
                       <div class="input-wrap-custom select-wrap-custom">
                         <span class="select-label-custom">Select Service</span>
-                        <select name="mtype" class="form-select-custom" >
+                        <select name="mtype" class="form-select-custom" aria-label="Select Service Type">
                           <option value="" disabled selected>Select Service</option>
                           <option>Household Relocation</option>
                           <option>Office Relocation</option>
@@ -40,13 +40,13 @@
                     <div class="form-group-custom half-width-mobile">
                       <div class="input-wrap-custom">
                         <i class="bi bi-geo-alt input-icon-custom"></i>
-                        <input type="text" name="mfrom" class="form-control-custom" value="<?= @$city ?>" placeholder="Moving From" >
+                        <input type="text" name="mfrom" class="form-control-custom" value="<?= @$city ?>" placeholder="Moving From" aria-label="Moving From City">
                       </div>
                     </div>
                     <div class="form-group-custom half-width-mobile">
                       <div class="input-wrap-custom">
                         <i class="bi bi-geo-alt input-icon-custom"></i>
-                        <input type="text" name="mto" class="form-control-custom" placeholder="Moving To" >
+                        <input type="text" name="mto" class="form-control-custom" placeholder="Moving To" aria-label="Moving To City">
                       </div>
                     </div>
                     <button type="submit" class="btn-submit-custom">

@@ -40,7 +40,7 @@ if (!isset($work_orders)) {
         <div class="section-header text-center mb-5">
             <div class="srv-eyebrow mb-3 justify-content-center d-flex align-items-center">
                 <span class="reviews-heading-line left">
-                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <line x1="0" y1="2" x2="22" y2="2" stroke="var(--primary-color)" stroke-width="1.8" stroke-linecap="round" />
                         <line x1="22" y1="2" x2="45" y2="2" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" />
                     </svg>
@@ -49,7 +49,7 @@ if (!isset($work_orders)) {
                     CLIENT CREDENTIALS
                 </span>
                 <span class="reviews-heading-line right">
-                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
                         <line x1="0" y1="2" x2="22" y2="2" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" />
                         <line x1="22" y1="2" x2="45" y2="2" stroke="var(--primary-color)" stroke-width="1.8" stroke-linecap="round" />
                     </svg>
@@ -69,8 +69,8 @@ if (!isset($work_orders)) {
                         </div>
                         <h3 class="doc-title"><?= htmlspecialchars($doc['title']) ?></h3>
                         <span class="doc-name" title="<?= htmlspecialchars($doc['file_name']) ?>"><?= htmlspecialchars($doc['file_name']) ?></span>
-                        <a href="<?= base_url($doc['file_path']) ?>" target="_blank" class="btn-view-doc">
-                            <i class="bi bi-eye"></i> View
+                        <a href="<?= base_url($doc['file_path']) ?>" target="_blank" class="btn-view-doc" aria-label="View <?= htmlspecialchars($doc['title']) ?>">
+                            <i class="bi bi-eye" aria-hidden="true"></i> View
                         </a>
                     </div>
                 </div>
@@ -80,7 +80,7 @@ if (!isset($work_orders)) {
         <div class="text-center docs-cta-wrap">
             <a href="<?= site_url('certificates') ?>" class="btn-view-all-docs">
                 <span>View All Documents</span>
-                <i class="bi bi-arrow-right"></i>
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
             </a>
         </div>
     </div>

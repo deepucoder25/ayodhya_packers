@@ -2,7 +2,7 @@
 
 <section class="reviews-section py-5 position-relative overflow-hidden">
     <div class="reviews-bg-grid reviews-bg-grid-left d-none d-lg-block">
-        <svg width="80" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" width="80" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <pattern id="reviews-dot-pattern-left" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
                 <circle cx="2" cy="2" r="1.5" fill="#cbd5e1" opacity="0.35" />
             </pattern>
@@ -10,7 +10,7 @@
         </svg>
     </div>
     <div class="reviews-bg-grid reviews-bg-grid-right d-none d-lg-block">
-        <svg width="80" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" width="80" height="120" fill="none" xmlns="http://www.w3.org/2000/svg">
             <pattern id="reviews-dot-pattern-right" x="0" y="0" width="16" height="16" patternUnits="userSpaceOnUse">
                 <circle cx="2" cy="2" r="1.5" fill="#cbd5e1" opacity="0.35" />
             </pattern>
@@ -19,7 +19,7 @@
     </div>
 
     <div class="reviews-bg-decor reviews-bg-decor-left d-none d-xl-block">
-        <svg width="220" height="90" viewBox="0 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" width="220" height="90" viewBox="0 0 360 140" fill="none" xmlns="http://www.w3.org/2000/svg">
             <path d="M 0 80 C 100 80, 140 120, 220 115 C 280 110, 310 70, 340 85" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" stroke-dasharray="3 7" />
             <g transform="translate(340, 85)">
                 <circle cx="0" cy="0" r="14" fill="var(--primary-color)" />
@@ -29,7 +29,7 @@
     </div>
 
     <div class="reviews-bg-decor reviews-bg-decor-right d-none d-xl-block">
-        <svg width="160" height="100" viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
+        <svg aria-hidden="true" width="160" height="100" viewBox="0 0 160 100" xmlns="http://www.w3.org/2000/svg">
             <path d="M15 75 C40 75, 45 55, 65 40 C85 25, 105 55, 125 40 C135 32, 140 30, 145 35" fill="none" stroke="var(--tertiary-color)" stroke-width="3" stroke-dasharray="5 5" stroke-linecap="round"/>
             <g transform="translate(135,35) rotate(-20)">
                 <path d="M0 0 L18 4 L30 0 L18 -4 Z" fill="var(--tertiary-color)"/>
@@ -45,19 +45,19 @@
         <div class="section-header text-center mb-5">
             <div class="srv-eyebrow mb-3">
                 <span class="reviews-heading-line left">
-                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="0" y1="2" x2="22" y2="2" stroke="var(--primary-color)" stroke-width="1.8" stroke-linecap="round" />
                         <line x1="22" y1="2" x2="45" y2="2" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" />
                     </svg>
                 </span>
                 <span class="srv-eyebrow-text px-3 d-inline-flex align-items-center">
                     TESTIMONIALS 
-                    <svg width="20" height="16" viewBox="0 0 24 24" fill="var(--primary-color)" class="ms-2">
+                    <svg aria-hidden="true" width="20" height="16" viewBox="0 0 24 24" fill="var(--primary-color)" class="ms-2">
                         <path d="M20 2H4c-1.1 0-1.99.9-1.99 2L2 22l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2zM6 9h12v2H6V9zm8 5H6v-2h8v2zm4-6H6V6h12v2z" />
                     </svg>
                 </span>
                 <span class="reviews-heading-line right">
-                    <svg width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" width="45" height="4" viewBox="0 0 45 4" fill="none" xmlns="http://www.w3.org/2000/svg">
                         <line x1="0" y1="2" x2="22" y2="2" stroke="var(--secondary-color)" stroke-width="1.8" stroke-linecap="round" />
                         <line x1="22" y1="2" x2="45" y2="2" stroke="var(--primary-color)" stroke-width="1.8" stroke-linecap="round" />
                     </svg>
@@ -71,14 +71,14 @@
             <div class="col-lg-4 d-flex">
                 <div class="score-card w-100">
                     <div class="score-card-watermark d-none d-sm-block">
-                        <svg width="180" height="140" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" width="180" height="140" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <pattern id="score-card-dots" x="0" y="0" width="12" height="12" patternUnits="userSpaceOnUse">
                                 <circle cx="2" cy="2" r="1" fill="#ffffff" opacity="0.08" />
                             </pattern>
                             <rect width="180" height="140" fill="url(#score-card-dots)" />
                         </svg>
                     </div>
-                    <svg class="score-card-bg-wave" viewBox="0 0 300 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
+                    <svg aria-hidden="true" class="score-card-bg-wave" viewBox="0 0 300 120" preserveAspectRatio="none" xmlns="http://www.w3.org/2000/svg">
                         <path d="M 0 30 C 80 65, 220 15, 300 30 L 300 120 L 0 120 Z" fill="var(--primary-color)" />
                     </svg>
                     <div class="score-card-content">
@@ -149,7 +149,7 @@
             <div class="col-lg-8">
                 <div class="reviews-slider-outer">
                     <button class="slider-nav-btn prev-btn" id="rev-prev-btn" aria-label="Previous review">
-                        <i class="bi bi-chevron-left"></i>
+                        <i class="bi bi-chevron-left" aria-hidden="true"></i>
                     </button>
                     
                     <div class="reviews-slider-viewport">
@@ -175,7 +175,7 @@
                                 </div>
                                 <div class="card-user-info">
                                     <div class="card-avatar-wrap">
-                                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg aria-hidden="true" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="30" cy="30" r="30" fill="url(#avatar-grad-1)"/>
                                             <circle cx="30" cy="25" r="11" fill="#fed8cc"/>
                                             <path d="M18 20 C 18 14, 42 14, 42 20 C 42 14, 18 14, 18 20 Z" fill="#2d1c18"/>
@@ -219,7 +219,7 @@
                                 </div>
                                 <div class="card-user-info">
                                     <div class="card-avatar-wrap">
-                                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg aria-hidden="true" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="30" cy="30" r="30" fill="url(#avatar-grad-2)"/>
                                             <path d="M12 28 C 12 15, 48 15, 48 28 C 48 38, 44 48, 44 48 L 16 48 C 16 48, 12 38, 12 28 Z" fill="#2d1c18"/>
                                             <circle cx="30" cy="27" r="11" fill="#fed8cc"/>
@@ -266,7 +266,7 @@
                                 </div>
                                 <div class="card-user-info">
                                     <div class="card-avatar-wrap">
-                                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg aria-hidden="true" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="30" cy="30" r="30" fill="url(#avatar-grad-3)"/>
                                             <circle cx="30" cy="26" r="11" fill="#fedcbe"/>
                                             <path d="M19 22 C 19 16, 41 16, 41 22 C 41 14, 19 14, 19 22 Z" fill="#1f2421"/>
@@ -314,7 +314,7 @@
                                 </div>
                                 <div class="card-user-info">
                                     <div class="card-avatar-wrap">
-                                        <svg viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <svg aria-hidden="true" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
                                             <circle cx="30" cy="30" r="30" fill="url(#avatar-grad-4)"/>
                                             <circle cx="30" cy="25" r="11" fill="#e0f2fe"/>
                                             <path d="M16 48 C 16 38, 44 38, 44 48" fill="#e85b82" stroke="#e0f2fe" stroke-width="1.5"/>
@@ -341,7 +341,7 @@
                     </div>
 
                     <button class="slider-nav-btn next-btn" id="rev-next-btn" aria-label="Next review">
-                        <i class="bi bi-chevron-right"></i>
+                        <i class="bi bi-chevron-right" aria-hidden="true"></i>
                     </button>
 
                     <div class="slider-dots-container" id="rev-dots-track"></div>
@@ -412,7 +412,7 @@
                 
                 <div class="feature-stat-wrap">
                     <div class="stat-watermark">
-                        <svg width="80" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <svg aria-hidden="true" width="80" height="60" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <pattern id="stat-dots" x="0" y="0" width="10" height="10" patternUnits="userSpaceOnUse">
                                 <circle cx="1.5" cy="1.5" r="0.8" fill="var(--accent-color)" opacity="0.06" />
                             </pattern>
