@@ -605,6 +605,26 @@
     background-color: #FF0000;
 }
 
+.btn-twitter-x {
+    background-color: #000000;
+}
+
+.btn-vk {
+    background-color: #0077FF;
+}
+
+.btn-tumblr {
+    background-color: #36465D;
+}
+
+.btn-reddit {
+    background-color: #FF4500;
+}
+
+.btn-behance {
+    background-color: #0057ff;
+}
+
 @media (max-width: 767.98px) {
     .footer-bottom-bar {
         padding-bottom: 84px !important; /* Prevents sticky action bar from covering footer content */
@@ -614,8 +634,15 @@
         text-align: center;
         gap: 15px;
     }
-    .policy-links, .social-icons {
+    .policy-links {
         justify-content: center;
+    }
+    .social-icons {
+        justify-content: center;
+        flex-wrap: wrap;
+        max-width: 250px;
+        margin: 0 auto;
+        gap: 10px 12px;
     }
 }
 

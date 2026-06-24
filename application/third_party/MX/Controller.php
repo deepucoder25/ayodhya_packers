@@ -65,7 +65,11 @@ class MX_Controller
         $this->comp['facebookhtml'] = "https://m.facebook.com/ayodhyapackers/";
         $this->comp['youtubehtml'] = "https://youtube.com/channel/UC8eIrNKY0XkNcH5wbnhNMnw";
         $this->comp['instagramhtml'] = "https://www.instagram.com/ayodhyapackers";
-        $this->comp['twitterhtml'] = "https://mobile.twitter.com/AyodhyaPackers";
+        $this->comp['twitterhtml'] = "https://twitter.com/AyodhyaPackers";
+        $this->comp['vkhtml'] = "https://vk.com/ayodhyapackers";
+        $this->comp['tumblrhtml'] = "https://ayodhyapackers.tumblr.com/";
+        $this->comp['reddithtml'] = "https://www.reddit.com/user/ayodhyapackers";
+        $this->comp['behancehtml'] = "https://www.behance.net/0f0bcdb1";
         $this->comp['linkedinhtml'] = "https://www.linkedin.com/in/ayodhya-packers-741195243";
         $this->comp['whatsapphtml'] = "https://wa.me/919039699727";
 

@@ -12,6 +12,27 @@ $this->load->view('template/breadcrumbs', [
 
 $certificates = [
     [
+        'title' => 'GST Registration Certificate',
+        'file_name' => 'GST_Registration_Certificate.pdf',
+        'file_path' => 'assets/images/documents/gst_certificate.pdf',
+        'color' => 'blue',
+        'is_pink_hover' => true
+    ],
+    [
+        'title' => 'MSME Registration Certificate',
+        'file_name' => 'MSME_Registration_Certificate.pdf',
+        'file_path' => 'assets/images/documents/msme_certificate.pdf',
+        'color' => 'pink',
+        'is_pink_hover' => false
+    ],
+    [
+        'title' => 'Shop & Establishment Registration Certificate',
+        'file_name' => 'Shop_Establishment_Certificate.pdf',
+        'file_path' => 'assets/images/documents/shop_establised_certificate.pdf',
+        'color' => 'orange',
+        'is_pink_hover' => true
+    ],
+    [
         'title' => 'Official Quotation & Estimate',
         'file_name' => 'Quotation_No_20260165.pdf',
         'file_path' => 'assets/images/documents/certificate1.pdf',

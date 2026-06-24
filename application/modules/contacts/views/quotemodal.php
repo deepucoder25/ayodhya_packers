@@ -322,79 +322,117 @@ document.addEventListener('DOMContentLoaded', function() {
 
     const householdArticles = {
         "Drawing Room": [
-            "A/c/Coolers/fan/Table Fan",
-            "T.V/Portable/full size/Trolley",
-            "Sofa, 2+1",
-            "Table / Chairs",
+            "Air Conditioner (A/C)",
+            "Cooler",
+            "Ceiling Fan",
+            "Table Fan",
+            "T.V",
+            "Portable T.V",
+            "Full Size T.V",
+            "T.V Trolley",
+            "Sofa 2+1",
+            "Table",
+            "Chairs",
             "Deewan",
             "Show Case",
             "Music System"
         ],
         "Centre Room": [
             "Carpets",
-            "Writing/Side/Center Table",
+            "Writing Table",
+            "Side Table",
+            "Center Table",
             "Chairs",
             "Sofa 2+1",
-            "Wall Frames / Clocks",
+            "Wall Frames",
+            "Clocks",
             "Sewing Machine",
             "Computer"
         ],
         "Dining Room": [
-            "A/c/Coolers/fan",
-            "Dining Table (4+1/6+1)",
+            "Air Conditioner (A/C)",
+            "Cooler",
+            "Fan",
+            "4 Seater Dining Table (4+1)",
+            "6 Seater Dining Table (6+1)",
+            "8 Seater Dining Table (8+1)",
             "Water Cooler",
-            "Fridge (90/165/180/289 Ltr.)",
+            "Fridge (90 Ltr.)",
+            "Fridge (165 Ltr.)",
+            "Fridge (180 Ltr.)",
+            "Fridge (289 Ltr.)",
             "Serving Trolley",
             "Show Case",
             "Wall Frames",
             "Chest of Drawer"
         ],
         "Bedroom": [
-            "Double Bed / Single Bed",
+            "Double Bed",
+            "Single Bed",
             "Mattress",
-            "Wardrobe / Almirah",
+            "Wardrobe",
+            "Almirah",
             "Dressing Table",
             "Bedside Table",
-            "Air Conditioner / Cooler",
-            "Study Table & Chair"
+            "Air Conditioner",
+            "Cooler",
+            "Study Table",
+            "Study Chair"
         ],
         "Kitchen": [
-            "Microwave / Oven",
-            "Gas Stove & Cylinder",
+            "Microwave",
+            "Oven",
+            "Gas Stove",
+            "Gas Cylinder",
             "Kitchen Chimney",
             "Kitchen Utensils (Cartons)",
-            "Mixer / Juicer / Grinder",
+            "Mixer",
+            "Juicer",
+            "Grinder",
             "Water Filter"
         ],
         "Other Items": [
             "Washing Machine",
-            "Steel / Wooden Almirah",
+            "Steel Almirah",
+            "Wooden Almirah",
             "Suitcases / Luggage Boxes",
-            "Bicycle / Kids Toys",
-            "Books & Document Boxes"
+            "Bicycle",
+            "Kids Toys",
+            "Books Boxes",
+            "Document Boxes"
         ]
     };
 
     const officeArticles = {
         "Workstations": [
-            "Computers & Laptops",
-            "Office Desks & Tables",
+            "Computers",
+            "Laptops",
+            "Office Desks",
+            "Office Tables",
             "Ergonomic Office Chairs",
             "Workstation Dividers",
             "Desktop Telephones"
         ],
         "Storage & Filing": [
-            "File Cabinets & Cupboards",
+            "File Cabinets",
+            "Cupboards",
             "Box Files & Document Boxes",
-            "Bookshelves & Racks",
-            "Reception Desk & Sofa"
+            "Bookshelves",
+            "Racks",
+            "Reception Desk",
+            "Reception Sofa"
         ],
         "IT & Infrastructure": [
-            "Server Rack & Switches",
+            "Server Rack",
+            "Network Switches",
             "UPS & Power Backups",
-            "Printers / Scanners / Copiers",
-            "Projectors & Screens",
-            "Pantry Fridge & Microwave"
+            "Printers",
+            "Scanners",
+            "Copiers",
+            "Projectors",
+            "Screens",
+            "Pantry Fridge",
+            "Pantry Microwave"
         ]
     };
 

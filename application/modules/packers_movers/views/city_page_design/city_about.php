@@ -73,30 +73,30 @@ include 'city_content.php';
             if (!isset($work_orders)) {
                 $work_orders = [
                     [
-                        'title' => 'Official Quotation & Estimate',
-                        'file_name' => 'Quotation_No_20260165.pdf',
-                        'file_path' => 'assets/images/documents/certificate1.pdf',
+                        'title' => 'GST Registration Certificate',
+                        'file_name' => 'GST_Registration_Certificate.pdf',
+                        'file_path' => 'assets/images/documents/gst_certificate.pdf',
                         'color' => 'blue',
                         'is_pink_hover' => true
                     ],
                     [
-                        'title' => 'Pre-Move Survey List',
-                        'file_name' => 'Survey_List_No_20260004.pdf',
-                        'file_path' => 'assets/images/documents/certificate2.pdf',
+                        'title' => 'MSME Registration Certificate',
+                        'file_name' => 'MSME_Registration_Certificate.pdf',
+                        'file_path' => 'assets/images/documents/msme_certificate.pdf',
                         'color' => 'pink',
                         'is_pink_hover' => false
                     ],
                     [
-                        'title' => 'Inventory Packing List',
-                        'file_name' => 'Packing_List_No_20260018.pdf',
-                        'file_path' => 'assets/images/documents/certificate3.pdf',
+                        'title' => 'Shop & Establishment Certificate',
+                        'file_name' => 'Shop_Establishment_Certificate.pdf',
+                        'file_path' => 'assets/images/documents/shop_establised_certificate.pdf',
                         'color' => 'orange',
                         'is_pink_hover' => true
                     ],
                     [
-                        'title' => 'Lorry Receipt (Consignment Note)',
-                        'file_name' => 'Lorry_Receipt_No_20260046.pdf',
-                        'file_path' => 'assets/images/documents/certificate4.pdf',
+                        'title' => 'Official Quotation & Estimate',
+                        'file_name' => 'Quotation_No_20260165.pdf',     
+                        'file_path' => 'assets/images/documents/certificate1.pdf',
                         'color' => 'purple',
                         'is_pink_hover' => false
                     ]

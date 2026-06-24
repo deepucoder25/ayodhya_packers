@@ -309,6 +309,35 @@
           <a href="<?= !empty($youtubehtml) ? $youtubehtml : '#' ?>" class="social-btn btn-youtube" aria-label="YouTube" target="_blank" rel="noopener">
             <i class="bi bi-youtube"></i>
           </a>
+          <?php if (!empty($twitterhtml)): ?>
+          <a href="<?= $twitterhtml ?>" class="social-btn btn-twitter-x" aria-label="Twitter (X)" target="_blank" rel="noopener">
+            <i class="bi bi-twitter-x"></i>
+          </a>
+          <?php endif; ?>
+          <?php if (!empty($vkhtml)): ?>
+          <a href="<?= $vkhtml ?>" class="social-btn btn-vk" aria-label="VK (VKontakte)" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M6.837 7.3h-2.73c.126 6.24 3.245 9.99 8.72 9.99h.309v-3.57c2.013.2 3.533 1.67 4.144 3.57h2.835c-.782-2.84-2.832-4.41-4.114-5.01 1.282-.74 3.085-2.54 3.514-4.98h-2.583c-.563 1.98-2.223 3.78-3.8 3.95V7.3h-2.709v6.92c-1.603-.4-3.625-2.34-3.712-6.92z"/>
+            </svg>
+          </a>
+          <?php endif; ?>
+          <?php if (!empty($tumblrhtml)): ?>
+          <a href="<?= $tumblrhtml ?>" class="social-btn btn-tumblr" aria-label="Tumblr" target="_blank" rel="noopener">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="currentColor">
+              <path d="M14.563 24c-5.093 0-7.031-3.756-7.031-6.411V9.747H5.116V6.648c3.63-1.313 4.512-4.596 4.71-6.469C9.84.051 9.941 0 9.999 0h3.517v6.114h4.801v3.633h-4.82v7.47c.016 1.001.375 2.371 2.207 2.371h.09c.631-.02 1.486-.205 1.936-.419l1.156 3.425c-.436.636-2.4 1.374-4.156 1.404h-.178l.011.002z"/>
+            </svg>
+          </a>
+          <?php endif; ?>
+          <?php if (!empty($reddithtml)): ?>
+          <a href="<?= $reddithtml ?>" class="social-btn btn-reddit" aria-label="Reddit" target="_blank" rel="noopener">
+            <i class="bi bi-reddit"></i>
+          </a>
+          <?php endif; ?>
+          <?php if (!empty($behancehtml)): ?>
+          <a href="<?= $behancehtml ?>" class="social-btn btn-behance" aria-label="Behance" target="_blank" rel="noopener">
+            <i class="bi bi-behance"></i>
+          </a>
+          <?php endif; ?>
         </div>
       </div>
     </div>
