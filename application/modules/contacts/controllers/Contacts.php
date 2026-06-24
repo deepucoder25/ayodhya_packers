@@ -21,6 +21,8 @@ class Contacts extends MX_Controller
         $this->form_validation->set_rules('name', 'Name', 'required|trim');
         $this->form_validation->set_rules('phone', 'Mobile', 'required|trim|numeric|exact_length[10]');
         $this->form_validation->set_rules('email', "Email", 'trim|valid_email');
+        $this->form_validation->set_rules('service', 'Service', 'trim');
+        $this->form_validation->set_rules('articles', 'Articles', 'trim');
         $this->form_validation->set_rules('message', 'Message', 'trim');
         if ($this->form_validation->run() == true) {
             $this->load->model('contacts_mdl');
