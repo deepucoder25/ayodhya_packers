@@ -22,7 +22,7 @@
 </head>
 
 <body ng-app="groveusCms" hoe-navigation-type="vertical" hoe-nav-placement="left" theme-layout="wide-layout" class="view-animate-container">
-    <div id="hoeapp-wrapper" class="hoe-hide-lpanel" hoe-device-type="desktop" class="view-animate">
+    <div id="hoeapp-wrapper" class="hoe-hide-lpanel view-animate" hoe-device-type="desktop">
         <header id="hoe-header" hoe-lpanel-effect="default">
             <div class="hoe-left-header">
                 <a href="#">

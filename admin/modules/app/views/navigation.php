@@ -155,10 +155,22 @@
 	#hoe-left-panel::-webkit-scrollbar-thumb:hover {
 		background: #9fb0c3;
 	}
+
+	#hoe-left-panel {
+		height: calc(100vh - 50px) !important;
+		overflow-y: auto !important;
+		top: 50px !important;
+	}
+	@media (max-width: 767.98px) {
+		#hoe-left-panel {
+			height: calc(100vh - 100px) !important;
+			top: 100px !important;
+		}
+	}
 </style>
 <div id="hoeapp-container" hoe-lpanel-effect="default">
 	<aside id="hoe-left-panel" hoe-position-type="absolute"
-		style="height: 50px; overflow: scroll">
+		>
 		<div class="profile-box">
 			<div class="media">
 				<a href="#/home" title="Go to dashboard">

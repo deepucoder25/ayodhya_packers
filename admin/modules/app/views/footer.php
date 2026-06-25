@@ -19,6 +19,18 @@
     	<script src="<?=base_url("assets/admin/datepicker/bootstrap-datetimepicker.min.js")?>"></script>
     	<script src="<?=site_url('app/app_main')?>"></script>
     	<script src="<?=base_url("assets/admin/js/message.js")?>"></script>
+    	<script>
+    	$(document).ready(function() {
+    	    $(document).on('click', '.panel-list li a, .profile-box a', function() {
+    	        if ($(this).parent().hasClass('hoe-has-menu')) {
+    	            return;
+    	        }
+    	        if ($('#hoeapp-wrapper').attr('hoe-device-type') === 'phone') {
+    	            $('#hoeapp-wrapper').addClass('hoe-hide-lpanel');
+    	        }
+    	    });
+    	});
+    	</script>
 	<?php endif;?>
 	<style>
 	.modal{

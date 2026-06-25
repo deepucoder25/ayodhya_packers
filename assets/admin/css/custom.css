@@ -26,7 +26,7 @@
    box-shadow: 0 1px 3px 0px rgba(0,0,0,0.17);
    background: #ffffff;
    position:relative;
-	disply:block;
+	display:block;
 	width:100%;
 }
 .table-data{
@@ -102,11 +102,6 @@
 }
 .heading .breadcrumb li:first-child a{
 	color:#212121;
-}
-
-/* form design */
-label{
-	font-size:;
 }
 .form-control, .btn{
 	border-radius:7px;
@@ -386,3 +381,16 @@ label{
 .yellow{color: yellow}
 .orange{color: orange}
 .pink{color: pink}
+
+/* Responsive Admin Tables */
+@media screen and (max-width: 767.98px) {
+    .admin-table {
+        display: block;
+        width: 100%;
+        overflow-x: auto;
+        -webkit-overflow-scrolling: touch;
+        border: 1px solid #ddd;
+        margin-bottom: 15px;
+    }
+}
+
