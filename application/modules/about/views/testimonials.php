@@ -29,14 +29,14 @@ $this->load->view('template/breadcrumbs', [
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h3>Excellent Household Shifting</h3>
+                                <h3>The quoted price remained the same.</h3>
                                 <p>
-                                    "I shifted my entire household goods from Delhi to Bangalore. The crew arrived on time and packed everything carefully using double-layered bubble wrap. Not even a single glass item broke during the transit. Highly recommended!"
+                                    "Among the three companies, I chose <?= $company3 ?> for shifting due to their clarity of price quote and matching bills."
                                 </p>
                                 <div class="user-details">
                                     <div>
-                                        <strong>Ramanuj Sharma</strong>
-                                        <small>Delhi to Bangalore</small>
+                                        <strong>Ashish Tandon</strong>
+                                        <small>Lucknow</small>
                                     </div>
                                     <span class="badge about-bg-success-soft">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -53,14 +53,14 @@ $this->load->view('template/breadcrumbs', [
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h3>Safe Car &amp; Bike Carrier Service</h3>
+                                <h3>They handled our furniture very carefully.</h3>
                                 <p>
-                                    "We relocated our Hyundai i20 and Royal Enfield from Mumbai to Gurgaon. <?= $company3 ?> used a dedicated car carrier and delivered both vehicles door-to-door without a single scratch. Very transparent pricing as well."
+                                    "The wooden dining table belonged to my grand-parents so it was a bit scary. But the team wrapped everything and it was delivered to my new home without any scratches or damage."
                                 </p>
                                 <div class="user-details">
                                     <div>
-                                        <strong>Priya Nair</strong>
-                                        <small>Mumbai to Gurgaon</small>
+                                        <strong>Ritu Sharma</strong>
+                                        <small>Ayodhya</small>
                                     </div>
                                     <span class="badge about-bg-success-soft">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -77,14 +77,14 @@ $this->load->view('template/breadcrumbs', [
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h3>Smooth Office Relocation</h3>
+                                <h3>Excellent communication during the whole journey.</h3>
                                 <p>
-                                    "We had to move our IT office branch with 45 work stations from Pune to Hyderabad. The planning and execution by <?= $company3 ?> was flawless. We resumed our operations on Monday morning without any downtime."
+                                    "During the transportation of my goods, I got updates on regular basis. Every time I contacted, I got a response and a detailed explanation."
                                 </p>
                                 <div class="user-details">
                                     <div>
-                                        <strong>Vikram Malhotra</strong>
-                                        <small>Pune to Hyderabad</small>
+                                        <strong>Mohit Singh</strong>
+                                        <small>Prayagraj</small>
                                     </div>
                                     <span class="badge about-bg-success-soft">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -101,14 +101,14 @@ $this->load->view('template/breadcrumbs', [
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-half"></i>
                                 </div>
-                                <h3>Reliable Local Shifting</h3>
+                                <h3>Everything was set up the very next morning.</h3>
                                 <p>
-                                    "Shifted our 3 BHK flat within Kolkata. The team completed the loading, transport, and unloading in just under 6 hours. Their pricing was highly competitive and the crew was incredibly polite and helpful."
+                                    "Over the weekend, our office was shifted. Computers, files, tables, and chair were packed properly and everything was arranged before our employees came back to work on Monday."
                                 </p>
                                 <div class="user-details">
                                     <div>
-                                        <strong>Amitava Bose</strong>
-                                        <small>Local Kolkata Shifting</small>
+                                        <strong>Pankaj Verma</strong>
+                                        <small>Kanpur</small>
                                     </div>
                                     <span class="badge about-bg-success-soft">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -125,14 +125,14 @@ $this->load->view('template/breadcrumbs', [
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h3>Stress-Free Pet Relocation</h3>
+                                <h3>No rush and thorough packing process.</h3>
                                 <p>
-                                    "Extremely thankful to <?= $company3 ?> for safely shifting my Labrador from Siliguri to Chennai. They handled the documentation, custom travel crate, and kept feeding and walking him during breaks. Amazing care!"
+                                    "The guys did not rush while packing. After checking each room thoroughly, they started loading the truck and that gave me peace of mind."
                                 </p>
                                 <div class="user-details">
                                     <div>
-                                        <strong>Dr. Rajesh Patel</strong>
-                                        <small>Siliguri to Chennai</small>
+                                        <strong>Anjali Gupta</strong>
+                                        <small>Gorakhpur</small>
                                     </div>
                                     <span class="badge about-bg-success-soft">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
@@ -149,14 +149,158 @@ $this->load->view('template/breadcrumbs', [
                                     <i class="bi bi-star-fill"></i>
                                     <i class="bi bi-star-fill"></i>
                                 </div>
-                                <h3>IBA Approved Billing &amp; Shifting</h3>
+                                <h3>Both of them reached there according to schedule.</h3>
                                 <p>
-                                    "As a bank employee, I needed IBA approved packers and movers for my official transfer from Patna to Lucknow. <?= $company3 ?> provided accurate quotation, consignment note, and bills. Claim settlement was smooth."
+                                    "While shifting, punctuality is very important. Both of them reached early in the morning and the shift was done on time."
                                 </p>
                                 <div class="user-details">
                                     <div>
-                                        <strong>Siddharth Sen</strong>
-                                        <small>Patna to Lucknow</small>
+                                        <strong>Vikas Mishra</strong>
+                                        <small>Varanasi</small>
+                                    </div>
+                                    <span class="badge about-bg-success-soft">
+                                        <i class="bi bi-patch-check-fill me-1"></i> Verified
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="about-testimonial-card h-100">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Very good guys to deal with.</h3>
+                                <p>
+                                    "Everyone in the team was polite and respectful. They paid attention to our instructions and handled all things carefully without any reminders."
+                                </p>
+                                <div class="user-details">
+                                    <div>
+                                        <strong>Neha Kapoor</strong>
+                                        <small>Delhi</small>
+                                    </div>
+                                    <span class="badge about-bg-success-soft">
+                                        <i class="bi bi-patch-check-fill me-1"></i> Verified
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="about-testimonial-card h-100">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Highly recommended moving company.</h3>
+                                <p>
+                                    "Moving is always tough but they made the entire process so easy for me. Honest pricing, careful packing, and professional attitude throughout the relocation period."
+                                </p>
+                                <div class="user-details">
+                                    <div>
+                                        <strong>Rohan Srivastava</strong>
+                                        <small>Noida</small>
+                                    </div>
+                                    <span class="badge about-bg-success-soft">
+                                        <i class="bi bi-patch-check-fill me-1"></i> Verified
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="about-testimonial-card h-100">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Bike delivered in time without any scratch.</h3>
+                                <p>
+                                    "While relocating for work, I booked their bike transportation service. They delivered on time and there was not even a single scratch on my motorcycle."
+                                </p>
+                                <div class="user-details">
+                                    <div>
+                                        <strong>Arvind Yadav</strong>
+                                        <small>Faizabad</small>
+                                    </div>
+                                    <span class="badge about-bg-success-soft">
+                                        <i class="bi bi-patch-check-fill me-1"></i> Verified
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="about-testimonial-card h-100">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Impressed by the quality of packing.</h3>
+                                <p>
+                                    "Bubble wrapping and carton packing was done perfectly. They separated fragile items with different labels which made unpacking easy."
+                                </p>
+                                <div class="user-details">
+                                    <div>
+                                        <strong>Sneha Jain</strong>
+                                        <small>Jaipur</small>
+                                    </div>
+                                    <span class="badge about-bg-success-soft">
+                                        <i class="bi bi-patch-check-fill me-1"></i> Verified
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="about-testimonial-card h-100">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>Professional customer support.</h3>
+                                <p>
+                                    "All questions I had before booking were answered patiently and it boosted my confidence in the company before finalizing the move."
+                                </p>
+                                <div class="user-details">
+                                    <div>
+                                        <strong>Deepak Tiwari</strong>
+                                        <small>Agra</small>
+                                    </div>
+                                    <span class="badge about-bg-success-soft">
+                                        <i class="bi bi-patch-check-fill me-1"></i> Verified
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="about-testimonial-card h-100">
+                                <div class="rating">
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                    <i class="bi bi-star-fill"></i>
+                                </div>
+                                <h3>I would definitely book your services again.</h3>
+                                <p>
+                                    "Second time we have shifted in the last five years, and definitely it is the best shifting experience. Everything was done in a professional way."
+                                </p>
+                                <div class="user-details">
+                                    <div>
+                                        <strong>Priya Saxena</strong>
+                                        <small>Bengaluru</small>
                                     </div>
                                     <span class="badge about-bg-success-soft">
                                         <i class="bi bi-patch-check-fill me-1"></i> Verified
