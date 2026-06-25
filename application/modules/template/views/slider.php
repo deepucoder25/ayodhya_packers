@@ -11,10 +11,10 @@
             <span class="eyebrow-ontime">ON TIME.</span>
           </div>
           <h1 class="hero-title">
-            We Move Your <span class="accent-text">World</span> With Care
+            We Transport Your Goods <span class="accent-text">With Care</span>
           </h1>
           <p class="hero-desc">
-            Ayodhya Packers And Movers offers professional packing and moving services for your home, office, and vehicle – anywhere in India and worldwide.
+            Trusted Packers and Movers For Households, Offices and Vehicles in India
           </p>
           
           <div class="hero-buttons-flex">

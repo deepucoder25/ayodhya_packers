@@ -1,5 +1,54 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); 
 ?>
+<section class="welcome-section py-5 position-relative overflow-hidden">
+    <!-- Decorative background elements -->
+    <div class="welcome-bg-decor d-none d-lg-block" aria-hidden="true">
+        <span class="decor-circle circle-1"></span>
+        <span class="decor-circle circle-2"></span>
+    </div>
+
+    <div class="container position-relative welcome-z2">
+        <div class="row">
+            <div class="col-12">
+                <div class="welcome-premium-box p-4 p-md-5 rounded-4 shadow-sm border border-light position-relative overflow-hidden">
+                    <div class="row align-items-center g-4 g-lg-5">
+                        <div class="col-lg-8 col-12">
+                            <div class="welcome-badge mb-3 d-inline-flex align-items-center">
+                                <span class="badge-icon d-flex align-items-center justify-content-center me-2" aria-hidden="true">
+                                    <i class="bi bi-patch-check-fill"></i>
+                                </span>
+                                <span class="badge-text text-uppercase fw-bold">Welcome to <?= htmlspecialchars($company3) ?></span>
+                            </div>
+                            
+                            <p class="mb-4">
+                                Moving is not just about changing the addresses, but about relocations of all your goods including documents, furniture, and even vehicles.
+                            </p>
+                            
+                            <p class="mb-0">
+                                At <?= $company3 ?>, you can get <b>reliable shifting services</b> for your households, offices, apartments, shops, commercial premises, and others. We offer a variety of relocation options for locals and long distances, and our highly-skilled team is always ready to give you a helping hand.
+                            </p>
+                        </div>
+                        
+                        <div class="col-lg-4 col-12">
+                            <div class="welcome-stats-card p-4 rounded-3 text-center border">
+                                <div class="stat-icon mb-3" aria-hidden="true">
+                                    <div class="icon-circle d-inline-flex align-items-center justify-content-center">
+                                        <i class="bi bi-truck"></i>
+                                    </div>
+                                </div>
+                                <h3 class="stat-number mb-2">1500+</h3>
+                                <p class="stat-label mb-2 text-uppercase fw-bold text-secondary">Shifts Done</p>
+                                <p class="stat-text small mb-0 text-muted">
+                                    Our good reputation was created with professionalism, honest prices, and reliability.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
 <section class="about-section py-5 position-relative overflow-hidden">
     <div class="about-bg-decor about-bg-decor-left d-none d-lg-block">
@@ -45,18 +94,18 @@
                         </span>
                     </div>
                     <h2 class="srv-main-title text-start mb-3">
-                        Making Every Move <span class="highlight-pink-text">Simple, Safe &amp; Stress-Free</span>
+                        Moving Made Easy. <span class="highlight-pink-text">Every Single Time.</span>
                     </h2>
                     <div class="about-title-underline mb-4">
                         <span class="line-pink"></span>
                         <span class="line-blue"></span>
                     </div>
                     <p class="mb-3">
-                        At Ayodhya Packers And Movers, we believe that moving is more than just shifting belongings – it's about moving lives. With years of experience and a dedicated team of professionals, we provide reliable, efficient and affordable moving solutions tailored to your needs.
+                       <strong><?= $company3 ?></strong> was founded with an aim of making the moving process easy for customers. Throughout our history, we helped our clients to shift to new flats, relocated offices of companies, and transported various vehicles around India.
                     </p>
                     
                     <p>
-                        From packing your valuables with care to delivering them safely to your new destination, we handle everything so you can relax and focus on your new beginning.
+                        Our qualified team consists of packing, loading specialists, drivers, and logistics specialists. We pack and transport all your belongings carefully using quality packing materials, professional procedures, and innovative transportation techniques.
                     </p>
 
                 </div>

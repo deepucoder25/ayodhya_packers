@@ -169,7 +169,7 @@
                                     </div>
                                     <div class="card-content">
                                         <p class="card-text-body">
-                                            I relocated my complete 3BHK household goods from Bangalore to Ayodhya. The packaging was outstanding, and not a single item was damaged. Outstanding job!
+                                            The team arrived on time and carefully packed up everything. The entire household moving process went smoothly with nothing being damaged on transit. I will not hesitate to refer them to anyone moving.
                                         </p>
                                     </div>
                                 </div>
@@ -189,8 +189,8 @@
                                         </svg>
                                     </div>
                                     <div class="card-user-details">
-                                        <h4 class="card-user-name">Rohan Mehta <i class="bi bi-patch-check-fill"></i></h4>
-                                        <span class="card-user-loc"><i class="bi bi-geo-alt-fill"></i> Bangalore, India</span>
+                                        <h4 class="card-user-name">Rahul Mishra <i class="bi bi-patch-check-fill"></i></h4>
+                                        <span class="card-user-loc"><i class="bi bi-geo-alt-fill"></i> Lucknow</span>
                                     </div>
                                 </div>
                                 <div class="card-bottom-stripe"></div>
@@ -213,7 +213,7 @@
                                     </div>
                                     <div class="card-content">
                                         <p class="card-text-body">
-                                            Highly impressed with their packing box shifting and logistics. They packed my fragile glass items with triple-layer bubble wraps. Truly professionals!
+                                           I had some concerns regarding the transportation of my fragile furniture and kitchenware. But everything was taken care of efficiently by the team. Everything was delivered in the specified time and was organized properly. Highly impressed with their packing box shifting and logistics. They packed my fragile glass items with triple-layer bubble wraps. Truly professionals!
                                         </p>
                                     </div>
                                 </div>
@@ -236,8 +236,8 @@
                                         </svg>
                                     </div>
                                     <div class="card-user-details">
-                                        <h4 class="card-user-name">Priya Sharma <i class="bi bi-patch-check-fill"></i></h4>
-                                        <span class="card-user-loc"><i class="bi bi-geo-alt-fill"></i> Mumbai, India</span>
+                                        <h4 class="card-user-name">Neha Singh <i class="bi bi-patch-check-fill"></i></h4>
+                                        <span class="card-user-loc"><i class="bi bi-geo-alt-fill"></i> Ayodhya</span>
                                     </div>
                                 </div>
                                 <div class="card-bottom-stripe"></div>
@@ -260,7 +260,7 @@
                                     </div>
                                     <div class="card-content">
                                         <p class="card-text-body">
-                                            Best commercial movers ever. Moved our complete office desk setups and computers in a single weekend. Highly recommended for commercial clients!
+                                            All the office stuff, computers, furniture etc were packed and transported without disturbing our daily operations. They did everything efficiently.
                                         </p>
                                     </div>
                                 </div>
@@ -285,7 +285,7 @@
                                     </div>
                                     <div class="card-user-details">
                                         <h4 class="card-user-name">Amit Verma <i class="bi bi-patch-check-fill"></i></h4>
-                                        <span class="card-user-loc"><i class="bi bi-geo-alt-fill"></i> Delhi, India</span>
+                                        <span class="card-user-loc"><i class="bi bi-geo-alt-fill"></i> Kanpur</span>
                                     </div>
                                 </div>
                                 <div class="card-bottom-stripe"></div>
@@ -308,7 +308,7 @@
                                     </div>
                                     <div class="card-content">
                                         <p class="card-text-body">
-                                            Smooth car transit experience from Mumbai to Pune. Got daily tracking updates and the vehicle was delivered without a single scratch. Excellent!
+                                            They have provided me with an honest quote, and their employees were polite and helpful. Besides, the moving process was completed much sooner than I thought.
                                         </p>
                                     </div>
                                 </div>
@@ -327,8 +327,8 @@
                                         </svg>
                                     </div>
                                     <div class="card-user-details">
-                                        <h4 class="card-user-name">Vikram Singh <i class="bi bi-patch-check-fill"></i></h4>
-                                        <span class="card-user-loc"><i class="bi bi-geo-alt-fill"></i> Pune, India</span>
+                                        <h4 class="card-user-name">Priya Sharma <i class="bi bi-patch-check-fill"></i></h4>
+                                        <span class="card-user-loc"><i class="bi bi-geo-alt-fill"></i> Prayagraj</span>
                                     </div>
                                 </div>
                                 <div class="card-bottom-stripe"></div>

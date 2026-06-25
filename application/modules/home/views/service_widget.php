@@ -94,7 +94,7 @@ $services = [
             
             <h2 class="srv-main-title">Moving Solutions <span class="highlight-pink-text">Tailored For You</span></h2>
             
-            <p class="srv-subtitle mx-auto">At <?= htmlspecialchars($company3) ?>, we provide end-to-end moving solutions designed to make your relocation smooth, safe and stress-free.</p>
+            <p class="srv-subtitle mx-auto">Being one of the <b>Top Packers and Movers</b>, we provide custom moving solutions for households and businesses.</p>
         </div>
 
         <div class="row g-4 justify-content-center">
