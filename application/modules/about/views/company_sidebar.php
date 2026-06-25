@@ -23,6 +23,7 @@
             <?php
             $sidebar_links = [
                 ['slug' => 'about-us',             'name' => 'About Us',             'icon' => 'bi-info-circle',       'color' => 'pink'],
+                ['slug' => 'why-choose-us',        'name' => 'Why Choose Us',        'icon' => 'bi-patch-check',       'color' => 'teal'],
                 ['slug' => 'testimonials',         'name' => 'Testimonial',          'icon' => 'bi-chat-quote',        'color' => 'blue'],
                 ['slug' => 'certificates',         'name' => 'Our Certificates',     'icon' => 'bi-award',             'color' => 'orange'],
                 ['slug' => 'blog',                 'name' => 'Blog',                 'icon' => 'bi-journal-text',      'color' => 'green'],

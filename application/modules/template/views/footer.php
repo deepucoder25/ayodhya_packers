@@ -135,6 +135,11 @@
                 </a>
               </li>
               <li>
+                <a href="<?= site_url('why-choose-us') ?>">
+                  <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Why Choose Us
+                </a>
+              </li>
+              <li>
                 <a href="<?= site_url('our-services') ?>">
                   <span class="link-arrow"><i class="bi bi-chevron-right"></i></span> Services
                 </a>

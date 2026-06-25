@@ -12,7 +12,7 @@
       $active_tab = 'home';
   } elseif ($segment1 === 'online-payment') {
       $active_tab = 'payment';
-  } elseif ($class === 'about' || $class === 'blog' || $class === 'gallery' || in_array($segment1, ['about-us', 'testimonials', 'certificates', 'blog', 'reviews', 'faqs', 'packing-tips', 'privacy-policy', 'terms-and-conditions', 'photo-gallery'])) {
+  } elseif ($class === 'about' || $class === 'blog' || $class === 'gallery' || in_array($segment1, ['about-us', 'why-choose-us', 'testimonials', 'certificates', 'blog', 'reviews', 'faqs', 'packing-tips', 'privacy-policy', 'terms-and-conditions', 'photo-gallery'])) {
       $active_tab = 'about';
   } elseif ($class === 'services' || in_array($segment1, ['our-services', 'packing-and-moving', 'loading-and-unloading', 'residential-relocation', 'home-relocation', 'office-relocation', 'car-transportation', 'bike-transportation', 'international-transportation', 'warehousing-and-storage', 'transport-insurance', 'heavy-machinery-and-shifting'])) {
       $active_tab = 'services';
@@ -123,6 +123,7 @@
               
               <div class="desktop-dropdown-menu">
                 <a href="<?= site_url('about-us') ?>">About Us</a>
+                <a href="<?= site_url('why-choose-us') ?>">Why Choose Us</a>
                 <a href="<?= site_url('testimonials') ?>">Testimonial</a>
                 <a href="<?= site_url('certificates') ?>">Our Certificates</a>
                 <a href="<?= site_url('blog') ?>">Blog</a>
@@ -260,6 +261,7 @@
             </button>
             <div class="mobile-dropdown-menu">
               <a href="<?= site_url('about-us') ?>" class="<?= $segment1 === 'about-us' ? 'active' : '' ?>">About Us</a>
+              <a href="<?= site_url('why-choose-us') ?>" class="<?= $segment1 === 'why-choose-us' ? 'active' : '' ?>">Why Choose Us</a>
               <a href="<?= site_url('testimonials') ?>" class="<?= $segment1 === 'testimonials' ? 'active' : '' ?>">Testimonial</a>
               <a href="<?= site_url('certificates') ?>" class="<?= $segment1 === 'certificates' ? 'active' : '' ?>">Our Certificates</a>
               <a href="<?= site_url('blog') ?>" class="<?= $segment1 === 'blog' ? 'active' : '' ?>">Blog</a>

@@ -15,75 +15,32 @@ $this->load->view('template/breadcrumbs', [
             <div class="col-lg-8">
                 <div class="service-main-content">
                     
-                    <h2>The Difference We Make</h2>
-                    <p class="lead">
-                        Relocation is not just about moving boxes; it's about moving lives, memories, and valuable assets. At <strong><?= $company3 ?></strong>, we are committed to making your transition seamless, safe, and stress-free. Over our 30+ year journey, we have refined our processes to become India's most trusted name in packers and movers.
-                    </p>
-                    <p>
-                        We employ only seasoned packing professionals, utilize superior packing materials, and possess a vast fleet of specialized transport carriers. Our transparent pricing structure and pan-India presence ensure you receive high-quality service at the most reasonable prices, with no hidden surprises.
-                    </p>
+                    <h2>Reasons for Choosing <?= $company3 ?></h2>
+                    <p>It goes without saying that hiring professional movers is very important for a comfortable moving process. Still, it is an important step too, since movers will be responsible for the safe delivery of all furniture and other possessions. Below, you can find some of the main reasons why you should choose <?= $company3 ?>.</p>
+                    <p>The moving process offered by <strong><?= $company3 ?></strong> includes carefully handled items, timely performing of relocation services and effective communication.</p>
 
-                    <h2>Our Key Pillars of Trust</h2>
-                    <div class="row mt-4">
-                        <div class="col-md-6 mb-4">
-                            <div class="packing-tips-card text-center h-100">
-                                <div class="icon-box mb-3">
-                                    <i class="bi bi-shield-lock-fill"></i>
-                                </div>
-                                <h3>100% Safe Shifting</h3>
-                                <p>
-                                    We use heavy-duty multi-layered bubble wraps, customized crates, and premium carton sheets. Your belongings are guarded against impact, moisture, and dust during the entire journey.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="packing-tips-card text-center h-100">
-                                <div class="icon-box mb-3">
-                                    <i class="bi bi-truck"></i>
-                                </div>
-                                <h3>Specialized Vehicle Carriers</h3>
-                                <p>
-                                    Our cars and bikes are moved inside covered, enclosed container carriers to ensure they are shielded from road debris, weather, and external damage, providing door-to-door delivery.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="packing-tips-card text-center h-100">
-                                <div class="icon-box mb-3">
-                                    <i class="bi bi-tags-fill"></i>
-                                </div>
-                                <h3>Transparent Fair Pricing</h3>
-                                <p>
-                                    No hidden costs. We provide a detailed itemized breakdown of expenses upfront so you know exactly what you are paying for, eliminating any post-move disputes.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="col-md-6 mb-4">
-                            <div class="packing-tips-card text-center h-100">
-                                <div class="icon-box mb-3">
-                                    <i class="bi bi-clock-history"></i>
-                                </div>
-                                <h3>Punctual &amp; Prompt Delivery</h3>
-                                <p>
-                                    Time is crucial. We carefully map logistics routes, utilize advanced tracking systems, and plan departures to guarantee your items arrive precisely when expected.
-                                </p>
-                            </div>
-                        </div>
-                    </div>
+                   <h3>Professional Packers and Movers</h3>
+                    <p>Our <b>experienced packers and movers</b> know how to handle all kinds of household items and furniture. Apart from fragile items such as glassware or electronics, we take care of safe delivery of heavy furniture and office equipment during the transportation process.</p>
 
-                    <h2>Industry Credentials</h2>
-                    <p>
-                        <strong><?= $company3 ?></strong> is fully accredited with major relocation and standard certifications. Our logistics team operates on the highest standards of safety guidelines.
-                    </p>
-                    <ul>
-                        <li><strong>ISO Certified Quality Systems:</strong> Complies with strict international standards of service management and logistics operations.</li>
-                        <li><strong>IBA Approved Transporters:</strong> Offering official, bank-approved billing and shifting options for corporate and government employee relocations.</li>
-                        <li><strong>Full Transit Insurance Options:</strong> Offering peace of mind with complete cargo valuation and swift claim settlements.</li>
-                    </ul>
+                    <span class="fw-bold fs-6"><i class="bi bi-box"></i> High Quality Packing Materials</span>
+                    <p>The use of proper packing materials is a key to a successful relocation. Therefore, <?= $company3 ?> use high quality carton boxes, bubble wraps, foam sheets, stretch film and coverings in order to increase the level of safety during transportation and to prevent any damage to the items.</p>
+
+                    <span class="fw-bold fs-6"><i class="bi bi-cash"></i> Detailed Quotations and No Hidden Charges</span>
+                    <p>We value honesty and transparency. That is why our clients always receive detailed information about prices of selected services beforehand in order to avoid any unpleasant surprises during the moving process.</p>
+
+                    <span class="fw-bold fs-6"><i class="bi bi-clock-history"></i> Timely Pickups and Deliveries</span>
+                    <p>Delays and lags may cause many inconveniences for our clients, regardless whether they want to move to a new city for work or for their family or just want to move their office. Therefore, we try to make sure that our clients receive timely delivery service.</p>
+
+                    <span class="fw-bold fs-6"><i class="bi bi-car-front-fill"></i> Reliable Car Transportation Services</span>
+                    <p>Apart from moving offices and houses, we offer reliable vehicle transportation service. You can rely on us when you want to deliver your car or motorbike.</p>
+
+                    <span class="fw-bold fs-6"><i class="bi bi-headphones"></i> 24/7 Customer Support</span>
+                    <p>In case any questions arise before, during or after your relocation, we are here to help you. Our customer support representatives answer your calls around the clock and help our clients with all issues connected with relocation.</p>
+
                     <div class="about-feedback-cta mt-5">
-                        <h5>Our Quality Commitment</h5>
+                        <h6>Good Reputation</h6>
                         <p>
-                            "We believe that a satisfied client is our greatest advertisement. Every single move receives the absolute dedication of our branch managers, supervisors, packing experts, and customer care executives."
+                            During many years, <em><?= $company3 ?></em> performed hundreds of successful relocations. Many of our clients heard about us from their friends, relatives and colleagues. We promise to take care of the belongings of our clients as of our own ones and to provide them with reliable relocation services.
                         </p>
                     </div>
 
