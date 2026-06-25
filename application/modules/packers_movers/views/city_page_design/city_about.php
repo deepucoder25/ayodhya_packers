@@ -36,8 +36,8 @@ include 'city_content.php';
         </div>
         <div class="pm-city-content-card">
             <div class="pm-city-section-eyebrow">Top Rated Relocation</div>
-            <h2 class="pm-city-section-title">
-                <span class="pm-city-accent"><?= $city ?></span> Packers and Movers
+            <h2 class="pm-city-section-title">Best Packers and Movers in 
+                <span class="pm-city-accent"><?= $city ?></span> | Reliable Packers and Movers
             </h2>
             <div class='city-prose'>
                 <?php echo $htmlcontent;?>  

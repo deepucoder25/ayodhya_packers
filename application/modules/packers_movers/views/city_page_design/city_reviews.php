@@ -1,160 +1,106 @@
-        <div class="city-content-card mt-4">
-          <h3 class="city-section-title-sm"><i class="bi bi-chat-left-quote me-2"></i>Customer Experiences</h3>
-          <div id="cityReviewsCarouselDesktop" class="carousel slide mt-3 d-none d-md-block reviews-carousel-desktop" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-inner pb-4">
-              <div class="carousel-item active">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="city-review-card">
-                      <div class="review-stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>"Shifted my flat inside <?= $city ?>. They arrived at 8 AM sharp and finished packing faster than expected. No damage to kitchen items."</p>
-                      <div class="review-author">
-                        <div class="review-avatar">R</div>
-                        <div>
-                          <strong>Rohit Sharma</strong>
-                          <small><?= $city ?>, India</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                  
-                  <div class="col-md-6">
-                    <div class="city-review-card">
-                      <div class="review-stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>"We moved office equipment during the weekend. The team coordinated with building security and handled everything properly. Great experience!"</p>
-                      <div class="review-author">
-                        <div class="review-avatar">A</div>
-                        <div>
-                          <strong>Ananya Gupta</strong>
-                          <small><?= $city ?>, India</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
+<?php if (!defined('BASEPATH')) exit('No direct script access allowed');
+
+$reviews = [
+    [
+        'name' => 'Rahul Sharma',
+        'avatar' => 'R',
+        'stars' => 5,
+        'text' => 'We shifted in ' . htmlspecialchars($city) . ' in September 2025. They came exactly at 8 AM and completed everything by evening.'
+    ],
+    [
+        'name' => 'Neha Gupta',
+        'avatar' => 'N',
+        'stars' => 5,
+        'text' => 'Very good packing quality and nice staff. No damage done to my furniture.'
+    ],
+    [
+        'name' => 'Amit Verma',
+        'avatar' => 'A',
+        'stars' => 4.5,
+        'text' => 'Fair charges and good service. Would recommend local shifting in ' . htmlspecialchars($city) . '.'
+    ]
+];
+?>
+
+<div class="city-content-card mt-4">
+  <h3 class="city-section-title-sm"><i class="bi bi-chat-left-quote me-2"></i>Customer Experiences</h3>
+  
+  <div class="city-reviews-slider-outer">
+    <div class="city-reviews-slider-viewport" id="cityReviewsViewport">
+      <div class="city-reviews-slider-track">
+        <?php foreach ($reviews as $review): ?>
+          <div class="col-md-6 col-12 flex-shrink-0" style="scroll-snap-align: start;">
+            <div class="city-review-card">
+              <div class="review-stars">
+                <?php
+                $stars = $review['stars'];
+                $full_stars = floor($stars);
+                $has_half = ($stars - $full_stars) >= 0.5;
+                for ($i = 0; $i < 5; $i++) {
+                  if ($i < $full_stars) {
+                    echo '<i class="bi bi-star-fill"></i>';
+                  } elseif ($i == $full_stars && $has_half) {
+                    echo '<i class="bi bi-star-half"></i>';
+                  } else {
+                    echo '<i class="bi bi-star"></i>';
+                  }
+                }
+                ?>
+              </div>
+              <p>"<?= htmlspecialchars($review['text']) ?>"</p>
+              <div class="review-author">
+                <div class="review-avatar"><?= htmlspecialchars($review['avatar']) ?></div>
+                <div>
+                  <strong><?= htmlspecialchars($review['name']) ?></strong>
+                  <small><?= htmlspecialchars($city) ?>, India</small>
                 </div>
               </div>
-              <div class="carousel-item">
-                <div class="row g-3">
-                  <div class="col-md-6">
-                    <div class="city-review-card">
-                      <div class="review-stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                      </div>
-                      <p>"Booked them after searching Packers and Movers Near Me in <?= $city ?>. Pricing stayed exactly as discussed earlier. That rarely happens these days."</p>
-                      <div class="review-author">
-                        <div class="review-avatar">S</div>
-                        <div>
-                          <strong>Sandeep Verma</strong>
-                          <small><?= $city ?>, India</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-
-                  <div class="col-md-6">
-                    <div class="city-review-card">
-                      <div class="review-stars">
-                        <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                      </div>
-                      <p>"Helpful staff. My parents were stressed about furniture scratches, but packing quality was genuinely good. Highly recommended!"</p>
-                      <div class="review-author">
-                        <div class="review-avatar">P</div>
-                        <div>
-                          <strong>Priya Nair</strong>
-                          <small><?= $city ?>, India</small>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-
-            </div>
-            <div class="reviews-carousel-footer">
-              <button class="reviews-footer-btn" type="button" data-bs-target="#cityReviewsCarouselDesktop" data-bs-slide="prev" aria-label="Previous">
-                <i class="bi bi-chevron-left"></i>
-              </button>
-              <button class="reviews-footer-btn" type="button" data-bs-target="#cityReviewsCarouselDesktop" data-bs-slide="next" aria-label="Next">
-                <i class="bi bi-chevron-right"></i>
-              </button>
             </div>
           </div>
-          <div id="cityReviewsCarouselMobile" class="carousel slide mt-3 d-block d-md-none reviews-carousel-mobile" data-bs-ride="carousel" data-bs-interval="5000">
-            <div class="carousel-inner pb-4">
-              <div class="carousel-item active">
-                <div class="city-review-card">
-                  <div class="review-stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>"Shifted my flat inside <?= $city ?>. They arrived at 8 AM sharp and finished packing faster than expected. No damage to kitchen items."</p>
-                  <div class="review-author">
-                    <div class="review-avatar">R</div>
-                    <div>
-                      <strong>Rohit Sharma</strong>
-                      <small><?= $city ?>, India</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="city-review-card">
-                  <div class="review-stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>"We moved office equipment during the weekend. The team coordinated with building security and handled everything properly. Great experience!"</p>
-                  <div class="review-author">
-                    <div class="review-avatar">A</div>
-                    <div>
-                      <strong>Ananya Gupta</strong>
-                      <small><?= $city ?>, India</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="city-review-card">
-                  <div class="review-stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-half"></i>
-                  </div>
-                  <p>"Booked them after searching Packers and Movers Near Me in <?= $city ?>. Pricing stayed exactly as discussed earlier. That rarely happens these days."</p>
-                  <div class="review-author">
-                    <div class="review-avatar">S</div>
-                    <div>
-                      <strong>Sandeep Verma</strong>
-                      <small><?= $city ?>, India</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div class="city-review-card">
-                  <div class="review-stars">
-                    <i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i><i class="bi bi-star-fill"></i>
-                  </div>
-                  <p>"Helpful staff. My parents were stressed about furniture scratches, but packing quality was genuinely good. Highly recommended!"</p>
-                  <div class="review-author">
-                    <div class="review-avatar">P</div>
-                    <div>
-                      <strong>Priya Nair</strong>
-                      <small><?= $city ?>, India</small>
-                    </div>
-                  </div>
-                </div>
-              </div>
+        <?php endforeach; ?>
+      </div>
+    </div>
+    
+    <div class="reviews-carousel-footer mt-3">
+      <button class="reviews-footer-btn" type="button" id="cityReviewsPrevBtn" aria-label="Previous">
+        <i class="bi bi-chevron-left"></i>
+      </button>
+      <button class="reviews-footer-btn" type="button" id="cityReviewsNextBtn" aria-label="Next">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </div>
+</div>
 
-            </div>
-            <div class="reviews-carousel-footer">
-              <button class="reviews-footer-btn" type="button" data-bs-target="#cityReviewsCarouselMobile" data-bs-slide="prev" aria-label="Previous">
-                <i class="bi bi-chevron-left"></i>
-              </button>
-              <button class="reviews-footer-btn" type="button" data-bs-target="#cityReviewsCarouselMobile" data-bs-slide="next" aria-label="Next">
-                <i class="bi bi-chevron-right"></i>
-              </button>
-            </div>
-          </div>
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const view = document.getElementById('cityReviewsViewport');
+  const prevBtn = document.getElementById('cityReviewsPrevBtn');
+  const nextBtn = document.getElementById('cityReviewsNextBtn');
+  const cards = view ? view.querySelectorAll('.flex-shrink-0') : [];
+  if (!view || !cards.length) return;
 
-        </div>
+  // Calculate scrolling step based on card width + gap
+  const getStep = () => {
+    const cardWidth = cards[0].offsetWidth;
+    const style = window.getComputedStyle(view.querySelector('.city-reviews-slider-track'));
+    const gap = parseFloat(style.columnGap || style.gap) || 24;
+    return cardWidth + gap;
+  };
+
+  prevBtn.onclick = () => view.scrollBy({ left: -getStep(), behavior: 'smooth' });
+  nextBtn.onclick = () => view.scrollBy({ left: getStep(), behavior: 'smooth' });
+
+  const updateButtons = () => {
+    const isAtStart = view.scrollLeft <= 5;
+    const isAtEnd = view.scrollLeft >= (view.scrollWidth - view.clientWidth - 5);
+    
+    prevBtn.classList.toggle('disabled', isAtStart);
+    nextBtn.classList.toggle('disabled', isAtEnd);
+  };
+
+  view.addEventListener('scroll', updateButtons);
+  window.addEventListener('resize', updateButtons);
+  updateButtons();
+});
+</script>

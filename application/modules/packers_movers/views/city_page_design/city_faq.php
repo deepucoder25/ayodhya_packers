@@ -3,18 +3,12 @@
           <div class="city-faq-list mt-3" id="cityFaqAccordion">
             <?php
             $faqs = [
-              ["q" => "How early should I book shifting services in $city?",
-               "a" => "Booking at least 5–7 days earlier is recommended, especially for month-end dates and weekends when demand is highest."],
-              ["q" => "Do you provide packing materials?",
-               "a" => "Yes. Cartons, wrapping sheets, bubble rolls, and protective materials are included based on service type."],
-              ["q" => "Can I move only a few household items?",
-               "a" => "Absolutely. Small shifting requests and part-load transportation are available in $city."],
-              ["q" => "Are goods insured during relocation?",
-               "a" => "Insurance options are available for long-distance and valuable-item transportation."],
-              ["q" => "Do you handle local office shifts in $city?",
-               "a" => "Yes, including workstation packing, file movement, and electronic equipment relocation."],
-              ["q" => "What is the cost of packers and movers in $city?",
-               "a" => "Cost depends on distance, volume of goods, floor, and service type. Contact us for a free detailed quote."],
+              ["q" => "Do you provide local shifting services in $city?",
+               "a" => "Yes. We offer local household, office and commercial relocation in $city."],
+              ["q" => "How are moving charges calculated?",
+               "a" => "The charges vary depending on distance, packing requirement, type of the vehicle and volume of the goods."],
+              ["q" => "Do you offer packing materials?",
+               "a" => "Yes, we use good packing material for packing furniture, electrical equipment, and fragile items."],
             ];
             foreach ($faqs as $i => $faq):
             ?>

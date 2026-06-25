@@ -1721,3 +1721,27 @@
     font-size: 14px;
     font-weight: 700;
 }
+
+/* City Reviews Scroll-Snap Slider styles */
+.city-reviews-slider-outer {
+    position: relative;
+    width: 100%;
+}
+
+.city-reviews-slider-viewport {
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+    -ms-overflow-style: none; /* IE/Edge */
+    scrollbar-width: none; /* Firefox */
+}
+
+.city-reviews-slider-viewport::-webkit-scrollbar {
+    display: none; /* Chrome/Safari */
+}
+
+.city-reviews-slider-track {
+    display: flex;
+    gap: 24px;
+    padding-bottom: 8px; /* Room for card shadow/transform hover space */
+}
