@@ -16,76 +16,119 @@ $this->load->view('template/breadcrumbs', [
                 <div class="service-main-content">
                     <img loading="lazy" src="<?= base_url('assets/images/gallery/img5.jpg') ?>" alt="About <?= $company3 ?>" class="about-banner-img">
 
-                    <h2>India's Leading Packers &amp; Movers</h2>
-                    <p>
-                        Welcome to <strong><?= $company3 ?></strong>, your premier destination for high-quality, safe, and cost-effective shifting solutions. With over <strong><?= $experience ?> years</strong> of professional logistics experience, we are dedicated to transforming stressful shifting days into pleasant, seamless transitions for families and businesses nationwide.
-                    </p>
-                    <p>
-                        Established with the vision of providing standard, honest, and reliable relocation services, <?= $company3 ?> has grown to become a household name in India. Today, we manage a vast logistics network across major cities, supported by a specialized fleet of modern container carriers, state-of-the-art warehouses, and a trained crew of packing experts.
-                    </p>
+                    <h2>About <?= $company3 ?></h2>
+                    <span class="fs-6 fw-bold">Welcome to a Moving Company That Knows How to Move</span>
+                    <p>Welcome to <strong><?= $company3 ?></strong>, your reliable partner for moving and shifting of household goods and office equipment in India. We understand that moving means much more than simply transporting things from one place to another. It is about making a fresh start in life and getting a perfect moving experience in return.</p>
+                    <p>During the years of our work, we helped a great number of families, working people, businesspeople, and organizations move to a new place with comfort and peace of mind. We are always ready to take care of your belongings and ensure that everything reaches its destination in a safe manner.</p>
                     <div class="about-stats-grid">
                         <div class="about-stat-card">
                             <div class="stat-icon"><i class="bi bi-clock-history"></i></div>
-                            <h3><?= $experience ?></h3>
+                            <span class="fs-3 fw-bold"><?= $experience ?></span>
                             <p>Years Legacy</p>
                         </div>
                         <div class="about-stat-card">
                             <div class="stat-icon"><i class="bi bi-people"></i></div>
-                            <h3><?= $happyClients ?></h3>
+                            <span class="fs-3 fw-bold"><?= $happyClients ?></span>
                             <p>Happy Clients</p>
                         </div>
                         <div class="about-stat-card">
                             <div class="stat-icon"><i class="bi bi-shield-check"></i></div>
-                            <h3>99.6%</h3>
+                            <span class="fs-3 fw-bold">99.6%</span>
                             <p>Safe Delivery</p>
                         </div>
                         <div class="about-stat-card">
                             <div class="stat-icon"><i class="bi bi-geo-alt"></i></div>
-                            <h3><?= $statesCovered ?></h3>
+                            <span class="fs-3 fw-bold"><?= $statesCovered ?></span>
                             <p>States Covered</p>
                         </div>
                     </div>
 
-                    <h2>Our Shifting Commitments</h2>
-                    <p>
-                        At the heart of our operations is a strong commitment to customer satisfaction and property safety. We operate on the foundation of transparency, integrity, and punctuality. We believe that your trust is our most valuable asset, and we strive to honor it by packing and shipping every household item as if it were our own.
-                    </p>
-                    <div class="about-values-grid">
-                        <div class="about-value-card">
-                            <div class="value-icon"><i class="bi bi-shield-fill-check"></i></div>
-                            <h3>Uncompromising Safety</h3>
-                            <p>We utilize premium multi-layered packing materials (bubble wrap, corrugated sheets, foam rolls) to guard your assets against impact, moisture, and road hazards.</p>
+                    <h3>Your Reliable Partner in Moving and Shifting</h3>
+                    <p>We offer complete moving solutions for residential, commercial, and vehicle transportation purposes. We will help you move an apartment, a house, an office set, or even a car and a bike. We understand that relocation may be urgent or need some time to be prepared. Therefore, we pay special attention to knowing the specific needs of each client in order to develop the right plan of action.</p>
+                    <p>Our skilled staff will use high-quality packing materials, appropriate handling technique and perfectly maintained transport vehicles to minimize the risks associated with the moving and shifting process.</p>
+
+                    <span class="fs-3 fw-bold">Your Moving Company with Care and Experience</span>
+                    <p>Trust is the thing you cannot buy. You can earn it with constant work and reliability. Our team does its best to ensure that our clients always know what to expect from us. We give transparent quotation and professional advice at all stages of the moving process.</p>
+                    <p>Our experienced movers know how to properly pack and handle such things as delicate belongings, furniture, appliances, office equipment, and other personal items.</p>
+
+                    <h4>Our Mission to Help with Moving and Shifting</h4>
+                    <p>Our mission is to provide reliable moving and shifting services that will help our clients move easily.</p>
+
+                    <p>We try to ensure the following for each of our clients:</p>
+                    <ul>
+                        <li>Secure packaging and transportation</li>
+                        <li>Transparent and honest prices</li>
+                        <li>Timely pick-up and drop-off of belongings</li>
+                        <li>Professional assistance to our clients</li>
+                        <li>Quality service always</li>
+                    </ul>
+                    <p>Each move helps us to build trust with our clients.</p>
+
+                    <h4>Our Vision to Provide Better Services</h4>
+                    <p>Our vision is to become one of the most trusted and <b>reliable moving companies in India</b> through continuous improvement of our services and customer experience. We try to create a moving process where customers will be informed, comfortable, and confident about their move. While developing further, our vision stays the same - to provide our clients with reliable moving services professionally, skillfully, and honestly.</p>
+                    <span class="fs-5 fw-bold">Reasons Why Our Clients Prefer Us</span>
+                    <p>Clients prefer <?= $company3 ?> because we care about such things as reliability, safety, and customer satisfaction.</p>
+                    <ul>
+                        <li>Trained and certified moving professionals</li>
+                        <li>High-quality packing materials to protect your belongings better</li>
+                        <li>Honest pricing without any additional fees</li>
+                        <li>Timely schedule of pickup and delivery</li>
+                        <li>Safe car and bike transportation services</li>
+                        <li>Constant support at all stages of relocation</li>
+                    </ul>
+                    <h5>Our Story</h5>
+                    <p><em><?= $company3 ?></em> was created in order to make moving and shifting easier, safer, and more reliable for families and organizations. What was initially a moving service grew thanks to the trust of our clients, hard work, and quality of our services.Nowadays, we continue to help our clients in India with moving and shifting with the same values that helped us to earn our good reputation.</p>
+
+                    <h3 class="mt-5 mb-4">Frequently Asked Questions</h3>
+                    <div class="about-custom-faq-accordion accordion mb-4" id="aboutFaqAccordion">
+                        <?php
+                        $about_faqs = [
+                            [
+                                'q' => 'What services do you provide?',
+                                'a' => 'We provide household shifting, office shifting, packing, loading, unloading, vehicle transportations, and storage services.'
+                            ],
+                            [
+                                'q' => 'Do you supply packing material?',
+                                'a' => 'Yes, we use quality packing materials to ensure that your belongings are safely transported.'
+                            ],
+                            [
+                                'q' => 'Can I get moving quotations from you?',
+                                'a' => 'You just need to call us, send a WhatsApp message or fill in an inquiry form on our website.'
+                            ],
+                            [
+                                'q' => 'Do you carry out interstate relocations?',
+                                'a' => 'Yes, we provide local and distance moving services all over India.'
+                            ],
+                            [
+                                'q' => 'Can you transport cars and bikes?',
+                                'a' => 'Yes, we also provide secure and reliable vehicle transportation services for vehicles and two-wheelers.'
+                            ]
+                        ];
+                        foreach ($about_faqs as $i => $faq):
+                            $isOpen = ($i === 0);
+                        ?>
+                        <div class="accordion-item">
+                            <h3 class="accordion-header" id="faq-heading-<?= $i ?>">
+                                <button class="accordion-button <?= $isOpen ? '' : 'collapsed' ?>" 
+                                        type="button" 
+                                        data-bs-toggle="collapse" 
+                                        data-bs-target="#faq-collapse-<?= $i ?>" 
+                                        aria-expanded="<?= $isOpen ? 'true' : 'false' ?>" 
+                                        aria-controls="faq-collapse-<?= $i ?>">
+                                    <?= htmlspecialchars($faq['q']) ?>
+                                </button>
+                            </h3>
+                            <div id="faq-collapse-<?= $i ?>" 
+                                 class="accordion-collapse collapse <?= $isOpen ? 'show' : '' ?>" 
+                                 aria-labelledby="faq-heading-<?= $i ?>" 
+                                 data-bs-parent="#aboutFaqAccordion">
+                                <div class="accordion-body">
+                                    <p class="mb-0"><?= htmlspecialchars($faq['a']) ?></p>
+                                </div>
+                            </div>
                         </div>
-                        <div class="about-value-card">
-                            <div class="value-icon"><i class="bi bi-cash-coin"></i></div>
-                            <h3>Transparent Fair Pricing</h3>
-                            <p>We provide detailed, itemized quotes upfront with no hidden charges, ensuring complete honesty in billing and zero post-move disputes.</p>
-                        </div>
-                        <div class="about-value-card">
-                            <div class="value-icon"><i class="bi bi-speedometer2"></i></div>
-                            <h3>Punctual Transit</h3>
-                            <p>We map efficient transport routes, deploy experienced long-haul drivers, and track schedules carefully to guarantee on-time deliveries at your destination.</p>
-                        </div>
-                        <div class="about-value-card">
-                            <div class="value-icon"><i class="bi bi-headset"></i></div>
-                            <h3>24/7 Dedicated Care</h3>
-                            <p>Our customer service desk is accessible round-the-clock, offering real-time tracking updates and immediate solutions throughout the shifting lifecycle.</p>
-                        </div>
+                        <?php endforeach; ?>
                     </div>
-
-                    <h2>Advanced Shifting Infrastructure</h2>
-                    <p>
-                        Our capabilities are backed by advanced relocation infrastructure that sets us apart from local contractors. We own and operate a large fleet of enclosed truck containers, custom car carriers, and heavy cargo machinery to handle heavy commercial equipment.
-                    </p>
-                    <p>
-                        Additionally, we offer safe, climate-controlled warehousing and storage yards. These spaces are secured with round-the-clock CCTV surveillance, fire prevention systems, and regular pest control, allowing you to store your household goods or business cargo for long or short periods.
-                    </p>
-
-                    <h2>IBA Approved Shifting</h2>
-                    <p>
-                        For government employees, bank managers, and corporate professionals, we supply IBA-approved transport bills and quotation profiles. Our documents comply with strict bank claim regulations, making it easy to coordinate official transfers and complete relocation claims.
-                    </p>
-
                 </div>
             </div>
             <div class="col-lg-4">
