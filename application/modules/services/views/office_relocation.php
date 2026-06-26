@@ -38,36 +38,21 @@ $this->load->view('template/breadcrumbs', [
                         </div>
                     </div>
 
-                    <h2>Professional Corporate &amp; Office Relocation Services</h2>
-                    <p class="lead">
-                        At <strong><?= $company3 ?></strong>, we understand that office relocation requires systematic planning to minimize disruption to your business operations. Shifting network servers, workstation cubicles, fragile IT screens, and critical paper archives demands a structured, safety-first workflow.
+                    <h2>Office Relocation Without Disrupting Your Business</h2>
+                    <p>
+                        Office relocation differs greatly from house relocation. Each hour spent on packing, moving, and unpacking has an impact on your company's performance and business operations. Confidential data, office furniture, computers, servers, equipment - all of these things have to be handled properly and organized efficiently. Unplanned relocation always results in confusion that persists long after the office relocation is done.
                     </p>
                     <p>
-                        We assign a dedicated corporate moving manager to coordinate the entire project. We organize packing schedules over weekends or holidays, helping you resume business operations on Monday morning without missing a beat.
+                        The specialists from <strong><?= $company3 ?></strong> offer you well-organized office relocation service that will ensure your business moves to its new location with minimum disruptions.
                     </p>
-                    <h2>How We Compare to Competitors</h2>
-                    <p>Our corporate moving processes are designed to handle business assets with high efficiency:</p>
-                    
-                    <div class="service-comparison-box">
-                        <div class="service-comparison-col premium-standard">
-                            <h4><i class="bi bi-check-circle-fill"></i> Our Shifting Standards</h4>
-                            <ul>
-                                <li>Anti-static bubble wrap for servers and IT screens.</li>
-                                <li>Systematic color-coded labelling for department files.</li>
-                                <li>Relocation scheduled during weekends or overnight.</li>
-                                <li>Dedicated project coordinator managing the crew on-site.</li>
-                            </ul>
-                        </div>
-                        <div class="service-comparison-col local-standard">
-                            <h4><i class="bi bi-x-circle-fill"></i> Local Transporters</h4>
-                            <ul>
-                                <li>Standard plastic wrap without anti-static protection.</li>
-                                <li>Random loading of folders without departmental sorting.</li>
-                                <li>Weekday moves that disrupt normal business operations.</li>
-                                <li>Uncoordinated loading without a project planner.</li>
-                            </ul>
-                        </div>
-                    </div>
+
+                    <h3>Office Shifting Begins with Proper Planning</h3>
+                    <p>Efficient office shifting begins with thorough preparations. Our professionals visit your office and learn its structure, identify valuable office equipment, assess your packing needs and develop a realistic office relocation schedule.</p>
+                    <p>All departments, workplaces, paperwork and electronic devices will be sorted separately to make the process of unpacking faster and let employees start working right away without spending any valuable time finding important things.</p>
+
+                    <h4>Proper Handling of Office Furniture and IT Equipment</h4>
+                    <p>Contemporary offices include a lot of things apart from tables and chairs. Computers, printers, servers, meeting rooms equipment, filing cabinets, electronic devices - each of these elements requires its own special way of packing.</p>
+                    <p>Our team will make sure that high-grade packing material will be used to ensure safe transportation of office assets. Disassembly and assembly of furniture take place while transporting them. All the electronic devices will be packed with caution to avoid any damage during transportation.</p>
                     <h2>Our Corporate Relocation Process</h2>
                     <div class="process-timeline">
                         <div class="process-step">
@@ -91,29 +76,20 @@ $this->load->view('template/breadcrumbs', [
                             <p>We unload packages room-by-room based on the color tags, helping you unpack files and place desk layouts in position.</p>
                         </div>
                     </div>
-                    <h2>Office Shifting Guidelines</h2>
-                    <p>Please review which office assets are handled by our corporate moving crew:</p>
                     
-                    <div class="service-safety-notice-box">
-                        <div class="service-safety-col safety-yes">
-                            <h4><i class="bi bi-check"></i> Standard Office Assets</h4>
-                            <ul>
-                                <li>Computers, LED screens, and printers.</li>
-                                <li>Workstation cubicles and modular desks.</li>
-                                <li>Corporate files, books, and documents.</li>
-                                <li>Pantry equipment, water filters, and chairs.</li>
-                            </ul>
-                        </div>
-                        <div class="service-safety-col safety-no">
-                            <h4><i class="bi bi-x"></i> Prohibited / Excluded</h4>
-                            <ul>
-                                <li>Company financial checkbooks and cash.</li>
-                                <li>Critical locker keys or security passwords.</li>
-                                <li>Employees' personal tablets and phones.</li>
-                                <li>Highly sensitive intellectual property patents.</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <span class="fs-4 fw-bold">Flexibility of Our Office Relocation Service</span>
+                    <p>Many business owners cannot afford to stop their business operations for relocation. That is why we offer flexible scheduling according to the demands of your company.</p>
+                    <p>If necessary, office shifting will be done on weekends, holidays or after your working hours. This will allow reducing downtime and letting employees start working again without major disruptions after the office relocation.</p>
+
+                    <span class="fs-5 fw-bold">Continuous Coordination at Every Step</span>
+                    <p>Updates are equally important to business owners as safe transportation. We will contact you at each step of the relocation process and inform you about the progress of the packing process, vehicle dispatching, transportation and delivery schedule.</p>
+                    <p>It will help to avoid any misunderstandings and let your management team plan the whole process of transition comfortably.</p>
+
+                    <span class="fs-5 fw-bold">Successful Office Relocation Done In Advance</span>
+                    <p>Several months ago our team relocated a marketing agency that employs more than forty people to another office. The main problem for the agency owners was completing this job over the weekend so that their employees would be able to work on Monday.</p>
+                    <p>Our team separated the office into zones, marked every workplace, packed the computer system separately and moved all elements in batches. By the end of Sunday, all furniture was assembled, workplaces were organized and internet equipment was ready to install. On Monday morning the agency staff entered the completely arranged office without any waste of working time.</p>
+                    <h6>Move Your Office With Confidence</h6>
+                    <p>Office relocation needs careful planning, coordination, and efficient execution. <?= $company3 ?> ensures you with a professional labor force, proper packing and dependable transportation.</p>
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>

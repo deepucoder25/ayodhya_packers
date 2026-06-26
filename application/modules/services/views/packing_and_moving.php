@@ -1,7 +1,7 @@
 <?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
 <?php
 $this->load->view('template/breadcrumbs', [
-    'title' => 'Packing & Moving',
+    'title' => 'Packing and Moving Services',
     'description' => 'Premium packing materials and expert handling for scratch-free, water-resistant, and completely safe relocation of your valuable belongings.',
     'breadcrumbs' => [
         ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
@@ -38,36 +38,14 @@ $this->load->view('template/breadcrumbs', [
                         </div>
                     </div>
 
-                    <h2>High-End Packing &amp; Moving Services</h2>
-                    <p class="lead">
-                        At <strong><?= $company3 ?></strong>, we know that the safety of your move is determined by the quality of the packing. Simply bundling items inside cardboard boxes is not enough. Relocating requires specialized wraps to protect items from moisture, dust, road vibrations, and highway bumps.
-                    </p>
+                    <h2>Safe and Reliable Relocation Solutions</h2>
                     <p>
-                        We use premium packaging materials including double-walled corrugated boxes, air-bubble wraps, foam sheets, edge guards, and stretch film. Our crew is trained in custom-wrapping delicate glassware, electronics, and polished wooden furniture.
+                        A change of house or office needs much more than just transferring stuff from one place to another. It needs careful planning and execution in addition to proper packing. We offer <b>reliable packing and moving services</b> for houses, flats, offices and other business places. If you are shifting to a new place or simply moving from one place to another within the city, our services are tailor-made according to your specific moving requirements.
                     </p>
-                    <h2>How We Compare to Competitors</h2>
-                    <p>Our premium packing methods ensure your goods are protected against transit risks:</p>
+                    <h2>Complete Packing and Moving Services</h2>
+                    <p>We take care of all aspects of the moving process which includes packing of your stuff, loading, transportation, unloading at the destination and rearrangement of your stuff. We assess your items, look into the accessibility at both ends and check which of your items need special care. It helps us in arranging appropriate packing materials, vehicles and manpower for hassle free moving.</p>
                     
-                    <div class="service-comparison-box">
-                        <div class="service-comparison-col premium-standard">
-                            <h4><i class="bi bi-check-circle-fill"></i> Our Shifting Standards</h4>
-                            <ul>
-                                <li>Multi-layer packing with bubble wrap and stretch film.</li>
-                                <li>Heavy-duty double-walled corrugated boxes.</li>
-                                <li>Custom wooden crates for fragile glassware and TV.</li>
-                                <li>Waterproof tapes and moisture-proof packing.</li>
-                            </ul>
-                        </div>
-                        <div class="service-comparison-col local-standard">
-                            <h4><i class="bi bi-x-circle-fill"></i> Local Transporters</h4>
-                            <ul>
-                                <li>Single-layer newspaper or thin plastic wrap.</li>
-                                <li>Thin, recycled boxes that collapse easily.</li>
-                                <li>No specialized wooden crating for delicate items.</li>
-                                <li>Standard tape that peels off in hot weather.</li>
-                            </ul>
-                        </div>
-                    </div>
+
                     <h2>Our Systematic Packing Process</h2>
                     <div class="process-timeline">
                         <div class="process-step">
@@ -91,49 +69,15 @@ $this->load->view('template/breadcrumbs', [
                             <p>We seal all boxes with heavy-duty tape, label them by room, and draft a checklist for tracking during transport.</p>
                         </div>
                     </div>
-                    <h2>Packing Safety Guidelines</h2>
-                    <p>Please review which household items are packed by our moving specialists:</p>
-                    
-                    <div class="service-safety-notice-box">
-                        <div class="service-safety-col safety-yes">
-                            <h4><i class="bi bi-check"></i> Standard Cargo Items</h4>
-                            <ul>
-                                <li>Kitchenware, crockery, and fragile glass.</li>
-                                <li>Refrigerators, washing machines, and TVs.</li>
-                                <li>Beds, wardrobes, sofas, and dining sets.</li>
-                                <li>Clothing, books, toys, and linens.</li>
-                            </ul>
-                        </div>
-                        <div class="service-safety-col safety-no">
-                            <h4><i class="bi bi-x"></i> Prohibited Items</h4>
-                            <ul>
-                                <li>Kerosene, gasoline, cylinders, or matches.</li>
-                                <li>Precious gold, diamonds, jewelry, or cash.</li>
-                                <li>Firearms, bullets, or explosive chemicals.</li>
-                                <li>Corrosive acids or liquid paint cans.</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="service-reviews-slice">
-                        <div class="rating-row">
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                            <i class="bi bi-star-fill"></i>
-                        </div>
-                        <p class="review-text">
-                            "The packing crew was outstanding. They wrapped our glassware, chinaware, and smart TV with care. Not a single item was broken or scratched during our long-distance shift. Truly professional packing!"
-                        </p>
-                        <div class="review-user">
-                            <div class="user-avatar">R</div>
-                            <div class="user-name">
-                                <h6>Rohtash Kumar</h6>
-                                <span>Patna, Bihar</span>
-                            </div>
-                        </div>
-                    </div>
-                    <h2>Frequently Asked Questions</h2>
+                    <h4>Quality Packing Materials for Extra Protection</h4>
+                    <p>We make use of strong packing materials like corrugated boxes, bubble wrap, foam sheets, stretch film, waterproof covers and edge protectors to ensure that there are minimal chances of damage to your stuff during transit. We offer extra cushioning for fragile stuff while disassembling and assembling furniture is done only if absolutely necessary. Each of the boxes is clearly marked for easy identification later on.</p>
+                    <h5>Advantages of Employing Professional Packers and Movers</h5>
+                    <p>When you employ professionals for packing and moving work on your behalf, then the whole process becomes easy and much safer for you. The need arises to deal with bulky appliances in the proper way, packing of delicate items in a safe manner, and loading of furniture in such a way that it becomes secure during the whole journey. Though employing professional movers will require you an investment initially, it may help you avoid unnecessary expenses.</p>
+                    <span class="fs-4 fw-bold">A Recent Move</span>
+                    <p>Recently, our team was called upon to assist in the relocation of a family who were moving into a new flat. They had a huge wooden wardrobe which was too big for the lift in the new flat. Rather than forcing them, we disassembled their wardrobe, packed their parts separately, moved them safely and assembled them perfectly at their new location.</p>
+                    <span class="fs-5 fw-bold">Get a Free Moving Quote</span>
+                    <p>Be it your local move or long distance move, <strong><?= $company3 ?></strong> has got you covered. We concentrate on careful packing, safe transit and punctual delivery of your stuff for a stress free moving experience. Just give us a call and get a free moving quotation.</p>
+                    <span class="fs-2 fw-bold">Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
                             <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-pm-1" aria-expanded="false" role="button">

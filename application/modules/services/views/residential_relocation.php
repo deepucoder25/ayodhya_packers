@@ -1,7 +1,8 @@
-<?php if (!defined('BASEPATH')) exit('No direct script access allowed'); ?>
+<?php if (!defined('BASEPATH'))
+    exit('No direct script access allowed'); ?>
 <?php
 $this->load->view('template/breadcrumbs', [
-    'title' => 'Residential Relocation',
+    'title' => 'Residential Relocation Services',
     'description' => 'Hassle-free household shifting and home relocation services. Safe and smooth door-to-door household moving at affordable rates.',
     'breadcrumbs' => [
         ['label' => 'Home', 'url' => site_url(), 'icon' => 'bi bi-house-door-fill'],
@@ -16,7 +17,8 @@ $this->load->view('template/breadcrumbs', [
             <div class="col-lg-8">
                 <div class="service-main-content">
                     <div class="service-hero-cover">
-                        <img loading="lazy" src="<?= base_url('assets/images/gallery/img8.jpg') ?>" alt="Residential Shifting - <?= $company3 ?>">
+                        <img loading="lazy" src="<?= base_url('assets/images/gallery/img8.jpg') ?>"
+                            alt="Residential Shifting - <?= $company3 ?>">
                         <div class="service-hero-overlay"></div>
                         <span class="service-hero-badge">Door-to-Door Safe Relocation</span>
                     </div>
@@ -38,82 +40,83 @@ $this->load->view('template/breadcrumbs', [
                         </div>
                     </div>
 
-                    <h2>Elite Household Shifting &amp; Home Relocation Services</h2>
-                    <p class="lead">
-                        At <strong><?= $company3 ?></strong>, we know that moving your home involves more than shifting boxes—it means transporting your memories and valuable household assets. From delicate family china to heavy wooden beds and sensitive appliances, every item needs individual care.
+                    <p>It feels great when you have to change your residence. But moving an entire household requires
+                        planning, patience and proper handling. Each and every family has some specific requirements.
+                        While some families are worried about their fragile kitchen ware, there are few who are
+                        concerned about expensive furniture and learning material for children's studies.
+                        <strong><?= $company3 ?></strong> offers residential shifting service that makes sure your
+                        entire shift happens smoothly.
                     </p>
-                    <p>
-                        We manage your home relocation systematically. Our trained packers handle the wrapping, loading, and unpacking. We also deploy professional carpenters on-site to handle furniture dismantling and reassembly, ensuring a stress-free transition.
+
+                    <p>The move is planned by our team based on the size of the house, amount of goods and the distance
+                        of the place you will be moving to.</p>
+
+                    <p>Whatever type of home you are moving from; apartment, independent house or gated community, we
+                        take care of packing, loading, transportation, unloading and placing your household items at the
+                        new place. Our aim is to ensure that your goods reach the new place in the same condition in
+                        which they were in the old place.</p>
+                    <h3>What is Included in Residential Relocation Service?</h3>
+                    <p>At first we assess the requirements of our customers. Based on that we decide what type of
+                        packing material, what size of vehicle and what manpower is required for the job. Our packing
+                        includes dismantling the furniture, if required, packing the electronic appliances with special
+                        packing material and labelling the cartons room-wise.</p>
+                    <span class="fw-bold">We use following packing material:</span>
+                    <ul>
+                        <li>Corrugated carton boxes</li>
+                        <li>Bubble wrap for delicate items</li>
+                        <li>Foam sheet for electronic appliances</li>
+                        <li>Stretch film for furniture</li>
+                        <li>Waterproof covers during transportation</li>
+                    </ul>
+                    <p>This helps to avoid any possible scratches, dents and breakages of goods during transportation.
                     </p>
-                    <h2>How We Compare to Competitors</h2>
-                    <p>Our home relocation services are designed around your family's convenience and safety:</p>
-                    
-                    <div class="service-comparison-box">
-                        <div class="service-comparison-col premium-standard">
-                            <h4><i class="bi bi-check-circle-fill"></i> Our Shifting Standards</h4>
-                            <ul>
-                                <li>Complete door-to-door packing and unpacking.</li>
-                                <li>Customized foam padding for wooden finishes.</li>
-                                <li>On-site furniture dismantling and assembly.</li>
-                                <li>Dedicated move manager supervising the team.</li>
-                            </ul>
-                        </div>
-                        <div class="service-comparison-col local-standard">
-                            <h4><i class="bi bi-x-circle-fill"></i> Local Transporters</h4>
-                            <ul>
-                                <li>Basic transport from building to building only.</li>
-                                <li>No surface protection for furniture and tables.</li>
-                                <li>No carpentry support for beds or almirahs.</li>
-                                <li>Unsupervised daily laborers with no coordinator.</li>
-                            </ul>
-                        </div>
-                    </div>
+
                     <h2>Our Household Moving Process</h2>
                     <div class="process-timeline">
                         <div class="process-step">
                             <span class="step-number">1</span>
                             <h4>In-Home Survey</h4>
-                            <p>We review the volume of your goods, document fragile items, and plan the required truck size and packing supplies.</p>
+                            <p>We review the volume of your goods, document fragile items, and plan the required truck
+                                size and packing supplies.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">2</span>
                             <h4>Systematic Packaging</h4>
-                            <p>Our team wraps furniture in corrugated sheets, packs kitchenware in bubble wrap, and disassembles bed frames.</p>
+                            <p>Our team wraps furniture in corrugated sheets, packs kitchenware in bubble wrap, and
+                                disassembles bed frames.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">3</span>
                             <h4>Balanced Loading</h4>
-                            <p>We stack your goods securely inside our enclosed container truck, ensuring weight is balanced to prevent shifting in transit.</p>
+                            <p>We stack your goods securely inside our enclosed container truck, ensuring weight is
+                                balanced to prevent shifting in transit.</p>
                         </div>
                         <div class="process-step">
                             <span class="step-number">4</span>
                             <h4>Unpacking &amp; Setup</h4>
-                            <p>We unload your belongings room-by-room, reassemble the furniture, and help place heavy items where you want them.</p>
+                            <p>We unload your belongings room-by-room, reassemble the furniture, and help place heavy
+                                items where you want them.</p>
                         </div>
                     </div>
-                    <h2>Home Shifting Safety Guidelines</h2>
-                    <p>Please review which items are accepted for packing and transport:</p>
-                    
-                    <div class="service-safety-notice-box">
-                        <div class="service-safety-col safety-yes">
-                            <h4><i class="bi bi-check"></i> Standard Household Items</h4>
-                            <ul>
-                                <li>Beds, sofas, dining tables, and cupboards.</li>
-                                <li>TVs, refrigerators, and washing machines.</li>
-                                <li>Kitchen utensils, crockery, and dry groceries.</li>
-                                <li>Clothes, books, linens, and suitcases.</li>
-                            </ul>
-                        </div>
-                        <div class="service-safety-col safety-no">
-                            <h4><i class="bi bi-x"></i> Prohibited Items</h4>
-                            <ul>
-                                <li>Inflammable fuels, gas cans, or fireworks.</li>
-                                <li>Gold, silver, diamonds, jewelry, or cash.</li>
-                                <li>Original property deeds, certificates, or IDs.</li>
-                                <li>Open liquids or leaking oils.</li>
-                            </ul>
-                        </div>
-                    </div>
+                    <h4>Why Should Families Avail Our Services?</h4>
+                    <p>Home shifting is not just the transportation of your furniture. It involves many other aspects
+                        like timing, packing, loading, method of transportation etc. Poor packing of your washing
+                        machine or improper loading in the truck might damage your goods easily.</p>
+
+                    <p>Yes, residential shifting is indeed an investment but repairing damaged furniture and replacement
+                        of broken appliances will cost you even more money. It will also save a lot of your time,
+                        especially if you are moving your home within some particular date.</p>
+
+                    <span class="fs-5 fw-bold">A Case Study</span>
+                    <p>Recently we shifted a family from a rented flat to their newly constructed house. Most of their
+                        concern was about shifting of a 6-seater dining table having a glass top. We separated out the
+                        glass, packed each piece separately and reassembled the table in the new place. The family
+                        completed their shifting before the evening.</p>
+                    <h6 class="fs-5 fw-bold">Ready for Your Residential Shift?</h6>
+                    <p>At <?= $company3 ?>, we combine qualified manpower, high quality packing material and well
+                        organized planning to make residential shifting simple and reliable. Contact us now for a quote
+                        and let us help you to shift your house in a professional manner.</p>
+
                     <div class="service-reviews-slice">
                         <div class="rating-row">
                             <i class="bi bi-star-fill"></i>
@@ -123,51 +126,58 @@ $this->load->view('template/breadcrumbs', [
                             <i class="bi bi-star-fill"></i>
                         </div>
                         <p class="review-text">
-                            "Shifting our 3BHK flat was incredibly smooth. The crew from Ayodhya Packers arrived on time, wrapped everything in double-walled boxes, and reassembled all the beds at our new house. Excellent, stress-free home relocation!"
+                            "They labeled each and every carton room wise, which saved us lot of time during unpacking and arranging our new house. Such small things made our job easy."
                         </p>
                         <div class="review-user">
-                            <div class="user-avatar">V</div>
+                            <div class="user-avatar">P</div>
                             <div class="user-name">
-                                <h6>Vijay Kumar</h6>
-                                <span>Patna, Bihar</span>
+                                <span class="fs-6 fw-bold text-dark">Priya Mishra</span>
+                                <span>Sultanpur | Jan 2025</span>
                             </div>
                         </div>
                     </div>
                     <h2>Frequently Asked Questions</h2>
                     <div class="service-faq-container">
                         <div class="faq-card">
-                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-rr-1" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-rr-1"
+                                aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
                                 <span class="flex-grow-1">How many days in advance should I book my home move?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
                             <div id="faq-rr-1" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    We recommend booking at least 5 to 7 days in advance to secure the moving date and allow proper coordination of packing supplies.
+                                    We recommend booking at least 5 to 7 days in advance to secure the moving date and
+                                    allow proper coordination of packing supplies.
                                 </div>
                             </div>
                         </div>
                         <div class="faq-card">
-                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-rr-2" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-rr-2"
+                                aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
                                 <span class="flex-grow-1">Do you help in dismantling and reassembling beds?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
                             <div id="faq-rr-2" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    Yes. Our team includes professional carpenters who disassemble double beds, almirahs, and dining tables, and reassemble them at your new home.
+                                    Yes. Our team includes professional carpenters who disassemble double beds,
+                                    almirahs, and dining tables, and reassemble them at your new home.
                                 </div>
                             </div>
                         </div>
                         <div class="faq-card">
-                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-rr-3" aria-expanded="false" role="button">
+                            <div class="faq-card-header collapsed" data-bs-toggle="collapse" data-bs-target="#faq-rr-3"
+                                aria-expanded="false" role="button">
                                 <i class="bi bi-patch-question-fill faq-card-icon"></i>
                                 <span class="flex-grow-1">How do you transport fragile kitchen items?</span>
                                 <i class="bi bi-plus faq-toggle-icon"></i>
                             </div>
                             <div id="faq-rr-3" class="collapse" data-bs-parent=".service-faq-container">
                                 <div class="faq-card-body">
-                                    All plates, bowls, and glassware are wrapped individually in bubble wrap and packed inside sturdy carton boxes. We label these boxes as FRAGILE to ensure they are handled with care.
+                                    All plates, bowls, and glassware are wrapped individually in bubble wrap and packed
+                                    inside sturdy carton boxes. We label these boxes as FRAGILE to ensure they are
+                                    handled with care.
                                 </div>
                             </div>
                         </div>
